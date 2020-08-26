@@ -1,7 +1,3 @@
-# capstone-project
-
-Final project for web development bootcamp
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
