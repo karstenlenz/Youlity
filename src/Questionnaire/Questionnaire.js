@@ -12,38 +12,33 @@ export default function Questionnaire() {
     setResult(countYes(answers))
   }, [answers])
 
-  return (
+  return currentQuestionIndex < questions.length ? (
     <>
-      {currentQuestionIndex < questions.length ? (
-        <>
-          <h3>Frage {currentQuestionIndex + 1} / 8 </h3>
-          <h2>{questions[currentQuestionIndex]}</h2>
-          <button onClick={handleAnswer} data-js="no">
-            (Eher) Nein
-          </button>
-          <button onClick={handleAnswer} data-js="yes">
-            (Eher) Ja
-          </button>
-        </>
+      <h3>Frage {currentQuestionIndex + 1} / 8 </h3>
+      <h2>{questions[currentQuestionIndex]}</h2>
+      <button onClick={handleAnswer} data-js="no">
+        (Eher) Nein
+      </button>
+      <button onClick={handleAnswer} data-js="yes">
+        (Eher) Ja
+      </button>
+    </>
+  ) : (
+    <>
+      <h2>Ergebnis:</h2>
+      <h3>Sie haben {result} von 8 Fragen mit "ja" beantwortet.</h3>
+      {result > 5 ? (
+        <p>
+          Das deutet darauf hin, dass der narzisstische Persönlichkeitsstil bei
+          Ihnen überdurchschnittlich ausgeprägt ist.
+          <br /> Keine Sorge, das ist nichts Schlimmes! Nur, wenn Sie das Gefühl
+          haben, unter Ihrer Persönlichkeit zu leiden, sollten Sie Hilfe suchen.
+        </p>
       ) : (
-        <>
-          <h2>Ergebnis:</h2>
-          <h3>Sie haben {result} von 8 Fragen mit "ja" beantwortet.</h3>
-          {result > 5 ? (
-            <p>
-              Das deutet darauf hin, dass der narzisstische Persönlichkeitsstil
-              bei Ihnen überdurchschnittlich ausgeprägt ist.
-              <br /> Keine Sorge, das ist nichts Schlimmes! Nur wenn Sie das
-              Gefühl haben, unter Ihrer Persönlichkeit zu leiden, sollten Sie
-              Hilfe suchen.
-            </p>
-          ) : (
-            <p>
-              Das deutet nicht darauf hin, dass der narzisstische
-              Persönlichkeitsstil bei Ihnen überdurchschnittlich ausgeprägt ist.
-            </p>
-          )}
-        </>
+        <p>
+          Das deutet nicht darauf hin, dass der narzisstische
+          Persönlichkeitsstil bei Ihnen überdurchschnittlich ausgeprägt ist.
+        </p>
       )}
     </>
   )
