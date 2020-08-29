@@ -5,6 +5,35 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <main>
+        <h3>
+          Frage 
+          1
+           / 8 
+        </h3>
+        <h2>
+          Brauchen Sie in hohem Maße Lob und Anerkennung?
+        </h2>
+        <button
+          data-js="no"
+        >
+          (Eher) Nein
+        </button>
+        <button
+          data-js="yes"
+        >
+          (Eher) Ja
+        </button>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <main>
+      <h3>
+        Frage 
+        1
+         / 8 
+      </h3>
       <h2>
         Brauchen Sie in hohem Maße Lob und Anerkennung?
       </h2>
@@ -18,22 +47,7 @@ Object {
       >
         (Eher) Ja
       </button>
-    </div>
-  </body>,
-  "container": <div>
-    <h2>
-      Brauchen Sie in hohem Maße Lob und Anerkennung?
-    </h2>
-    <button
-      data-js="no"
-    >
-      (Eher) Nein
-    </button>
-    <button
-      data-js="yes"
-    >
-      (Eher) Ja
-    </button>
+    </main>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

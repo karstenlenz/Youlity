@@ -4,8 +4,8 @@ import { questionnaires } from '../data/questionnaires'
 export default function Questionnaire() {
   const currentQuestionnaire = questionnaires[0]
   const { questions } = currentQuestionnaire
-  const [answers, setAnswers] = useState([])
   const [currentQuestionIndex, setcurrentQuestionIndex] = useState(0)
+  const [answers, setAnswers] = useState([])
   const [result, setResult] = useState(0)
 
   useEffect(() => {
@@ -16,6 +16,7 @@ export default function Questionnaire() {
     <>
       {currentQuestionIndex < questions.length ? (
         <>
+          <h3>Frage {currentQuestionIndex + 1} / 8 </h3>
           <h2>{questions[currentQuestionIndex]}</h2>
           <button onClick={handleAnswer} data-js="no">
             (Eher) Nein
@@ -27,17 +28,18 @@ export default function Questionnaire() {
       ) : (
         <>
           <h2>Ergebnis:</h2>
-          <p>Sie haben {result} von 8 Fragen mit ja beantwortet.</p>
+          <h3>Sie haben {result} von 8 Fragen mit "ja" beantwortet.</h3>
           {result > 5 ? (
             <p>
-              Das deutet darauf hin, dass der narzistische Persönlichkeitsstil
-              bei Ihnen überdurchschnittlich ausgeprägt ist. Keine Sorge, das
-              ist nichts Schlimmes! Nur, wenn Sie das Gefühl haben, unter Ihrer
-              Persönlichkeit zu leiden, sollten Sie Hilfe suchen.
+              Das deutet darauf hin, dass der narzisstische Persönlichkeitsstil
+              bei Ihnen überdurchschnittlich ausgeprägt ist.
+              <br /> Keine Sorge, das ist nichts Schlimmes! Nur wenn Sie das
+              Gefühl haben, unter Ihrer Persönlichkeit zu leiden, sollten Sie
+              Hilfe suchen.
             </p>
           ) : (
             <p>
-              Das deutet nicht darauf hin, dass der narzistische
+              Das deutet nicht darauf hin, dass der narzisstische
               Persönlichkeitsstil bei Ihnen überdurchschnittlich ausgeprägt ist.
             </p>
           )}

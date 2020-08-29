@@ -5,6 +5,11 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <h3>
+        Frage 
+        1
+         / 8 
+      </h3>
       <h2>
         Brauchen Sie in hohem Maße Lob und Anerkennung?
       </h2>
@@ -21,6 +26,11 @@ Object {
     </div>
   </body>,
   "container": <div>
+    <h3>
+      Frage 
+      1
+       / 8 
+    </h3>
     <h2>
       Brauchen Sie in hohem Maße Lob und Anerkennung?
     </h2>
