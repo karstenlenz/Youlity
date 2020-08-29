@@ -31,7 +31,9 @@ export default function Questionnaire() {
           {result > 5 ? (
             <p>
               Das deutet darauf hin, dass der narzistische Persönlichkeitsstil
-              bei Ihnen überdurchschnittlich ausgeprägt ist.
+              bei Ihnen überdurchschnittlich ausgeprägt ist. Keine Sorge, das
+              ist nichts Schlimmes! Nur, wenn Sie das Gefühl haben, unter Ihrer
+              Persönlichkeit zu leiden, sollten Sie Hilfe suchen.
             </p>
           ) : (
             <p>
@@ -51,9 +53,8 @@ export default function Questionnaire() {
   }
 }
 
-export function countYes(arr) {
-  const yesCount = arr.reduce((acc, cur) => {
-    return cur === 'yes' ? acc + 1 : acc
+export function countYes(answers) {
+  return answers.reduce((yesCount, answer) => {
+    return answer === 'yes' ? yesCount + 1 : yesCount
   }, 0)
-  return yesCount
 }
