@@ -17,6 +17,20 @@ it('renders correctly', () => {
 it('counts all the yesses', () => {
   const wrapper = mount(<Questionnaire />)
   const testAnswers = ['yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes']
-  const result = wrapper.countYes(testAnswers)
+  const result = wrapper.instance().countYes(testAnswers)
   expect(result).toEqual(8)
+})
+
+it('doesnt count all the noes', () => {
+  const wrapper = mount(<Questionnaire />)
+  const testAnswers = ['no', 'no', 'no', 'no', 'no', 'no', 'no', 'no']
+  const result = wrapper.instance().countYes(testAnswers)
+  expect(result).toEqual(0)
+})
+
+it('only counts the yesses', () => {
+  const wrapper = mount(<Questionnaire />)
+  const testAnswers = ['no', 'yes', 'no', 'yes', 'yes', 'no', 'no', 'no']
+  const result = wrapper.instance().countYes(testAnswers)
+  expect(result).toEqual(3)
 })

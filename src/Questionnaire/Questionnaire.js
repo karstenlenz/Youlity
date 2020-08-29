@@ -49,11 +49,11 @@ export default function Questionnaire() {
     setAnswers([...answers, answer])
     setcurrentQuestionIndex(currentQuestionIndex + 1)
   }
+}
 
-  function countYes(arr) {
-    const yesCount = arr.reduce((acc, cur) => {
-      return cur === 'yes' ? acc + 1 : acc
-    }, 0)
-    return yesCount
-  }
+export function countYes(arr) {
+  const yesCount = arr.reduce((acc, cur) => {
+    return cur === 'yes' ? acc + 1 : acc
+  }, 0)
+  return yesCount
 }

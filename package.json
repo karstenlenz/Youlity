@@ -44,8 +44,6 @@
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.18",
     "cypress": "^5.0.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.3",
     "eslint-plugin-cypress": "^2.11.1"
   }
 }
