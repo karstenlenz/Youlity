@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
+import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
+import styled from 'styled-components'
 
 Motives.propTypes = {
   userMotives: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -27,7 +28,7 @@ export default function Motives({ userMotives, setUserMotives }) {
         <li> {userMotives[2]} </li>
       </ol>
 
-      <section>
+      <ButtonList>
         <button onClick={(event) => handleClick(event, 'Anerkennung')}>
           Anerkennung
         </button>
@@ -46,7 +47,7 @@ export default function Motives({ userMotives, setUserMotives }) {
         <button onClick={(event) => handleClick(event, 'Grenzen')}>
           Grenzen
         </button>
-      </section>
+      </ButtonList>
     </>
   )
 
@@ -56,3 +57,13 @@ export default function Motives({ userMotives, setUserMotives }) {
     setUserMotives([...userMotives, motive])
   }
 }
+
+const ButtonList = styled.section`
+  display: flex;
+  flex-direction: column;
+
+  button {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+`

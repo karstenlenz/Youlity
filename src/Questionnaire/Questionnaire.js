@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { questionnaires } from '../data/questionnaires'
 
 export default function Questionnaire({ userStyles }) {
-  const [currentTestId, setCurrentTestId] = useState(userStyles[0])
+  const currentTestId = userStyles[0]
   const { questions } = questionnaires[currentTestId]
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
@@ -10,21 +10,21 @@ export default function Questionnaire({ userStyles }) {
   if (currentQuestionIndex < questions.length) {
     return (
       <>
+        <h1>Fragebogen:</h1>
+        <p>"{questionnaires[currentTestId].name}"</p>
         <h3>
           Frage {currentQuestionIndex + 1} / {questions.length}{' '}
         </h3>
         <h2>{questions[currentQuestionIndex]}</h2>
         <button onClick={() => handleAnswer(false)}>(Eher) Nein</button>
-        <button
-          onClick={() => handleAnswer(SVGComponentTransferFunctionElement)}
-        >
-          (Eher) Ja
-        </button>
+        <button onClick={() => handleAnswer(true)}>(Eher) Ja</button>
       </>
     )
   } else {
     return (
       <>
+        <h1>Fragebogen:</h1>
+        <p>"{questionnaires[currentTestId].name}"</p>
         <h2>Ergebnis:</h2>
         <h3>
           Sie haben {countYes(answers)} von {questions.length} Fragen mit "ja"
