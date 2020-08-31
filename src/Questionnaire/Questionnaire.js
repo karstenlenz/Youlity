@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { questionnaires } from '../data/questionnaires'
 
-export default function Questionnaire() {
-  const { questions } = questionnaires[0]
+export default function Questionnaire({ userStyles }) {
+  const [currentTestId, setCurrentTestId] = useState(userStyles[0])
+  const { questions } = questionnaires[currentTestId]
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
 
@@ -31,7 +32,8 @@ export default function Questionnaire() {
         </h3>
         {countYes(answers) > 5 ? (
           <p>
-            Das deutet darauf hin, dass der narzisstische Persönlichkeitsstil
+            Das deutet darauf hin, dass
+            {' ' + questionnaires[currentTestId].name + ' '}
             bei Ihnen überdurchschnittlich ausgeprägt ist.
             <br /> Keine Sorge, das ist nichts Schlimmes! Nur, wenn Sie das
             Gefühl haben, unter Ihrer Persönlichkeit zu leiden, sollten Sie
@@ -39,8 +41,9 @@ export default function Questionnaire() {
           </p>
         ) : (
           <p>
-            Das deutet nicht darauf hin, dass der narzisstische
-            Persönlichkeitsstil bei Ihnen überdurchschnittlich ausgeprägt ist.
+            Das deutet nicht darauf hin, dass
+            {' ' + questionnaires[currentTestId].name + ' '}bei Ihnen
+            überdurchschnittlich ausgeprägt ist.
           </p>
         )}
       </>

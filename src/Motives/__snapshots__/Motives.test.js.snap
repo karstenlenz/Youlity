@@ -2,8 +2,45 @@
 
 exports[`The Motives component renders correctly 1`] = `
 <div>
-  <p>
-    Motives page will be added here
-  </p>
+  <h1>
+    Bedürfnisse
+  </h1>
+  <h2>
+    Bitte wählen Sie die 3 Bedürfnisse aus, die Ihnen am wichtigsten sind. Fangen Sie mit dem wichtigsten an.
+  </h2>
+  <ol>
+    <li>
+       
+       
+    </li>
+    <li>
+       
+       
+    </li>
+    <li>
+       
+       
+    </li>
+  </ol>
+  <section>
+    <button>
+      Anerkennung
+    </button>
+    <button>
+      Wichtigkeit
+    </button>
+    <button>
+      Verlässlichkeit
+    </button>
+    <button>
+      Solidarität
+    </button>
+    <button>
+      Autonomie
+    </button>
+    <button>
+      Grenzen
+    </button>
+  </section>
 </div>
 `;

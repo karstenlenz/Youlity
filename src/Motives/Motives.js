@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
+import { useHistory } from 'react-router-dom'
 
 Motives.propTypes = {
   userMotives: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -7,6 +8,12 @@ Motives.propTypes = {
 }
 
 export default function Motives({ userMotives, setUserMotives }) {
+  const history = useHistory()
+
+  useEffect(() => {
+    userMotives.length === 3 && history.push('/questionnaire')
+  }, [userMotives, history])
+
   return (
     <>
       <h1>Bedürfnisse</h1>

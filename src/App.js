@@ -6,10 +6,12 @@ import { evaluateMatchingStyles } from './Motives/util'
 
 function App() {
   const [userMotives, setUserMotives] = useState([])
+  const [userStyles, setUserStyles] = useState([])
 
   useEffect(() => {
     if (userMotives.length === 3) {
       console.log('Matching styles:' + evaluateMatchingStyles(userMotives))
+      setUserStyles(evaluateMatchingStyles(userMotives))
     }
   }, [userMotives])
 
@@ -17,7 +19,7 @@ function App() {
     <main>
       <Switch>
         <Route path="/questionnaire">
-          <Questionnaire />
+          <Questionnaire userStyles={userStyles} />
         </Route>
         <Route path="/">
           <Motives userMotives={userMotives} setUserMotives={setUserMotives} />
