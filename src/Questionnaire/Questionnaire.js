@@ -8,6 +8,11 @@ Questionnaire.propTypes = {
 }
 
 export default function Questionnaire({ userStyles = [1, 2, 3] }) {
+  const history = useHistory()
+  if (userStyles === null) {
+    history.push('/')
+  }
+
   const currentTestId = userStyles[0]
   const { questions } = questionnaires[currentTestId]
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)

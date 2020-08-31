@@ -27,11 +27,20 @@ function App() {
           )}
         </Route>
         <Route path="/">
-          <Motives userMotives={userMotives} setUserMotives={setUserMotives} />
+          <Motives
+            userMotives={userMotives}
+            handleMotiveClick={handleMotiveClick}
+          />
         </Route>
       </Switch>
     </main>
   )
+
+  function handleMotiveClick(event, motive) {
+    const button = event.target
+    button.disabled = true
+    setUserMotives([...userMotives, motive])
+  }
 }
 
 export default App

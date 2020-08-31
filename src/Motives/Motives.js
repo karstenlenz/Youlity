@@ -5,15 +5,15 @@ import styled from 'styled-components'
 
 Motives.propTypes = {
   userMotives: PropTypes.arrayOf(PropTypes.string).isRequired,
-  setUserMotives: PropTypes.func.isRequired,
+  handleMotiveClick: PropTypes.func.isRequired,
 }
 
-export default function Motives({ userMotives, setUserMotives }) {
+export default function Motives({ userMotives, handleMotiveClick }) {
   const history = useHistory()
 
   useEffect(() => {
     userMotives.length === 3 && history.push('/questionnaire')
-  }, [userMotives, history])
+  }, [userMotives])
 
   return (
     <>
@@ -29,33 +29,29 @@ export default function Motives({ userMotives, setUserMotives }) {
       </ol>
 
       <ButtonList>
-        <button onClick={(event) => handleClick(event, 'Anerkennung')}>
+        <button onClick={(event) => handleMotiveClick(event, 'Anerkennung')}>
           Anerkennung
         </button>
-        <button onClick={(event) => handleClick(event, 'Wichtigkeit')}>
+        <button onClick={(event) => handleMotiveClick(event, 'Wichtigkeit')}>
           Wichtigkeit
         </button>
-        <button onClick={(event) => handleClick(event, 'Verlässlichkeit')}>
+        <button
+          onClick={(event) => handleMotiveClick(event, 'Verlässlichkeit')}
+        >
           Verlässlichkeit
         </button>
-        <button onClick={(event) => handleClick(event, 'Solidarität')}>
+        <button onClick={(event) => handleMotiveClick(event, 'Solidarität')}>
           Solidarität
         </button>
-        <button onClick={(event) => handleClick(event, 'Autonomie')}>
+        <button onClick={(event) => handleMotiveClick(event, 'Autonomie')}>
           Autonomie
         </button>
-        <button onClick={(event) => handleClick(event, 'Grenzen')}>
+        <button onClick={(event) => handleMotiveClick(event, 'Grenzen')}>
           Grenzen
         </button>
       </ButtonList>
     </>
   )
-
-  function handleClick(event, motive) {
-    const button = event.target
-    button.disabled = true
-    setUserMotives([...userMotives, motive])
-  }
 }
 
 const ButtonList = styled.section`

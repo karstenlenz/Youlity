@@ -23,7 +23,9 @@ exports[`renders correctly 1`] = `
          
       </li>
     </ol>
-    <section>
+    <section
+      class="sc-AxjAm eGbGEo"
+    >
       <button>
         Anerkennung
       </button>
