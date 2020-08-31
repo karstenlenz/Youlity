@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { questionnaires } from '../data/questionnaires'
 
 export default function Questionnaire() {
