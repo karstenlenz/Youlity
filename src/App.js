@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import Questionnaire from './Questionnaire/Questionnaire'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, useHistory } from 'react-router-dom'
 import Motives from './Motives/Motives'
 import { evaluateMatchingStyles } from './Motives/util'
 
 function App() {
   const [userMotives, setUserMotives] = useState([])
   const [userStyles, setUserStyles] = useState([])
+  const history = useHistory()
 
   useEffect(() => {
     if (userMotives.length === 3) {
@@ -19,7 +20,11 @@ function App() {
     <main>
       <Switch>
         <Route path="/questionnaire">
-          <Questionnaire userStyles={userStyles} />
+          {userStyles.length > 0 ? (
+            <Questionnaire userStyles={userStyles} />
+          ) : (
+            history.push('/')
+          )}
         </Route>
         <Route path="/">
           <Motives userMotives={userMotives} setUserMotives={setUserMotives} />

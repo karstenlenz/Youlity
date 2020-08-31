@@ -1,7 +1,13 @@
+import PropTypes from 'prop-types'
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import { questionnaires } from '../data/questionnaires'
 
-export default function Questionnaire({ userStyles }) {
+Questionnaire.propTypes = {
+  userStyles: PropTypes.arrayOf(PropTypes.number).isRequired,
+}
+
+export default function Questionnaire({ userStyles = [1, 2, 3] }) {
   const currentTestId = userStyles[0]
   const { questions } = questionnaires[currentTestId]
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
