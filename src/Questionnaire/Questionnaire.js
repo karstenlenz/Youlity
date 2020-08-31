@@ -5,27 +5,31 @@ export default function Questionnaire() {
   const { questions } = questionnaires[0]
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
-  const [result, setResult] = useState(0)
-
-  useEffect(() => {
-    setResult(countYes(answers))
-  }, [answers])
 
   if (currentQuestionIndex < questions.length) {
     return (
       <>
-        <h3>Frage {currentQuestionIndex + 1} / 8 </h3>
+        <h3>
+          Frage {currentQuestionIndex + 1} / {questions.length}{' '}
+        </h3>
         <h2>{questions[currentQuestionIndex]}</h2>
-        <button onClick={() => handleAnswer('no')}>(Eher) Nein</button>
-        <button onClick={() => handleAnswer('yes')}>(Eher) Ja</button>
+        <button onClick={() => handleAnswer(false)}>(Eher) Nein</button>
+        <button
+          onClick={() => handleAnswer(SVGComponentTransferFunctionElement)}
+        >
+          (Eher) Ja
+        </button>
       </>
     )
   } else {
     return (
       <>
         <h2>Ergebnis:</h2>
-        <h3>Sie haben {result} von 8 Fragen mit "ja" beantwortet.</h3>
-        {result > 5 ? (
+        <h3>
+          Sie haben {countYes(answers)} von {questions.length} Fragen mit "ja"
+          beantwortet.
+        </h3>
+        {countYes(answers) > 5 ? (
           <p>
             Das deutet darauf hin, dass der narzisstische Persönlichkeitsstil
             bei Ihnen überdurchschnittlich ausgeprägt ist.
@@ -51,6 +55,6 @@ export default function Questionnaire() {
 
 export function countYes(answers) {
   return answers.reduce((yesCount, answer) => {
-    return answer === 'yes' ? yesCount + 1 : yesCount
+    return answer ? yesCount + 1 : yesCount
   }, 0)
 }

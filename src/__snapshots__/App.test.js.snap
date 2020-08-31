@@ -9,19 +9,17 @@ Object {
         <h3>
           Frage 
           1
-           / 8 
+           / 
+          8
+           
         </h3>
         <h2>
           Brauchen Sie in hohem Maße Lob und Anerkennung?
         </h2>
-        <button
-          data-js="no"
-        >
+        <button>
           (Eher) Nein
         </button>
-        <button
-          data-js="yes"
-        >
+        <button>
           (Eher) Ja
         </button>
       </main>
@@ -32,19 +30,17 @@ Object {
       <h3>
         Frage 
         1
-         / 8 
+         / 
+        8
+         
       </h3>
       <h2>
         Brauchen Sie in hohem Maße Lob und Anerkennung?
       </h2>
-      <button
-        data-js="no"
-      >
+      <button>
         (Eher) Nein
       </button>
-      <button
-        data-js="yes"
-      >
+      <button>
         (Eher) Ja
       </button>
     </main>
