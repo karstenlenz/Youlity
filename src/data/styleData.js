@@ -1,4 +1,4 @@
-export const questionnaires = [
+export const styleData = [
   {
     id: 1,
     name: 'der narzisstische Persönlichkeitsstil',

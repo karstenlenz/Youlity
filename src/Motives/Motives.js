@@ -13,7 +13,7 @@ export default function Motives({ userMotives, handleMotiveClick }) {
 
   useEffect(() => {
     userMotives.length === 3 && history.push('/questionnaire')
-  }, [userMotives])
+  }, [userMotives, history])
 
   return (
     <>

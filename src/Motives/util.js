@@ -1,5 +1,4 @@
-import { questionnaires } from '../data/questionnaires'
-const styleData = questionnaires
+import { styleData } from '../data/styleData'
 
 export function evaluateMatchingStyles(userMotives) {
   const userStylesMatch = {}
@@ -24,7 +23,7 @@ export function evaluateMatchingStyles(userMotives) {
     }
   })
   const sortedUserStyles = Object.keys(userStylesMatch).sort(
-    (a, b) => userStylesMatch[a] < userStylesMatch[b]
+    (a, b) => userStylesMatch[b] - userStylesMatch[a]
   )
   const sortedUserStylesAsInts = sortedUserStyles.map((id) => parseInt(id))
   return sortedUserStylesAsInts

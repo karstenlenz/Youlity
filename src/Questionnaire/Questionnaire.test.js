@@ -4,7 +4,7 @@ import Questionnaire, { countYes } from './Questionnaire'
 
 describe('The questionnaire component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Questionnaire />)
+    const { container } = render(<Questionnaire userStyles={[1, 2, 3]} />)
     expect(container).toMatchSnapshot()
   })
 })

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { questionnaires } from '../data/questionnaires'
+import { styleData } from '../data/styleData'
 
 Questionnaire.propTypes = {
   userStyles: PropTypes.arrayOf(PropTypes.number).isRequired,
@@ -13,8 +13,8 @@ export default function Questionnaire({ userStyles = [1, 2, 3] }) {
     history.push('/')
   }
 
-  const currentTestId = userStyles[0]
-  const { questions } = questionnaires[currentTestId]
+  const currentTestId = userStyles[0] - 1
+  const { questions } = styleData[currentTestId]
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
 
@@ -22,9 +22,9 @@ export default function Questionnaire({ userStyles = [1, 2, 3] }) {
     return (
       <>
         <h1>Fragebogen:</h1>
-        <p>"{questionnaires[currentTestId].name}"</p>
+        <p>"{styleData[currentTestId].name}"</p>
         <h3>
-          Frage {currentQuestionIndex + 1} / {questions.length}{' '}
+          Frage {currentQuestionIndex + 1} / {questions.length}
         </h3>
         <h2>{questions[currentQuestionIndex]}</h2>
         <button onClick={() => handleAnswer(false)}>(Eher) Nein</button>
@@ -35,7 +35,7 @@ export default function Questionnaire({ userStyles = [1, 2, 3] }) {
     return (
       <>
         <h1>Fragebogen:</h1>
-        <p>"{questionnaires[currentTestId].name}"</p>
+        <p>"{styleData[currentTestId].name}"</p>
         <h2>Ergebnis:</h2>
         <h3>
           Sie haben {countYes(answers)} von {questions.length} Fragen mit "ja"
@@ -44,7 +44,7 @@ export default function Questionnaire({ userStyles = [1, 2, 3] }) {
         {countYes(answers) > 5 ? (
           <p>
             Das deutet darauf hin, dass
-            {' ' + questionnaires[currentTestId].name + ' '}
+            {' ' + styleData[currentTestId].name + ' '}
             bei Ihnen überdurchschnittlich ausgeprägt ist.
             <br /> Keine Sorge, das ist nichts Schlimmes! Nur, wenn Sie das
             Gefühl haben, unter Ihrer Persönlichkeit zu leiden, sollten Sie
@@ -53,7 +53,7 @@ export default function Questionnaire({ userStyles = [1, 2, 3] }) {
         ) : (
           <p>
             Das deutet nicht darauf hin, dass
-            {' ' + questionnaires[currentTestId].name + ' '}bei Ihnen
+            {' ' + styleData[currentTestId].name + ' '}bei Ihnen
             überdurchschnittlich ausgeprägt ist.
           </p>
         )}

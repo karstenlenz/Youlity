@@ -6,7 +6,7 @@ import { evaluateMatchingStyles } from './util'
 describe('The Motives component', () => {
   it('renders correctly', () => {
     const { container } = render(
-      <Motives userMotives={[]} setUserMotives={() => true} />
+      <Motives userMotives={[]} handleMotiveClick={() => true} />
     )
     expect(container).toMatchSnapshot()
   })
@@ -24,7 +24,7 @@ describe('evaluateStyles', () => {
     expect(result[0]).toEqual(1)
   })
 
-  it('also matches the narcissistic style with mixed-up order', () => {
+  it('also matches the narcissistic style with mixed-up order in the top 3', () => {
     const testMotives = [
       'Autonomie',
       'Anerkennung',
@@ -32,7 +32,7 @@ describe('evaluateStyles', () => {
       'Solidarität',
     ]
     const result = evaluateMatchingStyles(testMotives)
-    expect(result[0]).toEqual(1)
+    expect(result.slice(0, 3)).toContain(1)
   })
 
   it('also matches the histrionic style with correct order', () => {

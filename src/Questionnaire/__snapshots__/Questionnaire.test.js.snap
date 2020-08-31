@@ -7,7 +7,7 @@ exports[`The questionnaire component renders correctly 1`] = `
   </h1>
   <p>
     "
-    der histrionische Persönlichkeitsstil
+    der narzisstische Persönlichkeitsstil
     "
   </p>
   <h3>
@@ -15,10 +15,9 @@ exports[`The questionnaire component renders correctly 1`] = `
     1
      / 
     8
-     
   </h3>
   <h2>
-    Liegt Ihnen viel daran, dass Sie für andere Personen wichtig sind, dass Sie in deren Leben eine Rolle spielen?
+    Brauchen Sie in hohem Maße Lob und Anerkennung?
   </h2>
   <button>
     (Eher) Nein
