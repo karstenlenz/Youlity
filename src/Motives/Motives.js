@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
-import styled from 'styled-components'
+import MotiveButtons from './MotiveButtons'
 
 Motives.propTypes = {
   userMotives: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -28,38 +28,7 @@ export default function Motives({ userMotives, handleMotiveClick }) {
         <li> {userMotives[2]} </li>
       </ol>
 
-      <ButtonList>
-        <button onClick={(event) => handleMotiveClick(event, 'Anerkennung')}>
-          Anerkennung
-        </button>
-        <button onClick={(event) => handleMotiveClick(event, 'Wichtigkeit')}>
-          Wichtigkeit
-        </button>
-        <button
-          onClick={(event) => handleMotiveClick(event, 'Verlässlichkeit')}
-        >
-          Verlässlichkeit
-        </button>
-        <button onClick={(event) => handleMotiveClick(event, 'Solidarität')}>
-          Solidarität
-        </button>
-        <button onClick={(event) => handleMotiveClick(event, 'Autonomie')}>
-          Autonomie
-        </button>
-        <button onClick={(event) => handleMotiveClick(event, 'Grenzen')}>
-          Grenzen
-        </button>
-      </ButtonList>
+      <MotiveButtons handleMotiveClick={handleMotiveClick} />
     </>
   )
 }
-
-const ButtonList = styled.section`
-  display: flex;
-  flex-direction: column;
-
-  button {
-    height: 40px;
-    margin-bottom: 20px;
-  }
-`
