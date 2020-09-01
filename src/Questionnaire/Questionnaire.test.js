@@ -4,7 +4,15 @@ import Questionnaire, { countYes } from './Questionnaire'
 
 describe('The questionnaire component', () => {
   it('renders correctly', () => {
-    const { container } = render(<Questionnaire userStyles={[1, 2, 3]} />)
+    const { container } = render(
+      <Questionnaire
+        userStyles={[3, 7, 5]}
+        onQuestionnaireEnd={() => {
+          return true
+        }}
+        round={0}
+      />
+    )
     expect(container).toMatchSnapshot()
   })
 })

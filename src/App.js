@@ -3,7 +3,7 @@ import { Route, Switch, useHistory } from 'react-router-dom'
 import Motives from './Motives/Motives'
 import { evaluateMatchingStyles } from './Motives/util'
 import Questionnaire from './Questionnaire/Questionnaire'
-import Result from './Result/Result'
+import Resultpage from './Result/Resultpage'
 
 export default function App() {
   const [userMotives, setUserMotives] = useState([])
@@ -30,7 +30,7 @@ export default function App() {
           />
         </Route>
         <Route path="/result/:resultCode">
-          <Result />
+          <Resultpage />
         </Route>
         <Route path="/">
           <Motives

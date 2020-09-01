@@ -1,15 +1,8 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import { styleData } from '../data/styleData'
 
-export default function Result() {
-  const { resultCode } = useParams()
-  const resultArray = resultCode.split('&')
-  const resultData = [
-    { id: resultArray[0], yesCount: resultArray[1] },
-    { id: resultArray[2], yesCount: resultArray[3] },
-  ]
+export default function Result({ resultData }) {
   const [isNoticeVisible, setIsNoticeVisible] = useState(true)
 
   return (
