@@ -7,6 +7,10 @@ import Questionnaire from './Questionnaire/Questionnaire'
 function App() {
   const [userMotives, setUserMotives] = useState([])
   const [userStyles, setUserStyles] = useState([])
+  const [result, setResult] = useState({
+    questionnaires: [],
+    dominantType: null,
+  })
 
   useEffect(() => {
     if (userMotives.length === 3) {
