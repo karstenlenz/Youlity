@@ -8,10 +8,20 @@ import Result from './Result/Result'
 function App() {
   const [userMotives, setUserMotives] = useState([])
   const [userStyles, setUserStyles] = useState([])
-  const [result, setResult] = useState({
-    questionnaires: [],
-    dominantStyle: null,
-  })
+  const [result, setResult] = useState([
+    {
+      styleId: 1,
+      yesCount: 3,
+    },
+    {
+      styleId: 9,
+      yesCount: 7,
+    },
+    {
+      styleId: 5,
+      yesCount: 6,
+    },
+  ])
   const history = useHistory()
 
   useEffect(() => {
@@ -30,7 +40,7 @@ function App() {
             onQuestionnaireEnd={handleQuestionnaireEnd}
           />
         </Route>
-        <Route path="/result/:id/:result/">
+        <Route path="/result/:resultCode">
           <Result />
         </Route>
         <Route path="/">

@@ -4,16 +4,28 @@ import styled from 'styled-components'
 import { styleData } from '../data/styleData'
 
 export default function Result() {
-  const { id, result } = useParams()
-
+  const { resultCode } = useParams()
+  const resultArray = resultCode.split('&')
+  const resultData = [
+    { id: resultArray[0], yesCount: resultArray[1] },
+    { id: resultArray[2], yesCount: resultArray[3] },
+    { id: resultArray[4], yesCount: resultArray[5] },
+  ]
   return (
     <>
       <h1>Ergebnis</h1>
-      <p>
-        Das Testergebnis weist darauf hin, dass bei Ihnen folgender
-        Persönlichkeitsstil überdurchschnittlich ausgeprägt ist:
-      </p>
-      <ResultDisplay>{styleData[id - 1]?.name}</ResultDisplay>
+      <p>Sie haben eben Tests für folgende Persönlichkeitsstile beantwortet</p>
+      <ul>
+        {resultData.map((result) => {
+          return (
+            <li>
+              {styleData[result.id - 1]?.name}, Ergebnis:{result.yesCount}
+            </li>
+          )
+        })}
+      </ul>
+
+      {/* <ResultDisplay>{styleData[id - 1]?.name}</ResultDisplay>
       <p>
         Das heißt nicht, dass etwas mit Ihnen „nicht stimmt“, oder eine Störung
         vorliegt! Jeder Mensch hat einen oder mehrere dominante
@@ -24,7 +36,7 @@ export default function Result() {
         <h2>Positives Ergebnis</h2>
       ) : (
         <h2>Negatives Ergebnis</h2>
-      )}
+      )} */}
     </>
   )
 }
