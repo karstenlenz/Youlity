@@ -7,9 +7,7 @@ describe('The questionnaire component', () => {
     const { container } = render(
       <Questionnaire
         userStyles={[3, 7, 5]}
-        onQuestionnaireEnd={() => {
-          return true
-        }}
+        onQuestionnaireEnd={jest.fn}
         round={0}
       />
     )
