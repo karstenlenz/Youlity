@@ -39,8 +39,8 @@ export default function Questionnaire({
     )
   } else if (currentQuestionIndex === questions.length) {
     onQuestionnaireEnd(currentTestId, countYes(answers))
-    setAnswers([])
     setCurrentQuestionIndex(0)
+    setAnswers([])
   }
 
   function handleAnswer(answer) {
