@@ -34,7 +34,7 @@ export default function Result() {
       <ul>
         {resultData.map((result) => {
           return (
-            <li>
+            <li key={result.id}>
               <h3> {styleData[result.id - 1]?.name}</h3>
               <p>
                 Sie haben {result.yesCount} von{' '}
@@ -70,27 +70,9 @@ export default function Result() {
         im Browser als Lesezeichen speichern, um diese Informationen erneut
         aufzurufen.
       </p>
-
-      {/* <ResultDisplay>{styleData[id - 1]?.name}</ResultDisplay>
-      <p>
-        Das heißt nicht, dass etwas mit Ihnen „nicht stimmt“, oder eine Störung
-        vorliegt! Jeder Mensch hat einen oder mehrere dominante
-        Persönlichkeitsstile. Erst wenn Sie unter Ihrer Persönlichkeit leiden,
-        besteht Handlungsbedarf.
-      </p>
-      {parseInt(result) === 1 ? (
-        <h2>Positives Ergebnis</h2>
-      ) : (
-        <h2>Negatives Ergebnis</h2>
-      )} */}
     </>
   )
 }
-
-const ResultDisplay = styled.span`
-  font-size: 2em;
-  font-weight: 700;
-`
 
 const Notice = styled.section`
   background: #ddd;

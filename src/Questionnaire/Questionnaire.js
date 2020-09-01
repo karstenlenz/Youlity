@@ -6,15 +6,20 @@ import { styleData } from '../data/styleData'
 Questionnaire.propTypes = {
   userStyles: PropTypes.arrayOf(PropTypes.number).isRequired,
   onQuestionnaireEnd: PropTypes.func.isRequired,
+  round: PropTypes.number.isRequired,
 }
 
-export default function Questionnaire({ userStyles = [], onQuestionnaireEnd }) {
+export default function Questionnaire({
+  userStyles = [],
+  onQuestionnaireEnd,
+  round,
+}) {
   const history = useHistory()
   if (userStyles.length < 3) {
     history.push('/')
   }
 
-  const currentTestId = userStyles[0] - 1
+  const currentTestId = userStyles[round - 1] - 1
   const questions = styleData[currentTestId]?.questions ?? []
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
@@ -22,7 +27,7 @@ export default function Questionnaire({ userStyles = [], onQuestionnaireEnd }) {
   if (currentQuestionIndex < questions.length) {
     return (
       <>
-        <h1>Fragebogen:</h1>
+        <h1>Fragebogen {round} / 2</h1>
         <p>"{styleData[currentTestId].name}"</p>
         <h3>
           Frage {currentQuestionIndex + 1} / {questions.length}
@@ -33,10 +38,9 @@ export default function Questionnaire({ userStyles = [], onQuestionnaireEnd }) {
       </>
     )
   } else if (currentQuestionIndex === questions.length) {
-    countYes(answers) > 5
-      ? onQuestionnaireEnd(currentTestId, 1)
-      : onQuestionnaireEnd(currentTestId, 0)
-    return null
+    onQuestionnaireEnd(currentTestId, countYes(answers))
+    setAnswers([])
+    setCurrentQuestionIndex(0)
   }
 
   function handleAnswer(answer) {

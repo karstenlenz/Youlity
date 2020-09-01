@@ -5,19 +5,11 @@ import { evaluateMatchingStyles } from './Motives/util'
 import Questionnaire from './Questionnaire/Questionnaire'
 import Result from './Result/Result'
 
-function App() {
+export default function App() {
   const [userMotives, setUserMotives] = useState([])
   const [userStyles, setUserStyles] = useState([])
-  const [result, setResult] = useState([
-    {
-      styleId: 1,
-      yesCount: 3,
-    },
-    {
-      styleId: 9,
-      yesCount: 7,
-    },
-  ])
+  const [result, setResult] = useState([])
+  const [questionRound, setQuestionRound] = useState(1)
   const history = useHistory()
 
   useEffect(() => {
@@ -34,6 +26,7 @@ function App() {
           <Questionnaire
             userStyles={userStyles}
             onQuestionnaireEnd={handleQuestionnaireEnd}
+            round={questionRound}
           />
         </Route>
         <Route path="/result/:resultCode">
@@ -55,10 +48,22 @@ function App() {
     setUserMotives([...userMotives, motive])
   }
 
-  function handleQuestionnaireEnd(resultId, resultBool) {
-    setResult({ ...result, dominantStyle: resultId })
-    history.push('/result/' + resultId + '/' + resultBool)
+  function handleQuestionnaireEnd(resultId, yesCount) {
+    if (questionRound === 1) {
+      setResult([...result, { styleId: resultId, yesCount }])
+      setQuestionRound(questionRound + 1)
+    } else {
+      setResult([...result, { styleId: resultId, yesCount }])
+      history.push(
+        '/result/' +
+          result[0].styleId +
+          '&' +
+          result[0].yesCount +
+          '&' +
+          resultId +
+          '&' +
+          yesCount
+      )
+    }
   }
 }
-
-export default App
