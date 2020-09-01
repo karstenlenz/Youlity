@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
-import { useHistory, Redirect } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { styleData } from '../data/styleData'
 
 Questionnaire.propTypes = {
   userStyles: PropTypes.arrayOf(PropTypes.number).isRequired,
+  onQuestionnaireEnd: PropTypes.func.isRequired,
 }
 
-export default function Questionnaire({ userStyles = [] }) {
+export default function Questionnaire({ userStyles = [], onQuestionnaireEnd }) {
   const history = useHistory()
   if (userStyles.length < 3) {
     history.push('/')
@@ -32,7 +33,7 @@ export default function Questionnaire({ userStyles = [] }) {
       </>
     )
   } else if (currentQuestionIndex === questions.length) {
-    return <Redirect to="/" />
+    onQuestionnaireEnd(currentTestId, 1)
   }
 
   function handleAnswer(answer) {

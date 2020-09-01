@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import Motives from './Motives/Motives'
 import { evaluateMatchingStyles } from './Motives/util'
 import Questionnaire from './Questionnaire/Questionnaire'
@@ -24,10 +24,13 @@ function App() {
     <main>
       <Switch>
         <Route path="/questionnaire">
-          <Questionnaire userStyles={userStyles} />
+          <Questionnaire
+            userStyles={userStyles}
+            onQuestionnaireEnd={handleQuestionnaireEnd}
+          />
         </Route>
-        <Route path="/result/:id">
-          <Result dominantStyle={result.dominantStyle} />
+        <Route path="/result/:id/:result/">
+          <Result />
         </Route>
         <Route path="/">
           <Motives
@@ -43,6 +46,11 @@ function App() {
     const button = event.target
     button.disabled = true
     setUserMotives([...userMotives, motive])
+  }
+
+  function handleQuestionnaireEnd(resultId, result) {
+    setResult({ ...result, dominantStyle: resultId })
+    return <Redirect to="/result/{resultId}/{result}" />
   }
 }
 

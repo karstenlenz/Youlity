@@ -1,15 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { styleData } from '../data/styleData'
+import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
-import { useHistory, useParams } from 'react-router-dom'
-
-Result.propTypes = {
-  dominantStyle: PropTypes.number.isRequired,
-}
+import { styleData } from '../data/styleData'
 
 export default function Result() {
-  const { id } = useParams()
+  const { id, result } = useParams()
 
   return (
     <>
@@ -25,6 +20,11 @@ export default function Result() {
         Persönlichkeitsstile. Erst wenn Sie unter Ihrer Persönlichkeit leiden,
         besteht Handlungsbedarf.
       </p>
+      {parseInt(result) === 1 ? (
+        <h2>Positives Ergebnis</h2>
+      ) : (
+        <h2>Negatives Ergebnis</h2>
+      )}
     </>
   )
 }
