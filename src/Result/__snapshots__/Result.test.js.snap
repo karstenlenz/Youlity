@@ -30,7 +30,7 @@ exports[`The Result component renders correctly 1`] = `
     <li>
       <h3>
          
-        der narzisstische Persönlichkeitsstil
+        der passiv-aggressive Persönlichkeitsstil
       </h3>
       <p>
         Sie haben 
@@ -56,11 +56,11 @@ exports[`The Result component renders correctly 1`] = `
     <li>
       <h3>
          
-        der passiv-aggressive Persönlichkeitsstil
+        der dependente Persönlichkeitsstil
       </h3>
       <p>
         Sie haben 
-        3
+        4
          von
          
         8

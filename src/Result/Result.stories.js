@@ -7,5 +7,10 @@ export default {
 }
 
 export const ResultComponent = () => (
-  <Result userMotives={[1, 2, 3, 4, 5, 6, 7, 8, 9]} setUserMotives={() => ''} />
+  <Result
+    resultData={[
+      { id: 5, yesCount: 8 },
+      { id: 3, yesCount: 4 },
+    ]}
+  />
 )
