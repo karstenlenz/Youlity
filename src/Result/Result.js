@@ -1,12 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { styleData } from '../data/styleData'
+import styled from 'styled-components'
+import { useHistory, useParams } from 'react-router-dom'
 
 Result.propTypes = {
-  resultData: PropTypes.object.isRequired,
+  dominantStyle: PropTypes.number.isRequired,
 }
 
-export default function Result({ dominantType }) {
+export default function Result() {
+  const { id } = useParams()
+
   return (
     <>
       <h1>Ergebnis</h1>
@@ -14,7 +18,7 @@ export default function Result({ dominantType }) {
         Das Testergebnis weist darauf hin, dass bei Ihnen folgender
         Persönlichkeitsstil überdurchschnittlich ausgeprägt ist:
       </p>
-      <ResultDisplay>{styleData[dominantType]?.name}</ResultDisplay>
+      <ResultDisplay>{styleData[id - 1]?.name}</ResultDisplay>
       <p>
         Das heißt nicht, dass etwas mit Ihnen „nicht stimmt“, oder eine Störung
         vorliegt! Jeder Mensch hat einen oder mehrere dominante

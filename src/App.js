@@ -3,13 +3,14 @@ import { Route, Switch } from 'react-router-dom'
 import Motives from './Motives/Motives'
 import { evaluateMatchingStyles } from './Motives/util'
 import Questionnaire from './Questionnaire/Questionnaire'
+import Result from './Result/Result'
 
 function App() {
   const [userMotives, setUserMotives] = useState([])
   const [userStyles, setUserStyles] = useState([])
   const [result, setResult] = useState({
     questionnaires: [],
-    dominantType: null,
+    dominantStyle: null,
   })
 
   useEffect(() => {
@@ -24,6 +25,9 @@ function App() {
       <Switch>
         <Route path="/questionnaire">
           <Questionnaire userStyles={userStyles} />
+        </Route>
+        <Route path="/result/:id">
+          <Result dominantStyle={result.dominantStyle} />
         </Route>
         <Route path="/">
           <Motives
