@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Motives from './Motives/Motives'
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <main>
+
       <Switch>
         <Route path="/questionnaire">
           <Questionnaire userStyles={userStyles} />
@@ -36,6 +38,7 @@ function App() {
     button.disabled = true
     setUserMotives([...userMotives, motive])
   }
+
 }
 
 export default App

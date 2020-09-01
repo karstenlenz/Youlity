@@ -1,3 +1,4 @@
+
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
@@ -18,9 +19,11 @@ export default function Questionnaire({ userStyles = [] }) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
 
+
   if (currentQuestionIndex < questions.length) {
     return (
       <>
+
         <h1>Fragebogen:</h1>
         <p>"{styleData[currentTestId].name}"</p>
         <h3>
@@ -29,6 +32,7 @@ export default function Questionnaire({ userStyles = [] }) {
         <h2>{questions[currentQuestionIndex]}</h2>
         <button onClick={() => handleAnswer(false)}>(Eher) Nein</button>
         <button onClick={() => handleAnswer(true)}>(Eher) Ja</button>
+
       </>
     )
   } else {
