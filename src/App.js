@@ -17,10 +17,6 @@ function App() {
       styleId: 9,
       yesCount: 7,
     },
-    {
-      styleId: 5,
-      yesCount: 6,
-    },
   ])
   const history = useHistory()
 
