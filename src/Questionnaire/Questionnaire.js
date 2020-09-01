@@ -33,7 +33,10 @@ export default function Questionnaire({ userStyles = [], onQuestionnaireEnd }) {
       </>
     )
   } else if (currentQuestionIndex === questions.length) {
-    onQuestionnaireEnd(currentTestId, 1)
+    countYes(answers) > 5
+      ? onQuestionnaireEnd(currentTestId, 1)
+      : onQuestionnaireEnd(currentTestId, 0)
+    return null
   }
 
   function handleAnswer(answer) {

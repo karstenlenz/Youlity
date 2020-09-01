@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch, Redirect, useHistory } from 'react-router-dom'
 import Motives from './Motives/Motives'
 import { evaluateMatchingStyles } from './Motives/util'
 import Questionnaire from './Questionnaire/Questionnaire'
@@ -12,6 +12,7 @@ function App() {
     questionnaires: [],
     dominantStyle: null,
   })
+  const history = useHistory()
 
   useEffect(() => {
     if (userMotives.length === 3) {
@@ -48,9 +49,9 @@ function App() {
     setUserMotives([...userMotives, motive])
   }
 
-  function handleQuestionnaireEnd(resultId, result) {
+  function handleQuestionnaireEnd(resultId, resultBool) {
     setResult({ ...result, dominantStyle: resultId })
-    return <Redirect to="/result/{resultId}/{result}" />
+    history.push('/result/' + resultId + '/' + resultBool)
   }
 }
 
