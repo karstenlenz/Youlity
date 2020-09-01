@@ -27,7 +27,6 @@ export default function Motives({ userMotives, handleMotiveClick }) {
         <li> {userMotives[1]} </li>
         <li> {userMotives[2]} </li>
       </ol>
-
       <MotiveButtons handleMotiveClick={handleMotiveClick} />
     </>
   )
