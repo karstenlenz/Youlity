@@ -4,6 +4,7 @@ import Motives from './Motives/Motives'
 import { evaluateMatchingStyles } from './Motives/util'
 import Questionnaire from './Questionnaire/Questionnaire'
 import Resultpage from './Result/Resultpage'
+import PersonalityStyleInfo from './Result/PersonalityStyleInfo'
 
 export default function App() {
   const [userMotives, setUserMotives] = useState([])
@@ -31,6 +32,9 @@ export default function App() {
         </Route>
         <Route path="/result/:resultCode">
           <Resultpage />
+        </Route>
+        <Route path="/style-info/:styleId">
+          <PersonalityStyleInfo />
         </Route>
         <Route path="/">
           <Motives
