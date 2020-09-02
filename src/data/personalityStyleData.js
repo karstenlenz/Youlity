@@ -3,6 +3,17 @@ export const personalityStyleData = [
     id: 1,
     name: 'der narzisstische Persönlichkeitsstil',
     commonName: 'Selbstverliebt',
+    motives: ['Anerkennung', 'Autonomie', 'Solidarität', 'Wichtigkeit'],
+    questions: [
+      'Brauchen Sie in hohem Maße Lob und Anerkennung?',
+      'Möchten Sie besser sein als andere?',
+      'Reagieren Sie empfindlich auf Kritik, selbst wenn diese berechtigt ist?',
+      'Haben Sie ab und zu Phasen, in denen Sie an Ihren Fähigkeiten, Erfolgen etc. zweifeln?',
+      'Erleben Sie Phasen, in denen Sie sehr zufrieden mit sich sind und denken, dass Sie gut sind?',
+      'Haben Sie die Tendenz, in besonderer Weise behandelt werden zu wollen?',
+      'Haben Sie deutliche Erwartungen, an die sich andere halten sollten, z. B. Sie nicht zu behindern u. a.?',
+      'Neigen Sie dazu, andere Personen „einzuspannen“, ihnen Aufgaben zu geben, die Sie eigentlich selbst erledigen sollten?',
+    ],
     description:
       'Menschen mit narzisstischem Persönlichkeitsstil sind erfolgsorientiert. Sie möchten erfolgreich sein und schaffen dies auch, weil sie leistungs- und anstrengungsbereit sind. Bewundert zu werden, ist ein zentrales Ziel für sie. Oft spannen sie andere für ihre Belange ein. Dabei sind sie zwiegespalten: Einerseits sind sie von ihren Fähigkeiten überzeugt, andererseits zweifeln sie stark an sich selbst. Ihre eine Seite lässt sie nach außen hin großartig, kompetent und fähig wirken, um andere zu beeindrucken. Gleichzeitig sind sie kritiksensibel, häufig nachtragend und darum bemüht, sich weder kontrollieren, noch bevormunden zu lassen.',
     strengths:
@@ -39,17 +50,6 @@ export const personalityStyleData = [
         url: 'tel:+491789396747',
       },
     ],
-    motives: ['Anerkennung', 'Autonomie', 'Solidarität', 'Wichtigkeit'],
-    questions: [
-      'Brauchen Sie in hohem Maße Lob und Anerkennung?',
-      'Möchten Sie besser sein als andere?',
-      'Reagieren Sie empfindlich auf Kritik, selbst wenn diese berechtigt ist?',
-      'Haben Sie ab und zu Phasen, in denen Sie an Ihren Fähigkeiten, Erfolgen etc. zweifeln?',
-      'Erleben Sie Phasen, in denen Sie sehr zufrieden mit sich sind und denken, dass Sie gut sind?',
-      'Haben Sie die Tendenz, in besonderer Weise behandelt werden zu wollen?',
-      'Haben Sie deutliche Erwartungen, an die sich andere halten sollten, z. B. Sie nicht zu behindern u. a.?',
-      'Neigen Sie dazu, andere Personen „einzuspannen“, ihnen Aufgaben zu geben, die Sie eigentlich selbst erledigen sollten?',
-    ],
   },
   {
     id: 2,
@@ -64,6 +64,38 @@ export const personalityStyleData = [
       'Erwarten Sie, dass ein Partner genau das tut, was Sie von ihm erwarten, und werden Sie wütend, wenn er das nicht tut?',
       'Flirten Sie gerne und sind Sie manchmal in der Versuchung, eine Affäre einzugehen?',
       'Haben Sie den Eindruck, dass Sie sich schnell in positive, aber auch in negative Gefühle „hineinsteigern“ können?',
+    ],
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    strengths:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    weaknesses:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    tips:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    furtherInfo: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+    ],
+    help: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'Test-Telefonnummer',
+        url: 'tel:+491789396747',
+      },
     ],
   },
   {
@@ -80,6 +112,38 @@ export const personalityStyleData = [
       'Haben Sie manchmal den Eindruck, Sie wissen nicht genau, was Sie wollen?',
       'Sitzen Sie manchmal lange vor einer Speisekarte und tun sich auffallend schwer, sich für ein Gericht zu entscheiden?',
     ],
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    strengths:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    weaknesses:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    tips:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    furtherInfo: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+    ],
+    help: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'Test-Telefonnummer',
+        url: 'tel:+491789396747',
+      },
+    ],
   },
   {
     id: 4,
@@ -94,6 +158,38 @@ export const personalityStyleData = [
       'Halten Sie sich manchmal für unattraktiv?',
       'Wenn Sie sich vorstellen, jemanden anzusprechen, haben Sie dann Angst vor möglicher Ablehnung?',
       'Wenn Sie sich zum ersten Mal mit einem potenziellen Partner / einer Partnerin treffen, ist das fast wie bei einer Prüfung für Sie?',
+    ],
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    strengths:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    weaknesses:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    tips:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    furtherInfo: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+    ],
+    help: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'Test-Telefonnummer',
+        url: 'tel:+491789396747',
+      },
     ],
   },
   {
@@ -110,6 +206,38 @@ export const personalityStyleData = [
       'Denken Sie manchmal, dass sogenannte Autoritätspersonen im Grunde gar nicht den Respekt verdienen, den sie bekommen?',
       'Haben Sie manchmal den Eindruck, dass Sie von anderen benachteiligt werden oder dass Sie Dinge, die Ihnen zustehen, nicht bekommen?',
     ],
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    strengths:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    weaknesses:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    tips:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    furtherInfo: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+    ],
+    help: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'Test-Telefonnummer',
+        url: 'tel:+491789396747',
+      },
+    ],
   },
   {
     id: 6,
@@ -124,6 +252,38 @@ export const personalityStyleData = [
       'Haben Sie den Eindruck, dass Ihnen Klassenfahrten, Betriebsausflüge u. a. eher „auf die Nerven“ gehen / gegangen sind?',
       'Haben Sie den Eindruck, eher wenig Gefühle zu haben?',
       'Fällt es Ihnen manchmal schwer, auf andere Menschen zu reagieren?',
+    ],
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    strengths:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    weaknesses:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    tips:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    furtherInfo: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+    ],
+    help: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'Test-Telefonnummer',
+        url: 'tel:+491789396747',
+      },
     ],
   },
   {
@@ -140,6 +300,38 @@ export const personalityStyleData = [
       'Ärgert es Sie, wenn andere Personen sich nicht an Regeln, Vorschriften oder Gesetze halten?',
       'Wäre es aus Ihrer Sicht gut, wenn viele oder alle Menschen so dächten wie Sie?',
     ],
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    strengths:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    weaknesses:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    tips:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    furtherInfo: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+    ],
+    help: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'Test-Telefonnummer',
+        url: 'tel:+491789396747',
+      },
+    ],
   },
   {
     id: 8,
@@ -154,6 +346,38 @@ export const personalityStyleData = [
       'Denken Sie, manchmal ist es besser, sofort etwas zu tun, wenn der Eindruck entsteht, jemand wolle Ihnen schaden, und der „kritischen“ Person deutlich zu machen, dass Sie das nicht dulden werden?',
       'Denken Sie, dass es nichts schaden kann, auch Partner zu kontrollieren, da man nie genau weiß, woran man ist?',
       'Haben Sie den Eindruck, mit anderen Menschen eher negative Erfahrungen gemacht zu haben?',
+    ],
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    strengths:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    weaknesses:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    tips:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    furtherInfo: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+    ],
+    help: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'Test-Telefonnummer',
+        url: 'tel:+491789396747',
+      },
     ],
   },
   {
@@ -176,6 +400,38 @@ export const personalityStyleData = [
       'Haben Sie gelegentlich die Tendenz zu „testen“, ob Ihr Partner noch auf Ihrer Seite steht?',
       'Fragen Sie sich manchmal, wo Ihre eigenen Grenzen sind und wie nah Sie andere wirklich an sich herankommen lassen wollen, oder haben Sie den Eindruck, sie haben manchmal „Ihre Grenzen überschritten“?',
       'Reagieren Sie manchmal auf das Verhalten anderer schnell und heftig ärgerlich?',
+    ],
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    strengths:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    weaknesses:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    tips:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+    furtherInfo: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+    ],
+    help: [
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'lorem ipsum',
+        url: 'https://www.google.de/',
+      },
+      {
+        text: 'Test-Telefonnummer',
+        url: 'tel:+491789396747',
+      },
     ],
   },
 ]
