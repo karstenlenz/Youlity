@@ -47,7 +47,7 @@ export default function Questionnaire({
       </>
     )
   } else if (currentQuestionIndex === questions.length) {
-    onQuestionnaireEnd(currentTestId, countYes(answers))
+    onQuestionnaireEnd(currentTestId + 1, countYes(answers))
     setCurrentQuestionIndex(0)
     setAnswers([])
     return <div></div>
