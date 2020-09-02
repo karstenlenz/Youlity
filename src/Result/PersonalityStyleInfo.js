@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { personalityStyleData } from '../data/personalityStyleData'
+import { capitalizeFirstLetter } from '../common/util'
 
 export default function PersonalityStyleInfo() {
   const { styleId } = useParams()
@@ -8,7 +9,7 @@ export default function PersonalityStyleInfo() {
 
   return (
     <>
-      <h1>{currentStyleData.name}</h1>
+      <h1>{capitalizeFirstLetter(currentStyleData.name)}</h1>
       <h2>Einleitung</h2>
       <p>{currentStyleData.description}</p>
       <h2>Stärken</h2>

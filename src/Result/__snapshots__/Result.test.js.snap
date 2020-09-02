@@ -48,7 +48,7 @@ exports[`The Result component renders correctly 1`] = `
         Wir haben Ihnen die wichtigsten Informationen und Tipps zu diesem Stil zusammengestellt.
       </p>
       <a
-        href="#"
+        href="/style-info/5"
       >
         Zu den Informationen
       </a>

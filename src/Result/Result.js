@@ -46,7 +46,7 @@ export default function Result({ resultData }) {
                     Wir haben Ihnen die wichtigsten Informationen und Tipps zu
                     diesem Stil zusammengestellt.
                   </p>
-                  <a href="#">Zu den Informationen</a>
+                  <a href={'/style-info/' + result.id}>Zu den Informationen</a>
                 </>
               ) : (
                 <p>
