@@ -22,13 +22,13 @@ export function evaluateMatchingStyles(userMotives) {
       userPersonalityStyleIdsMatch[style.id] = 0
     }
   })
-  const sorteduserPersonalityStyleIds = Object.keys(
+  const sortedUserPersonalityStyleIds = Object.keys(
     userPersonalityStyleIdsMatch
   ).sort(
     (a, b) => userPersonalityStyleIdsMatch[b] - userPersonalityStyleIdsMatch[a]
   )
-  const sorteduserPersonalityStyleIdsAsInts = sorteduserPersonalityStyleIds.map(
+  const sortedUserPersonalityStyleIdsAsInts = sortedUserPersonalityStyleIds.map(
     (id) => parseInt(id)
   )
-  return sorteduserPersonalityStyleIdsAsInts
+  return sortedUserPersonalityStyleIdsAsInts
 }
