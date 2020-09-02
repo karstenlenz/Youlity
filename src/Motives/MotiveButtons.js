@@ -15,7 +15,10 @@ export default function MotiveButtons({ handleMotiveClick }) {
     <ButtonList>
       {motives.map((text) => {
         return (
-          <button onClick={(event) => handleMotiveClick(event, text)}>
+          <button
+            key={text}
+            onClick={(event) => handleMotiveClick(event, text)}
+          >
             {text}
           </button>
         )
