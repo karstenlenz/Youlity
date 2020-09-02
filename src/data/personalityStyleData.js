@@ -1,4 +1,4 @@
-export const styleData = [
+export const personalityStyleData = [
   {
     id: 1,
     name: 'der narzisstische Persönlichkeitsstil',

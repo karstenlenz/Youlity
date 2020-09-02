@@ -1,26 +1,35 @@
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { styleData } from '../data/styleData'
+import { personalityStyleData } from '../data/personalityStyleData'
 
 Questionnaire.propTypes = {
-  userStyles: PropTypes.arrayOf(PropTypes.number).isRequired,
+  userPersonalityStyleIds: PropTypes.arrayOf(PropTypes.number).isRequired,
   onQuestionnaireEnd: PropTypes.func.isRequired,
   round: PropTypes.number.isRequired,
 }
 
 export default function Questionnaire({
-  userStyles = [],
+  userPersonalityStyleIds = [],
   onQuestionnaireEnd,
   round,
 }) {
   const history = useHistory()
-  if (userStyles.length < 3) {
+  if (userPersonalityStyleIds.length < 3) {
     history.push('/')
   }
 
-  const currentTestId = userStyles[round - 1] - 1
-  const questions = styleData[currentTestId]?.questions ?? []
+  const currentTestId = userPersonalityStyleIds[round - 1] - 1
+  const questions = personalityStyleData[currentTestId]?.questions ?? [
+    'Brauchen Sie in hohem Maße Lob und Anerkennung?',
+    'Möchten Sie besser sein als andere?',
+    'Reagieren Sie empfindlich auf Kritik, selbst wenn diese berechtigt ist?',
+    'Haben Sie ab und zu Phasen, in denen Sie an Ihren Fähigkeiten, Erfolgen etc. zweifeln?',
+    'Erleben Sie Phasen, in denen Sie sehr zufrieden mit sich sind und denken, dass Sie gut sind?',
+    'Haben Sie die Tendenz, in besonderer Weise behandelt werden zu wollen?',
+    'Haben Sie deutliche Erwartungen, an die sich andere halten sollten, z. B. Sie nicht zu behindern u. a.?',
+    'Neigen Sie dazu, andere Personen „einzuspannen“, ihnen Aufgaben zu geben, die Sie eigentlich selbst erledigen sollten?',
+  ]
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
 
@@ -28,7 +37,7 @@ export default function Questionnaire({
     return (
       <>
         <h1>Fragebogen {round} / 2</h1>
-        <p>"{styleData[currentTestId].name}"</p>
+        <p>"{personalityStyleData[currentTestId].name}"</p>
         <h3>
           Frage {currentQuestionIndex + 1} / {questions.length}
         </h3>
@@ -41,6 +50,7 @@ export default function Questionnaire({
     onQuestionnaireEnd(currentTestId, countYes(answers))
     setCurrentQuestionIndex(0)
     setAnswers([])
+    return <div></div>
   }
 
   function handleAnswer(answer) {

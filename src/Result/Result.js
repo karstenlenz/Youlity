@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { styleData } from '../data/styleData'
+import { personalityStyleData } from '../data/personalityStyleData'
 
 export default function Result({ resultData }) {
   const [isNoticeVisible, setIsNoticeVisible] = useState(true)
@@ -28,11 +28,11 @@ export default function Result({ resultData }) {
         {resultData.map((result) => {
           return (
             <li key={result.id}>
-              <h3> {styleData[result.id - 1]?.name}</h3>
+              <h3> {personalityStyleData[result.id - 1]?.name}</h3>
               <p>
                 Sie haben {result.yesCount} von{' '}
-                {styleData[result.id - 1].questions.length} Fragen mit "Ja"
-                beantwortet.
+                {personalityStyleData[result.id - 1].questions.length} Fragen
+                mit "Ja" beantwortet.
               </p>
               {result.yesCount > 5 ? (
                 <>

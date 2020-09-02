@@ -1,9 +1,9 @@
-import { styleData } from '../data/styleData'
+import { personalityStyleData } from '../data/personalityStyleData'
 
 export function evaluateMatchingStyles(userMotives) {
-  const userStylesMatch = {}
+  const userPersonalityStyleIdsMatch = {}
 
-  styleData.forEach((style) => {
+  personalityStyleData.forEach((style) => {
     if (style.motives.includes(userMotives[0])) {
       let matchPoints = 5
       if (userMotives[0] === style.motives[0]) {
@@ -17,14 +17,18 @@ export function evaluateMatchingStyles(userMotives) {
       }
       // compensate for different array lengths / specificity
       matchPoints = matchPoints * 5 + 30 / style.motives.length
-      userStylesMatch[style.id] = matchPoints
+      userPersonalityStyleIdsMatch[style.id] = matchPoints
     } else {
-      userStylesMatch[style.id] = 0
+      userPersonalityStyleIdsMatch[style.id] = 0
     }
   })
-  const sortedUserStyles = Object.keys(userStylesMatch).sort(
-    (a, b) => userStylesMatch[b] - userStylesMatch[a]
+  const sorteduserPersonalityStyleIds = Object.keys(
+    userPersonalityStyleIdsMatch
+  ).sort(
+    (a, b) => userPersonalityStyleIdsMatch[b] - userPersonalityStyleIdsMatch[a]
   )
-  const sortedUserStylesAsInts = sortedUserStyles.map((id) => parseInt(id))
-  return sortedUserStylesAsInts
+  const sorteduserPersonalityStyleIdsAsInts = sorteduserPersonalityStyleIds.map(
+    (id) => parseInt(id)
+  )
+  return sorteduserPersonalityStyleIdsAsInts
 }

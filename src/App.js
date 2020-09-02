@@ -7,7 +7,7 @@ import Resultpage from './Result/Resultpage'
 
 export default function App() {
   const [userMotives, setUserMotives] = useState([])
-  const [userStyles, setUserStyles] = useState([])
+  const [userPersonalityStyleIds, setuserPersonalityStyleIds] = useState([])
   const [result, setResult] = useState([])
   const [questionRound, setQuestionRound] = useState(1)
   const history = useHistory()
@@ -15,7 +15,7 @@ export default function App() {
   useEffect(() => {
     if (userMotives.length === 3) {
       console.log('Matching styles:' + evaluateMatchingStyles(userMotives))
-      setUserStyles(evaluateMatchingStyles(userMotives))
+      setuserPersonalityStyleIds(evaluateMatchingStyles(userMotives))
     }
   }, [userMotives])
 
@@ -24,7 +24,7 @@ export default function App() {
       <Switch>
         <Route path="/questionnaire">
           <Questionnaire
-            userStyles={userStyles}
+            userPersonalityStyleIds={userPersonalityStyleIds}
             onQuestionnaireEnd={handleQuestionnaireEnd}
             round={questionRound}
           />

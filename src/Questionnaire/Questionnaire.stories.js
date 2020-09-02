@@ -9,7 +9,7 @@ export default {
 export const Narzissmus = () => {
   return (
     <Questionnaire
-      userStyles={[1, 2, 3]}
+      userPersonalityStyleIds={[1, 2, 3]}
       onQuestionnaireEnd={() => true}
       round={1}
     />
