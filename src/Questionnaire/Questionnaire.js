@@ -37,7 +37,7 @@ export default function Questionnaire({
     return (
       <>
         <h1>Fragebogen {round} / 2</h1>
-        <p>"{personalityStyleData[currentTestId].name}"</p>
+        <p>"{personalityStyleData[currentTestId]?.name}"</p>
         <h3>
           Frage {currentQuestionIndex + 1} / {questions.length}
         </h3>
