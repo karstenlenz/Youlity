@@ -46,7 +46,7 @@ export default function Result({ resultData }) {
                     Wir haben Ihnen die wichtigsten Informationen und Tipps zu
                     diesem Stil zusammengestellt.
                   </p>
-                  <a href="#">Zu den Informationen</a>
+                  {/* <a href="#">Zu den Informationen</a> to be added in the next story */}
                 </>
               ) : (
                 <p>

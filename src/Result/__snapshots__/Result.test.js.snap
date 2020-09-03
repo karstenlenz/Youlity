@@ -47,11 +47,6 @@ exports[`The Result component renders correctly 1`] = `
         <br />
         Wir haben Ihnen die wichtigsten Informationen und Tipps zu diesem Stil zusammengestellt.
       </p>
-      <a
-        href="#"
-      >
-        Zu den Informationen
-      </a>
     </li>
     <li>
       <h3>
