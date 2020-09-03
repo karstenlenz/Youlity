@@ -3,7 +3,9 @@
 exports[`The questionnaire component renders correctly 1`] = `
 <div>
   <h1>
-    Fragebogen:
+    Fragebogen 
+    1
+     / 2
   </h1>
   <p>
     "

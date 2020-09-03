@@ -5,7 +5,6 @@ import * as serviceWorker from './serviceWorker'
 import GlobalStyles from './GlobalStyles'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />

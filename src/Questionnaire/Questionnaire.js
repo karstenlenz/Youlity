@@ -1,73 +1,55 @@
-
-import PropTypes from 'prop-types'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { styleData } from '../data/styleData'
+import { personalityStyleData } from '../data/personalityStyleData'
 
-Questionnaire.propTypes = {
-  userStyles: PropTypes.arrayOf(PropTypes.number).isRequired,
-}
-
-export default function Questionnaire({ userStyles = [] }) {
+export default function Questionnaire({ testIds }) {
   const history = useHistory()
-  if (userStyles.length < 3) {
-    history.push('/')
-  }
 
-  const currentTestId = userStyles[0] - 1
-  const questions = styleData[currentTestId]?.questions ?? []
+  const [questionRound, setQuestionRound] = useState(0)
+  const currentTestIndex = testIds[questionRound] - 1
+  const questions = personalityStyleData[currentTestIndex]?.questions ?? [
+    'Brauchen Sie in hohem Maße Lob und Anerkennung?',
+    'Möchten Sie besser sein als andere?',
+    'Reagieren Sie empfindlich auf Kritik, selbst wenn diese berechtigt ist?',
+    'Haben Sie ab und zu Phasen, in denen Sie an Ihren Fähigkeiten, Erfolgen etc. zweifeln?',
+    'Erleben Sie Phasen, in denen Sie sehr zufrieden mit sich sind und denken, dass Sie gut sind?',
+    'Haben Sie die Tendenz, in besonderer Weise behandelt werden zu wollen?',
+    'Haben Sie deutliche Erwartungen, an die sich andere halten sollten, z. B. Sie nicht zu behindern u. a.?',
+    'Neigen Sie dazu, andere Personen „einzuspannen“, ihnen Aufgaben zu geben, die Sie eigentlich selbst erledigen sollten?',
+  ]
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
+  const [resultUrl, setResultUrl] = useState('/result/')
 
+  useEffect(() => {
+    questionRound === 2 && history.push(resultUrl)
+  }, [questionRound, resultUrl, history])
 
-  if (currentQuestionIndex < questions.length) {
-    return (
-      <>
-
-        <h1>Fragebogen:</h1>
-        <p>"{styleData[currentTestId].name}"</p>
-        <h3>
-          Frage {currentQuestionIndex + 1} / {questions.length}
-        </h3>
-        <h2>{questions[currentQuestionIndex]}</h2>
-        <button onClick={() => handleAnswer(false)}>(Eher) Nein</button>
-        <button onClick={() => handleAnswer(true)}>(Eher) Ja</button>
-
-      </>
-    )
-  } else {
-    return (
-      <>
-        <h1>Fragebogen:</h1>
-        <p>"{styleData[currentTestId]?.name}"</p>
-        <h2>Ergebnis:</h2>
-        <h3>
-          Sie haben {countYes(answers)} von {questions.length} Fragen mit "ja"
-          beantwortet.
-        </h3>
-        {countYes(answers) > 5 ? (
-          <p>
-            Das deutet darauf hin, dass
-            {' ' + styleData[currentTestId]?.name + ' '}
-            bei Ihnen überdurchschnittlich ausgeprägt ist.
-            <br /> Keine Sorge, das ist nichts Schlimmes! Nur, wenn Sie das
-            Gefühl haben, unter Ihrer Persönlichkeit zu leiden, sollten Sie
-            Hilfe suchen.
-          </p>
-        ) : (
-          <p>
-            Das deutet nicht darauf hin, dass
-            {' ' + styleData[currentTestId]?.name + ' '}bei Ihnen
-            überdurchschnittlich ausgeprägt ist.
-          </p>
-        )}
-      </>
-    )
-  }
+  return (
+    <>
+      <h1>Fragebogen {questionRound + 1} / 2</h1>
+      <p>"{personalityStyleData[currentTestIndex]?.name}"</p>
+      <h3>
+        Frage {currentQuestionIndex + 1} / {questions.length}
+      </h3>
+      <h2>{questions[currentQuestionIndex]}</h2>
+      <button onClick={() => handleAnswer(false)}>(Eher) Nein</button>
+      <button onClick={() => handleAnswer(true)}>(Eher) Ja</button>
+    </>
+  )
 
   function handleAnswer(answer) {
-    setAnswers([...answers, answer])
-    setCurrentQuestionIndex(currentQuestionIndex + 1)
+    if (currentQuestionIndex === questions.length - 1) {
+      setQuestionRound(questionRound + 1)
+      setResultUrl(
+        resultUrl + (currentTestIndex + 1) + countYes([...answers, answer])
+      )
+      setCurrentQuestionIndex(0)
+      setAnswers([])
+    } else {
+      setAnswers([...answers, answer])
+      setCurrentQuestionIndex(currentQuestionIndex + 1)
+    }
   }
 }
 
