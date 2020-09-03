@@ -1,18 +1,20 @@
-import PropTypes from 'prop-types'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import MotiveButtons from './MotiveButtons'
+import { evaluateMatchingStyles } from './util'
 
-Motives.propTypes = {
-  userMotives: PropTypes.arrayOf(PropTypes.string).isRequired,
-  handleMotiveClick: PropTypes.func.isRequired,
-}
-
-export default function Motives({ userMotives, handleMotiveClick }) {
+export default function Motives() {
+  const [userMotives, setUserMotives] = useState([])
   const history = useHistory()
 
   useEffect(() => {
-    userMotives.length === 3 && history.push('/questionnaire')
+    if (userMotives.length === 3) {
+      const userPersonalityStyles = evaluateMatchingStyles(userMotives)
+      const questionnaireUrl =
+        '/questionnaire/' + userPersonalityStyles[0] + userPersonalityStyles[1]
+      setUserMotives([])
+      history.push(questionnaireUrl)
+    }
   }, [userMotives, history])
 
   return (
@@ -30,4 +32,10 @@ export default function Motives({ userMotives, handleMotiveClick }) {
       <MotiveButtons handleMotiveClick={handleMotiveClick} />
     </>
   )
+
+  function handleMotiveClick(event, motive) {
+    const button = event.target
+    button.disabled = true
+    setUserMotives([...userMotives, motive])
+  }
 }

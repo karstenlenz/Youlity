@@ -4,11 +4,12 @@ exports[`The questionnaire component renders correctly 1`] = `
 <div>
   <h1>
     Fragebogen 
-    0
+    1
      / 2
   </h1>
   <p>
     "
+    der narzisstische Persönlichkeitsstil
     "
   </p>
   <h3>

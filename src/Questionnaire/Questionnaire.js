@@ -1,26 +1,13 @@
-import PropTypes from 'prop-types'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { personalityStyleData } from '../data/personalityStyleData'
 
-Questionnaire.propTypes = {
-  userPersonalityStyleIds: PropTypes.arrayOf(PropTypes.number).isRequired,
-  onQuestionnaireEnd: PropTypes.func.isRequired,
-  round: PropTypes.number.isRequired,
-}
-
-export default function Questionnaire({
-  userPersonalityStyleIds = [],
-  onQuestionnaireEnd,
-  round,
-}) {
+export default function Questionnaire({ testIds }) {
   const history = useHistory()
-  if (userPersonalityStyleIds.length < 3) {
-    history.push('/')
-  }
 
-  const currentTestId = userPersonalityStyleIds[round - 1] - 1
-  const questions = personalityStyleData[currentTestId]?.questions ?? [
+  const [questionRound, setQuestionRound] = useState(0)
+  const currentTestIndex = testIds[questionRound] - 1
+  const questions = personalityStyleData[currentTestIndex]?.questions ?? [
     'Brauchen Sie in hohem Maße Lob und Anerkennung?',
     'Möchten Sie besser sein als andere?',
     'Reagieren Sie empfindlich auf Kritik, selbst wenn diese berechtigt ist?',
@@ -32,30 +19,35 @@ export default function Questionnaire({
   ]
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
+  const [resultUrl, setResultUrl] = useState('/result/')
 
-  if (currentQuestionIndex < questions.length) {
-    return (
-      <>
-        <h1>Fragebogen {round} / 2</h1>
-        <p>"{personalityStyleData[currentTestId]?.name}"</p>
-        <h3>
-          Frage {currentQuestionIndex + 1} / {questions.length}
-        </h3>
-        <h2>{questions[currentQuestionIndex]}</h2>
-        <button onClick={() => handleAnswer(false)}>(Eher) Nein</button>
-        <button onClick={() => handleAnswer(true)}>(Eher) Ja</button>
-      </>
-    )
-  } else if (currentQuestionIndex === questions.length) {
-    onQuestionnaireEnd(currentTestId + 1, countYes(answers))
-    setCurrentQuestionIndex(0)
-    setAnswers([])
-    return <div></div>
-  }
+  useEffect(() => {
+    questionRound === 2 && history.push(resultUrl)
+  }, [questionRound, resultUrl, history])
+
+  return (
+    <>
+      <h1>Fragebogen {questionRound + 1} / 2</h1>
+      <p>"{personalityStyleData[currentTestIndex]?.name}"</p>
+      <h3>
+        Frage {currentQuestionIndex + 1} / {questions.length}
+      </h3>
+      <h2>{questions[currentQuestionIndex]}</h2>
+      <button onClick={() => handleAnswer(false)}>(Eher) Nein</button>
+      <button onClick={() => handleAnswer(true)}>(Eher) Ja</button>
+    </>
+  )
 
   function handleAnswer(answer) {
-    setAnswers([...answers, answer])
-    setCurrentQuestionIndex(currentQuestionIndex + 1)
+    if (currentQuestionIndex === questions.length - 1) {
+      setQuestionRound(questionRound + 1)
+      setResultUrl(resultUrl + (currentTestIndex + 1) + countYes(answers))
+      setCurrentQuestionIndex(0)
+      setAnswers([])
+    } else {
+      setAnswers([...answers, answer])
+      setCurrentQuestionIndex(currentQuestionIndex + 1)
+    }
   }
 }
 

@@ -6,12 +6,6 @@ export default {
   component: Questionnaire,
 }
 
-export const Narzissmus = () => {
-  return (
-    <Questionnaire
-      userPersonalityStyleIds={[1, 2, 3]}
-      onQuestionnaireEnd={() => true}
-      round={1}
-    />
-  )
+export const NarzisstischDependent = () => {
+  return <Questionnaire testIds={[1, 4, 3, 6]} />
 }
