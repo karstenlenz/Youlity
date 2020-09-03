@@ -5,9 +5,7 @@ import { evaluateMatchingStyles } from './util'
 
 describe('The Motives component', () => {
   it('renders correctly', () => {
-    const { container } = render(
-      <Motives userMotives={[]} handleMotiveClick={() => true} />
-    )
+    const { container } = render(<Motives />)
     expect(container).toMatchSnapshot()
   })
 })

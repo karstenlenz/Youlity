@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import { useParams, useHistory } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import { personalityStyleData } from '../data/personalityStyleData'
 
-export default function Questionnaire() {
+export default function Questionnaire({ testIds }) {
   const history = useHistory()
-  const { testIdParam } = useParams()
-  const testIdArray = testIdParam.split('')
 
   const [questionRound, setQuestionRound] = useState(0)
-  const currentTestIndex = testIdArray[questionRound] - 1
+  const currentTestIndex = testIds[questionRound] - 1
   const questions = personalityStyleData[currentTestIndex]?.questions ?? [
     'Brauchen Sie in hohem Maße Lob und Anerkennung?',
     'Möchten Sie besser sein als andere?',

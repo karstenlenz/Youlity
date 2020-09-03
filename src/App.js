@@ -1,18 +1,18 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Motives from './Motives/Motives'
-import Questionnaire from './Questionnaire/Questionnaire'
-import Resultpage from './Result/Resultpage'
+import QuestionnairePage from './Questionnaire/QuestionnairePage'
+import ResultPage from './Result/ResultPage'
 
 export default function App() {
   return (
     <main>
       <Switch>
         <Route path="/questionnaire/:testIdParam">
-          <Questionnaire />
+          <QuestionnairePage />
         </Route>
         <Route path="/result/:resultCode">
-          <Resultpage />
+          <ResultPage />
         </Route>
         <Route path="/">
           <Motives />

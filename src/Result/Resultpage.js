@@ -2,7 +2,7 @@ import React from 'react'
 import Result from './Result'
 import { useParams } from 'react-router-dom'
 
-export default function Resultpage() {
+export default function ResultPage() {
   const { resultCode } = useParams()
   const resultArray = resultCode.split('')
   const resultData = [
