@@ -42,4 +42,17 @@ h6 {
 }
 
 
+:root {
+
+--overlay-bg:100;
+--overlay-content:200;
+
+--primary: #683B89;
+--secondary: #00C5AA;
+--highlight: #65C2FD;
+--light-grey: #E0E9F1;
+--medium-grey: #B2A7B8;
+--dark-grey: #4C4452;
+
+}
 `
