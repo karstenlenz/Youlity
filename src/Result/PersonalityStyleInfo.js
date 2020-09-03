@@ -32,7 +32,7 @@ export default function PersonalityStyleInfo() {
       </ul>
       <h2>Weitere Informationen</h2>
       <ul>
-        {currentStyleData.help.map((info, index) => {
+        {currentStyleData.furtherInfo.map((info, index) => {
           return (
             <li key={index}>
               <a href={info.url}>{info.text}</a>
