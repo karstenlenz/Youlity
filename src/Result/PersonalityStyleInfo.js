@@ -20,9 +20,9 @@ export default function PersonalityStyleInfo() {
       <p>{currentStyleData.tips}</p>
       <h2>Weitere Informationen</h2>
       <ul>
-        {currentStyleData.help.map((info) => {
+        {currentStyleData.help.map((info, index) => {
           return (
-            <li>
+            <li key={index}>
               <a href={info.url}>{info.text}</a>
             </li>
           )
@@ -35,9 +35,9 @@ export default function PersonalityStyleInfo() {
           Hilfe! Hier sind erste Anlaufstellen:
         </p>
         <ul>
-          {currentStyleData.help.map((help) => {
+          {currentStyleData.help.map((help, index) => {
             return (
-              <li>
+              <li key={index}>
                 <a href={help.url}>{help.text}</a>
               </li>
             )
