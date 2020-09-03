@@ -3,48 +3,63 @@
 exports[`renders correctly 1`] = `
 <div>
   <main>
+    <img
+      alt=""
+      src="/img/mirror.svg"
+    />
     <h1>
-      Bedürfnisse
+      Entdecken Sie Ihren Persönlichkeitsstil!
     </h1>
+    <ul>
+      <li>
+        Lernen Sie sich selbst kennen, mit Ihren eigenen Stärken und Schwächen!
+      </li>
+      <li>
+        Erhalten Sie wertvolle Tipps zum Umgang mit Ihren Mitmenschen, egal ob im Beruf oder in privaten Beziehungen!
+      </li>
+    </ul>
     <h2>
-      Bitte wählen Sie die 3 Bedürfnisse aus, die Ihnen am wichtigsten sind. Fangen Sie mit dem wichtigsten an.
+      Unser Versprechen
     </h2>
-    <ol>
+    <ul>
       <li>
-         
-         
+        <h3>
+          Seriös
+        </h3>
+        <p>
+          Der Test basiert auf neuesten Forschungsergebnissen der Psychologie.
+        </p>
       </li>
       <li>
          
-         
+        <h3>
+          Schnell
+        </h3>
+        <p>
+          Es dauert nur ca. 10 Minuten.
+        </p>
       </li>
       <li>
-         
-         
+        <h3>
+          Sicher
+        </h3>
+        <p>
+          Wir übermitteln keine Daten von Ihnen. Ihre Privatsphäre ist absolut sicher.
+        </p>
       </li>
-    </ol>
-    <section
-      class="sc-AxjAm eGbGEo"
+    </ul>
+    <a
+      href="/motives"
     >
-      <button>
-        Anerkennung
+      <button
+        class="sc-AxjAm exTVOo"
+      >
+        Test starten
       </button>
-      <button>
-        Wichtigkeit
-      </button>
-      <button>
-        Verlässlichkeit
-      </button>
-      <button>
-        Solidarität
-      </button>
-      <button>
-        Autonomie
-      </button>
-      <button>
-        Grenzen
-      </button>
-    </section>
+    </a>
+    <small>
+      Hinweis: Dieser Test ersetzt keine psychologische Beratung. Lorem ipsum….
+    </small>
   </main>
 </div>
 `;

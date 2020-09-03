@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Button from '../common/Button'
 
 export default function MotiveButtons({ handleMotiveClick }) {
   const motives = [
@@ -15,12 +16,12 @@ export default function MotiveButtons({ handleMotiveClick }) {
     <ButtonList>
       {motives.map((text) => {
         return (
-          <button
+          <Button
             key={text}
             onClick={(event) => handleMotiveClick(event, text)}
           >
             {text}
-          </button>
+          </Button>
         )
       })}
     </ButtonList>
