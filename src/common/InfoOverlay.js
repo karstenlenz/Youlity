@@ -49,7 +49,11 @@ const OverlayContent = styled.section`
   padding: 15px;
 
   button {
+    font-size: 24px;
     position: absolute;
-    right: 10px;
+    right: 2px;
+    top: 2px;
+    background: none;
+    border: none;
   }
 `
