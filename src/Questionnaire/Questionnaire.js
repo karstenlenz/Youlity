@@ -41,9 +41,7 @@ export default function Questionnaire({ testIds }) {
   function handleAnswer(answer) {
     if (currentQuestionIndex === questions.length - 1) {
       setQuestionRound(questionRound + 1)
-      setResultUrl(
-        resultUrl + (currentTestIndex + 1) + countYes([...answers, answer])
-      )
+      setResultUrl(resultUrl + (currentTestIndex + 1) + countYes(answers))
       setCurrentQuestionIndex(0)
       setAnswers([])
     } else {
