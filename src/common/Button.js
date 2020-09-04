@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 Button.propTypes = {
   onClick: PropTypes.func,
@@ -12,8 +12,15 @@ export default function Button({ children, onClick }) {
 }
 
 const ButtonStyled = styled.button`
+  font-size: 1.21rem;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  height: 50px;
   display: block;
   padding: 10px;
   width: 100%;
-  font-size: 1rem;
+  background: var(--primary);
+  border: none;
+  border-radius: 39px;
 `
