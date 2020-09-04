@@ -23,24 +23,36 @@ exports[`The Motives component renders correctly 1`] = `
     </li>
   </ol>
   <section
-    class="sc-AxjAm eGbGEo"
+    class="sc-AxirZ jQdDrD"
   >
-    <button>
+    <button
+      class="sc-AxjAm exTVOo"
+    >
       Anerkennung
     </button>
-    <button>
+    <button
+      class="sc-AxjAm exTVOo"
+    >
       Wichtigkeit
     </button>
-    <button>
+    <button
+      class="sc-AxjAm exTVOo"
+    >
       Verlässlichkeit
     </button>
-    <button>
+    <button
+      class="sc-AxjAm exTVOo"
+    >
       Solidarität
     </button>
-    <button>
+    <button
+      class="sc-AxjAm exTVOo"
+    >
       Autonomie
     </button>
-    <button>
+    <button
+      class="sc-AxjAm exTVOo"
+    >
       Grenzen
     </button>
   </section>
