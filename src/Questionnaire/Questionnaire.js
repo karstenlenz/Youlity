@@ -29,10 +29,10 @@ export default function Questionnaire({ testIds }) {
     <>
       <h1>Fragebogen {questionRound + 1} / 2</h1>
       <p>"{personalityStyleData[currentTestIndex]?.name}"</p>
-      <h3>
+      <h2>
         Frage {currentQuestionIndex + 1} / {questions.length}
-      </h3>
-      <h2>{questions[currentQuestionIndex]}</h2>
+      </h2>
+      <h3>{questions[currentQuestionIndex]}</h3>
       <button onClick={() => handleAnswer(false)}>(Eher) Nein</button>
       <button onClick={() => handleAnswer(true)}>(Eher) Ja</button>
     </>
