@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Button from '../common/Button'
 import InfoOverlay from '../common/InfoOverlay'
 
 export default function MotiveButtons({ handleMotiveClick }) {
@@ -126,9 +125,8 @@ export default function MotiveButtons({ handleMotiveClick }) {
     <ButtonList>
       {motiveData.map((motive) => {
         return (
-          <ButtonPair>
+          <ButtonPair key={motive.name}>
             <MotiveButton
-              key={motive.name}
               onClick={(event) => handleMotiveClick(event, motive.name)}
             >
               {motive.name}
