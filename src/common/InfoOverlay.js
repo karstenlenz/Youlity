@@ -33,7 +33,7 @@ const OverLayBG = styled.div`
   z-index: var(--overlay-bg);
   width: 100vw;
   height: 100vh;
-  background: var(--light-grey);
+  background: var(--dark-grey);
   opacity: 0.5;
 `
 
