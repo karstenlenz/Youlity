@@ -17,7 +17,7 @@ export default function InfoOverlay({ children }) {
         </>
       )}
 
-      <button onClick={toggleOverlay}>i</button>
+      <InfoButton onClick={toggleOverlay}>i</InfoButton>
     </>
   )
 
@@ -25,6 +25,10 @@ export default function InfoOverlay({ children }) {
     setIsOverlayVisible(!isOverlayVisible)
   }
 }
+
+const InfoButton = styled.button`
+  width: 20%;
+`
 
 const OverLayBG = styled.div`
   position: fixed;

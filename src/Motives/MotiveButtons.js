@@ -126,20 +126,25 @@ export default function MotiveButtons({ handleMotiveClick }) {
     <ButtonList>
       {motiveData.map((motive) => {
         return (
-          <>
-            <Button
+          <ButtonPair>
+            <MotiveButton
               key={motive.name}
               onClick={(event) => handleMotiveClick(event, motive.name)}
             >
               {motive.name}
-            </Button>
+            </MotiveButton>
             <InfoOverlay>{motive.description()}</InfoOverlay>
-          </>
+          </ButtonPair>
         )
       })}
     </ButtonList>
   )
 }
+
+const ButtonPair = styled.div`
+  display: flex;
+  flex-direction: row;
+`
 
 const ButtonList = styled.section`
   display: flex;
@@ -149,4 +154,12 @@ const ButtonList = styled.section`
     height: 40px;
     margin-bottom: 20px;
   }
+`
+
+const MotiveButton = styled.button`
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  margin-right: 20px;
 `
