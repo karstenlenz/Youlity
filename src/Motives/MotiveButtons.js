@@ -119,6 +119,29 @@ export default function MotiveButtons({ handleMotiveClick }) {
         )
       },
     },
+    {
+      name: 'Verlässlichkeit',
+      description: () => {
+        return (
+          <>
+            <p>
+              Das Bedürfnis nach Grenzen bedeutet, Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Ipsum sit quod accusantium
+              voluptatibus tenetur dolor? Necessitatibus, debitis unde
+              repellendus non cupiditate doloribus? Accusantium debitis
+              temporibus vel aut, consectetur distinctio! Obcaecati eum vel
+              natus mollitia voluptatibus ullam quae esse sit tempora.
+            </p>
+            <ul>
+              <li>„Du bist als lorem“</li>
+              <li>„Du bist ipsum.“</li>
+              <li>„Du siehst dolor aus.“</li>
+              <li>„Du bist sit.“</li>
+            </ul>
+          </>
+        )
+      },
+    },
   ]
 
   return (
