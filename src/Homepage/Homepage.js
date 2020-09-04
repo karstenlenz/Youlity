@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import PrimaryBtn from '../common/PrimaryBtn'
+import SecondaryBtn from '../common/SecondaryBtn'
 
 export default function () {
   return (
@@ -41,6 +42,7 @@ export default function () {
       <Link to="/motives">
         <PrimaryBtn>Test starten</PrimaryBtn>
       </Link>
+      <SecondaryBtn>Test Button</SecondaryBtn>
       <small>
         Hinweis: Dieser Test ersetzt keine psychologische Beratung. Lorem
         ipsum….
