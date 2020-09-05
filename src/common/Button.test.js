@@ -1,15 +1,15 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import PrimaryBtn from './PrimaryBtn'
+import Button from './Button'
 
-describe('The PrimaryBtn component', () => {
+describe('The Button component', () => {
   it('renders correctly', () => {
-    const { container } = render(<PrimaryBtn>Test-Text</PrimaryBtn>)
+    const { container } = render(<Button>Test-Text</Button>)
     expect(container).toMatchSnapshot()
   })
 
   it('display the text "Test-Text"', () => {
-    render(<PrimaryBtn>Test-Text</PrimaryBtn>)
+    render(<Button>Test-Text</Button>)
     expect(screen.getByText('Test-Text')).toBeInTheDocument()
   })
 })
