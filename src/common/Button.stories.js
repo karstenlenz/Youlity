@@ -5,21 +5,21 @@ export default {
   title: 'Button',
   component: Button,
   argTypes: {
-    btnType: { control: 'enum', options: ['primary', 'secondary', 'white'] },
-    isButtonDisabled: { control: 'bool' },
-    args: {
-      btnType: 'primary',
-      isButtonDisabled: false,
-    },
+    // btnType: { control: 'enum', options: ['primary', 'secondary', 'white'] },
+    // isButtonDisabled: { control: 'bool' },
   },
+  // args: {
+  //   btnType: 'primary',
+  //   isButtonDisabled: false,
+  // },
 }
 
-export const PrimaryBtn = () => <Button btnType="primary">Test starten</Button>
+export const PrimaryBtn = () => <Button>Test starten</Button>
+PrimaryBtn.args = { btnType: 'primary', isButtonDisabled: false }
 
 export const PrimaryBtnDisabled = (args) => (
   <Button {...args}>Test starten</Button>
 )
-
 PrimaryBtnDisabled.args = { isButtonDisabled: true }
 
 export const SecondaryBtn = (args) => <Button {...args}>Test starten</Button>
