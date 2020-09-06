@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../common/Button'
 import HeadlineUnderline from '../common/HeadlineUnderline'
+import styled from 'styled-components'
 
 export default function () {
   return (
@@ -42,17 +43,9 @@ export default function () {
           </p>
         </li>
       </ul>
-      <Link to="/motives">
-        <Button btnType="primary" isButtonDisabled={true}>
-          Test starten
-        </Button>
-      </Link>
-      <Button btnType="secondary" isButtonDisabled={true}>
-        Secondary Button
-      </Button>
-      <Button btnType="white" isButtonDisabled={true}>
-        White Button
-      </Button>
+      <FixedButton to="/motives">
+        <Button btnType="primary">Test starten</Button>
+      </FixedButton>
       <small>
         Hinweis: Dieser Test ersetzt keine psychologische Beratung. Lorem
         ipsum….
@@ -60,3 +53,10 @@ export default function () {
     </>
   )
 }
+
+const FixedButton = styled(Link)`
+  position: fixed;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
+`
