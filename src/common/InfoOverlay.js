@@ -53,7 +53,7 @@ const OverlayContent = styled.section`
   padding: 15px;
 
   button {
-    font-size: 24px;
+    font-size: 1.331em;
     position: absolute;
     right: 2px;
     top: 2px;

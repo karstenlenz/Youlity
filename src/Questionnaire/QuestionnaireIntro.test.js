@@ -1,13 +1,13 @@
 import { render } from '@testing-library/react'
 import React from 'react'
-import Homepage from './Homepage'
+import QuestionnaireIntro from './QuestionnaireIntro'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-describe('The Homepage component', () => {
+describe('The QuestionnaireIntro component', () => {
   it('renders correctly', () => {
     const { container } = render(
       <Router>
-        <Homepage />
+        <QuestionnaireIntro />
       </Router>
     )
     expect(container).toMatchSnapshot()

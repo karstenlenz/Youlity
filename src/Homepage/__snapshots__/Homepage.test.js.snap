@@ -48,7 +48,7 @@ exports[`The Homepage component renders correctly 1`] = `
     </li>
   </ul>
   <a
-    href="/motives"
+    href="/motives/intro"
   >
     <button
       class="sc-AxjAm exTVOo"
