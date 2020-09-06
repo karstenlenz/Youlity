@@ -68,4 +68,9 @@ h6 {
 a {
     text-decoration:none;
     }
+
+img {
+    display:block;
+    margin:0 auto;
+    }
 `
