@@ -17,38 +17,39 @@ main {
     padding: 15px;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align:center;
+}
+
+
 h1 {
     font-size: 1.611rem ;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 h2 {
     font-size: 1.464rem ;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 h3 {
     font-size: 1.331rem;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 h4 {
     font-size: 1.21rem;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 h5 {
     font-size: 1.1rem;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 h6 {
     font-size: 1rem;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 
 :root {
+    --background:-1;
 --overlay-bg:100;
 --overlay-content:200;
 

@@ -1,12 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../common/Button'
+import HeadlineUnderline from '../common/HeadlineUnderline'
 
 export default function () {
   return (
     <>
       <img alt="" src="/img/mirror.svg" />
-      <h1>Entdecken Sie Ihren Persönlichkeitsstil!</h1>
+      <HeadlineUnderline>
+        <h1>Entdecken Sie Ihren Persönlichkeitsstil!</h1>
+      </HeadlineUnderline>
       <ul>
         <li>
           Lernen Sie sich selbst kennen, mit Ihren eigenen Stärken und
@@ -17,7 +20,9 @@ export default function () {
           im Beruf oder in privaten Beziehungen!
         </li>
       </ul>
-      <h2>Unser Versprechen</h2>
+      <HeadlineUnderline>
+        <h2>Unser Versprechen</h2>
+      </HeadlineUnderline>
       <ul>
         <li>
           <h3>Seriös</h3>
@@ -26,7 +31,6 @@ export default function () {
           </p>
         </li>
         <li>
-          {' '}
           <h3>Schnell</h3>
           <p>Es dauert nur ca. 10 Minuten.</p>
         </li>

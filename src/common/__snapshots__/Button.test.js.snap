@@ -3,17 +3,7 @@
 exports[`The Button component renders correctly 1`] = `
 <div>
   <button
-    class="sc-AxjAm exTVOo"
-  >
-    Test-Text
-  </button>
-</div>
-`;
-
-exports[`The PrimaryBtn component renders correctly 1`] = `
-<div>
-  <button
-    class="PrimaryBtn__PrimaryBtnStyled-sc-70yx6k-0 cswOOA"
+    class="Button__BtnStyled-sc-129yfz5-0 gDehLW"
   >
     Test-Text
   </button>

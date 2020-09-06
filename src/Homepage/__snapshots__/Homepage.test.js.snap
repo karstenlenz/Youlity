@@ -51,11 +51,24 @@ exports[`The Homepage component renders correctly 1`] = `
     href="/motives"
   >
     <button
-      class="sc-AxjAm exTVOo"
+      class="Button__BtnStyled-sc-129yfz5-0 gDehLW"
+      disabled=""
     >
       Test starten
     </button>
   </a>
+  <button
+    class="Button__BtnStyled-sc-129yfz5-0 RogES"
+    disabled=""
+  >
+    Secondary Button
+  </button>
+  <button
+    class="Button__BtnStyled-sc-129yfz5-0 gQjzaG"
+    disabled=""
+  >
+    White Button
+  </button>
   <small>
     Hinweis: Dieser Test ersetzt keine psychologische Beratung. Lorem ipsum….
   </small>

@@ -23,38 +23,92 @@ exports[`The Motives component renders correctly 1`] = `
     </li>
   </ol>
   <section
-    class="sc-AxirZ jQdDrD"
+    class="sc-AxhUy eVuXNO"
   >
-    <button
-      class="sc-AxjAm exTVOo"
+    <div
+      class="sc-AxhCb cmMuZo"
     >
-      Anerkennung
-    </button>
-    <button
-      class="sc-AxjAm exTVOo"
+      <button
+        class="sc-AxgMl eCqhqC"
+      >
+        Anerkennung
+      </button>
+      <button
+        class="sc-AxjAm kptOXd"
+      >
+        i
+      </button>
+    </div>
+    <div
+      class="sc-AxhCb cmMuZo"
     >
-      Wichtigkeit
-    </button>
-    <button
-      class="sc-AxjAm exTVOo"
+      <button
+        class="sc-AxgMl eCqhqC"
+      >
+        Wichtigkeit
+      </button>
+      <button
+        class="sc-AxjAm kptOXd"
+      >
+        i
+      </button>
+    </div>
+    <div
+      class="sc-AxhCb cmMuZo"
     >
-      Verlässlichkeit
-    </button>
-    <button
-      class="sc-AxjAm exTVOo"
+      <button
+        class="sc-AxgMl eCqhqC"
+      >
+        Solidarität
+      </button>
+      <button
+        class="sc-AxjAm kptOXd"
+      >
+        i
+      </button>
+    </div>
+    <div
+      class="sc-AxhCb cmMuZo"
     >
-      Solidarität
-    </button>
-    <button
-      class="sc-AxjAm exTVOo"
+      <button
+        class="sc-AxgMl eCqhqC"
+      >
+        Autonomie
+      </button>
+      <button
+        class="sc-AxjAm kptOXd"
+      >
+        i
+      </button>
+    </div>
+    <div
+      class="sc-AxhCb cmMuZo"
     >
-      Autonomie
-    </button>
-    <button
-      class="sc-AxjAm exTVOo"
+      <button
+        class="sc-AxgMl eCqhqC"
+      >
+        Grenzen
+      </button>
+      <button
+        class="sc-AxjAm kptOXd"
+      >
+        i
+      </button>
+    </div>
+    <div
+      class="sc-AxhCb cmMuZo"
     >
-      Grenzen
-    </button>
+      <button
+        class="sc-AxgMl eCqhqC"
+      >
+        Verlässlichkeit
+      </button>
+      <button
+        class="sc-AxjAm kptOXd"
+      >
+        i
+      </button>
+    </div>
   </section>
 </div>
 `;
