@@ -1,9 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
 
-export default function BulletList() {
+export default function BulletList({ listType = 'bullet_circle' }) {
   return (
-    <ul>
+    <ListContainer>
       <li></li>
-    </ul>
+    </ListContainer>
   )
 }
+
+const ListContainer = styled.ul`
+  list-style-image: ${(props) => 'url(/img/' + props.listType + '.svg)'};
+`
