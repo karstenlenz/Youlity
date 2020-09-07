@@ -10,13 +10,19 @@ Button.propTypes = {
 }
 
 export default function Button({
+  className,
   children,
   onClick,
   btnType = 'primary',
   isButtonDisabled = false,
 }) {
   return (
-    <BtnStyled disabled={isButtonDisabled} btnType={btnType} onClick={onClick}>
+    <BtnStyled
+      className={className}
+      disabled={isButtonDisabled}
+      btnType={btnType}
+      onClick={onClick}
+    >
       {children}
     </BtnStyled>
   )

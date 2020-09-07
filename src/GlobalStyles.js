@@ -64,8 +64,8 @@ p {
 --medium-grey: #B2A7B8;
 --dark-grey: #4C4452;
 
---primary-shadow:  0px 3px 6px 3px rgba(63, 0, 110, 0.16);
---secondary-shadow:  0px 3px 6px 3px rgba(0,197,170, 0.16);
+--primary-shadow:  0 1px 6px 0 rgba(63, 0, 110, 0.16);
+--secondary-shadow:  0 1px 6px 0 rgba(0,197,170, 0.16);
 }
 
 

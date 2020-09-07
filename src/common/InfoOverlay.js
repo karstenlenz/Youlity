@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import styled from 'styled-components'
+import Button from './Button'
 
 export default function InfoOverlay({ children }) {
   const [isOverlayVisible, setIsOverlayVisible] = useState(false)
@@ -17,7 +18,9 @@ export default function InfoOverlay({ children }) {
         </>
       )}
 
-      <InfoButton onClick={toggleOverlay}>i</InfoButton>
+      <InfoButton btnType="white" onClick={toggleOverlay}>
+        ?
+      </InfoButton>
     </>
   )
 
@@ -26,8 +29,10 @@ export default function InfoOverlay({ children }) {
   }
 }
 
-const InfoButton = styled.button`
-  width: 20%;
+const InfoButton = styled(Button)`
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
 `
 
 const OverLayBG = styled.div`
