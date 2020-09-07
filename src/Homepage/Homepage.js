@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Button from '../common/Button'
-import HeadlineUnderline from '../common/HeadlineUnderline'
 import styled from 'styled-components'
 import BulletList from '../common/BulletList'
+import Button from '../common/Button'
+import FloatingButtonContainer from '../common/FloatingButtonContainer'
+import HeadlineUnderline from '../common/HeadlineUnderline'
 
 export default function () {
   return (
@@ -44,25 +44,17 @@ export default function () {
           </p>
         </li>
       </BulletList>
-      <FixedButton to="/motives/intro">
-        <Button btnType="primary">Test starten</Button>
-      </FixedButton>
       <FinePrint>
         Hinweis: Dieser Test ersetzt keine psychologische Beratung. Lorem
         ipsum….
       </FinePrint>
+      <FloatingButtonContainer to="/motives/intro">
+        <Button btnType="primary">Test starten</Button>
+      </FloatingButtonContainer>
     </>
   )
 }
 
 const FinePrint = styled.small`
   display: block;
-  margin-bottom: 80px;
-`
-
-const FixedButton = styled(Link)`
-  position: fixed;
-  left: 15px;
-  right: 15px;
-  bottom: 0;
 `

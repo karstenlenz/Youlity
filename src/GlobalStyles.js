@@ -47,6 +47,10 @@ h6 {
     font-size: 1rem;
 }
 
+p {
+    line-height:140%;
+}
+
 
 :root {
     --background:-1;
