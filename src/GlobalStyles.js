@@ -71,7 +71,8 @@ p {
 
 
 a {
-    text-decoration:none;
+    color:black;
+    text-decoration:underline;
     }
 
 img {

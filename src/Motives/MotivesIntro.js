@@ -22,7 +22,7 @@ export default function MotivesIntro() {
         prüfen, wie ausgeprägt diese Stile bei Ihnen sind.
       </p>
       <FloatingButtonContainer to="/motives/selection">
-        <Button>Weiter zur Motivauswahl</Button>
+        <Button>Weiter zur Auswahl</Button>
       </FloatingButtonContainer>
     </>
   )

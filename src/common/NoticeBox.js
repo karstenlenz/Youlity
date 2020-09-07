@@ -21,7 +21,7 @@ export default function NoticeBox({ children }) {
 const SectionStyled = styled.section`
   background: white;
   box-shadow: var(--primary-shadow);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 15px;
   position: relative;
   margin-bottom: 30px;

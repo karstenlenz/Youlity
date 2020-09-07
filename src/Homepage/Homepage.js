@@ -45,8 +45,9 @@ export default function () {
         </li>
       </BulletList>
       <FinePrint>
-        Hinweis: Dieser Test ersetzt keine psychologische Beratung. Lorem
-        ipsum….
+        Hinweis: Dieser Test ersetzt keine psychologische Beratung. Wenn Sie
+        unter psychischen Problemen leiden, suchen Sie sich bitte professionelle
+        Hilfe.
       </FinePrint>
       <FloatingButtonContainer to="/motives/intro">
         <Button btnType="primary">Test starten</Button>

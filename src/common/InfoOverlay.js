@@ -12,7 +12,9 @@ export default function InfoOverlay({ children }) {
         <>
           <OverLayBG onClick={toggleOverlay} />
           <OverlayContent>
-            <button onClick={toggleOverlay}>X</button>
+            <button onClick={toggleOverlay}>
+              <img alt="close overlay" src="/img/close.svg" />
+            </button>
             {children}
           </OverlayContent>
         </>
@@ -51,17 +53,17 @@ const OverlayContent = styled.section`
   top: 30px;
   left: 30px;
   right: 30px;
-  background: var(--light-grey);
+  border-radius: 10px;
+  background: white;
   z-index: var(--overlay-content);
   opacity: 1;
-  border: 1px solid black;
   padding: 15px;
 
   button {
-    font-size: 1.331em;
+    padding: 0;
     position: absolute;
-    right: 2px;
-    top: 2px;
+    right: 10px;
+    top: 10px;
     background: none;
     border: none;
   }
