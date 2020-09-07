@@ -2,6 +2,10 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { personalityStyleData } from '../data/personalityStyleData'
 import { capitalizeFirstLetter } from '../common/util'
+import HeadlineUnderline from '../common/HeadlineUnderline'
+import styled from 'styled-components'
+import SectionBG from '../common/SectionBG'
+import BulletList from '../common/BulletList'
 
 export default function PersonalityStyleInfo() {
   const { styleId } = useParams()
@@ -9,29 +13,39 @@ export default function PersonalityStyleInfo() {
 
   return (
     <>
-      <h1>{capitalizeFirstLetter(currentStyleData.name)}</h1>
-      <h2>Einleitung</h2>
-      <p>{currentStyleData.description}</p>
-      <h2>Stärken</h2>
-      <ul>
-        {currentStyleData.strengths.map((strength) => {
-          return <li key={strength}>{strength}</li>
-        })}
-      </ul>
-      <h2>Schwächen</h2>
-      <ul>
-        {currentStyleData.weaknesses.map((weakness) => {
-          return <li key={weakness}>{weakness}</li>
-        })}
-      </ul>
-      <h2>Tipps</h2>
-      <ul>
-        {currentStyleData.tips.map((tip) => {
-          return <li key={tip}>{tip}</li>
-        })}
-      </ul>
+      <HeadlineUnderline>
+        <h1>{capitalizeFirstLetter(currentStyleData.name)}</h1>
+      </HeadlineUnderline>
+      <SectionNoBG>
+        <HeadlineNoMarginTop>Einleitung</HeadlineNoMarginTop>
+        <p>{currentStyleData.description}</p>
+      </SectionNoBG>
+      <InfoBG>
+        <h2>Stärken</h2>
+        <BulletList listType="bullet_circle">
+          {currentStyleData.strengths.map((strength) => {
+            return <li key={strength}>{strength}</li>
+          })}
+        </BulletList>
+      </InfoBG>
+      <SectionNoBG>
+        <h2>Schwächen</h2>
+        <BulletList listType="bullet_circle">
+          {currentStyleData.weaknesses.map((weakness) => {
+            return <li key={weakness}>{weakness}</li>
+          })}
+        </BulletList>
+      </SectionNoBG>
+      <InfoBG>
+        <h2>Tipps</h2>
+        <BulletList listType="bullet_circle">
+          {currentStyleData.tips.map((tip) => {
+            return <li key={tip}>{tip}</li>
+          })}
+        </BulletList>
+      </InfoBG>
       <h2>Weitere Informationen</h2>
-      <ul>
+      <BulletList listType="bullet_circle">
         {currentStyleData.furtherInfo.map((info, index) => {
           return (
             <li key={index}>
@@ -39,7 +53,7 @@ export default function PersonalityStyleInfo() {
             </li>
           )
         })}
-      </ul>
+      </BulletList>
       <section>
         <h2>Hier gibt es Hilfe</h2>
         <p>
@@ -59,3 +73,15 @@ export default function PersonalityStyleInfo() {
     </>
   )
 }
+
+const InfoBG = styled(SectionBG)`
+  margin-bottom: 0px;
+  padding-bottom: 1px;
+`
+
+const HeadlineNoMarginTop = styled.h2`
+  margin-top: 0px;
+`
+const SectionNoBG = styled.section`
+  margin-bottom: 40px;
+`

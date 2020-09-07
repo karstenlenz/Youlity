@@ -5,6 +5,7 @@ import TextLink from '../common/TextLink'
 import { capitalizeFirstLetter } from '../common/util'
 import { personalityStyleData } from '../data/personalityStyleData'
 import styled from 'styled-components'
+import SectionBG from '../common/SectionBG'
 
 export default function Result({ resultData }) {
   return (
@@ -29,7 +30,7 @@ export default function Result({ resultData }) {
       </ResultIntro>
       {resultData.map((result) => {
         return (
-          <ResultSection key={result.id}>
+          <SectionBG key={result.id}>
             <h3>
               {capitalizeFirstLetter(personalityStyleData[result.id - 1]?.name)}
             </h3>
@@ -60,7 +61,7 @@ export default function Result({ resultData }) {
                 bei Ihnen überdurchschnittlich ausgeprägt ist.
               </p>
             )}
-          </ResultSection>
+          </SectionBG>
         )
       })}
       <p>
@@ -74,10 +75,4 @@ export default function Result({ resultData }) {
 
 const ResultIntro = styled.p`
   margin-bottom: 40px;
-`
-
-const ResultSection = styled.section`
-  background: var(--light-grey);
-  margin: -15px -15px 60px -15px;
-  padding: 1px 15px 30px 15px;
 `
