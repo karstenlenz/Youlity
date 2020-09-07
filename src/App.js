@@ -4,6 +4,7 @@ import Motives from './Motives/Motives'
 import QuestionnairePage from './Questionnaire/QuestionnairePage'
 import ResultPage from './Result/ResultPage'
 import PersonalityStyleInfo from './Result/PersonalityStyleInfo'
+import Homepage from './Homepage/Homepage'
 
 export default function App() {
   return (
@@ -18,8 +19,11 @@ export default function App() {
         <Route path="/style-info/:styleId">
           <PersonalityStyleInfo />
         </Route>
-        <Route path="/">
+        <Route path="/motives">
           <Motives />
+        </Route>
+        <Route path="/">
+          <Homepage />
         </Route>
       </Switch>
     </main>
