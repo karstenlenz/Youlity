@@ -8,19 +8,19 @@ exports[`renders correctly 1`] = `
       src="/img/mirror.svg"
     />
     <section
-      class="sc-Axmtr dXgRrs"
+      class="sc-AxgMl ecWowd"
     >
       <h1>
         Entdecken Sie Ihren Persönlichkeitsstil!
       </h1>
       <svg
-        class="sc-AxmLO gLQGbO"
+        class="sc-AxheI bEfORA"
       >
         underline.svg
       </svg>
     </section>
     <ul
-      class="sc-fzozJi cdtgXO"
+      class="sc-fzplWN ANPUi"
     >
       <li>
         Lernen Sie sich selbst kennen, mit Ihren eigenen Stärken und Schwächen!
@@ -30,18 +30,20 @@ exports[`renders correctly 1`] = `
       </li>
     </ul>
     <section
-      class="sc-Axmtr dXgRrs"
+      class="sc-AxgMl ecWowd"
     >
       <h2>
         Unser Versprechen
       </h2>
       <svg
-        class="sc-AxmLO gLQGbO"
+        class="sc-AxheI bEfORA"
       >
         underline.svg
       </svg>
     </section>
-    <ul>
+    <ul
+      class="sc-fzplWN kpKmDT"
+    >
       <li>
         <h3>
           Seriös
@@ -67,19 +69,25 @@ exports[`renders correctly 1`] = `
         </p>
       </li>
     </ul>
+    <small
+      class="sc-fzoyAV fajiRR"
+    >
+      Hinweis: Dieser Test ersetzt keine psychologische Beratung. Wenn Sie unter psychischen Problemen leiden, suchen Sie sich bitte professionelle Hilfe.
+    </small>
     <a
-      class="sc-fzoLsD hGfoKX"
+      class="sc-fzqBZW dWlaTh"
       href="/motives/intro"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 gDehLW"
+        class="Button__BtnStyled-sc-129yfz5-0 fyEIpZ"
+        width="100"
       >
         Test starten
       </button>
     </a>
-    <small>
-      Hinweis: Dieser Test ersetzt keine psychologische Beratung. Lorem ipsum….
-    </small>
+    <div
+      class="sc-fzqNJr cxocDQ"
+    />
   </main>
 </div>
 `;
