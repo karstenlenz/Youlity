@@ -15,6 +15,7 @@ export default function Button({
   onClick,
   btnType = 'primary',
   isButtonDisabled = false,
+  width = '100',
 }) {
   return (
     <BtnStyled
@@ -22,6 +23,7 @@ export default function Button({
       disabled={isButtonDisabled}
       btnType={btnType}
       onClick={onClick}
+      width={width}
     >
       {children}
     </BtnStyled>
@@ -31,6 +33,7 @@ export default function Button({
 const BtnStyled = styled.button`
   color: ${(props) =>
     props.btnType === 'white' ? 'var(--dark-grey)' : 'white'};
+  width: ${(props) => props.width + '%'};
   background: ${(props) => {
     if (props.btnType === 'primary') {
       return 'var(--primary)'
@@ -44,14 +47,13 @@ const BtnStyled = styled.button`
     props.btnType === 'secondary'
       ? 'var(--secondary-shadow)'
       : 'var(--primary-shadow)'};
+  display: ${(props) => (props.width === '100' ? 'block' : 'inline')};
   margin-bottom: 20px;
   font-size: 1.21rem;
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   height: 50px;
-  display: block;
   padding: 10px;
-  width: 100%;
   border: none;
   border-radius: 39px;
 

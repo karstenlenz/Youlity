@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { personalityStyleData } from '../data/personalityStyleData'
+import HeadlineUnderline from '../common/HeadlineUnderline'
+import Button from '../common/Button'
+import styled from 'styled-components'
 
 export default function Questionnaire({ testIds }) {
   const history = useHistory()
@@ -27,14 +30,26 @@ export default function Questionnaire({ testIds }) {
 
   return (
     <>
-      <h1>Fragebogen {questionRound + 1} / 2</h1>
-      <p>"{personalityStyleData[currentTestIndex]?.name}"</p>
+      <HeadlineUnderline>
+        <h1>Fragebogen {questionRound + 1} / 2</h1>
+      </HeadlineUnderline>
       <h2>
         Frage {currentQuestionIndex + 1} / {questions.length}
       </h2>
       <h3>{questions[currentQuestionIndex]}</h3>
-      <button onClick={() => handleAnswer(false)}>(Eher) Nein</button>
-      <button onClick={() => handleAnswer(true)}>(Eher) Ja</button>
+
+      <ButtonRow>
+        <Button
+          btnType="white"
+          width="47.5"
+          onClick={() => handleAnswer(false)}
+        >
+          (Eher) Nein
+        </Button>
+        <Button btnType="white" width="47.5" onClick={() => handleAnswer(true)}>
+          (Eher) Ja
+        </Button>
+      </ButtonRow>
     </>
   )
 
@@ -58,3 +73,8 @@ export function countYes(answers) {
     return answer ? yesCount + 1 : yesCount
   }, 0)
 }
+
+const ButtonRow = styled.section`
+  display: flex;
+  justify-content: space-between;
+`
