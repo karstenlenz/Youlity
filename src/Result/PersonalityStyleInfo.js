@@ -13,11 +13,23 @@ export default function PersonalityStyleInfo() {
       <h2>Einleitung</h2>
       <p>{currentStyleData.description}</p>
       <h2>Stärken</h2>
-      <p>{currentStyleData.strengths}</p>
+      <ul>
+        {currentStyleData.strengths.map((strength) => {
+          return <li key={strength}>{strength}</li>
+        })}
+      </ul>
       <h2>Schwächen</h2>
-      <p>{currentStyleData.weaknesses}</p>
+      <ul>
+        {currentStyleData.weaknesses.map((weakness) => {
+          return <li key={weakness}>{weakness}</li>
+        })}
+      </ul>
       <h2>Tipps</h2>
-      <p>{currentStyleData.tips}</p>
+      <ul>
+        {currentStyleData.tips.map((tip) => {
+          return <li key={tip}>{tip}</li>
+        })}
+      </ul>
       <h2>Weitere Informationen</h2>
       <ul>
         {currentStyleData.furtherInfo.map((info, index) => {
