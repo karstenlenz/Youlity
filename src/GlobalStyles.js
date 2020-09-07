@@ -18,27 +18,27 @@ main {
 
 
 h1 {
-    font-size: 2.5em;
+    font-size: 1.611em ;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.464em ;
 }
 
 h3 {
-    font-size: 1.725em;
+    font-size: 1.331em;
 }
 
 h4 {
-    font-size: 1.45em;
+    font-size: 1.21em;
 }
 
 h5 {
-    font-size: 1.2em;
+    font-size: 1.1rem;
 }
 
 h6 {
-    font-size: 1em;
+    font-size: 1erm;
 }
 
 
