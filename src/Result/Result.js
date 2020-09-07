@@ -1,27 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
+import NoticeBox from '../common/NoticeBox'
 import { personalityStyleData } from '../data/personalityStyleData'
 
 export default function Result({ resultData }) {
-  const [isNoticeVisible, setIsNoticeVisible] = useState(true)
-
   return (
     <>
-      {isNoticeVisible && (
-        <Notice>
-          <button onClick={() => setIsNoticeVisible(false)}>X</button>
-          <h3>Hinweis</h3>
-          <p>
-            Unser Testergebnis stellt nur eine Tendenz dar und ersetzt keine
-            psychologische Beratung. Wenn Sie sich unwohl fühlen, holen Sie sich
-            professionelle Hilfe.
-          </p>
-          <a href="https://www.psychenet.de/de/hilfe-finden/schnelle-hilfe/krisenanlaufstellen.html">
-            Ansprechpartner
-          </a>
-        </Notice>
-      )}
-
+      <NoticeBox>
+        <h3>Hinweis</h3>
+        <p>
+          Unser Testergebnis stellt nur eine Tendenz dar und ersetzt keine
+          psychologische Beratung. Wenn Sie sich unwohl fühlen, holen Sie sich
+          professionelle Hilfe.
+        </p>
+        <a href="https://www.psychenet.de/de/hilfe-finden/schnelle-hilfe/krisenanlaufstellen.html">
+          Ansprechpartner
+        </a>
+      </NoticeBox>
       <h1>Ergebnis</h1>
       <p>Sie haben eben Tests für folgende Persönlichkeitsstile ausgefüllt</p>
       <ul>

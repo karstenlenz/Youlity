@@ -19,7 +19,7 @@ export default function InfoOverlay({ children }) {
       )}
 
       <InfoButton btnType="white" onClick={toggleOverlay}>
-        ?
+        i
       </InfoButton>
     </>
   )

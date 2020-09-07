@@ -53,7 +53,7 @@ p {
 
 
 :root {
-    --background:-1;
+--background:-1;
 --overlay-bg:100;
 --overlay-content:200;
 
