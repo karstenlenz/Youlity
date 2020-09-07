@@ -1,9 +1,6 @@
 import React from 'react'
 import Button from '../common/Button'
-<<<<<<< HEAD
-=======
 import { Link } from 'react-router-dom'
->>>>>>> feat/homepage
 
 export default function () {
   return (
