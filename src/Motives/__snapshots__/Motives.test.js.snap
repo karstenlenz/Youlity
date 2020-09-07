@@ -26,32 +26,32 @@ exports[`The Motives component renders correctly 1`] = `
     class="sc-AxirZ jQdDrD"
   >
     <button
-      class="sc-AxjAm exTVOo"
+      class="sc-AxjAm jYhWme"
     >
       Anerkennung
     </button>
     <button
-      class="sc-AxjAm exTVOo"
+      class="sc-AxjAm jYhWme"
     >
       Wichtigkeit
     </button>
     <button
-      class="sc-AxjAm exTVOo"
+      class="sc-AxjAm jYhWme"
     >
       Verlässlichkeit
     </button>
     <button
-      class="sc-AxjAm exTVOo"
+      class="sc-AxjAm jYhWme"
     >
       Solidarität
     </button>
     <button
-      class="sc-AxjAm exTVOo"
+      class="sc-AxjAm jYhWme"
     >
       Autonomie
     </button>
     <button
-      class="sc-AxjAm exTVOo"
+      class="sc-AxjAm jYhWme"
     >
       Grenzen
     </button>

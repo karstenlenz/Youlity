@@ -12,15 +12,15 @@ exports[`The questionnaire component renders correctly 1`] = `
     der narzisstische Persönlichkeitsstil
     "
   </p>
-  <h3>
+  <h2>
     Frage 
     1
      / 
     8
-  </h3>
-  <h2>
-    Brauchen Sie in hohem Maße Lob und Anerkennung?
   </h2>
+  <h3>
+    Brauchen Sie in hohem Maße Lob und Anerkennung?
+  </h3>
   <button>
     (Eher) Nein
   </button>
