@@ -173,3 +173,11 @@ const ButtonList = styled.section`
   display: flex;
   flex-direction: column;
 `
+
+const MotiveButton = styled.button`
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  margin-right: 20px;
+`
