@@ -24,6 +24,7 @@ const SectionStyled = styled.section`
   border-radius: 5px;
   padding: 15px;
   position: relative;
+  margin-bottom: 30px;
 
   button {
     padding: 0;

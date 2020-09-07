@@ -20,6 +20,7 @@ export default function Result({ resultData }) {
           Ansprechpartner &gt;
         </TextLink>
       </NoticeBox>
+      <img src="/img/style_info.svg" alt="" />
       <HeadlineUnderline>
         <h1>Ergebnis</h1>
       </HeadlineUnderline>
