@@ -43,7 +43,7 @@ export default function () {
           </p>
         </li>
       </ul>
-      <FixedButton to="/motives">
+      <FixedButton to="/motives/intro">
         <Button btnType="primary">Test starten</Button>
       </FixedButton>
       <small>

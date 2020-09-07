@@ -29,10 +29,10 @@ export default function Questionnaire({ testIds }) {
     <>
       <h1>Fragebogen {questionRound + 1} / 2</h1>
       <p>"{personalityStyleData[currentTestIndex]?.name}"</p>
-      <h3>
+      <h2>
         Frage {currentQuestionIndex + 1} / {questions.length}
-      </h3>
-      <h2>{questions[currentQuestionIndex]}</h2>
+      </h2>
+      <h3>{questions[currentQuestionIndex]}</h3>
       <button onClick={() => handleAnswer(false)}>(Eher) Nein</button>
       <button onClick={() => handleAnswer(true)}>(Eher) Ja</button>
     </>
@@ -41,7 +41,9 @@ export default function Questionnaire({ testIds }) {
   function handleAnswer(answer) {
     if (currentQuestionIndex === questions.length - 1) {
       setQuestionRound(questionRound + 1)
-      setResultUrl(resultUrl + (currentTestIndex + 1) + countYes(answers))
+      setResultUrl(
+        resultUrl + (currentTestIndex + 1) + countYes([...answers, answer])
+      )
       setCurrentQuestionIndex(0)
       setAnswers([])
     } else {

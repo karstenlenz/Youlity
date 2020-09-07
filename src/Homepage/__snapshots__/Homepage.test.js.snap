@@ -48,11 +48,10 @@ exports[`The Homepage component renders correctly 1`] = `
     </li>
   </ul>
   <a
-    href="/motives"
+    href="/motives/intro"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 gDehLW"
-      disabled=""
+      class="sc-AxjAm jYhWme"
     >
       Test starten
     </button>
