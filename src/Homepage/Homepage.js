@@ -1,5 +1,9 @@
 import React from 'react'
 import Button from '../common/Button'
+<<<<<<< HEAD
+=======
+import { Link } from 'react-router-dom'
+>>>>>>> feat/homepage
 
 export default function () {
   return (
@@ -37,9 +41,9 @@ export default function () {
           </p>
         </li>
       </ul>
-      <a href="/motives">
+      <Link to="/motives/intro">
         <Button>Test starten</Button>
-      </a>
+      </Link>
       <small>
         Hinweis: Dieser Test ersetzt keine psychologische Beratung. Lorem
         ipsum….
