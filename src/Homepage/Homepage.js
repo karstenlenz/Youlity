@@ -47,13 +47,18 @@ export default function () {
       <FixedButton to="/motives/intro">
         <Button btnType="primary">Test starten</Button>
       </FixedButton>
-      <small>
+      <FinePrint>
         Hinweis: Dieser Test ersetzt keine psychologische Beratung. Lorem
         ipsum….
-      </small>
+      </FinePrint>
     </>
   )
 }
+
+const FinePrint = styled.small`
+  display: block;
+  margin-bottom: 80px;
+`
 
 const FixedButton = styled(Link)`
   position: fixed;
