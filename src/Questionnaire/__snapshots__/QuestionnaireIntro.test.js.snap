@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The QuestionnaireIntro component renders correctly 1`] = `
+<div>
+  <h1>
+    Schritt 2: Fragebogen
+  </h1>
+  <img
+    alt=""
+    src="/img/questionnaire-intro.svg"
+  />
+  <p>
+    Durch die Auswahl Ihrer Bedürfnisse haben wir 2 potentielle Persönlichkeitsstile identifiziert. 
+    <br />
+     Bitte füllen Sie jeweils einen Fragebogen aus, um die Ausprägung des jeweiligen Stils bei Ihnen zu testen. Es werden jeweils 8 Ja/Nein-Fragen gestellt. Pro Bogen dauert es ca. 3 Minuten. Die Reaktionszeit spielt keine Rolle, Sie können den Bogen in Ruhe ausfüllen.
+  </p>
+  <button
+    class="sc-AxjAm exTVOo"
+  >
+    Weiter zum Fragebogen
+  </button>
+</div>
+`;

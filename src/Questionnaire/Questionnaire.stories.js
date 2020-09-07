@@ -6,6 +6,6 @@ export default {
   component: Questionnaire,
 }
 
-export const NarzisstischDependent = () => {
+export const QuestionnaireComponent = () => {
   return <Questionnaire testIds={[1, 4, 3, 6]} />
 }
