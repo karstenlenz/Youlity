@@ -7,10 +7,21 @@ exports[`renders correctly 1`] = `
       alt=""
       src="/img/mirror.svg"
     />
-    <h1>
-      Entdecken Sie Ihren Persönlichkeitsstil!
-    </h1>
-    <ul>
+    <section
+      class="sc-Axmtr dXgRrs"
+    >
+      <h1>
+        Entdecken Sie Ihren Persönlichkeitsstil!
+      </h1>
+      <svg
+        class="sc-AxmLO gLQGbO"
+      >
+        underline.svg
+      </svg>
+    </section>
+    <ul
+      class="sc-fzozJi cdtgXO"
+    >
       <li>
         Lernen Sie sich selbst kennen, mit Ihren eigenen Stärken und Schwächen!
       </li>
@@ -18,9 +29,18 @@ exports[`renders correctly 1`] = `
         Erhalten Sie wertvolle Tipps zum Umgang mit Ihren Mitmenschen, egal ob im Beruf oder in privaten Beziehungen!
       </li>
     </ul>
-    <h2>
-      Unser Versprechen
-    </h2>
+    <section
+      class="sc-Axmtr dXgRrs"
+    >
+      <h2>
+        Unser Versprechen
+      </h2>
+      <svg
+        class="sc-AxmLO gLQGbO"
+      >
+        underline.svg
+      </svg>
+    </section>
     <ul>
       <li>
         <h3>
@@ -31,7 +51,6 @@ exports[`renders correctly 1`] = `
         </p>
       </li>
       <li>
-         
         <h3>
           Schnell
         </h3>
@@ -49,26 +68,15 @@ exports[`renders correctly 1`] = `
       </li>
     </ul>
     <a
+      class="sc-fzoLsD hGfoKX"
       href="/motives/intro"
     >
       <button
-        class="sc-AxjAm jYhWme"
+        class="Button__BtnStyled-sc-129yfz5-0 gDehLW"
       >
         Test starten
       </button>
     </a>
-    <button
-      class="Button__BtnStyled-sc-129yfz5-0 RogES"
-      disabled=""
-    >
-      Secondary Button
-    </button>
-    <button
-      class="Button__BtnStyled-sc-129yfz5-0 gQjzaG"
-      disabled=""
-    >
-      White Button
-    </button>
     <small>
       Hinweis: Dieser Test ersetzt keine psychologische Beratung. Lorem ipsum….
     </small>

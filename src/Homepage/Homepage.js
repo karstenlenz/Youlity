@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Button from '../common/Button'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 import styled from 'styled-components'
+import BulletList from '../common/BulletList'
 
 export default function () {
   return (
@@ -11,7 +12,7 @@ export default function () {
       <HeadlineUnderline>
         <h1>Entdecken Sie Ihren Persönlichkeitsstil!</h1>
       </HeadlineUnderline>
-      <ul>
+      <BulletList listType="bullet_circle">
         <li>
           Lernen Sie sich selbst kennen, mit Ihren eigenen Stärken und
           Schwächen!
@@ -20,11 +21,11 @@ export default function () {
           Erhalten Sie wertvolle Tipps zum Umgang mit Ihren Mitmenschen, egal ob
           im Beruf oder in privaten Beziehungen!
         </li>
-      </ul>
+      </BulletList>
       <HeadlineUnderline>
         <h2>Unser Versprechen</h2>
       </HeadlineUnderline>
-      <ul>
+      <BulletList listType="bullet_checkmark">
         <li>
           <h3>Seriös</h3>
           <p>
@@ -42,7 +43,7 @@ export default function () {
             sicher.
           </p>
         </li>
-      </ul>
+      </BulletList>
       <FixedButton to="/motives/intro">
         <Button btnType="primary">Test starten</Button>
       </FixedButton>
