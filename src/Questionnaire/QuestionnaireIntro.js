@@ -1,11 +1,14 @@
 import React from 'react'
 import Button from '../common/Button'
+import HeadlineUnderline from '../common/HeadlineUnderline'
 
 export default function QuestionnaireIntro({ onButtonClick }) {
   return (
     <>
-      <h1>Schritt 2: Fragebogen</h1>
       <img alt="" src="/img/questionnaire-intro.svg" />
+      <HeadlineUnderline>
+        <h1>Schritt 2: Fragebogen</h1>
+      </HeadlineUnderline>
       <p>
         Durch die Auswahl Ihrer Bedürfnisse haben wir 2 potentielle
         Persönlichkeitsstile identifiziert. <br /> Bitte füllen Sie jeweils
