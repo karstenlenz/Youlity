@@ -1,7 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
+import HeadlineUnderline from '../common/HeadlineUnderline'
 import NoticeBox from '../common/NoticeBox'
+import TextLink from '../common/TextLink'
+import { capitalizeFirstLetter } from '../common/util'
 import { personalityStyleData } from '../data/personalityStyleData'
+import styled from 'styled-components'
 
 export default function Result({ resultData }) {
   return (
@@ -13,46 +16,52 @@ export default function Result({ resultData }) {
           psychologische Beratung. Wenn Sie sich unwohl fühlen, holen Sie sich
           professionelle Hilfe.
         </p>
-        <a href="https://www.psychenet.de/de/hilfe-finden/schnelle-hilfe/krisenanlaufstellen.html">
-          Ansprechpartner
-        </a>
+        <TextLink href="https://www.psychenet.de/de/hilfe-finden/schnelle-hilfe/krisenanlaufstellen.html">
+          Ansprechpartner &gt;
+        </TextLink>
       </NoticeBox>
-      <h1>Ergebnis</h1>
-      <p>Sie haben eben Tests für folgende Persönlichkeitsstile ausgefüllt</p>
-      <ul>
-        {resultData.map((result) => {
-          return (
-            <li key={result.id}>
-              <h3> {personalityStyleData[result.id - 1]?.name}</h3>
-              <p>
-                Sie haben {result.yesCount} von{' '}
-                {personalityStyleData[result.id - 1].questions.length} Fragen
-                mit "Ja" beantwortet.
-              </p>
-              {result.yesCount > 5 ? (
-                <>
-                  <p>
-                    Das deutet darauf hin, dass dieser Stil bei Ihnen
-                    überdurchschnittlich ausgeprägt ist. <br />
-                    Das heißt nicht, dass etwas mit Ihnen „nicht stimmt“, oder
-                    eine Störung vorliegt! Jeder Mensch hat einen oder mehrere
-                    dominante Persönlichkeitsstile. Erst wenn Sie unter Ihrer
-                    Persönlichkeit leiden, besteht Handlungsbedarf. <br />
-                    Wir haben Ihnen die wichtigsten Informationen und Tipps zu
-                    diesem Stil zusammengestellt.
-                  </p>
-                  <a href={'/style-info/' + result.id}>Zu den Informationen</a>
-                </>
-              ) : (
+      <HeadlineUnderline>
+        <h1>Ergebnis</h1>
+      </HeadlineUnderline>
+      <ResultIntro>
+        Sie haben eben Tests für folgende Persönlichkeitsstile ausgefüllt:
+      </ResultIntro>
+      {resultData.map((result) => {
+        return (
+          <ResultSection key={result.id}>
+            <h3>
+              {capitalizeFirstLetter(personalityStyleData[result.id - 1]?.name)}
+            </h3>
+            <p>
+              Sie haben {result.yesCount} von{' '}
+              {personalityStyleData[result.id - 1].questions.length} Fragen mit
+              "Ja" beantwortet.
+            </p>
+            {result.yesCount > 5 ? (
+              <>
                 <p>
-                  Das deutet <strong>nicht</strong> darauf hin, dass dieser Stil
-                  bei Ihnen überdurchschnittlich ausgeprägt ist.
+                  Das deutet darauf hin, dass dieser Stil bei Ihnen
+                  überdurchschnittlich ausgeprägt ist. <br />
+                  Das heißt nicht, dass etwas mit Ihnen „nicht stimmt“, oder
+                  eine Störung vorliegt! Jeder Mensch hat einen oder mehrere
+                  dominante Persönlichkeitsstile. Erst wenn Sie unter Ihrer
+                  Persönlichkeit leiden, besteht Handlungsbedarf. <br />
+                  Wir haben Ihnen die wichtigsten Informationen und Tipps zu
+                  diesem Stil zusammengestellt.
                 </p>
-              )}
-            </li>
-          )
-        })}
-      </ul>
+                <a href={'/style-info/' + result.id}>
+                  Zu den Informationen &gt;
+                </a>
+              </>
+            ) : (
+              <p>
+                Das deutet <strong>nicht</strong> darauf hin, dass dieser Stil
+                bei Ihnen überdurchschnittlich ausgeprägt ist.
+              </p>
+            )}
+          </ResultSection>
+        )
+      })}
       <p>
         Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese Seite
         im Browser als Lesezeichen speichern, um diese Informationen erneut
@@ -62,14 +71,12 @@ export default function Result({ resultData }) {
   )
 }
 
-const Notice = styled.section`
-  background: #ddd;
-  border: 1px solid black;
-  padding: 15px;
-  position: relative;
+const ResultIntro = styled.p`
+  margin-bottom: 40px;
+`
 
-  button {
-    position: absolute;
-    right: 10px;
-  }
+const ResultSection = styled.section`
+  background: var(--light-grey);
+  margin: -15px -15px 60px -15px;
+  padding: 1px 15px 30px 15px;
 `
