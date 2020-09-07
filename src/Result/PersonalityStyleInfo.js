@@ -54,11 +54,12 @@ export default function PersonalityStyleInfo() {
           )
         })}
       </BulletList>
-      <section>
+      <HelpSection>
         <h2>Hier gibt es Hilfe</h2>
         <p>
           Falls Sie unter Ihrem Persönlichkeitsstil leiden, holen Sie sich
-          Hilfe! Hier sind erste Anlaufstellen:
+          Hilfe! <br />
+          Hier sind erste Anlaufstellen:
         </p>
         <ul>
           {currentStyleData.help.map((help, index) => {
@@ -69,7 +70,7 @@ export default function PersonalityStyleInfo() {
             )
           })}
         </ul>
-      </section>
+      </HelpSection>
     </>
   )
 }
@@ -84,4 +85,10 @@ const HeadlineNoMarginTop = styled.h2`
 `
 const SectionNoBG = styled.section`
   margin-bottom: 40px;
+`
+
+const HelpSection = styled.section`
+  background: var(--secondary);
+  padding: 15px;
+  border-radius: 5px;
 `
