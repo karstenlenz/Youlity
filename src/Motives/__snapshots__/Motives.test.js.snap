@@ -23,38 +23,78 @@ exports[`The Motives component renders correctly 1`] = `
     </li>
   </ol>
   <section
-    class="sc-AxirZ jQdDrD"
+    class="sc-AxgMl ktHXpk"
   >
-    <button
-      class="sc-AxjAm exTVOo"
+    <div
+      class="sc-AxhUy enhySx"
     >
-      Anerkennung
-    </button>
-    <button
-      class="sc-AxjAm exTVOo"
+      <button
+        class="sc-AxheI lgwtEg"
+      >
+        Anerkennung
+      </button>
+      <button
+        class="sc-AxirZ bMqjWG"
+      >
+        i
+      </button>
+    </div>
+    <div
+      class="sc-AxhUy enhySx"
     >
-      Wichtigkeit
-    </button>
-    <button
-      class="sc-AxjAm exTVOo"
+      <button
+        class="sc-AxheI lgwtEg"
+      >
+        Wichtigkeit
+      </button>
+      <button
+        class="sc-AxirZ bMqjWG"
+      >
+        i
+      </button>
+    </div>
+    <div
+      class="sc-AxhUy enhySx"
     >
-      Verlässlichkeit
-    </button>
-    <button
-      class="sc-AxjAm exTVOo"
+      <button
+        class="sc-AxheI lgwtEg"
+      >
+        Solidarität
+      </button>
+      <button
+        class="sc-AxirZ bMqjWG"
+      >
+        i
+      </button>
+    </div>
+    <div
+      class="sc-AxhUy enhySx"
     >
-      Solidarität
-    </button>
-    <button
-      class="sc-AxjAm exTVOo"
+      <button
+        class="sc-AxheI lgwtEg"
+      >
+        Autonomie
+      </button>
+      <button
+        class="sc-AxirZ bMqjWG"
+      >
+        i
+      </button>
+    </div>
+    <div
+      class="sc-AxhUy enhySx"
     >
-      Autonomie
-    </button>
-    <button
-      class="sc-AxjAm exTVOo"
-    >
-      Grenzen
-    </button>
+      <button
+        class="sc-AxheI lgwtEg"
+      >
+        Grenzen
+      </button>
+      <button
+        class="sc-AxirZ bMqjWG"
+      >
+        i
+      </button>
+    </div>
   </section>
 </div>
 `;
