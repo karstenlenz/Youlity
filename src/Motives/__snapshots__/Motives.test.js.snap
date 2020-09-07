@@ -95,6 +95,36 @@ exports[`The Motives component renders correctly 1`] = `
         i
       </button>
     </div>
+    <button
+      class="sc-AxjAm jYhWme"
+    >
+      Anerkennung
+    </button>
+    <button
+      class="sc-AxjAm jYhWme"
+    >
+      Wichtigkeit
+    </button>
+    <button
+      class="sc-AxjAm jYhWme"
+    >
+      Verlässlichkeit
+    </button>
+    <button
+      class="sc-AxjAm jYhWme"
+    >
+      Solidarität
+    </button>
+    <button
+      class="sc-AxjAm jYhWme"
+    >
+      Autonomie
+    </button>
+    <button
+      class="sc-AxjAm jYhWme"
+    >
+      Grenzen
+    </button>
   </section>
 </div>
 `;

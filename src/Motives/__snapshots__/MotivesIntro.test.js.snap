@@ -19,6 +19,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
   >
     <button
       class="sc-AxjAm exTVOo"
+      class="sc-AxjAm jYhWme"
     >
       Weiter zur Motivauswahl
     </button>
