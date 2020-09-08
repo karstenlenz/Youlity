@@ -2,7 +2,7 @@
 
 Final project for the web development bootcamp @ neue fische.
 
-Test-URL (master): [capstone-project-puce.vercel.app](capstone-project-puce.vercel.app)
+Test-URL (master): [capstone-project-puce.vercel.app](https://capstone-project-puce.vercel.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
