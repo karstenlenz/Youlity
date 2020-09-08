@@ -7,5 +7,5 @@ export default function TextLink({ children, href }) {
 
 const LinkStyled = styled.a`
   text-decoration: underline;
-  color: var(--primary);
+  color: black;
 `

@@ -74,12 +74,13 @@ p {
 a {
     cursor:pointer;
     color:black;
-    text-decoration:underline;
+    text-decoration:none;
     }
 
 button 
     {
     cursor:pointer;    
+    text-decoration:none;
     }
 
 img {

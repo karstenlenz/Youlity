@@ -6,6 +6,7 @@ import HeadlineUnderline from '../common/HeadlineUnderline'
 import styled from 'styled-components/macro'
 import SectionBG from '../common/SectionBG'
 import BulletList from '../common/BulletList'
+import TextLink from '../common/TextLink'
 
 export default function PersonalityStyleInfo() {
   const { styleId } = useParams()
@@ -49,7 +50,7 @@ export default function PersonalityStyleInfo() {
         {currentStyleData.furtherInfo.map((info, index) => {
           return (
             <li key={index}>
-              <a href={info.url}>{info.text}</a>
+              <TextLink href={info.url}>{info.text}</TextLink>
             </li>
           )
         })}
@@ -65,7 +66,7 @@ export default function PersonalityStyleInfo() {
           {currentStyleData.help.map((help, index) => {
             return (
               <li key={index}>
-                <a href={help.url}>{help.text}</a>
+                <TextLink href={help.url}>{help.text}</TextLink>
               </li>
             )
           })}
