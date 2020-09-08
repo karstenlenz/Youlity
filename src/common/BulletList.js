@@ -18,7 +18,7 @@ const ListContainer = styled.ul`
   }
 
   h3 {
-    margin: 0 0 0 0;
+    margin: 0;
     text-align: left;
   }
 
