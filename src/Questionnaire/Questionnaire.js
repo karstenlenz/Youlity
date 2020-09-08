@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import { personalityStyleData } from '../data/personalityStyleData'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 import Button from '../common/Button'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 export default function Questionnaire({ testIds }) {
   const history = useHistory()

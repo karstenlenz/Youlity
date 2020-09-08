@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { personalityStyleData } from '../data/personalityStyleData'
 import { capitalizeFirstLetter } from '../common/util'
 import HeadlineUnderline from '../common/HeadlineUnderline'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import SectionBG from '../common/SectionBG'
 import BulletList from '../common/BulletList'
 

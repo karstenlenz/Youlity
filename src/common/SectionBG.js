@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 export default function SectionBG({ children, className }) {
   return <Background className={className}>{children}</Background>

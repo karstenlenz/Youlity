@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import BulletList from '../common/BulletList'
 import Button from '../common/Button'
 import FloatingButtonContainer from '../common/FloatingButtonContainer'

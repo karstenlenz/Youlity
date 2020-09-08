@@ -4,7 +4,7 @@ import NoticeBox from '../common/NoticeBox'
 import TextLink from '../common/TextLink'
 import { capitalizeFirstLetter } from '../common/util'
 import { personalityStyleData } from '../data/personalityStyleData'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import SectionBG from '../common/SectionBG'
 
 export default function Result({ resultData }) {

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 export default function BulletList({ children, listType = 'bullet_circle' }) {
   return <ListContainer listType={listType}>{children}</ListContainer>
