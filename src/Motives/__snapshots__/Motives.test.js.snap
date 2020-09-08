@@ -7,13 +7,13 @@ exports[`The Motives component renders correctly 1`] = `
     src="/img/motives-intro.svg"
   />
   <section
-    class="sc-AxheI cDQGzf"
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 jWFWIm"
   >
     <h1>
       Schritt 1: Bedürfnisse
     </h1>
     <svg
-      class="sc-Axmtr ihTJXv"
+      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
     >
       underline.svg
     </svg>
@@ -36,10 +36,10 @@ exports[`The Motives component renders correctly 1`] = `
     </li>
   </ol>
   <section
-    class="sc-AxhUy gfXgDx"
+    class="MotiveButtons__ButtonList-sc-1u7c2an-1 eovEIL"
   >
     <div
-      class="sc-AxhCb dCFeIV"
+      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
     >
       <button
         class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
@@ -48,14 +48,14 @@ exports[`The Motives component renders correctly 1`] = `
         Anerkennung
       </button>
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
         width="100"
       >
         i
       </button>
     </div>
     <div
-      class="sc-AxhCb dCFeIV"
+      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
     >
       <button
         class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
@@ -64,14 +64,14 @@ exports[`The Motives component renders correctly 1`] = `
         Wichtigkeit
       </button>
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
         width="100"
       >
         i
       </button>
     </div>
     <div
-      class="sc-AxhCb dCFeIV"
+      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
     >
       <button
         class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
@@ -80,14 +80,14 @@ exports[`The Motives component renders correctly 1`] = `
         Solidarität
       </button>
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
         width="100"
       >
         i
       </button>
     </div>
     <div
-      class="sc-AxhCb dCFeIV"
+      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
     >
       <button
         class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
@@ -96,14 +96,14 @@ exports[`The Motives component renders correctly 1`] = `
         Autonomie
       </button>
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
         width="100"
       >
         i
       </button>
     </div>
     <div
-      class="sc-AxhCb dCFeIV"
+      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
     >
       <button
         class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
@@ -112,14 +112,14 @@ exports[`The Motives component renders correctly 1`] = `
         Grenzen
       </button>
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
         width="100"
       >
         i
       </button>
     </div>
     <div
-      class="sc-AxhCb dCFeIV"
+      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
     >
       <button
         class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
@@ -128,7 +128,7 @@ exports[`The Motives component renders correctly 1`] = `
         Verlässlichkeit
       </button>
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
         width="100"
       >
         i

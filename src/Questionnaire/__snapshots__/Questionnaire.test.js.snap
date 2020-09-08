@@ -7,7 +7,7 @@ exports[`The questionnaire component renders correctly 1`] = `
     src="/img/questionnaire-intro.svg"
   />
   <section
-    class="sc-AxjAm iFRHBp"
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 jWFWIm"
   >
     <h1>
       Fragebogen 
@@ -15,7 +15,7 @@ exports[`The questionnaire component renders correctly 1`] = `
        / 2
     </h1>
     <svg
-      class="sc-AxirZ dPwCGt"
+      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
     >
       underline.svg
     </svg>
@@ -30,7 +30,7 @@ exports[`The questionnaire component renders correctly 1`] = `
     Brauchen Sie in hohem Maße Lob und Anerkennung?
   </h3>
   <section
-    class="sc-AxiKw cGtQMs"
+    class="Questionnaire__ButtonRow-sc-13hxlgu-0 jArQLV"
   >
     <button
       class="Button__BtnStyled-sc-129yfz5-0 dhhzWY"

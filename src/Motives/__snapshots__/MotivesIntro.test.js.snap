@@ -7,13 +7,13 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     src="/img/motives-intro.svg"
   />
   <section
-    class="sc-AxiKw lkoKWO"
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 jWFWIm"
   >
     <h1>
       Schritt 1: Bedürfnisse
     </h1>
     <svg
-      class="sc-AxhCb jVLqMd"
+      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
     >
       underline.svg
     </svg>
@@ -26,7 +26,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     In Schritt 2 werden Sie dann 2 Fragebögen ausfüllen, um konkret zu prüfen, wie ausgeprägt diese Stile bei Ihnen sind.
   </p>
   <a
-    class="sc-AxjAm iwbzzY"
+    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 gXldTe"
     href="/motives/selection"
   >
     <button
@@ -37,7 +37,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     </button>
   </a>
   <div
-    class="sc-AxirZ hEBIHz"
+    class="FloatingButtonContainer__BottomSpacer-slkv4p-1 hgDFeh"
   />
 </div>
 `;
