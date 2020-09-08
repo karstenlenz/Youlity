@@ -72,8 +72,14 @@ p {
 
 
 a {
+    cursor:pointer;
     color:black;
     text-decoration:underline;
+    }
+
+button 
+    {
+    cursor:pointer;    
     }
 
 img {
