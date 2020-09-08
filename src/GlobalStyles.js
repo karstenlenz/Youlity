@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components/macro'
 
 export default createGlobalStyle`
 
@@ -10,27 +10,33 @@ body {
     font-size: 112.5%;
     margin: 0 auto;
     max-width: 900px;
+    font-family: 'Cabin', sans-serif; ;
 }
 
 main {
     padding: 15px;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align:center;
+}
+
 
 h1 {
-    font-size: 1.611em ;
+    font-size: 1.611rem ;
 }
 
 h2 {
-    font-size: 1.464em ;
+    font-size: 1.464rem ;
 }
 
 h3 {
-    font-size: 1.331em;
+    font-size: 1.331rem;
 }
 
 h4 {
-    font-size: 1.21em;
+    font-size: 1.21rem;
 }
 
 h5 {
@@ -38,11 +44,16 @@ h5 {
 }
 
 h6 {
-    font-size: 1erm;
+    font-size: 1rem;
+}
+
+p {
+    line-height:140%;
 }
 
 
 :root {
+--background:-1;
 
 --overlay-bg:100;
 --overlay-content:200;
@@ -54,5 +65,26 @@ h6 {
 --medium-grey: #B2A7B8;
 --dark-grey: #4C4452;
 
+--primary-shadow:  0 1px 6px 0 rgba(63, 0, 110, 0.16);
+--secondary-shadow:  0 1px 6px 0 rgba(0,197,170, 0.16);
+
 }
+
+
+a {
+    cursor:pointer;
+    color:black;
+    text-decoration:none;
+    }
+
+button 
+    {
+    cursor:pointer;    
+    text-decoration:none;
+    }
+
+img {
+    display:block;
+    margin:0 auto;
+    }
 `

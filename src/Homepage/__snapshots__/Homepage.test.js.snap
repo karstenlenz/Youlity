@@ -6,10 +6,21 @@ exports[`The Homepage component renders correctly 1`] = `
     alt=""
     src="/img/mirror.svg"
   />
-  <h1>
-    Entdecken Sie Ihren Persönlichkeitsstil!
-  </h1>
-  <ul>
+  <section
+    class="sc-AxhCb jZxptO"
+  >
+    <h1>
+      Entdecken Sie Ihren Persönlichkeitsstil!
+    </h1>
+    <svg
+      class="sc-AxhUy fasVGM"
+    >
+      underline.svg
+    </svg>
+  </section>
+  <ul
+    class="sc-AxjAm eaUSNQ"
+  >
     <li>
       Lernen Sie sich selbst kennen, mit Ihren eigenen Stärken und Schwächen!
     </li>
@@ -17,10 +28,21 @@ exports[`The Homepage component renders correctly 1`] = `
       Erhalten Sie wertvolle Tipps zum Umgang mit Ihren Mitmenschen, egal ob im Beruf oder in privaten Beziehungen!
     </li>
   </ul>
-  <h2>
-    Unser Versprechen
-  </h2>
-  <ul>
+  <section
+    class="sc-AxhCb jZxptO"
+  >
+    <h2>
+      Unser Versprechen
+    </h2>
+    <svg
+      class="sc-AxhUy fasVGM"
+    >
+      underline.svg
+    </svg>
+  </section>
+  <ul
+    class="sc-AxjAm csgEXJ"
+  >
     <li>
       <h3>
         Seriös
@@ -30,7 +52,6 @@ exports[`The Homepage component renders correctly 1`] = `
       </p>
     </li>
     <li>
-       
       <h3>
         Schnell
       </h3>
@@ -47,17 +68,24 @@ exports[`The Homepage component renders correctly 1`] = `
       </p>
     </li>
   </ul>
+  <small
+    class="sc-AxgMl euRGDb"
+  >
+    Hinweis: Dieser Test ersetzt keine psychologische Beratung. Wenn Sie unter psychischen Problemen leiden, suchen Sie sich bitte professionelle Hilfe.
+  </small>
   <a
+    class="sc-AxirZ iZNiSb"
     href="/motives/intro"
   >
     <button
-      class="sc-AxjAm jYhWme"
+      class="Button__BtnStyled-sc-129yfz5-0 fyEIpZ"
+      width="100"
     >
       Test starten
     </button>
   </a>
-  <small>
-    Hinweis: Dieser Test ersetzt keine psychologische Beratung. Lorem ipsum….
-  </small>
+  <div
+    class="sc-AxiKw gsqiqz"
+  />
 </div>
 `;

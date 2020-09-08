@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import MotiveButtons from './MotiveButtons'
 import { evaluateMatchingStyles } from './util'
+import HeadlineUnderline from '../common/HeadlineUnderline'
 
 export default function Motives() {
   const [userMotives, setUserMotives] = useState([])
@@ -19,10 +20,12 @@ export default function Motives() {
 
   return (
     <>
-      <h1>Bedürfnisse</h1>
+      <img alt="" src="/img/motives-intro.svg" />
+      <HeadlineUnderline>
+        <h1>Schritt 1: Bedürfnisse</h1>
+      </HeadlineUnderline>
       <h2>
         Bitte wählen Sie die 3 Bedürfnisse aus, die Ihnen am wichtigsten sind.
-        Fangen Sie mit dem wichtigsten an.
       </h2>
       <ol>
         <li> {userMotives[0]} </li>

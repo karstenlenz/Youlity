@@ -2,20 +2,30 @@
 
 exports[`The QuestionnaireIntro component renders correctly 1`] = `
 <div>
-  <h1>
-    Schritt 2: Fragebogen
-  </h1>
   <img
     alt=""
     src="/img/questionnaire-intro.svg"
   />
+  <section
+    class="sc-AxjAm iFRHBp"
+  >
+    <h1>
+      Schritt 2: Fragebogen
+    </h1>
+    <svg
+      class="sc-AxirZ dPwCGt"
+    >
+      underline.svg
+    </svg>
+  </section>
   <p>
     Durch die Auswahl Ihrer Bedürfnisse haben wir 2 potentielle Persönlichkeitsstile identifiziert. 
     <br />
      Bitte füllen Sie jeweils einen Fragebogen aus, um die Ausprägung des jeweiligen Stils bei Ihnen zu testen. Es werden jeweils 8 Ja/Nein-Fragen gestellt. Pro Bogen dauert es ca. 3 Minuten. Die Reaktionszeit spielt keine Rolle, Sie können den Bogen in Ruhe ausfüllen.
   </p>
   <button
-    class="sc-AxjAm exTVOo"
+    class="Button__BtnStyled-sc-129yfz5-0 fyEIpZ"
+    width="100"
   >
     Weiter zum Fragebogen
   </button>

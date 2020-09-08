@@ -2,16 +2,24 @@
 
 exports[`The questionnaire component renders correctly 1`] = `
 <div>
-  <h1>
-    Fragebogen 
-    1
-     / 2
-  </h1>
-  <p>
-    "
-    der narzisstische Persönlichkeitsstil
-    "
-  </p>
+  <img
+    alt=""
+    src="/img/questionnaire-intro.svg"
+  />
+  <section
+    class="sc-AxjAm iFRHBp"
+  >
+    <h1>
+      Fragebogen 
+      1
+       / 2
+    </h1>
+    <svg
+      class="sc-AxirZ dPwCGt"
+    >
+      underline.svg
+    </svg>
+  </section>
   <h2>
     Frage 
     1
@@ -21,11 +29,21 @@ exports[`The questionnaire component renders correctly 1`] = `
   <h3>
     Brauchen Sie in hohem Maße Lob und Anerkennung?
   </h3>
-  <button>
-    (Eher) Nein
-  </button>
-  <button>
-    (Eher) Ja
-  </button>
+  <section
+    class="sc-AxiKw cGtQMs"
+  >
+    <button
+      class="Button__BtnStyled-sc-129yfz5-0 dhhzWY"
+      width="47.5"
+    >
+      (Eher) Nein
+    </button>
+    <button
+      class="Button__BtnStyled-sc-129yfz5-0 dhhzWY"
+      width="47.5"
+    >
+      (Eher) Ja
+    </button>
+  </section>
 </div>
 `;

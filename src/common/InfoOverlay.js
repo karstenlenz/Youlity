@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
+import Button from './Button'
 
 export default function InfoOverlay({ children }) {
   const [isOverlayVisible, setIsOverlayVisible] = useState(false)
@@ -11,13 +12,17 @@ export default function InfoOverlay({ children }) {
         <>
           <OverLayBG onClick={toggleOverlay} />
           <OverlayContent>
-            <button onClick={toggleOverlay}>X</button>
+            <button onClick={toggleOverlay}>
+              <img alt="close overlay" src="/img/close.svg" />
+            </button>
             {children}
           </OverlayContent>
         </>
       )}
 
-      <InfoButton onClick={toggleOverlay}>i</InfoButton>
+      <InfoButton btnType="white" onClick={toggleOverlay}>
+        i
+      </InfoButton>
     </>
   )
 
@@ -26,8 +31,10 @@ export default function InfoOverlay({ children }) {
   }
 }
 
-const InfoButton = styled.button`
-  width: 20%;
+const InfoButton = styled(Button)`
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
 `
 
 const OverLayBG = styled.div`
@@ -46,17 +53,17 @@ const OverlayContent = styled.section`
   top: 30px;
   left: 30px;
   right: 30px;
-  background: var(--light-grey);
+  border-radius: 10px;
+  background: white;
   z-index: var(--overlay-content);
   opacity: 1;
-  border: 1px solid black;
   padding: 15px;
 
   button {
-    font-size: 1.331em;
+    padding: 0;
     position: absolute;
-    right: 2px;
-    top: 2px;
+    right: 10px;
+    top: 10px;
     background: none;
     border: none;
   }

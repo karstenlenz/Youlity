@@ -1,6 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import InfoOverlay from '../common/InfoOverlay'
+import Button from '../common/Button'
 
 export default function MotiveButtons({ handleMotiveClick }) {
   const motiveData = [
@@ -74,29 +75,6 @@ export default function MotiveButtons({ handleMotiveClick }) {
       },
     },
     {
-      name: 'Verlässlichkeit',
-      description: () => {
-        return (
-          <>
-            <p>
-              Das Bedürfnis nach Verlässlichkeit bedeutet, Lorem ipsum dolor sit
-              amet consectetur, adipisicing elit. Ipsum sit quod accusantium
-              voluptatibus tenetur dolor? Necessitatibus, debitis unde
-              repellendus non cupiditate doloribus? Accusantium debitis
-              temporibus vel aut, consectetur distinctio! Obcaecati eum vel
-              natus mollitia voluptatibus ullam quae esse sit tempora.
-            </p>
-            <ul>
-              <li>„Du bist als lorem“</li>
-              <li>„Du bist ipsum.“</li>
-              <li>„Du siehst dolor aus.“</li>
-              <li>„Du bist sit.“</li>
-            </ul>
-          </>
-        )
-      },
-    },
-    {
       name: 'Autonomie',
       description: () => {
         return (
@@ -142,6 +120,29 @@ export default function MotiveButtons({ handleMotiveClick }) {
         )
       },
     },
+    {
+      name: 'Verlässlichkeit',
+      description: () => {
+        return (
+          <>
+            <p>
+              Das Bedürfnis nach Grenzen bedeutet, Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Ipsum sit quod accusantium
+              voluptatibus tenetur dolor? Necessitatibus, debitis unde
+              repellendus non cupiditate doloribus? Accusantium debitis
+              temporibus vel aut, consectetur distinctio! Obcaecati eum vel
+              natus mollitia voluptatibus ullam quae esse sit tempora.
+            </p>
+            <ul>
+              <li>„Du bist als lorem“</li>
+              <li>„Du bist ipsum.“</li>
+              <li>„Du siehst dolor aus.“</li>
+              <li>„Du bist sit.“</li>
+            </ul>
+          </>
+        )
+      },
+    },
   ]
 
   return (
@@ -149,11 +150,12 @@ export default function MotiveButtons({ handleMotiveClick }) {
       {motiveData.map((motive) => {
         return (
           <ButtonPair key={motive.name}>
-            <MotiveButton
+            <Button
+              btnType="white"
               onClick={(event) => handleMotiveClick(event, motive.name)}
             >
               {motive.name}
-            </MotiveButton>
+            </Button>
             <InfoOverlay>{motive.description()}</InfoOverlay>
           </ButtonPair>
         )
@@ -163,18 +165,13 @@ export default function MotiveButtons({ handleMotiveClick }) {
 }
 
 const ButtonPair = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr auto;
 `
 
 const ButtonList = styled.section`
   display: flex;
   flex-direction: column;
-
-  button {
-    height: 40px;
-    margin-bottom: 20px;
-  }
 `
 
 const MotiveButton = styled.button`

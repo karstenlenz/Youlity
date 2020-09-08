@@ -2,11 +2,24 @@
 
 exports[`The Motives component renders correctly 1`] = `
 <div>
-  <h1>
-    Bedürfnisse
-  </h1>
+  <img
+    alt=""
+    src="/img/motives-intro.svg"
+  />
+  <section
+    class="sc-AxheI cDQGzf"
+  >
+    <h1>
+      Schritt 1: Bedürfnisse
+    </h1>
+    <svg
+      class="sc-Axmtr ihTJXv"
+    >
+      underline.svg
+    </svg>
+  </section>
   <h2>
-    Bitte wählen Sie die 3 Bedürfnisse aus, die Ihnen am wichtigsten sind. Fangen Sie mit dem wichtigsten an.
+    Bitte wählen Sie die 3 Bedürfnisse aus, die Ihnen am wichtigsten sind.
   </h2>
   <ol>
     <li>
@@ -23,108 +36,104 @@ exports[`The Motives component renders correctly 1`] = `
     </li>
   </ol>
   <section
-    class="sc-AxgMl ktHXpk"
+    class="sc-AxhUy gfXgDx"
   >
     <div
-      class="sc-AxhUy enhySx"
+      class="sc-AxhCb dCFeIV"
     >
       <button
-        class="sc-AxheI lgwtEg"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
+        width="100"
       >
         Anerkennung
       </button>
       <button
-        class="sc-AxirZ bMqjWG"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        width="100"
       >
         i
       </button>
     </div>
     <div
-      class="sc-AxhUy enhySx"
+      class="sc-AxhCb dCFeIV"
     >
       <button
-        class="sc-AxheI lgwtEg"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
+        width="100"
       >
         Wichtigkeit
       </button>
       <button
-        class="sc-AxirZ bMqjWG"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        width="100"
       >
         i
       </button>
     </div>
     <div
-      class="sc-AxhUy enhySx"
+      class="sc-AxhCb dCFeIV"
     >
       <button
-        class="sc-AxheI lgwtEg"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
+        width="100"
       >
         Solidarität
       </button>
       <button
-        class="sc-AxirZ bMqjWG"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        width="100"
       >
         i
       </button>
     </div>
     <div
-      class="sc-AxhUy enhySx"
+      class="sc-AxhCb dCFeIV"
     >
       <button
-        class="sc-AxheI lgwtEg"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
+        width="100"
       >
         Autonomie
       </button>
       <button
-        class="sc-AxirZ bMqjWG"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        width="100"
       >
         i
       </button>
     </div>
     <div
-      class="sc-AxhUy enhySx"
+      class="sc-AxhCb dCFeIV"
     >
       <button
-        class="sc-AxheI lgwtEg"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
+        width="100"
       >
         Grenzen
       </button>
       <button
-        class="sc-AxirZ bMqjWG"
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        width="100"
       >
         i
       </button>
     </div>
-    <button
-      class="sc-AxjAm jYhWme"
+    <div
+      class="sc-AxhCb dCFeIV"
     >
-      Anerkennung
-    </button>
-    <button
-      class="sc-AxjAm jYhWme"
-    >
-      Wichtigkeit
-    </button>
-    <button
-      class="sc-AxjAm jYhWme"
-    >
-      Verlässlichkeit
-    </button>
-    <button
-      class="sc-AxjAm jYhWme"
-    >
-      Solidarität
-    </button>
-    <button
-      class="sc-AxjAm jYhWme"
-    >
-      Autonomie
-    </button>
-    <button
-      class="sc-AxjAm jYhWme"
-    >
-      Grenzen
-    </button>
+      <button
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
+        width="100"
+      >
+        Verlässlichkeit
+      </button>
+      <button
+        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ sc-AxjAm fDpsBW"
+        width="100"
+      >
+        i
+      </button>
+    </div>
   </section>
 </div>
 `;
