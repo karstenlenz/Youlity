@@ -1,12 +1,11 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { personalityStyleData } from '../data/personalityStyleData'
-import { capitalizeFirstLetter } from '../common/util'
-import HeadlineUnderline from '../common/HeadlineUnderline'
 import styled from 'styled-components/macro'
-import SectionBG from '../common/SectionBG'
 import BulletList from '../common/BulletList'
+import HeadlineUnderline from '../common/HeadlineUnderline'
+import SectionBG from '../common/SectionBG'
 import TextLink from '../common/TextLink'
+import { personalityStyleData } from '../data/personalityStyleData'
 
 export default function PersonalityStyleInfo() {
   const { styleId } = useParams()
@@ -15,7 +14,7 @@ export default function PersonalityStyleInfo() {
   return (
     <>
       <HeadlineUnderline>
-        <h1>{capitalizeFirstLetter(currentStyleData.name)}</h1>
+        <h1>{currentStyleData.commonName}</h1>
       </HeadlineUnderline>
       <SectionNoBG>
         <HeadlineNoMarginTop>Einleitung</HeadlineNoMarginTop>
