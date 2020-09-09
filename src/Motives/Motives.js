@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom'
 import MotiveButtons from './MotiveButtons'
 import { evaluateMatchingStyles } from './util'
 import HeadlineUnderline from '../common/HeadlineUnderline'
+import styled from 'styled-components'
 
 export default function Motives() {
   const [userMotives, setUserMotives] = useState([])
@@ -24,9 +25,11 @@ export default function Motives() {
       <HeadlineUnderline>
         <h1>Schritt 1: Bedürfnisse</h1>
       </HeadlineUnderline>
-      <h2>
-        Bitte wählen Sie die 3 Bedürfnisse aus, die Ihnen am wichtigsten sind.
-      </h2>
+      <SmallH2>
+        Wählen Sie bitte intuitiv die drei Bedürfnisse aus, die für Sie am
+        Wichtigsten sind. Entscheiden Sie sich für die Begriffe, die Sie zuerst
+        ansprechen.
+      </SmallH2>
       <ol>
         <li> {userMotives[0]} </li>
         <li> {userMotives[1]} </li>
@@ -42,3 +45,5 @@ export default function Motives() {
     setUserMotives([...userMotives, motive])
   }
 }
+
+const SmallH2 = styled.h4``

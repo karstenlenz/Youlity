@@ -11,15 +11,19 @@ export default function MotivesIntro() {
         <h1>Schritt 1: Bedürfnisse</h1>
       </HeadlineUnderline>
       <p>
-        Die Persönlichkeit jedes Menschen ist von 6 Grundbedürfnissen bestimmt.
-        Dabei gibt es bei jedem von uns eine unterschiedliche Gewichtung.
+        Leben heißt, in Beziehung zu gehen. Wie Menschen in Beziehung gehen,
+        hängt stark von ihrer Persönlichkeit ab. Dabei spielen sechs
+        Grundbedürfnisse eine zentrale Rolle. Welche Grundbedürfnisse für
+        Menschen bedeutsam werden, entscheidet sich in ihrer Lebensgeschichte.
+        Die Persönlichkeit jedes Menschen ist ein Ergebnis aus der Gewichtung
+        dieser sechs Grundbedürfnisse.
         <br />
-        In Schritt 1 müssen Sie für sich die wichtigsten drei Themen auswählen,
-        die Sie in Ihrem Leben und Ihren Beziehungen zu anderen Menschen am
-        meisten beschäftigen. Diese Grundbedürfnisse lassen erste Rückschlüsse
-        auf Ihre Persönlichkeitsstile zu. <br />
-        In Schritt 2 werden Sie dann 2 Fragebögen ausfüllen, um konkret zu
-        prüfen, wie ausgeprägt diese Stile bei Ihnen sind.
+        Wählen Sie in Schritt 1 Ihre drei wichtigsten Grundbedürfnisse.
+        <br />
+        In Schritt 2 werden Ihnen als Ergebnis Ihrer Auswahl zwei auf Sie
+        angepasste Fragebögen präsentiert.
+        <br />
+        Im Anschluss erhalten Sie Ihr Ergebnis und dazu passende Informationen.
       </p>
       <FloatingButtonContainer to="/motives/selection">
         <Button>Weiter zur Auswahl</Button>
