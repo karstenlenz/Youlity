@@ -11,7 +11,7 @@ export default function MotivesIntro() {
         <h1>Schritt 1: Bedürfnisse</h1>
       </HeadlineUnderline>
       <p>
-        Die Persönlichkeit jedes Mensch ist von 6 Grundbedürfnissen bestimmt.
+        Die Persönlichkeit jedes Menschen ist von 6 Grundbedürfnissen bestimmt.
         Dabei gibt es bei jedem von uns eine unterschiedliche Gewichtung.
         <br />
         In Schritt 1 müssen Sie für sich die wichtigsten drei Themen auswählen,
