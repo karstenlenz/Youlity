@@ -5,22 +5,20 @@ context('Homepage', () => {
     cy.visit('/result/1694')
   })
 
-  it.only('has intro img', () => {
+  it('has intro img', () => {
     cy.get('main > img')
       .should('have.attr', 'src')
       .should('include', 'style_info.svg')
   })
 
   it('has a headline', () => {
-    cy.get('h1').should('contain', 'Ergebnis')
+    cy.contains('Ergebnis').should('exist')
   })
 
   it('has an introductory paragraph', () => {
-    cy.get('p')
-      .contains(
-        'Sie haben eben Tests für folgende Persönlichkeitsstile ausgefüllt:'
-      )
-      .should('exist')
+    cy.contains(
+      'Sie haben eben Tests für folgende Persönlichkeitsstile ausgefüllt:'
+    ).should('exist')
   })
 
   it('can navigate to the details page', () => {

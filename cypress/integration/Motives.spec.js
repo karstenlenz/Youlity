@@ -10,22 +10,18 @@ context('Motives Intro', () => {
   })
 
   it('has a headline', () => {
-    cy.get('h1').should('contain', 'Schritt 1: Bedürfnisse')
+    cy.contains('Schritt 1: Bedürfnisse').should('exist')
   })
 
   it('has an introductory paragraph', () => {
-    cy.get('p').should(
-      'contain',
+    cy.contains(
       'Die Persönlichkeit jedes Menschen ist von 6 Grundbedürfnissen bestimmt.'
-    )
+    ).should('exist')
   })
 
   it('can navigate to motive selection', () => {
-    cy.get('button').click()
-    cy.url().should(
-      'equal',
-      `${Cypress.config().baseUrl + '/motives/selection'}`
-    )
+    cy.get('button').contains('Weiter zur Auswahl').click()
+    cy.url().should('contain', '/motives/selection')
   })
 })
 
@@ -39,11 +35,11 @@ context('Motives Selection', () => {
   })
 
   it('has a headline', () => {
-    cy.get('h1').should('contain', 'Schritt 1: Bedürfnisse')
+    cy.contains('Schritt 1: Bedürfnisse').should('exist')
   })
 
   it('has an introductory h2', () => {
-    cy.get('h2').should('contain', 'Bitte wählen Sie die 3')
+    cy.contains('Bitte wählen Sie die 3').should('exist')
   })
 
   it('has 12 buttons', () => {
@@ -63,14 +59,11 @@ context('Motives Selection', () => {
     cy.get('button').contains('Anerkennung').click()
     cy.get('button').contains('Grenzen').click()
     cy.get('button').contains('Solidarität').click()
-    cy.url().should(
-      'equal',
-      `${Cypress.config().baseUrl + '/questionnaire/89'}`
-    )
+    cy.url().should('contain', '/questionnaire/89')
   })
 
-  it.only('can open the info layer', () => {
+  it('can open the info layer', () => {
     cy.get('button').contains('i').click()
-    cy.get('p').contains('Das Bedürfnis nach').should('exist')
+    cy.contains('Das Bedürfnis nach').should('exist')
   })
 })

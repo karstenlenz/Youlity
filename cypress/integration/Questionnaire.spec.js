@@ -10,27 +10,27 @@ context('Motives Intro', () => {
   })
 
   it('has a headline', () => {
-    cy.get('h1').should('contain', 'Schritt 2: Fragebogen')
+    cy.contains('Schritt 2: Fragebogen').should('exist')
   })
 
   it('has an introductory paragraph', () => {
-    cy.get('p').should(
-      'contain',
+    cy.contains(
       'Durch die Auswahl Ihrer Bedürfnisse haben wir 2 potentielle Persönlichkeitsstile identifiziert. '
-    )
+    ).should('exist')
   })
 
-  it('can navigate to motive selection', () => {
+  it('can navigate to questionnaire', () => {
     cy.get('button').click()
     cy.get('button').contains('(Eher) Nein').should('exist')
     cy.get('button').contains('(Eher) Ja').should('exist')
   })
 
-  it.only('can fill out the questionnaire', () => {
+  it('can fill out the questionnaire', () => {
     cy.get('button').click()
+    cy.get('button').contains('(Eher) Ja').as('yesButton')
     for (let i = 0; i < 16; i++) {
-      cy.get('button').contains('(Eher) Ja').click()
+      cy.get('@yesButton').click()
     }
-    cy.get('h1').should('contain', 'Ergebnis')
+    cy.contains('Ergebnis').should('exist')
   })
 })
