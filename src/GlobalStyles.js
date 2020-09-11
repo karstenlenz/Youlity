@@ -59,7 +59,9 @@ p {
 --overlay-content:200;
 
 --primary: #683B89;
+--primary-disabled: #E1D7E7 ;
 --secondary: #00C5AA;
+--secondary-disabled: #B2EEE5;
 --highlight: #65C2FD;
 --light-grey: #E0E9F1;
 --medium-grey: #B2A7B8;
