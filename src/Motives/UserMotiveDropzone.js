@@ -18,8 +18,8 @@ const DropzoneBG = styled.div`
   min-height: 80px;
   gap: 15px;
 
-  > * {
-    width: 100%;
+  > div {
+    width: 100% !important;
   }
 
   > :nth-child(1) {

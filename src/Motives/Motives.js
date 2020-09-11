@@ -34,7 +34,7 @@ export default function Motives() {
   }, [userMotives])
 
   return (
-    <DragDropContext onDragEnd={onDragEnd}>
+    <DragDropContext onDragStart={onDragStart} onDragEnd={onDragEnd}>
       <HeadlineUnderline>
         <h1>Schritt 1: Bedürfnisse</h1>
       </HeadlineUnderline>
@@ -62,7 +62,11 @@ export default function Motives() {
         {(provided) => (
           <MotivesList ref={provided.innerRef} {...provided.droppableProps}>
             {listMotives.map((motive, index) => (
-              <MotiveItem key={motive} index={index}>
+              <MotiveItem
+                key={'motives-list' + motive}
+                index={index}
+                isDragDisabled={userMotives.length === 3}
+              >
                 {motive}
               </MotiveItem>
             ))}
@@ -87,37 +91,65 @@ export default function Motives() {
     setUserMotives([...userMotives, motive])
   }
 
+  function onDragStart() {
+    if (window.navigator.vibrate) {
+      window.navigator.vibrate(100)
+    }
+  }
+
   function onDragEnd(result) {
     if (!result.destination) {
       return
     }
 
+    // assign the correct states to to source and destination
+    let sourceState
+    let setSourceState
+    let destinationState
+    let setDestinationState
+
+    if (result.source.droppableId === 'user-motives') {
+      sourceState = userMotives
+      setSourceState = setUserMotives
+    } else if (result.source.droppableId === 'motives-list') {
+      sourceState = listMotives
+      setSourceState = setListMotives
+    }
+
     if (result.destination.droppableId === 'user-motives') {
-      const newUserMotives = [...userMotives, listMotives[result.source.index]]
-      setUserMotives(newUserMotives)
-      const newListMotives = remove(listMotives, result.source.index)
-      setListMotives(newListMotives)
-      console.log('dropped on user motives')
+      destinationState = userMotives
+      setDestinationState = setUserMotives
     } else if (result.destination.droppableId === 'motives-list') {
-      const newListMotives = reorder(
-        listMotives,
+      destinationState = listMotives
+      setDestinationState = setListMotives
+    }
+
+    // drop a list item on same list => trigger reorder
+    if (result.destination.droppableId === result.source.droppableId) {
+      const newState = reorder(
+        destinationState,
         result.source.index,
         result.destination.index
       )
-      setListMotives(newListMotives)
-      console.log('dropped on motives list')
+      setDestinationState(newState)
     }
 
-    console.log(result.destination)
-
-    console.log('drag end happened')
+    // drop a list item on other list => transfer item and reorder
+    if (result.destination.droppableId !== result.source.droppableId) {
+      const newDestinationstate = [
+        ...destinationState,
+        sourceState[result.source.index],
+      ]
+      setDestinationState(newDestinationstate)
+      const newSourceState = remove(sourceState, result.source.index)
+      setSourceState(newSourceState)
+    }
   }
 
   function reorder(list, startIndex, endIndex) {
     const result = Array.from(list)
     const [removed] = result.splice(startIndex, 1)
     result.splice(endIndex, 0, removed)
-
     return result
   }
   function remove(list, index) {
