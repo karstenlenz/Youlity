@@ -29,10 +29,11 @@ const MotiveItemStyled = styled.div`
   box-shadow: var(--primary-shadow);
   display: inline-block;
   font-size: 1em;
+  line-height: 0;
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
-  height: 50px;
-  padding: 10px;
+  height: 58px;
+  padding: 29px 0;
   border: none;
   border-radius: 12px;
   text-align: center;
