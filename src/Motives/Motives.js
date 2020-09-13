@@ -52,10 +52,11 @@ export default function Motives() {
       </SmallH2>
       <MotiveBG>
         <Droppable droppableId="motive-1">
-          {(provided) => (
+          {(provided, snapshot) => (
             <UserMotiveDropzone
               ref={provided.innerRef}
               {...provided.droppableProps}
+              isDraggingOver={snapshot.isDraggingOver}
             >
               {motives.slot1?.map((motive, index) => (
                 <MotiveItem index={index} key={motive}>
@@ -73,10 +74,11 @@ export default function Motives() {
           )}
         </Droppable>
         <Droppable droppableId="motive-2">
-          {(provided) => (
+          {(provided, snapshot) => (
             <UserMotiveDropzone
               ref={provided.innerRef}
               {...provided.droppableProps}
+              isDraggingOver={snapshot.isDraggingOver}
             >
               {motives.slot2?.map((motive, index) => (
                 <MotiveItem index={index} key={motive}>
@@ -94,10 +96,11 @@ export default function Motives() {
           )}
         </Droppable>
         <Droppable droppableId="motive-3">
-          {(provided) => (
+          {(provided, snapshot) => (
             <UserMotiveDropzone
               ref={provided.innerRef}
               {...provided.droppableProps}
+              isDraggingOver={snapshot.isDraggingOver}
             >
               {motives.slot3?.map((motive, index) => (
                 <MotiveItem index={index} key={motive}>
@@ -117,8 +120,12 @@ export default function Motives() {
       </MotiveBG>
 
       <Droppable droppableId="motives-list">
-        {(provided) => (
-          <MotivesList ref={provided.innerRef} {...provided.droppableProps}>
+        {(provided, snapshot) => (
+          <MotivesList
+            ref={provided.innerRef}
+            {...provided.droppableProps}
+            isDraggingOver={snapshot.isDraggingOver}
+          >
             {motives.list?.map((motive, index) => (
               <MotiveItem
                 key={'motives-list' + motive}

@@ -1,9 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const MotivesList = React.forwardRef(({ children }, ref) => (
-  <MotiveContainer ref={ref}>{children}</MotiveContainer>
-))
+export const MotivesList = React.forwardRef(
+  ({ children, isDraggingOver }, ref) => (
+    <MotiveContainer isDraggingOver={isDraggingOver} ref={ref}>
+      {children}
+    </MotiveContainer>
+  )
+)
 
 const MotiveContainer = styled.div`
   display: grid;
@@ -11,6 +15,8 @@ const MotiveContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   row-gap: 30px;
   column-gap: 15px;
-  padding: 15px 0;
+  margin: 0 -15px;
+  padding: 30px 15px;
   justify-content: stretch;
+  ${(props) => props.isDraggingOver && 'background: var(--light-grey)'};
 `

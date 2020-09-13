@@ -55,8 +55,10 @@ p {
 :root {
 --background:-1;
 
---overlay-bg:100;
---overlay-content:200;
+--front:100;
+--floating-button:200;
+--overlay-bg:300;
+--overlay-content:400;
 
 --primary: #683B89;
 --primary-disabled: #E1D7E7 ;

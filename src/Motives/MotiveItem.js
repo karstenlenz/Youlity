@@ -15,6 +15,7 @@ export default function ({ children, index, isDragDisabled }) {
           {...provided.draggableProps}
           {...provided.dragHandleProps}
           style={getStyle(provided.draggableProps.style, snapshot)}
+          isDragging={snapshot.isDragging}
         >
           {children}
         </MotiveItemStyled>
@@ -36,6 +37,7 @@ export default function ({ children, index, isDragDisabled }) {
 }
 
 const MotiveItemStyled = styled.div`
+  position: relative;
   color: var(--dark-grey);
   width: 100%;
   background: white;
@@ -47,10 +49,12 @@ const MotiveItemStyled = styled.div`
   font-family: 'Ubuntu', sans-serif;
   height: 58px;
   padding: 29px 0;
-  border: none;
+  border: ${(props) =>
+    props.isDragging ? '1px solid var(--dark-grey)' : 'none'};
   border-radius: 12px;
   text-align: center;
   max-width: 47.5vw;
+  z-index: var(--front);
 
   &:disabled {
     opacity: 0.4;
