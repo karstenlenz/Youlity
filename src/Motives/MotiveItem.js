@@ -9,17 +9,30 @@ export default function ({ children, index, isDragDisabled }) {
       index={index}
       isDragDisabled={isDragDisabled}
     >
-      {(provided) => (
+      {(provided, snapshot) => (
         <MotiveItemStyled
           ref={provided.innerRef}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
+          style={getStyle(provided.draggableProps.style, snapshot)}
         >
           {children}
         </MotiveItemStyled>
       )}
     </Draggable>
   )
+
+  function getStyle(style, snapshot) {
+    if (!snapshot.isDragging) return {}
+    if (!snapshot.isDropAnimating) {
+      return style
+    }
+
+    return {
+      ...style,
+      transitionDuration: `0.001s`,
+    }
+  }
 }
 
 const MotiveItemStyled = styled.div`

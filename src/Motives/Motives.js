@@ -62,7 +62,13 @@ export default function Motives() {
                   {motive}
                 </MotiveItem>
               ))}
-              {provided.placeholder}
+              <span
+                style={{
+                  display: 'none',
+                }}
+              >
+                {provided.placeholder}
+              </span>
             </UserMotiveDropzone>
           )}
         </Droppable>
@@ -77,7 +83,13 @@ export default function Motives() {
                   {motive}
                 </MotiveItem>
               ))}
-              {provided.placeholder}
+              <span
+                style={{
+                  display: 'none',
+                }}
+              >
+                {provided.placeholder}
+              </span>
             </UserMotiveDropzone>
           )}
         </Droppable>
@@ -92,7 +104,13 @@ export default function Motives() {
                   {motive}
                 </MotiveItem>
               ))}
-              {provided.placeholder}
+              <span
+                style={{
+                  display: 'none',
+                }}
+              >
+                {provided.placeholder}
+              </span>
             </UserMotiveDropzone>
           )}
         </Droppable>
@@ -110,7 +128,13 @@ export default function Motives() {
                 {motive}
               </MotiveItem>
             ))}
-            {provided.placeholder}
+            <span
+              style={{
+                display: 'none',
+              }}
+            >
+              {provided.placeholder}
+            </span>
           </MotivesList>
         )}
       </Droppable>
@@ -211,17 +235,6 @@ export default function Motives() {
       newState[sourceState] = newSourceState
       setMotives(newState)
     }
-
-    // drop a list item on other list => transfer item and reorder
-    // if (result.destination.droppableId !== result.source.droppableId) {
-    //   const newDestinationstate = [
-    //     ...destinationState,
-    //     sourceState[result.source.index],
-    //   ]
-    //   setDestinationState(newDestinationstate)
-    //   const newSourceState = remove(sourceState, result.source.index)
-    //   setSourceState(newSourceState)
-    // }
   }
 
   function reorder(list, startIndex, endIndex) {
