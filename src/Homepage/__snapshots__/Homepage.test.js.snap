@@ -10,7 +10,7 @@ exports[`The Homepage component renders correctly 1`] = `
     class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 jWFWIm"
   >
     <h1>
-      Entdecken Sie Ihren Persönlichkeitsstil!
+      Entschlüsseln Sie Ihre Persönlichkeit!
     </h1>
     <svg
       class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
@@ -22,10 +22,13 @@ exports[`The Homepage component renders correctly 1`] = `
     class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
   >
     <li>
-      Lernen Sie sich selbst kennen, mit Ihren eigenen Stärken und Schwächen!
+      Informieren Sie sich über persönliche Eigenarten, die Ihr Denken, Fühlen und Handeln prägen.
     </li>
     <li>
-      Erhalten Sie wertvolle Tipps zum Umgang mit Ihren Mitmenschen, egal ob im Beruf oder in privaten Beziehungen!
+      Entwickeln Sie ein besseres Verständnis für sich selbst in Beziehungen.
+    </li>
+    <li>
+      Profitieren Sie von speziell auf Sie zugeschnittenen Alltagstipps.
     </li>
   </ul>
   <section
@@ -74,11 +77,11 @@ exports[`The Homepage component renders correctly 1`] = `
     Hinweis: Dieser Test ersetzt keine psychologische Beratung. Wenn Sie unter psychischen Problemen leiden, suchen Sie sich bitte professionelle Hilfe.
   </small>
   <a
-    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 gXldTe"
+    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 cLTvWp"
     href="/motives/intro"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 fyEIpZ"
+      class="Button__BtnStyled-sc-129yfz5-0 czYdCq"
       width="100"
     >
       Test starten

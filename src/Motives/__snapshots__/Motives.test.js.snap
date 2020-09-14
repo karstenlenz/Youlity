@@ -2,138 +2,187 @@
 
 exports[`The Motives component renders correctly 1`] = `
 <div>
-  <img
-    alt=""
-    src="/img/motives-intro.svg"
-  />
-  <section
-    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 jWFWIm"
+  <div
+    id="root"
   >
-    <h1>
-      Schritt 1: Bedürfnisse
-    </h1>
-    <svg
-      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
+    <section
+      class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 jWFWIm"
     >
-      underline.svg
-    </svg>
-  </section>
-  <h2>
-    Bitte wählen Sie die 3 Bedürfnisse aus, die Ihnen am wichtigsten sind.
-  </h2>
-  <ol>
-    <li>
-       
-       
-    </li>
-    <li>
-       
-       
-    </li>
-    <li>
-       
-       
-    </li>
-  </ol>
-  <section
-    class="MotiveButtons__ButtonList-sc-1u7c2an-1 eovEIL"
-  >
+      <h1>
+        Schritt 1: Bedürfnisse
+      </h1>
+      <svg
+        class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
+      >
+        underline.svg
+      </svg>
+    </section>
+    <h2
+      class="sc-AxhUy gZWqpP"
+    >
+      Wählen Sie bitte intuitiv die drei Bedürfnisse aus, die für Sie am Wichtigsten sind. Sie können die Bedürfnisse hin- und herziehen oder anklicken.
+    </h2>
+    <section
+      class="sc-AxgMl fTnEbM"
+    >
+      <div
+        class="sc-AxhCb eyfiwm"
+      >
+        <span
+          style="display: none;"
+        />
+      </div>
+      <div
+        class="sc-AxhCb eyfiwm"
+      >
+        <span
+          style="display: none;"
+        />
+      </div>
+      <div
+        class="sc-AxhCb eyfiwm"
+      >
+        <span
+          style="display: none;"
+        />
+      </div>
+    </section>
     <div
-      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
+      class="sc-AxiKw jSIwVy"
     >
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
-        width="100"
+      <div
+        aria-describedby="rbd-hidden-text-0-hidden-text-0"
+        class="sc-AxirZ cVLGLB"
+        data-rbd-drag-handle-context-id="0"
+        data-rbd-drag-handle-draggable-id="draggable-Anerkennung"
+        data-rbd-draggable-context-id="0"
+        data-rbd-draggable-id="draggable-Anerkennung"
+        draggable="false"
+        role="button"
+        tabindex="0"
       >
         Anerkennung
-      </button>
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
-        width="100"
-      >
-        i
-      </button>
-    </div>
-    <div
-      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
-    >
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
-        width="100"
+        <button
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          width="100"
+        >
+          i
+        </button>
+      </div>
+      <div
+        aria-describedby="rbd-hidden-text-0-hidden-text-0"
+        class="sc-AxirZ cVLGLB"
+        data-rbd-drag-handle-context-id="0"
+        data-rbd-drag-handle-draggable-id="draggable-Wichtigkeit"
+        data-rbd-draggable-context-id="0"
+        data-rbd-draggable-id="draggable-Wichtigkeit"
+        draggable="false"
+        role="button"
+        tabindex="0"
       >
         Wichtigkeit
-      </button>
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
-        width="100"
-      >
-        i
-      </button>
-    </div>
-    <div
-      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
-    >
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
-        width="100"
+        <button
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          width="100"
+        >
+          i
+        </button>
+      </div>
+      <div
+        aria-describedby="rbd-hidden-text-0-hidden-text-0"
+        class="sc-AxirZ cVLGLB"
+        data-rbd-drag-handle-context-id="0"
+        data-rbd-drag-handle-draggable-id="draggable-Solidarität"
+        data-rbd-draggable-context-id="0"
+        data-rbd-draggable-id="draggable-Solidarität"
+        draggable="false"
+        role="button"
+        tabindex="0"
       >
         Solidarität
-      </button>
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
-        width="100"
-      >
-        i
-      </button>
-    </div>
-    <div
-      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
-    >
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
-        width="100"
+        <button
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          width="100"
+        >
+          i
+        </button>
+      </div>
+      <div
+        aria-describedby="rbd-hidden-text-0-hidden-text-0"
+        class="sc-AxirZ cVLGLB"
+        data-rbd-drag-handle-context-id="0"
+        data-rbd-drag-handle-draggable-id="draggable-Autonomie"
+        data-rbd-draggable-context-id="0"
+        data-rbd-draggable-id="draggable-Autonomie"
+        draggable="false"
+        role="button"
+        tabindex="0"
       >
         Autonomie
-      </button>
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
-        width="100"
-      >
-        i
-      </button>
-    </div>
-    <div
-      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
-    >
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
-        width="100"
+        <button
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          width="100"
+        >
+          i
+        </button>
+      </div>
+      <div
+        aria-describedby="rbd-hidden-text-0-hidden-text-0"
+        class="sc-AxirZ cVLGLB"
+        data-rbd-drag-handle-context-id="0"
+        data-rbd-drag-handle-draggable-id="draggable-Grenzen"
+        data-rbd-draggable-context-id="0"
+        data-rbd-draggable-id="draggable-Grenzen"
+        draggable="false"
+        role="button"
+        tabindex="0"
       >
         Grenzen
-      </button>
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
-        width="100"
-      >
-        i
-      </button>
-    </div>
-    <div
-      class="MotiveButtons__ButtonPair-sc-1u7c2an-0 dHkxSL"
-    >
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ"
-        width="100"
+        <button
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          width="100"
+        >
+          i
+        </button>
+      </div>
+      <div
+        aria-describedby="rbd-hidden-text-0-hidden-text-0"
+        class="sc-AxirZ cVLGLB"
+        data-rbd-drag-handle-context-id="0"
+        data-rbd-drag-handle-draggable-id="draggable-Verlässlichkeit"
+        data-rbd-draggable-context-id="0"
+        data-rbd-draggable-id="draggable-Verlässlichkeit"
+        draggable="false"
+        role="button"
+        tabindex="0"
       >
         Verlässlichkeit
-      </button>
+        <button
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          width="100"
+        >
+          i
+        </button>
+      </div>
+      <span
+        style="display: none;"
+      />
+    </div>
+    <a
+      class="FloatingButtonContainer__ButtonContainer-slkv4p-0 cLTvWp"
+      href="/"
+    >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 hhwMUZ InfoOverlay__InfoButton-sc-17974c-0 iUoTUO"
+        class="Button__BtnStyled-sc-129yfz5-0 czYdCq"
+        disabled=""
         width="100"
       >
-        i
+        Test starten
       </button>
-    </div>
-  </section>
+    </a>
+    <div
+      class="FloatingButtonContainer__BottomSpacer-slkv4p-1 hgDFeh"
+    />
+  </div>
 </div>
 `;
