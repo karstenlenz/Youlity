@@ -2,31 +2,39 @@ import React from 'react'
 import { useState } from 'react'
 import styled from 'styled-components/macro'
 import Button from './Button'
+import ReactDOM from 'react-dom'
 
 export default function InfoOverlay({ children }) {
   const [isOverlayVisible, setIsOverlayVisible] = useState(false)
 
+  const appRoot = document.querySelector('#root')
+
   return (
     <>
-      {isOverlayVisible && (
+      {ReactDOM.createPortal(
         <>
-          <OverLayBG onClick={toggleOverlay} />
-          <OverlayContent>
-            <button onClick={toggleOverlay}>
-              <img alt="close overlay" src="/img/close.svg" />
-            </button>
-            {children}
-          </OverlayContent>
-        </>
+          {isOverlayVisible && (
+            <>
+              <OverLayBG onClick={toggleOverlay} />
+              <OverlayContent>
+                <button onClick={toggleOverlay}>
+                  <img alt="close overlay" src="/img/close.svg" />
+                </button>
+                {children}
+              </OverlayContent>
+            </>
+          )}
+        </>,
+        appRoot
       )}
-
       <InfoButton btnType="white" onClick={toggleOverlay}>
         i
       </InfoButton>
     </>
   )
 
-  function toggleOverlay() {
+  function toggleOverlay(event) {
+    event.stopPropagation()
     setIsOverlayVisible(!isOverlayVisible)
   }
 }
@@ -58,6 +66,7 @@ const OverlayContent = styled.section`
   z-index: var(--overlay-content);
   opacity: 1;
   padding: 15px;
+  text-align: left;
 
   button {
     padding: 0;

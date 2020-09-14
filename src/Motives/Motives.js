@@ -9,30 +9,31 @@ import { useEffect } from 'react'
 import FloatingButtonContainer from '../common/FloatingButtonContainer'
 import Button from '../common/Button'
 import { evaluateMatchingStyles } from './util'
+import { motiveData } from '../data/motiveData'
 
 export default function Motives() {
   const [motives, setMotives] = useState({
     slot1: [],
     slot2: [],
     slot3: [],
-    list: [
-      'Anerkennung',
-      'Wichtigkeit',
-      'Solidarität',
-      'Autonomie',
-      'Grenzen',
-      'Verlässlichkeit',
-    ],
+    list: [1, 2, 3, 4, 5, 6],
   })
 
   const [questionnaireUrl, setQuestionnaireUrl] = useState('/')
 
   useEffect(() => {
-    if (motives.slot1 && motives.slot2 && motives.slot3) {
+    if (
+      motives.slot1.length !== 0 &&
+      motives.slot2.length !== 0 &&
+      motives.slot3.length !== 0
+    ) {
+      const userMotive1 = motiveData[motives.slot1[0] - 1].name
+      const userMotive2 = motiveData[motives.slot1[0] - 1].name
+      const userMotive3 = motiveData[motives.slot1[0] - 1].name
       const userPersonalityStyles = evaluateMatchingStyles([
-        motives.slot1[0],
-        motives.slot2[0],
-        motives.slot3[0],
+        userMotive1,
+        userMotive2,
+        userMotive3,
       ])
       const questionnaireUrl =
         '/questionnaire/' + userPersonalityStyles[0] + userPersonalityStyles[1]
@@ -59,8 +60,14 @@ export default function Motives() {
               isDraggingOver={snapshot.isDraggingOver}
             >
               {motives.slot1?.map((motive, index) => (
-                <MotiveItem index={index} key={motive}>
-                  {motive}
+                <MotiveItem
+                  droppableId="motive-1"
+                  onClick={handleMotiveClick}
+                  index={index}
+                  key={motive}
+                  motiveIndex={motive - 1}
+                >
+                  {motiveData[motive - 1].name}
                 </MotiveItem>
               ))}
               <span
@@ -81,8 +88,14 @@ export default function Motives() {
               isDraggingOver={snapshot.isDraggingOver}
             >
               {motives.slot2?.map((motive, index) => (
-                <MotiveItem index={index} key={motive}>
-                  {motive}
+                <MotiveItem
+                  droppableId="motive-2"
+                  onClick={handleMotiveClick}
+                  index={index}
+                  key={motive}
+                  motiveIndex={motive - 1}
+                >
+                  {motiveData[motive - 1].name}
                 </MotiveItem>
               ))}
               <span
@@ -103,8 +116,14 @@ export default function Motives() {
               isDraggingOver={snapshot.isDraggingOver}
             >
               {motives.slot3?.map((motive, index) => (
-                <MotiveItem index={index} key={motive}>
-                  {motive}
+                <MotiveItem
+                  droppableId="motive-3"
+                  onClick={handleMotiveClick}
+                  index={index}
+                  key={motive}
+                  motiveIndex={motive - 1}
+                >
+                  {motiveData[motive - 1].name}
                 </MotiveItem>
               ))}
               <span
@@ -128,11 +147,14 @@ export default function Motives() {
           >
             {motives.list?.map((motive, index) => (
               <MotiveItem
+                droppableId="motives-list"
+                onClick={handleMotiveClick}
                 key={'motives-list' + motive}
                 index={index}
                 isDragDisabled={motives.slot1 && motives.slot2 && motives.slot3}
+                motiveIndex={motive - 1}
               >
-                {motive}
+                {motiveData[motive - 1].name}
               </MotiveItem>
             ))}
             <span
@@ -162,11 +184,24 @@ export default function Motives() {
     </DragDropContext>
   )
 
-  // function handleMotiveClick(event, motive) {
-  //   const button = event.target
-  //   button.disabled = true
-  //   setUserMotives([...userMotives, motive])
-  // }
+  function handleMotiveClick(event, motiveId, droppableId) {
+    console.log('click happened')
+    if (droppableId === 'motives-list') {
+      if (motives.slot1.length === 0) {
+        const newMotives = { ...motives }
+        newMotives.slot1 = [motiveId]
+        setMotives(newMotives)
+      } else if (motives.slot2.length === 0) {
+        const newMotives = { ...motives }
+        newMotives.slot2 = [motiveId]
+        setMotives(newMotives)
+      } else if (motives.slot3.length === 0) {
+        const newMotives = { ...motives }
+        newMotives.slot3 = [motiveId]
+        setMotives(newMotives)
+      }
+    }
+  }
 
   function onDragStart() {
     if (window.navigator.vibrate) {
@@ -220,7 +255,6 @@ export default function Motives() {
       motives[destinationState].length !== 0
     ) {
       // if a user-motive slot is already filled, the previous motive needs to be returned to the motives list
-      console.log('d-state.length :' + destinationState.length)
       const newDestinationState = [motives[sourceState][result.source.index]]
       const newState = { ...motives }
       newState[destinationState] = newDestinationState
@@ -228,7 +262,6 @@ export default function Motives() {
       newSourceState.push(motives[destinationState][0])
       newState[sourceState] = newSourceState
       setMotives(newState)
-      console.log('passiert hier was?')
     } else {
       // remove motive from source and add it to motives list
       const newDestinationState = insert(

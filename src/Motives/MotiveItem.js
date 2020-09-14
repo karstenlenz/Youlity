@@ -1,8 +1,17 @@
 import React from 'react'
 import { Draggable } from 'react-beautiful-dnd'
 import styled from 'styled-components'
+import InfoOverlay from '../common/InfoOverlay'
+import { motiveData } from '../data/motiveData'
 
-export default function ({ children, index, isDragDisabled }) {
+export default function ({
+  children,
+  index,
+  isDragDisabled,
+  motiveIndex,
+  onClick,
+  droppableId,
+}) {
   return (
     <Draggable
       draggableId={'draggable-' + children}
@@ -14,10 +23,15 @@ export default function ({ children, index, isDragDisabled }) {
           ref={provided.innerRef}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
+          onClick={(event) => onClick(event, motiveIndex + 1, droppableId)}
           style={getStyle(provided.draggableProps.style, snapshot)}
           isDragging={snapshot.isDragging}
         >
           {children}
+          <PositionedInfoOverlay>
+            <h2>{motiveData[motiveIndex].name}</h2>
+            <p>{motiveData[motiveIndex].description}</p>
+          </PositionedInfoOverlay>
         </MotiveItemStyled>
       )}
     </Draggable>
@@ -35,6 +49,12 @@ export default function ({ children, index, isDragDisabled }) {
     }
   }
 }
+
+const PositionedInfoOverlay = styled(InfoOverlay)`
+  position: absolute;
+  top: 0;
+  right: 10px;
+`
 
 const MotiveItemStyled = styled.div`
   position: relative;
