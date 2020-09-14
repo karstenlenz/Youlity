@@ -30,7 +30,6 @@ export default function Questionnaire({ testIds }) {
         Frage {currentQuestionIndex + 1} / {questions.length}
       </h2>
       <h3>{questions[currentQuestionIndex]}</h3>
-      <h3>Hier wird geswipt</h3>
       <div>
         <SwipeableCard>Test-Karte</SwipeableCard>
       </div>

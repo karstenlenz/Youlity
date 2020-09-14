@@ -20,27 +20,38 @@ export default function SwipeableCard({ children }) {
 
   const [offset, setOffset] = useState(0)
   const swipeConfig = {
-    delta: 10, // min distance(px) before a swipe starts
-    preventDefaultTouchmoveEvent: false, // preventDefault on touchmove, *See Details*
+    delta: 1, // min distance(px) before a swipe starts
+    preventDefaultTouchmoveEvent: true, // preventDefault on touchmove, *See Details*
     trackTouch: true, // track touch input
-    trackMouse: true, // track mouse input
+    trackMouse: false, // track mouse input
     rotationAngle: 0, // set a rotation angle
   }
 
   const swipeHandlers = useSwipeable({
-    onSwiped: (eventData) => handleSwiped(eventData),
-    onSwiping: (eventData) => handleSwiping(eventData),
+    onSwiped: (eventData) => {
+      eventData.event.preventDefault()
+      handleSwiped(eventData)
+    },
+    onSwiping: (eventData) => {
+      eventData.event.preventDefault()
+      handleSwiping(eventData)
+    },
     ...swipeConfig,
   })
 
   function handleSwiped(eventData) {
+    eventData.event.preventDefault()
+    if (eventData.dir === 'Right') {
+      console.log('rechts')
+    } else {
+      console.log('links')
+    }
     setOffset(0)
   }
 
   function handleSwiping(eventData) {
     eventData.event.preventDefault()
     setOffset(eventData.deltaX)
-    console.log('offset: ' + offset)
   }
 
   return (
