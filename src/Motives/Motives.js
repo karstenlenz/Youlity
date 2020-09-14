@@ -52,7 +52,7 @@ export default function Motives() {
         ansprechen.
       </SmallH2>
       <MotiveBG>
-        <Droppable droppableId="motive-1">
+        <Droppable droppableId="slot1">
           {(provided, snapshot) => (
             <UserMotiveDropzone
               ref={provided.innerRef}
@@ -61,7 +61,7 @@ export default function Motives() {
             >
               {motives.slot1?.map((motive, index) => (
                 <MotiveItem
-                  droppableId="motive-1"
+                  droppableId="slot1"
                   onClick={handleMotiveClick}
                   index={index}
                   key={motive}
@@ -80,7 +80,7 @@ export default function Motives() {
             </UserMotiveDropzone>
           )}
         </Droppable>
-        <Droppable droppableId="motive-2">
+        <Droppable droppableId="slot2">
           {(provided, snapshot) => (
             <UserMotiveDropzone
               ref={provided.innerRef}
@@ -89,7 +89,7 @@ export default function Motives() {
             >
               {motives.slot2?.map((motive, index) => (
                 <MotiveItem
-                  droppableId="motive-2"
+                  droppableId="slot2"
                   onClick={handleMotiveClick}
                   index={index}
                   key={motive}
@@ -108,7 +108,7 @@ export default function Motives() {
             </UserMotiveDropzone>
           )}
         </Droppable>
-        <Droppable droppableId="motive-3">
+        <Droppable droppableId="slot3">
           {(provided, snapshot) => (
             <UserMotiveDropzone
               ref={provided.innerRef}
@@ -117,7 +117,7 @@ export default function Motives() {
             >
               {motives.slot3?.map((motive, index) => (
                 <MotiveItem
-                  droppableId="motive-3"
+                  droppableId="slot3"
                   onClick={handleMotiveClick}
                   index={index}
                   key={motive}
@@ -190,16 +190,33 @@ export default function Motives() {
       if (motives.slot1.length === 0) {
         const newMotives = { ...motives }
         newMotives.slot1 = [motiveId]
+        const newMotivesList = [...motives.list].filter(
+          (motive) => motive !== motiveId
+        )
+        newMotives.list = newMotivesList
         setMotives(newMotives)
       } else if (motives.slot2.length === 0) {
         const newMotives = { ...motives }
         newMotives.slot2 = [motiveId]
+        const newMotivesList = [...motives.list].filter(
+          (motive) => motive !== motiveId
+        )
+        newMotives.list = newMotivesList
         setMotives(newMotives)
       } else if (motives.slot3.length === 0) {
         const newMotives = { ...motives }
         newMotives.slot3 = [motiveId]
+        const newMotivesList = [...motives.list].filter(
+          (motive) => motive !== motiveId
+        )
+        newMotives.list = newMotivesList
         setMotives(newMotives)
       }
+    } else {
+      const newMotives = { ...motives }
+      newMotives[droppableId] = []
+      newMotives.list.push(motiveId)
+      setMotives(newMotives)
     }
   }
 
@@ -218,21 +235,21 @@ export default function Motives() {
     let sourceState
     let destinationState
 
-    if (result.source.droppableId === 'motive-1') {
+    if (result.source.droppableId === 'slot1') {
       sourceState = 'slot1'
-    } else if (result.source.droppableId === 'motive-2') {
+    } else if (result.source.droppableId === 'slot2') {
       sourceState = 'slot2'
-    } else if (result.source.droppableId === 'motive-3') {
+    } else if (result.source.droppableId === 'slot3') {
       sourceState = 'slot3'
     } else if (result.source.droppableId === 'motives-list') {
       sourceState = 'list'
     }
 
-    if (result.destination.droppableId === 'motive-1') {
+    if (result.destination.droppableId === 'slot1') {
       destinationState = 'slot1'
-    } else if (result.destination.droppableId === 'motive-2') {
+    } else if (result.destination.droppableId === 'slot2') {
       destinationState = 'slot2'
-    } else if (result.destination.droppableId === 'motive-3') {
+    } else if (result.destination.droppableId === 'slot3') {
       destinationState = 'slot3'
     } else if (result.destination.droppableId === 'motives-list') {
       destinationState = 'list'
@@ -249,9 +266,9 @@ export default function Motives() {
       newState[sourceState] = newOrder
       setMotives(newState)
     } else if (
-      (result.destination.droppableId === 'motive-1' ||
-        result.destination.droppableId === 'motive-2' ||
-        result.destination.droppableId === 'motive-3') &&
+      (result.destination.droppableId === 'slot1' ||
+        result.destination.droppableId === 'slot2' ||
+        result.destination.droppableId === 'slot3') &&
       motives[destinationState].length !== 0
     ) {
       // if a user-motive slot is already filled, the previous motive needs to be returned to the motives list
