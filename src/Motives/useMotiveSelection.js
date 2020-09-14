@@ -19,8 +19,8 @@ export function useMotiveSelection() {
       motives.slot3.length !== 0
     ) {
       const userMotive1 = motiveData[motives.slot1[0] - 1].name
-      const userMotive2 = motiveData[motives.slot1[0] - 1].name
-      const userMotive3 = motiveData[motives.slot1[0] - 1].name
+      const userMotive2 = motiveData[motives.slot2[0] - 1].name
+      const userMotive3 = motiveData[motives.slot3[0] - 1].name
       const userPersonalityStyles = evaluateMatchingStyles([
         userMotive1,
         userMotive2,

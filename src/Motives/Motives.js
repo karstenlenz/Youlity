@@ -86,7 +86,7 @@ export default function Motives() {
           }
           btnType="primary"
         >
-          Test starten
+          Fragebogen starten
         </Button>
       </FloatingButtonContainer>
     </DragDropContext>
