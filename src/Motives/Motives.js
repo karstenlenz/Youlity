@@ -48,8 +48,8 @@ export default function Motives() {
       </HeadlineUnderline>
       <SmallH2 as="h2">
         Wählen Sie bitte intuitiv die drei Bedürfnisse aus, die für Sie am
-        Wichtigsten sind. Entscheiden Sie sich für die Begriffe, die Sie zuerst
-        ansprechen.
+        Wichtigsten sind. Sie können die Bedürfnisse hin- und herziehen oder
+        anklicken.
       </SmallH2>
       <MotiveBG>
         <Droppable droppableId="slot1">
@@ -312,8 +312,9 @@ export default function Motives() {
   }
 }
 
-const SmallH2 = styled.h4`
-  font-size: 1.21rem;
+const SmallH2 = styled.h6`
+  font-size: 1em;
+  margin-top: 0;
 `
 
 const MotiveBG = styled.section`
