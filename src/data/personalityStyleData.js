@@ -202,7 +202,7 @@ export const personalityStyleData = [
   {
     id: 4,
     name: 'Der selbstunsichere Persönlichkeitsstil',
-    Name: 'Der sensible Persönlichkeitsstil',
+    commonName: 'Der sensible Persönlichkeitsstil',
     motives: ['Anerkennung', 'Wichtigkeit'],
     questions: [
       'Würden Sie sich selbst als „schüchtern“ bezeichnen?',
