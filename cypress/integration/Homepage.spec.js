@@ -10,14 +10,13 @@ context('Homepage', () => {
   })
 
   it('has a headline', () => {
-    cy.get('h1').should('contain', 'Entdecken Sie Ihren Persönlichkeitsstil!')
+    cy.contains('Entdecken Sie Ihren Persönlichkeitsstil!').should('exist')
   })
 
   it('has an introductory bullet point', () => {
-    cy.get('li').should(
-      'contain',
+    cy.contains(
       'Lernen Sie sich selbst kennen, mit Ihren eigenen Stärken und Schwächen!'
-    )
+    ).should('exist')
   })
 
   it('uses the circle custom bullet point', () => {
@@ -37,8 +36,8 @@ context('Homepage', () => {
   })
 
   it('can navigate to motive intro', () => {
-    cy.get('button').click()
-    cy.url().should('equal', `${Cypress.config().baseUrl + '/motives/intro'}`)
+    cy.get('button').contains('Test starten').click()
+    cy.url().should('contain', '/motives/intro')
     cy.get('h1').should('contain', 'Schritt 1: Bedürfnisse')
   })
 })
