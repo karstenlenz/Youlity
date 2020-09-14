@@ -4,7 +4,7 @@ import styled from 'styled-components/macro'
 import Button from './Button'
 import ReactDOM from 'react-dom'
 
-export default function InfoOverlay({ children }) {
+export default function InfoOverlay({ children, className }) {
   const [isOverlayVisible, setIsOverlayVisible] = useState(false)
 
   const appRoot = document.querySelector('#root')
@@ -27,7 +27,7 @@ export default function InfoOverlay({ children }) {
         </>,
         appRoot
       )}
-      <InfoButton btnType="white" onClick={toggleOverlay}>
+      <InfoButton btnType="white" onClick={toggleOverlay} className={className}>
         i
       </InfoButton>
     </>
@@ -40,9 +40,8 @@ export default function InfoOverlay({ children }) {
 }
 
 const InfoButton = styled(Button)`
-  width: 50px;
-  height: 50px;
-  margin-left: 30px;
+  width: 40px;
+  height: 40px;
 `
 
 const OverLayBG = styled.div`

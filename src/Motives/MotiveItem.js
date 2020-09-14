@@ -52,8 +52,8 @@ export default function ({
 
 const PositionedInfoOverlay = styled(InfoOverlay)`
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: -10px;
+  right: -10px;
 `
 
 const MotiveItemStyled = styled.div`
