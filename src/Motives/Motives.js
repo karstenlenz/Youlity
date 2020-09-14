@@ -1,9 +1,10 @@
 import React from 'react'
 import { DragDropContext, Droppable } from 'react-beautiful-dnd'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import Button from '../common/Button'
 import FloatingButtonContainer from '../common/FloatingButtonContainer'
 import HeadlineUnderline from '../common/HeadlineUnderline'
+import HideElement from '../common/HideElement'
 import { motiveData } from '../data/motiveData'
 import MotiveItem from './MotiveItem'
 import { MotivesList } from './MotivesList'
@@ -30,21 +31,14 @@ export default function Motives() {
         anklicken.
       </SmallH2>
       <MotiveBG>
-        <UserMotiveDroppableWrapper
-          droppableId="slot1"
-          motives={motives}
-          handleMotiveClick={handleMotiveClick}
-        />
-        <UserMotiveDroppableWrapper
-          droppableId="slot2"
-          motives={motives}
-          handleMotiveClick={handleMotiveClick}
-        />
-        <UserMotiveDroppableWrapper
-          droppableId="slot3"
-          motives={motives}
-          handleMotiveClick={handleMotiveClick}
-        />
+        {['slot1', 'slot2', 'slot3'].map((slot) => (
+          <UserMotiveDroppableWrapper
+            droppableId={slot}
+            motives={motives}
+            handleMotiveClick={handleMotiveClick}
+            key={slot}
+          />
+        ))}
       </MotiveBG>
       <Droppable droppableId="motives-list">
         {(provided, snapshot) => (
@@ -65,13 +59,7 @@ export default function Motives() {
                 {motiveData[motive - 1].name}
               </MotiveItem>
             ))}
-            <span
-              style={{
-                display: 'none',
-              }}
-            >
-              {provided.placeholder}
-            </span>
+            <HideElement>{provided.placeholder}</HideElement>
           </MotivesList>
         )}
       </Droppable>

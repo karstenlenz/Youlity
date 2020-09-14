@@ -19,7 +19,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     </svg>
   </section>
   <p>
-    Leben heißt, in Beziehung zu gehen. Wie Menschen in Beziehung gehen, hängt stark von ihrer Persönlichkeit ab. Dabei spielen sechs Grundbedürfnisse eine zentrale Rolle. Welche Grundbedürfnisse für Menschen bedeutsam werden, entscheidet sich in ihrer Lebensgeschichte. Die Persönlichkeit jedes Menschen ist ein Ergebnis aus der Gewichtung dieser sechs Grundbedürfnisse.
+    Die Persönlichkeit jedes Menschen ist von 6 Grundbedürfnissen bestimmt. Dabei gibt es bei jedem von uns eine unterschiedliche Gewichtung.
     <br />
     Wählen Sie in Schritt 1 Ihre drei wichtigsten Grundbedürfnisse.
     <br />

@@ -33,7 +33,6 @@ export function useMotiveSelection() {
   }, [motives])
 
   function handleMotiveClick(event, motiveId, droppableId) {
-    console.log('click happened')
     if (droppableId === 'motives-list') {
       if (motives.slot1.length === 0) {
         const newMotives = { ...motives }

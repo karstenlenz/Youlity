@@ -18,41 +18,41 @@ exports[`The Motives component renders correctly 1`] = `
       </svg>
     </section>
     <h2
-      class="sc-AxhUy gZWqpP"
+      class="Motives__SmallH2-nzxhhf-0 hnMpqV"
     >
       Wählen Sie bitte intuitiv die drei Bedürfnisse aus, die für Sie am Wichtigsten sind. Sie können die Bedürfnisse hin- und herziehen oder anklicken.
     </h2>
     <section
-      class="sc-AxgMl fTnEbM"
+      class="Motives__MotiveBG-nzxhhf-1 dILmxj"
     >
       <div
-        class="sc-AxhCb eyfiwm"
+        class="UserMotiveDropzone__DropzoneBG-jv6lv-0 cFWTRG"
       >
-        <span
-          style="display: none;"
+        <div
+          class="sc-AxjAm XwQdQ"
         />
       </div>
       <div
-        class="sc-AxhCb eyfiwm"
+        class="UserMotiveDropzone__DropzoneBG-jv6lv-0 cFWTRG"
       >
-        <span
-          style="display: none;"
+        <div
+          class="sc-AxjAm XwQdQ"
         />
       </div>
       <div
-        class="sc-AxhCb eyfiwm"
+        class="UserMotiveDropzone__DropzoneBG-jv6lv-0 cFWTRG"
       >
-        <span
-          style="display: none;"
+        <div
+          class="sc-AxjAm XwQdQ"
         />
       </div>
     </section>
     <div
-      class="sc-AxiKw jSIwVy"
+      class="MotivesList__MotiveContainer-sc-935jjf-0 jbKbTJ"
     >
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="sc-AxirZ cVLGLB"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Anerkennung"
         data-rbd-draggable-context-id="0"
@@ -63,7 +63,7 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Anerkennung
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
           width="100"
         >
           i
@@ -71,7 +71,7 @@ exports[`The Motives component renders correctly 1`] = `
       </div>
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="sc-AxirZ cVLGLB"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Wichtigkeit"
         data-rbd-draggable-context-id="0"
@@ -82,7 +82,7 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Wichtigkeit
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
           width="100"
         >
           i
@@ -90,7 +90,7 @@ exports[`The Motives component renders correctly 1`] = `
       </div>
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="sc-AxirZ cVLGLB"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Solidarität"
         data-rbd-draggable-context-id="0"
@@ -101,7 +101,7 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Solidarität
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
           width="100"
         >
           i
@@ -109,7 +109,7 @@ exports[`The Motives component renders correctly 1`] = `
       </div>
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="sc-AxirZ cVLGLB"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Autonomie"
         data-rbd-draggable-context-id="0"
@@ -120,7 +120,7 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Autonomie
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
           width="100"
         >
           i
@@ -128,7 +128,7 @@ exports[`The Motives component renders correctly 1`] = `
       </div>
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="sc-AxirZ cVLGLB"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Grenzen"
         data-rbd-draggable-context-id="0"
@@ -139,7 +139,7 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Grenzen
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
           width="100"
         >
           i
@@ -147,7 +147,7 @@ exports[`The Motives component renders correctly 1`] = `
       </div>
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="sc-AxirZ cVLGLB"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Verlässlichkeit"
         data-rbd-draggable-context-id="0"
@@ -158,14 +158,14 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Verlässlichkeit
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg sc-AxjAm bLOFNx"
+          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
           width="100"
         >
           i
         </button>
       </div>
-      <span
-        style="display: none;"
+      <div
+        class="sc-AxjAm XwQdQ"
       />
     </div>
     <a
@@ -177,7 +177,7 @@ exports[`The Motives component renders correctly 1`] = `
         disabled=""
         width="100"
       >
-        Test starten
+        Fragebogen starten
       </button>
     </a>
     <div

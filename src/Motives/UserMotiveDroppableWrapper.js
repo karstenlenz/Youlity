@@ -3,6 +3,7 @@ import { Droppable } from 'react-beautiful-dnd'
 import MotiveItem from './MotiveItem'
 import { UserMotiveDropzone } from './UserMotiveDropzone'
 import { motiveData } from '../data/motiveData'
+import HideElement from '../common/HideElement'
 
 export default function UserMotiveDroppableWrapper({
   motives,
@@ -28,13 +29,7 @@ export default function UserMotiveDroppableWrapper({
               {motiveData[motive - 1].name}
             </MotiveItem>
           ))}
-          <span
-            style={{
-              display: 'none',
-            }}
-          >
-            {provided.placeholder}
-          </span>
+          <HideElement>{provided.placeholder}</HideElement>
         </UserMotiveDropzone>
       )}
     </Droppable>

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 export const UserMotiveDropzone = React.forwardRef(
   ({ children, isDraggingOver }, ref) => (
@@ -14,7 +14,6 @@ const DropzoneBG = styled.div`
   border: 1px dashed var(--medium-grey);
   background: ${(props) =>
     props.isDraggingOver ? 'var(--light-grey)' : 'white'};
-  /* padding: 30px 15px; */
   min-height: 60px;
   border-radius: 12px;
 
