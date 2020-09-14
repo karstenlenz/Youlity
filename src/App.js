@@ -6,10 +6,11 @@ import ResultPage from './Result/ResultPage'
 import PersonalityStyleInfo from './Result/PersonalityStyleInfo'
 import Homepage from './Homepage/Homepage'
 import MotivesIntro from './Motives/MotivesIntro'
+import styled from 'styled-components/macro'
 
 export default function App() {
   return (
-    <main>
+    <AppMain>
       <Switch>
         <Route path="/questionnaire/:testIdParam">
           <QuestionnairePage />
@@ -30,6 +31,10 @@ export default function App() {
           <Homepage />
         </Route>
       </Switch>
-    </main>
+    </AppMain>
   )
 }
+
+const AppMain = styled.main`
+  overflow-x: hidden;
+`

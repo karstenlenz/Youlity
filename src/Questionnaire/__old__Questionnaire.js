@@ -4,7 +4,6 @@ import { personalityStyleData } from '../data/personalityStyleData'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 import Button from '../common/Button'
 import styled from 'styled-components/macro'
-import SwipeableCard from './SwipeableCard'
 
 export default function Questionnaire({ testIds }) {
   const history = useHistory()
@@ -30,10 +29,6 @@ export default function Questionnaire({ testIds }) {
         Frage {currentQuestionIndex + 1} / {questions.length}
       </h2>
       <h3>{questions[currentQuestionIndex]}</h3>
-      <h3>Hier wird geswipt</h3>
-      <div>
-        <SwipeableCard>Test-Karte</SwipeableCard>
-      </div>
 
       <ButtonRow>
         <Button
