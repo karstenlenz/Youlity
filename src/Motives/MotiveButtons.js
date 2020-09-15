@@ -3,6 +3,11 @@ import styled from 'styled-components/macro'
 import InfoOverlay from '../common/InfoOverlay'
 import Button from '../common/Button'
 import { motiveData } from '../data/motiveData'
+import PropTypes from 'prop-types'
+
+MotiveButtons.propTypes = {
+  handleMotiveClick: PropTypes.func.isRequired,
+}
 
 export default function MotiveButtons({ handleMotiveClick }) {
   return (

@@ -2,10 +2,19 @@ import React from 'react'
 import { useSwipeable } from 'react-swipeable'
 import styled from 'styled-components/macro'
 
+import PropTypes from 'prop-types'
+
+SwipeableCard.propTypes = {
+  children: PropTypes.any,
+  handleAnswer: PropTypes.func.isRequired,
+  offset: PropTypes.number.isRequired,
+  setOffset: PropTypes.func.isRequired,
+  swipeThreshold: PropTypes.number.isRequired,
+}
+
 export default function SwipeableCard({
   children,
   handleAnswer,
-  stackIndex,
   offset,
   setOffset,
   swipeThreshold,

@@ -1,6 +1,16 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import SwipeableCard from './SwipeableCard'
+import PropTypes from 'prop-types'
+
+CardStack.propTypes = {
+  questions: PropTypes.array.isRequired,
+  currentQuestionIndex: PropTypes.number.isRequired,
+  handleAnswer: PropTypes.func.isRequired,
+  offset: PropTypes.number.isRequired,
+  setOffset: PropTypes.func.isRequired,
+  swipeThreshold: PropTypes.number.isRequired,
+}
 
 export default function CardStack({
   questions,

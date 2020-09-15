@@ -5,9 +5,14 @@ import HeadlineUnderline from '../common/HeadlineUnderline'
 import Button from '../common/Button'
 import styled from 'styled-components/macro'
 import CardStack from './CardStack'
+import PropTypes from 'prop-types'
 
 import { ReactComponent as ArrowLeft } from '../img/arrow_left.svg'
 import { ReactComponent as ArrowRight } from '../img/arrow_right.svg'
+
+Questionnaire.propTypes = {
+  testIds: PropTypes.number.isRequired,
+}
 
 export default function Questionnaire({ testIds }) {
   const history = useHistory()
