@@ -5,6 +5,11 @@ import NoticeBox from '../common/NoticeBox'
 import SectionBG from '../common/SectionBG'
 import TextLink from '../common/TextLink'
 import { personalityStyleData } from '../data/personalityStyleData'
+import PropTypes from 'prop-types'
+
+Result.propTypes = {
+  resultData: PropTypes.arrayOf(PropTypes.object).isRequired,
+}
 
 export default function Result({ resultData }) {
   return (
