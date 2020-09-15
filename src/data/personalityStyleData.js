@@ -1,8 +1,8 @@
 export const personalityStyleData = [
   {
     id: 1,
-    name: 'der narzisstische Persönlichkeitsstil',
-    commonName: 'Selbstverliebt',
+    name: 'Der narzisstische Persönlichkeitsstil',
+    commonName: 'Der selbstbewusste Persönlichkeitsstil',
     motives: ['Anerkennung', 'Autonomie', 'Solidarität', 'Wichtigkeit'],
     questions: [
       'Brauchen Sie in hohem Maße Lob und Anerkennung?',
@@ -15,7 +15,7 @@ export const personalityStyleData = [
       'Neigen Sie dazu, andere Personen „einzuspannen“, ihnen Aufgaben zu geben, die Sie eigentlich selbst erledigen sollten?',
     ],
     description:
-      'Narzisstisch geprägte Menschen möchten erfolgreich sein. Sie sind leistungs- und anstrengungsbereit. Ihr Ziel ist, bewundert zu werden. Hierfür spannen sie auch andere ein. Sie sind aber zwiegespalten: Von ihren Fähigkeiten überzeugt und doch an sich selbst zweifelnd. Nach außen wirken sie großartig, kompetent und fähig, um andere zu beeindrucken. Dabei sind sie kritiksensibel, nachtragend und darum bemüht, sich weder kontrollieren, noch bevormunden zu lassen.',
+      'Menschen mit diesem Stil sind selbstbewusst und möchten erfolgreich sein. In der Fachsprache spricht man auch vom "narzisstischen Persönlichkeitsstil". Sie sind leistungs- und anstrengungsbereit. Ihr Ziel ist, bewundert zu werden. Hierfür spannen sie auch andere ein. Sie sind aber zwiegespalten: Von ihren Fähigkeiten überzeugt und doch an sich selbst zweifelnd. Nach außen wirken sie großartig, kompetent und fähig, um andere zu beeindrucken. Dabei sind sie kritiksensibel, nachtragend und darum bemüht, sich weder kontrollieren, noch bevormunden zu lassen.',
     strengths: [
       'schnelle Entscheidungsfindung bei effektivem Handeln',
       'offensiver, risikofreudiger Umgang mit Problemen',
@@ -81,7 +81,8 @@ export const personalityStyleData = [
   },
   {
     id: 2,
-    name: 'der histrionische Persönlichkeitsstil',
+    name: 'Der histrionische Persönlichkeitsstil',
+    commonName: 'Der gesellige Persönlichkeitsstil',
     motives: ['Wichtigkeit', 'Solidarität', 'Verlässlichkeit'],
     questions: [
       'Liegt Ihnen viel daran, dass Sie für andere Personen wichtig sind, dass Sie in deren Leben eine Rolle spielen?',
@@ -140,7 +141,8 @@ export const personalityStyleData = [
   },
   {
     id: 3,
-    name: 'der dependente Persönlichkeitsstil',
+    name: 'Der dependente Persönlichkeitsstil',
+    commonName: 'Der anhängliche Persönlichkeitsstil',
     motives: ['Verlässlichkeit', 'Solidarität'],
     questions: [
       'Ist es Ihnen in persönlichen Beziehungen sehr wichtig zu wissen, dass ein Partner bei Ihnen bleibt, dass eine Beziehung stabil ist?',
@@ -199,7 +201,8 @@ export const personalityStyleData = [
   },
   {
     id: 4,
-    name: 'der selbstunsichere Persönlichkeitsstil',
+    name: 'Der selbstunsichere Persönlichkeitsstil',
+    commonName: 'Der sensible Persönlichkeitsstil',
     motives: ['Anerkennung', 'Wichtigkeit'],
     questions: [
       'Würden Sie sich selbst als „schüchtern“ bezeichnen?',
@@ -258,7 +261,8 @@ export const personalityStyleData = [
   },
   {
     id: 5,
-    name: 'der passiv-aggressive Persönlichkeitsstil',
+    name: 'Der passiv-aggressive Persönlichkeitsstil',
+    commonName: 'Der lässige Persönlichkeitsstil',
     motives: ['Grenzen', 'Autonomie', 'Anerkennung'],
     questions: [
       'Ist es Ihnen wichtig, auch in Beziehungen eigene Bereiche zu haben, die den Partner nichts angehen (z. B. eigenes Zimmer, eigenen Schreibtisch o. a.)?',
@@ -317,7 +321,8 @@ export const personalityStyleData = [
   },
   {
     id: 6,
-    name: 'der schizoide Persönlichkeitsstil',
+    name: 'Der schizoide Persönlichkeitsstil',
+    commonName: 'Der exzentrische Persönlichkeitsstil',
     motives: ['Solidarität', 'Verlässlichkeit', 'Wichtigkeit', 'Anerkennung'],
     questions: [
       'Haben Sie manchmal den Wunsch, andere Menschen wären an / auf Ihrer Seite und Sie könnten sich voll auf sie verlassen?',
@@ -376,7 +381,8 @@ export const personalityStyleData = [
   },
   {
     id: 7,
-    name: 'der zwanghafte Persönlichkeitsstil',
+    name: 'Der zwanghafte Persönlichkeitsstil',
+    commonName: 'Der gewissenhafte Persönlichkeitsstil',
     motives: ['Autonomie', 'Anerkennung', 'Wichtigkeit', 'Solidarität'],
     questions: [
       'Reagieren Sie ärgerlich, wenn andere Menschen Ihnen Vorschriften machen oder Sie bevormunden?',
@@ -435,7 +441,8 @@ export const personalityStyleData = [
   },
   {
     id: 8,
-    name: 'der paranoide Persönlichkeitsstil',
+    name: 'Der paranoide Persönlichkeitsstil',
+    CommonName: 'Der wachsame Persönlichkeitsstil',
     motives: ['Anerkennung', 'Grenzen', 'Autonomie', 'Solidarität'],
     questions: [
       'Zweifeln Sie manchmal an Ihren Kompetenzen und Fähigkeiten?',
@@ -494,7 +501,8 @@ export const personalityStyleData = [
   },
   {
     id: 9,
-    name: 'der Borderline-Persönlichkeitsstil',
+    name: 'Der Borderline-Persönlichkeitsstil',
+    commonName: 'Der sprunghafte Persönlichkeitsstil',
     motives: [
       'Anerkennung',
       'Wichtigkeit',

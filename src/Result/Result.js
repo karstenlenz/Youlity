@@ -1,11 +1,10 @@
 import React from 'react'
+import styled from 'styled-components/macro'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 import NoticeBox from '../common/NoticeBox'
-import TextLink from '../common/TextLink'
-import { capitalizeFirstLetter } from '../common/util'
-import { personalityStyleData } from '../data/personalityStyleData'
-import styled from 'styled-components/macro'
 import SectionBG from '../common/SectionBG'
+import TextLink from '../common/TextLink'
+import { personalityStyleData } from '../data/personalityStyleData'
 
 export default function Result({ resultData }) {
   return (
@@ -31,9 +30,7 @@ export default function Result({ resultData }) {
       {resultData.map((result) => {
         return (
           <SectionBG key={result.id}>
-            <h3>
-              {capitalizeFirstLetter(personalityStyleData[result.id - 1]?.name)}
-            </h3>
+            <h3>{personalityStyleData[result.id - 1]?.commonName}</h3>
             <p>
               Sie haben {result.yesCount} von{' '}
               {personalityStyleData[result.id - 1].questions.length} Fragen mit

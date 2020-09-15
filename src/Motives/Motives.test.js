@@ -1,11 +1,29 @@
 import { render } from '@testing-library/react'
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import Motives from './Motives'
 import { evaluateMatchingStyles } from './util'
+import ReactDOM from 'react-dom'
 
 describe('The Motives component', () => {
+  beforeAll(() => {
+    ReactDOM.createPortal = jest.fn((element, node) => {
+      return element
+    })
+  })
+
+  afterEach(() => {
+    ReactDOM.createPortal.mockClear()
+  })
+
   it('renders correctly', () => {
-    const { container } = render(<Motives />)
+    const { container } = render(
+      <Router>
+        <div id="root">
+          <Motives />
+        </div>
+      </Router>
+    )
     expect(container).toMatchSnapshot()
   })
 })

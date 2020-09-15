@@ -10,16 +10,19 @@ export default function () {
     <>
       <img alt="" src="/img/mirror.svg" />
       <HeadlineUnderline>
-        <h1>Entdecken Sie Ihren Persönlichkeitsstil!</h1>
+        <h1>Entschlüsseln Sie Ihre Persönlichkeit!</h1>
       </HeadlineUnderline>
       <BulletList listType="bullet_circle">
         <li>
-          Lernen Sie sich selbst kennen, mit Ihren eigenen Stärken und
-          Schwächen!
+          Informieren Sie sich über persönliche Eigenarten, die Ihr Denken,
+          Fühlen und Handeln prägen.
         </li>
         <li>
-          Erhalten Sie wertvolle Tipps zum Umgang mit Ihren Mitmenschen, egal ob
-          im Beruf oder in privaten Beziehungen!
+          Entwickeln Sie ein besseres Verständnis für sich selbst in
+          Beziehungen.
+        </li>
+        <li>
+          Profitieren Sie von speziell auf Sie zugeschnittenen Alltagstipps.
         </li>
       </BulletList>
       <HeadlineUnderline>

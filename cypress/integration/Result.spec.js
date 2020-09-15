@@ -23,7 +23,7 @@ context('Homepage', () => {
 
   it('can navigate to the details page', () => {
     cy.get('a').contains('Zu den Informationen').click()
-    cy.url().should('equal', `${Cypress.config().baseUrl + '/style-info/1'}`)
-    cy.get('h1').should('contain', 'Der narzisstische Persönlichkeitsstil')
+    cy.url().should('contain', '/style-info/1')
+    cy.get('h1').should('contain', 'Der selbstbewusste Persönlichkeitsstil')
   })
 })

@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-context('Motives Intro', () => {
+context('Questionnaire Intro', () => {
   beforeEach(() => {
     cy.visit('/questionnaire/89')
   })
@@ -15,7 +15,7 @@ context('Motives Intro', () => {
 
   it('has an introductory paragraph', () => {
     cy.contains(
-      'Durch die Auswahl Ihrer Bedürfnisse haben wir 2 potentielle Persönlichkeitsstile identifiziert. '
+      'Im Folgenden präsentieren wir Ihnen als Ergebnis Ihrer Auswahl zwei Fragebögen.'
     ).should('exist')
   })
 

@@ -16,6 +16,7 @@ const ButtonContainer = styled(Link)`
   left: 15px;
   right: 15px;
   bottom: 0;
+  z-index: var(--floating-button);
 `
 const BottomSpacer = styled.div`
   margin-bottom: 80px;

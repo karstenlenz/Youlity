@@ -55,11 +55,15 @@ p {
 :root {
 --background:-1;
 
---overlay-bg:100;
---overlay-content:200;
+--front:100;
+--floating-button:200;
+--overlay-bg:300;
+--overlay-content:400;
 
 --primary: #683B89;
+--primary-disabled: #E1D7E7 ;
 --secondary: #00C5AA;
+--secondary-disabled: #B2EEE5;
 --highlight: #65C2FD;
 --light-grey: #E0E9F1;
 --medium-grey: #B2A7B8;

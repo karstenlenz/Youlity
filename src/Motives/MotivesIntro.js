@@ -14,12 +14,12 @@ export default function MotivesIntro() {
         Die Persönlichkeit jedes Menschen ist von 6 Grundbedürfnissen bestimmt.
         Dabei gibt es bei jedem von uns eine unterschiedliche Gewichtung.
         <br />
-        In Schritt 1 müssen Sie für sich die wichtigsten drei Themen auswählen,
-        die Sie in Ihrem Leben und Ihren Beziehungen zu anderen Menschen am
-        meisten beschäftigen. Diese Grundbedürfnisse lassen erste Rückschlüsse
-        auf Ihre Persönlichkeitsstile zu. <br />
-        In Schritt 2 werden Sie dann 2 Fragebögen ausfüllen, um konkret zu
-        prüfen, wie ausgeprägt diese Stile bei Ihnen sind.
+        Wählen Sie in Schritt 1 Ihre drei wichtigsten Grundbedürfnisse.
+        <br />
+        In Schritt 2 werden Ihnen als Ergebnis Ihrer Auswahl zwei auf Sie
+        angepasste Fragebögen präsentiert.
+        <br />
+        Im Anschluss erhalten Sie Ihr Ergebnis und dazu passende Informationen.
       </p>
       <FloatingButtonContainer to="/motives/selection">
         <Button>Weiter zur Auswahl</Button>

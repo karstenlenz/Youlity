@@ -10,12 +10,12 @@ context('Homepage', () => {
   })
 
   it('has a headline', () => {
-    cy.contains('Entdecken Sie Ihren Persönlichkeitsstil!').should('exist')
+    cy.contains('Entschlüsseln Sie Ihre Persönlichkeit!').should('exist')
   })
 
   it('has an introductory bullet point', () => {
     cy.contains(
-      'Lernen Sie sich selbst kennen, mit Ihren eigenen Stärken und Schwächen!'
+      'Informieren Sie sich über persönliche Eigenarten, die Ihr Denken, Fühlen und Handeln prägen.'
     ).should('exist')
   })
 

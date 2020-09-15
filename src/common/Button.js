@@ -58,7 +58,15 @@ const BtnStyled = styled.button`
   border-radius: 39px;
 
   &:disabled {
-    opacity: 0.4;
+    background: ${(props) => {
+      if (props.btnType === 'primary') {
+        return 'var(--primary-disabled)'
+      } else if (props.btnType === 'secondary-disabled') {
+        return 'var(--secondary)'
+      } else {
+        return '#fff'
+      }
+    }};
     color: rgba(255, 255, 255, 0.5);
     ${(props) =>
       props.btnType === 'white' &&
