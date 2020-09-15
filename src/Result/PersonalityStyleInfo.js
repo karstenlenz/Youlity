@@ -37,7 +37,7 @@ export default function PersonalityStyleInfo() {
         </BulletList>
       </SectionNoBG>
       <InfoBG>
-        <h2>Tipps</h2>
+        <h2>Mindern Sie Ihre Schwächen ab, indem Sie...</h2>
         <BulletList listType="bullet_circle">
           {currentStyleData.tips.map((tip) => {
             return <li key={tip}>{tip}</li>
@@ -45,6 +45,15 @@ export default function PersonalityStyleInfo() {
         </BulletList>
       </InfoBG>
       <h2>Weitere Informationen</h2>
+      <p>
+        Hinweis: folgende Ressourcen thematisieren größtenteils
+        „Persönlichkeitsstörungen“. Das heißt weder, dass Sie eine
+        Persönlichkeitsstörung haben, noch, dass nur Menschen mit
+        Persönlichkeitsstörungen von den Informationen profitieren.
+        Persönlichkeitsstörungen sind Steigerungen von Persönlichkeitsaspekten,
+        die in geringerer Ausprägung viele Vorteile bieten können. Behalten Sie
+        das bei der Lektüre im Hinterkopf.
+      </p>
       <BulletList listType="bullet_circle">
         {currentStyleData.furtherInfo.map((info, index) => {
           return (

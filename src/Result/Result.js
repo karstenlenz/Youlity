@@ -36,27 +36,35 @@ export default function Result({ resultData }) {
               {personalityStyleData[result.id - 1].questions.length} Fragen mit
               "Ja" beantwortet.
             </p>
-            {result.yesCount > 5 ? (
+            {result.yesCount > 4 ? (
               <>
                 <p>
-                  Das deutet darauf hin, dass dieser Stil bei Ihnen
+                  Das kann darauf hindeuten, dass dieser Stil bei Ihnen
                   überdurchschnittlich ausgeprägt ist. <br />
                   Das heißt nicht, dass etwas mit Ihnen „nicht stimmt“, oder
                   eine Störung vorliegt! Jeder Mensch hat einen oder mehrere
                   dominante Persönlichkeitsstile. Erst wenn Sie unter Ihrer
                   Persönlichkeit leiden, besteht Handlungsbedarf. <br />
-                  Wir haben Ihnen die wichtigsten Informationen und Tipps zu
-                  diesem Stil zusammengestellt.
+                  Lesen Sie sich die folgenden Informationen durch und prüfen
+                  Sie ehrlich, ob die Beschreibungen auf Sie zutreffen.
                 </p>
                 <TextLink href={'/style-info/' + result.id}>
                   Zu den Informationen &gt;
                 </TextLink>
               </>
             ) : (
-              <p>
-                Das deutet <strong>nicht</strong> darauf hin, dass dieser Stil
-                bei Ihnen überdurchschnittlich ausgeprägt ist.
-              </p>
+              <>
+                <p>
+                  Das deutet <strong>wahrscheinlich nicht</strong> darauf hin,
+                  dass dieser Stil bei Ihnen überdurchschnittlich ausgeprägt
+                  ist. Sie können sich die Beschreibung des Persönlichkeitsstil
+                  trotzdem gerne durchlesen und prüfen, ob Sie sich damit
+                  identifizieren können.
+                </p>
+                <TextLink href={'/style-info/' + result.id}>
+                  Zu den Informationen &gt;
+                </TextLink>
+              </>
             )}
           </SectionBG>
         )
