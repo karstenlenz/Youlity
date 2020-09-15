@@ -11,7 +11,7 @@ import { ReactComponent as ArrowLeft } from '../img/arrow_left.svg'
 import { ReactComponent as ArrowRight } from '../img/arrow_right.svg'
 
 Questionnaire.propTypes = {
-  testIds: PropTypes.number.isRequired,
+  testIds: PropTypes.arrayOf(PropTypes.number).isRequired,
 }
 
 export default function Questionnaire({ testIds }) {
@@ -108,7 +108,7 @@ const H2Styled = styled.h2`
 `
 const QuestionnaireButton = styled(Button)`
   ${(props) =>
-    props.borderColor ? 'border: 2px solid ' + props.borderColor + ';' : ''}
+    props.borderColor && 'border: 2px solid ' + props.borderColor + ';'}
 `
 const ArrowContainer = styled.div`
   display: flex;

@@ -49,11 +49,7 @@ exports[`The Result component renders correctly 1`] = `
     class="SectionBG__Background-sc-164jup7-0 fYEYNK"
   >
     <h3>
-<<<<<<< HEAD
-      der passiv-aggressive Persönlichkeitsstil
-=======
       Der lässige Persönlichkeitsstil
->>>>>>> master
     </h3>
     <p>
       Sie haben 
@@ -81,11 +77,7 @@ exports[`The Result component renders correctly 1`] = `
     class="SectionBG__Background-sc-164jup7-0 fYEYNK"
   >
     <h3>
-<<<<<<< HEAD
-      der dependente Persönlichkeitsstil
-=======
       Der anhängliche Persönlichkeitsstil
->>>>>>> master
     </h3>
     <p>
       Sie haben 
