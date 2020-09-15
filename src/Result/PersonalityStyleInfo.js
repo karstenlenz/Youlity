@@ -21,7 +21,7 @@ export default function PersonalityStyleInfo() {
         <p>{currentStyleData.description}</p>
       </SectionNoBG>
       <InfoBG>
-        <h2>Stärken</h2>
+        <h2>Vorteile</h2>
         <BulletList listType="bullet_circle">
           {currentStyleData.strengths.map((strength) => {
             return <li key={strength}>{strength}</li>
@@ -29,7 +29,7 @@ export default function PersonalityStyleInfo() {
         </BulletList>
       </InfoBG>
       <SectionNoBG>
-        <h2>Schwächen</h2>
+        <h2>Nachteile</h2>
         <BulletList listType="bullet_circle">
           {currentStyleData.weaknesses.map((weakness) => {
             return <li key={weakness}>{weakness}</li>
@@ -37,7 +37,7 @@ export default function PersonalityStyleInfo() {
         </BulletList>
       </SectionNoBG>
       <InfoBG>
-        <h2>Mindern Sie Ihre Schwächen ab, indem Sie...</h2>
+        <h2>Reduzieren Sie Nachteile, indem Sie ...</h2>
         <BulletList listType="bullet_circle">
           {currentStyleData.tips.map((tip) => {
             return <li key={tip}>{tip}</li>
@@ -71,13 +71,21 @@ export default function PersonalityStyleInfo() {
           Hier sind erste Anlaufstellen:
         </p>
         <ul>
-          {currentStyleData.help.map((help, index) => {
-            return (
-              <li key={index}>
-                <TextLink href={help.url}>{help.text}</TextLink>
-              </li>
-            )
-          })}
+          <li>
+            <TextLink href="https://www.wege-zur-psychotherapie.org/">
+              Infoseite "Wege zur Psychotherapie"
+            </TextLink>
+          </li>
+          <li>
+            <TextLink href="https://www.therapie.de/psyche/info/">
+              Psychotherapeuten-Suche
+            </TextLink>
+          </li>
+          <li>
+            <TextLink href="tel:08001110111">
+              Kostenlose Telefon-Seelsorge 0800-1110111
+            </TextLink>
+          </li>
         </ul>
       </HelpSection>
     </>

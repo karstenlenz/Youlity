@@ -37,14 +37,14 @@ export const personalityStyleData = [
       'starke Kritikempfindlichkeit -> andere geben keine negative Rückmeldungen -> Entfremdung von der Realität -> schlechtere Einschätzung und Fehlentscheidungen',
     ],
     tips: [
-      '...versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
-      '...Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie in erster Linie versuchen Anerkennung zu erhalten',
-      '...wohlwollend mit sich umgehen',
-      '...sich vor Augen führen, dass ihr selbstbewusster Persönlichkeitsanteil nichts Seltenes oder Schlimmes ist',
-      '...sich vor Augen führen, dass Sie nichts für Ihre Prägung können',
-      '...Ihre Selbstzweifel im Keim ersticken, indem Sie diese hinterfragen und auf ihren Realitätsgehalt hin untersuchen',
-      '...realistische Gegenargumente gegen Ihre Selbstzweifel suchen',
-      '...sich vor Augen führen, dass Ihre selbstbewussten Persönlichkeitsanteile eine natürliche Reaktion auf Ihre Vergangenheit in Form einer Überlebensstrategie sein könnten',
+      '... versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
+      '... Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie in erster Linie versuchen Anerkennung zu erhalten',
+      '... wohlwollend mit sich umgehen',
+      '... sich vor Augen führen, dass Ihr selbstbewusster Persönlichkeitsanteil nichts Seltenes oder Schlimmes ist',
+      '... sich vor Augen führen, dass Sie nichts für Ihre Prägung können',
+      '... Ihre Selbstzweifel im Keim ersticken, indem Sie diese hinterfragen und auf ihren Realitätsgehalt hin untersuchen',
+      '... realistische Gegenargumente gegen Ihre Selbstzweifel suchen',
+      '... sich vor Augen führen, dass Ihre selbstbewussten Persönlichkeitsanteile eine natürliche Reaktion auf Ihre Vergangenheit in Form einer Überlebensstrategie sein könnten',
     ],
     furtherInfo: [
       {
@@ -59,29 +59,14 @@ export const personalityStyleData = [
       },
       {
         text:
-          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der narzisstischen Persönlichkeitsstörung, hogrefe, 2011',
+          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der narzisstischen Persönlichkeitsstörung, Hogrefe, 2011',
         url:
-          'https://www.hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-narzisstischen-persoenlichkeitsstoerung-66296.html',
+          'https://www.Hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-narzisstischen-persoenlichkeitsstoerung-66296.html',
       },
       {
-        text: 'Literatur-Liste Narzismuss',
+        text: 'Literatur-Liste Narzissmus',
         url:
           'http://www.ipp-bochum.de/n-kop/persoenlichkeitsstoerungen-narzistisch.htm',
-      },
-    ],
-    help: [
-      {
-        text: 'Median Kliniken Infoseite Narzissmus',
-        url:
-          'https://www.median-kliniken.de/de/behandlungsgebiete/psychosomatik/persoenlichkeitsstoerungen/formen/narzisstische-persoenlichkeitsstoerung/',
-      },
-      {
-        text: 'Psychotherapie Informationsdienst',
-        url: 'https://www.psychotherapiesuche.de/',
-      },
-      {
-        text: 'Test-Telefonnummer',
-        url: 'tel:+491789396747',
       },
     ],
   },
@@ -111,22 +96,22 @@ export const personalityStyleData = [
       'Sie können andere Menschen „um den Finger wickeln“',
     ],
     weaknesses: [
-      'Beziehungskosten: anderen Regeln zu setzen, sie zu manipulieren und auszunutzen verprellt diese',
+      'Beziehungskosten: anderen Regeln zu setzen, sie zu manipulieren und auszunutzen, verprellt diese',
       'Buhlen um Aufmerksamkeit kann andere ärgerlich machen und anstrengend sein',
       'Entfremdung von anderen Bedürfnissen führt zu diffuser Unzufriedenheit',
       'authentisches Handeln kann verlernt werden',
     ],
     tips: [
-      '...versuchen, sich selbst zu verstehen: Wie wichtig ist es Ihnen, für andere wichtig zu sein?',
-      '...Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Aufmerksamkeit ein Kernbedürfnis für Sie ist',
-      '...wohlwollend mit sich umgehen',
-      '...sich vor Augen führen, dass dramatische Persönlichkeitsanteile nichts Seltenes oder Schlimmes sind',
-      '...sich vor Augen führen, dass Sie nichts für Ihre Prägung können, weil diese mit hoher Wahrscheinlichkeit ein Ergebnis Ihrer Lebensgeschichte ist',
-      '...prüfen, ob Sie auf authentischem, transparenten Weg Aufmerksamkeit von anderen bekommen können',
-      '...sich klar machen, dass Sie kein Recht haben, andere für Ihre Zwecke einzuspannen',
-      '...nachsichtig sind, wenn Ihr Partner nicht genau das tut, was Sie möchten',
-      '...versuchen herauszufinden, was Sie wirklich möchten, wonach Sie sich sehnen und was Ihnen abseits von Aufmerksamkeit gut tut',
-      '...Ihre Spontanität bremsen',
+      '... versuchen, sich selbst zu verstehen: Wie wichtig ist es Ihnen, für andere wichtig zu sein?',
+      '... Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Aufmerksamkeit ein Kernbedürfnis für Sie ist',
+      '... wohlwollend mit sich umgehen',
+      '... sich vor Augen führen, dass gesellige Persönlichkeitsanteile nichts Seltenes oder Schlimmes sind',
+      '... sich vor Augen führen, dass Sie nichts für Ihre Prägung können, weil diese mit hoher Wahrscheinlichkeit ein Ergebnis Ihrer Lebensgeschichte ist',
+      '... prüfen, ob Sie auf authentischem, transparenten Weg Aufmerksamkeit von anderen bekommen können',
+      '... sich klar machen, dass Sie kein Recht haben, andere für Ihre Zwecke einzuspannen',
+      '... nachsichtig sind, wenn Ihr Partner nicht genau das tut, was Sie möchten',
+      '... versuchen herauszufinden, was Sie wirklich möchten, wonach Sie sich sehnen und was Ihnen abseits von Aufmerksamkeit gut tut',
+      '... Ihre Spontanität bremsen',
     ],
     furtherInfo: [
       {
@@ -141,28 +126,14 @@ export const personalityStyleData = [
       },
       {
         text:
-          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der histrionischen Persönlichkeitsstörung, hogrefe, 2012',
+          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der histrionischen Persönlichkeitsstörung, Hogrefe, 2012',
         url:
-          'https://www.hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-histrionischen-persoenlichkeitsstoerung-66360.html',
+          'https://www.Hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-histrionischen-persoenlichkeitsstoerung-66360.html',
       },
       {
         text: 'Literatur-Liste histrionische Persönlichkeitsstörung',
         url:
           'http://www.ipp-bochum.de/n-kop/persoenlichkeitsstoerungen-histrionisch.htm',
-      },
-    ],
-    help: [
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'Test-Telefonnummer',
-        url: 'tel:+491789396747',
       },
     ],
   },
@@ -209,17 +180,17 @@ export const personalityStyleData = [
       'möglicherweise finden andere sie langweilig',
     ],
     tips: [
-      '...versuchen, sich selbst zu verstehen: Wie wichtig ist es Ihnen, es in Beziehungen auf Ihre Kosten anderen recht zu machen, um die Beziehung aufrecht zu erhalten?',
-      '...Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie Angst davor haben, von anderen verlassen zu werden',
-      '...herausfinden, was Sie eigentlich möchten – und was nicht',
-      '...Ihre Gefühle beachten und ernst nehmen. Gefühle sind Wegweiser zu Ihren Bedürfnissen. Sie sind informativ. Analysieren Sie, was die Gefühle aussagen.',
-      '...sich selbst ernst und wichtig nehmen',
-      'sich vor Augen führen, dass Sie erst durch eigene Wünsche und Meinungen zu einem authentischen interessanten Gegenüber werden',
-      '...sich klar machen, dass Konflikte für Beziehungen überlebenswichtig sind',
-      '...anderen Rückmeldungen geben – auch kritische',
-      '...üben Entscheidungen zu treffen',
-      '...eigene Aktivität pflegen, also für Sie allein typische Hobbys und Interessen',
-      '...sich vor Augen führen, was Sie können und wodurch Sie attraktiv sind',
+      '... versuchen, sich selbst zu verstehen: Wie wichtig ist es Ihnen, es in Beziehungen auf Ihre Kosten anderen recht zu machen, um die Beziehung aufrecht zu erhalten?',
+      '... Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie Angst davor haben, von anderen verlassen zu werden',
+      '... herausfinden, was Sie eigentlich möchten – und was nicht',
+      '... Ihre Gefühle beachten und ernst nehmen. Gefühle sind Wegweiser zu Ihren Bedürfnissen. Sie sind informativ. Analysieren Sie, was die Gefühle aussagen.',
+      '... sich selbst ernst und wichtig nehmen',
+      '... sich vor Augen führen, dass Sie erst durch eigene Wünsche und Meinungen zu einem authentischen interessanten Gegenüber werden',
+      '... sich klar machen, dass Konflikte für Beziehungen überlebenswichtig sind',
+      '... anderen Rückmeldungen geben – auch kritische',
+      '... üben, Entscheidungen zu treffen',
+      '... eigene Aktivität pflegen, also für Sie allein typische Hobbys und Interessen',
+      '... sich vor Augen führen, was Sie können und wodurch Sie attraktiv sind',
     ],
     furtherInfo: [
       {
@@ -230,21 +201,7 @@ export const personalityStyleData = [
         text:
           'Sachse, Rainer; Klärungsorientierte Psychotherapie der dependenten Persönlichkeitsstörung.',
         url:
-          'https://www.hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-dependenten-persoenlichkeitsstoerung-66482.html',
-      },
-    ],
-    help: [
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'Test-Telefonnummer',
-        url: 'tel:+491789396747',
+          'https://www.Hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-dependenten-persoenlichkeitsstoerung-66482.html',
       },
     ],
   },
@@ -266,12 +223,9 @@ export const personalityStyleData = [
     description:
       'Sensible Menschen haben Angst, sich in sozialen Situationen zu blamieren oder falsch zu verhalten. Sie befürchten, wesentliche soziale Erwartungen nicht erfüllen zu können, daraufhin abgelehnt und ausgegrenzt zu werden. Deshalb vermeiden sie es, auf andere zuzugehen, sich zu zeigen und Smalltalk zu führen. Einige vermeiden soziale Kontakte komplett. Sie verpassen es, diese zu trainieren und dadurch wichtige Kompetenzen aufzubauen. Bei sehr starker Ausprägung, die zu umfangreichen Problemen in Beziehungen führt, spricht man von einer selbstunsicheren Persönlichkeitsstörung.',
     strengths: [
-      'gute soziale Fähigkeit',
-      'Wissen darüber, wie man sich sozial angemessen verhält',
-      'gute Gesprächsführung',
-      'Möglichkeit zu Smalltalk',
-      'Fähigkeit, über sich selbst zu erzählen',
-      'Fähigkeit zuzuhören und auf andere verständnisvoll einzugehen',
+      'Kreativität',
+      'enge Bindung zu vertrauten Menschen',
+      'zurückhaltende Art wird in manchen Situationen geschätzt',
     ],
     weaknesses: [
       'Vermeidung sozialer Situationen',
@@ -283,16 +237,16 @@ export const personalityStyleData = [
       'selbsterfüllende Prophezeiungen',
     ],
     tips: [
-      '...versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
-      '...Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie Angst davor haben, sich in sozialen Situationen falsch zu verhalten und deshalb abgelehnt zu werden',
-      '...sich den Leitspruch zu eigen machen: „Mein Weg ist da, wo die Angst ist. Und zwar durch sie hindurch.“',
-      '...sich vor Augen führen, dass Ihre Ängste durch Überzeugungen und Annahmen zustande kommen und sie nicht einfach wahr sind',
-      '...sich klar machen, dass diese Überzeugungen und Ihr Verhalten veränderbar sind',
-      '...sich entschließen etwas gegen Ihre Ängste zu unternehmen – nur Sie können das',
-      '...trainieren: Sprechen Sie Menschen an, mit denen Sie keine Beziehung beginnen möchten. Dabei geht es nur darum, das Ansprechen zu üben',
-      '...einsehen, dass Ihre Katastrophenfantasien unsinnig sind: Niemand wird Sie fertig machen. Wenn etwas wie Desinteresse aufkommt, können Sie dies bewältigen',
-      '...verstehen, dass Attraktivität nicht nur aus gutem Aussehen besteht',
-      '...sich vergegenwärtigen, was an Ihnen alles attraktiv ist',
+      '... versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
+      '... Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie Angst davor haben, sich in sozialen Situationen falsch zu verhalten und deshalb abgelehnt zu werden',
+      '... sich den Leitspruch zu eigen machen: „Mein Weg ist da, wo die Angst ist. Und zwar durch sie hindurch.“',
+      '... sich vor Augen führen, dass Ihre Ängste durch Überzeugungen und Annahmen zustande kommen und sie nicht einfach wahr sind',
+      '... sich klar machen, dass diese Überzeugungen und Ihr Verhalten veränderbar sind',
+      '... sich entschließen, etwas gegen Ihre Ängste zu unternehmen – nur Sie können das',
+      '... trainieren: Sprechen Sie Menschen an, mit denen Sie keine Beziehung beginnen möchten. Dabei geht es nur darum, das Ansprechen zu üben',
+      '... einsehen, dass Ihre Katastrophenfantasien unsinnig sind: Niemand wird Sie fertig machen. Wenn etwas wie Desinteresse aufkommt, können Sie dies bewältigen',
+      '... verstehen, dass Attraktivität nicht nur aus gutem Aussehen besteht',
+      '... sich vergegenwärtigen, was an Ihnen alles attraktiv ist',
     ],
     furtherInfo: [
       {
@@ -301,23 +255,9 @@ export const personalityStyleData = [
       },
       {
         text:
-          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der selbstunsicheren Persönlichkeitsstörung. hogrefe, 2014',
+          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der selbstunsicheren Persönlichkeitsstörung. Hogrefe, 2014',
         url:
-          'https://www.hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-selbstunsicheren-persoenlichkeitsstoerung-66622.html',
-      },
-    ],
-    help: [
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'Test-Telefonnummer',
-        url: 'tel:+491789396747',
+          'https://www.Hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-selbstunsicheren-persoenlichkeitsstoerung-66622.html',
       },
     ],
   },
@@ -343,25 +283,25 @@ export const personalityStyleData = [
       'lobt man parallel seinen Chef, sind diese Züge als soziale Kompetenz durchaus erfolgversprechend',
     ],
     weaknesses: [
-      'Beziehungskosten: Sabotage verprellt andere à diese können sich nicht mehr auf ihr Gegenüber verlassen und vertrauen nicht mehr',
+      'Beziehungskosten: Sabotage verprellt andere => diese können sich nicht mehr auf ihr Gegenüber verlassen und vertrauen nicht mehr',
       'man erhält keine verantwortungsvollen Aufgaben mehr',
       'beruflich steigt man eventuell nicht mehr auf',
       'geringe Leistungsbereitschaft',
       'negative Grundeinstellung, die für andere durch Jammern und Klagen anstrengend wird',
       'mangelnde Verlässlichkeit und Verantwortungsübernahme ärgern, frustrieren und enttäuschen andere',
       'Probleme, Autoritäten zu akzeptieren',
-      'hyperallergische Reaktionen auf (antizipierte) Einschränkungen der Autonomie (=hohe Reaktanz)',
+      'hyperallergische Reaktionen auf (antizipierte) Einschränkungen der Autonomie (d.h. hohe Reaktanz)',
     ],
     tips: [
-      '...versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
-      '...Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie in erster Linie versuchen verdeckt Ihre Grenzen und Autonomie zu schützen',
-      '...sich verdeutlichen, dass andere lediglich Ihre bestehenden Annahmen aktivieren und Ihr Denken und Handeln durch diese gesteuert werden. Sie reagieren auf alte Erfahrungen, nicht auf die Person in der eigentlichen Situation',
-      'sich fragen, ob sie wirklich so mit anderen umgehen wollen: Wie würden Sie sich fühlen, ginge man so mit Ihnen um?',
-      'prüfen, ob es nicht auch eine Idee wäre den Wünschen der anderen zu entsprechen',
-      'sich klar machen, dass es in Beziehungen normal ist, auch etwas für den anderen zu tun',
-      'Ihren eigenen Anteil an Problemen und Konflikten zu erkennen',
-      'lernen, direkt Nein zu sagen und sich Auseinandersetzungen zu stellen',
-      'positive Dinge fokussieren: Nehmen Sie an, was gut läuft!',
+      '... versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
+      '... Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie in erster Linie versuchen verdeckt Ihre Grenzen und Autonomie zu schützen',
+      '... sich verdeutlichen, dass andere lediglich Ihre bestehenden Annahmen aktivieren und Ihr Denken und Handeln durch diese gesteuert werden. Sie reagieren auf alte Erfahrungen, nicht auf die Person in der eigentlichen Situation',
+      '... sich fragen, ob Sie wirklich so mit anderen umgehen wollen: Wie würden Sie sich fühlen, ginge man so mit Ihnen um?',
+      '... prüfen, ob es nicht auch eine Idee wäre den Wünschen der anderen zu entsprechen',
+      '... sich klar machen, dass es in Beziehungen normal ist, auch etwas für den anderen zu tun',
+      '... Ihren eigenen Anteil an Problemen und Konflikten zu erkennen',
+      '... lernen, direkt Nein zu sagen und sich Auseinandersetzungen zu stellen',
+      '... positive Dinge fokussieren: Nehmen Sie an, was gut läuft!',
     ],
     furtherInfo: [
       {
@@ -370,23 +310,9 @@ export const personalityStyleData = [
       },
       {
         text:
-          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der schizoiden, passiv-aggressiven und paranoiden Persönlichkeitsstörung. hogrefe, 2017',
+          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der schizoiden, passiv-aggressiven und paranoiden Persönlichkeitsstörung. Hogrefe, 2017',
         url:
-          'https://www.hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-schizoiden-passiv-aggressiven-und-paranoiden-persoenlichkeitsstoerung-76541.html',
-      },
-    ],
-    help: [
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'Test-Telefonnummer',
-        url: 'tel:+491789396747',
+          'https://www.Hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-schizoiden-passiv-aggressiven-und-paranoiden-persoenlichkeitsstoerung-76541.html',
       },
     ],
   },
@@ -410,30 +336,30 @@ export const personalityStyleData = [
     ],
     strengths: [
       'Fähigkeit, alleine zu sein und Aktivität länger selbstständig durchzuführen ohne unter Einsamkeit zu leiden',
-      'gut bei Aufgaben, sie man besonders gut allein ausführt',
+      'gut bei Aufgaben, die man besonders gut allein ausführt',
     ],
     weaknesses: [
       'Selbsttäuschungen: Man redet sich ein, Beziehungen gar nicht zu benötigen, da diese nichts bringen – deshalb verzichtbar sind. Dies dient dem Versuch, das natürliche Bedürfnis nach Beziehungen zu reduzieren',
       'andere werden mit nonverbalen Mitteln auf Distanz gehalten',
       'Kontaktvermeidung',
-      'Zwangskontakte: vorherbestimmte Kontakte auf Veranstaltungen sind für schizoid geprägte Menschen ein Gräuel, weil sie selbst über Art und Umfang der Kontakte entscheiden möchten',
+      'Zwangskontakte: vorherbestimmte Kontakte auf Veranstaltungen sind für ungesellige Menschen ein Gräuel, weil sie selbst über Art und Umfang der Kontakte entscheiden möchten',
       'Vorbehalte in Beziehungen: ein völliges Einlassen auf Beziehungen wird nicht möglich. Auszeiten sind sehr wichtig, um das Gefühl zu erhalten alleine klar zu kommen und allein sein zu dürfen',
       'innere Konflikte zwischen Nähe und Distanz: Wunsch nach Nähe bei Angst vor dieser und Bedürfnis nach Distanz zum Schutz',
       'Mangel an sozialen Kompetenzen durch wenig Training',
       'Jobs mit viel Kundenkontakt sind schwer möglich',
     ],
     tips: [
-      '...versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
-      '...Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie in erster Linie versuchen Abstand zu anderen Menschen zu halten, um in einer Beziehung nicht allein gelassen und verletzt zu werden.',
-      '...festzustellen versuchen, was Sie aktuell brauchen: Abstand oder Nähe?',
-      '...akzeptieren, auch mal Nähe zu benötigen. Das ist normal. Nähe und Distanz lassen sich auch in Beziehungen regulieren',
-      '...Ihrer Intuition vertrauen: Schaffen Sie Distanz, wenn Sie welche benötigen. Sprechen Sie vorher mit anderen darüber, dass dieser Schritt mit Ihnen zu tun hat',
-      '...auch bei einem Nähe-Bedürfnis Nähe herstellen. Nutzen Sie diese Momente, um Ihre sozialen Kompetenzen zu verfeinern: zuhören, reagieren, Emotionen ausdrücken, Smalltalk führen, flirten und ähnliches',
-      '..auf Ihre Gefühle achten, diese ernst nehmen und analysieren, was sie bedeuten könnten',
-      '...andere beobachten und sich fragen: Was meint, möchte und fühlt diese Person? Trainieren Sie Ihre Empathie und fragen Sie nach, wenn Sie etwas nicht verstehen',
-      '...sich öffnen und sich anderen mitteilen. Bitten Sie um Gehör und Verständnis!',
-      '...sich mit sozialen Situationen konfrontieren',
-      '...anderen sagen, was Sie stört. Üben Sie zu verhandeln und Kompromisse zu erreichen',
+      '... versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
+      '... Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie in erster Linie versuchen Abstand zu anderen Menschen zu halten, um in einer Beziehung nicht allein gelassen und verletzt zu werden.',
+      '... festzustellen versuchen, was Sie aktuell brauchen: Abstand oder Nähe?',
+      '... akzeptieren, auch mal Nähe zu benötigen. Das ist normal. Nähe und Distanz lassen sich auch in Beziehungen regulieren',
+      '... Ihrer Intuition vertrauen: Schaffen Sie Distanz, wenn Sie welche benötigen. Sprechen Sie vorher mit anderen darüber, dass dieser Schritt mit Ihnen zu tun hat',
+      '... auch bei einem Nähe-Bedürfnis Nähe herstellen. Nutzen Sie diese Momente, um Ihre sozialen Kompetenzen zu verfeinern: zuhören, reagieren, Emotionen ausdrücken, Smalltalk führen, flirten und ähnliches',
+      '... auf Ihre Gefühle achten, diese ernst nehmen und analysieren, was sie bedeuten könnten',
+      '... andere beobachten und sich fragen: Was meint, möchte und fühlt diese Person? Trainieren Sie Ihre Empathie und fragen Sie nach, wenn Sie etwas nicht verstehen',
+      '... sich öffnen und sich anderen mitteilen. Bitten Sie um Gehör und Verständnis!',
+      '... sich mit sozialen Situationen konfrontieren',
+      '... anderen sagen, was Sie stört. Üben Sie zu verhandeln und Kompromisse zu erreichen',
     ],
     furtherInfo: [
       {
@@ -442,23 +368,9 @@ export const personalityStyleData = [
       },
       {
         text:
-          'Sachse, Rainer; Klärungsorientierte Psychotherapie der schizoiden, passiv-aggressiven und paranoiden Persönlichkeitsstörung, hogrefe, 2017',
+          'Sachse, Rainer; Klärungsorientierte Psychotherapie der schizoiden, passiv-aggressiven und paranoiden Persönlichkeitsstörung, Hogrefe, 2017',
         url:
-          'https://www.hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-schizoiden-passiv-aggressiven-und-paranoiden-persoenlichkeitsstoerung-76541.html',
-      },
-    ],
-    help: [
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'Test-Telefonnummer',
-        url: 'tel:+491789396747',
+          'https://www.Hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-schizoiden-passiv-aggressiven-und-paranoiden-persoenlichkeitsstoerung-76541.html',
       },
     ],
   },
@@ -498,19 +410,19 @@ export const personalityStyleData = [
       'wenig Flexibilität',
     ],
     tips: [
-      '...versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
-      '...Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie viel Wert auf die Einhaltung von Normen, Standards und Details legen',
-      '...versuchen, die aus Ihren Normen resultierenden Ängste zu verstehen.',
-      '...sich vor Augen führen, dass Ihre Normen nicht existieren, weil sie wahr sind, sondern weil sie Sie vor starken Ängsten schützen sollen.',
-      '...sich bewusst machen, welche Katastrophen Sie durch Ihre Annahmen befürchten. Prüfen Sie, wie wahrscheinlich diese sind und ob Sie diese Katastrophen nicht im Notfall auch bewältigen könnten',
-      '...lernen, Risiken einzugehen',
-      '...sich damit beschäftigen, was Sie mögen, möchten und was Ihnen gut tut',
-      '...das, was Ihnen gut tun würde, auch wirklich tun. Trainieren Sie Genießen!',
-      'Entspannen Sie! Tun Sie, was Spaß macht!',
-      'Ausnahmen machen: Weichen Sie Ihre Normen auf!',
-      'versuchen, Ihren Partner zu verstehen und auf ihn einzugehen',
-      'sich klar machen, dass Kompromisse zu einer Beziehung gehören. Sie müssen auch etwas für Ihren Partner tun',
-      '...sich Ihre Autonomie zurück holen. Lassen Sie sich nicht von Ihren Normen versklaven. Sie bestimmen!',
+      '... versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
+      '... Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie viel Wert auf die Einhaltung von Normen, Standards und Details legen',
+      '... versuchen, die aus Ihren Normen resultierenden Ängste zu verstehen.',
+      '... sich vor Augen führen, dass Ihre Normen nicht existieren, weil sie wahr sind, sondern weil sie Sie vor starken Ängsten schützen sollen.',
+      '... sich bewusst machen, welche Katastrophen Sie durch Ihre Annahmen befürchten. Prüfen Sie, wie wahrscheinlich diese sind und ob Sie diese Katastrophen nicht im Notfall auch bewältigen könnten',
+      '... lernen, Risiken einzugehen',
+      '... sich damit beschäftigen, was Sie mögen, möchten und was Ihnen gut tut',
+      '... das, was Ihnen gut tun würde, auch wirklich tun. Trainieren Sie Genießen!',
+      '... Entspannen Sie! Tun Sie, was Spaß macht!',
+      '... Ausnahmen machen: Weichen Sie Ihre Normen auf!',
+      '... versuchen, Ihren Partner zu verstehen und auf ihn einzugehen',
+      '... sich klar machen, dass Kompromisse zu einer Beziehung gehören. Sie müssen auch etwas für Ihren Partner tun',
+      '... sich Ihre Autonomie zurück holen. Lassen Sie sich nicht von Ihren Normen versklaven. Sie bestimmen!',
     ],
     furtherInfo: [
       {
@@ -519,23 +431,9 @@ export const personalityStyleData = [
       },
       {
         text:
-          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der zwanghaften Persönlichkeitsstörung, hogrefe, 2015',
+          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der zwanghaften Persönlichkeitsstörung, Hogrefe, 2015',
         url:
-          'https://www.hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-zwanghaften-persoenlichkeitsstoerung.html',
-      },
-    ],
-    help: [
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'Test-Telefonnummer',
-        url: 'tel:+491789396747',
+          'https://www.Hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-zwanghaften-persoenlichkeitsstoerung.html',
       },
     ],
   },
@@ -555,20 +453,20 @@ export const personalityStyleData = [
       'Haben Sie den Eindruck, mit anderen Menschen eher negative Erfahrungen gemacht zu haben?',
     ],
     description:
-      'Wachsame Menschen sind skeptisch und misstrauisch. Sie sind der Überzeugung, anderen gegenüber vorsichtig sein zu müssen. Hinter freundlichem, positivem Verhalten anderer sehen sie immer auch die Möglichkeit einer bösen Absicht. Letztlich halten sie es jederzeit für realistisch, dass andere die Absicht haben, ihnen zu schaden. Alle Beziehungen werden damit in vielerlei Hinsicht gefährlich. Diese Annahmen führen dazu, dass sich eine paranoid geprägte Person nie sicher fühlen kann und deshalb auch nie entspannt. Sie muss jederzeit wachsam bleiben, schließlich könnte immer etwas passieren. Bei sehr starker Ausprägung, die zu umfangreichen Problemen in Beziehungen führt, spricht man von einer paranoiden Persönlichkeitsstörung.',
+      'Wachsame Menschen sind skeptisch und misstrauisch. Sie sind der Überzeugung, anderen gegenüber vorsichtig sein zu müssen. Hinter freundlichem, positivem Verhalten anderer sehen sie immer auch die Möglichkeit einer bösen Absicht. Letztlich halten sie es jederzeit für realistisch, dass andere die Absicht haben, ihnen zu schaden. Alle Beziehungen werden damit in vielerlei Hinsicht gefährlich. Diese Annahmen führen dazu, dass sich eine wachsame Person nie sicher fühlen kann und deshalb auch nie entspannt. Sie muss jederzeit wachsam bleiben, schließlich könnte immer etwas passieren. Bei sehr starker Ausprägung, die zu umfangreichen Problemen in Beziehungen führt, spricht man von einer paranoiden Persönlichkeitsstörung.',
     strengths: [
       'skeptische Personen lassen sich nicht leicht beeinflussen, überreden oder täuschen',
       'Behauptungen werden nicht ungeprüft geglaubt, Aussagen recherchiert, analysiert und verifiziert',
       'schwer zu manipulieren',
-      'Haltung gut für Situationen, in denen Fakten und Fiktionen getrennt werden sollen (z.B. Steuerprüfungen, Vernehmungen oder Verhandlungen)',
+      'Haltung gut für Situationen, in denen Fakten und Fiktionen getrennt werden sollen (z. B. Steuerprüfungen, Vernehmungen oder Verhandlungen)',
       'gesundes Maß an Skepsis hilft, falsche Versprechen zu entlarven, Vorgetäuschtes oder Unsicheres zu erkennen',
     ],
     weaknesses: [
       'höchste Beziehungskosten von allen: andere ärgern sich über Misstrauen und Unterstellungen, dass sie ihrem Gegenüber absichtlich schaden wollen würden',
-      'nicht abschalten oder entspannen können durch ständige Alarmbereitschaft: Sicher- Fühlen wird als gefährliche Illusion gesehen',
-      'Unfähigkeit zu genießen (Anhedonie) sehr wahrscheinlich à hohe Depressionsgefahr',
+      'nicht abschalten oder entspannen können durch ständige Alarmbereitschaft: Sicher-Fühlen wird als gefährliche Illusion gesehen',
+      'Unfähigkeit zu genießen (Anhedonie) sehr wahrscheinlich => hohe Depressionsgefahr',
       'starkes Misstrauen',
-      'Außenwirkung: verschlossen, distanziert, wenig emotional, unfreundlich, humorlos,schlecht gelaunt, unentspannt, kontrollierend, nörgelnd, kritisierend',
+      'Außenwirkung: verschlossen, distanziert, wenig emotional, unfreundlich, humorlos, schlecht gelaunt, unentspannt, kontrollierend, nörgelnd, kritisierend',
       'verdeckte, teils grenzüberschreitende Kontrolle anderer',
       'Angst vor massiver absichtlicher Schädigung der eigenen Person durch andere',
       'selbsterfüllende Prophezeiungen: Unterstellungen führen auch bei Freundlichen dazu, dass sie zu dem werden, was ihnen lange vorher schon vorgeworfen wurde; nämlich unfreundlich und aggressiv zu sein',
@@ -579,16 +477,16 @@ export const personalityStyleData = [
       'Regel-Setzer: definieren, was andere zu tun haben',
     ],
     tips: [
-      '...versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
-      '...Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie dauerhaft misstrauisch und skeptisch sind',
-      '...sich Ihre eigenen Stärken, Fähigkeiten und Ressourcen bewusst machen. Was können Sie gut? Sie können viel!',
-      '...realisieren, dass Sie Meister im Abgrenzen und Verteidigen sind. Ihr Alarmzustand ist also unnötig. Lassen Sie Probleme auf sich zukommen. Wenn jemand Ihnen wirklich schaden möchte, werden Sie jederzeit damit fertig!',
-      '...sich klar machen, dass die meisten Menschen Ihnen nichts wollen',
-      '...versuchen sich zu entspannen',
-      '...prüfen, was Sie möchten. Tun Sie dann genau das, was Ihnen Spaß macht',
-      '...sich verdeutlichen wie viele Menschen an Ihrer Seite stehen. Verlassen Sie sich auf diese Zuverlässigen!',
-      '...aus Kritik lernen und für Ihr Handeln Verantwortung übernehmen',
-      '...bedenken, dass häufig Dinge schiefgehen, obwohl niemand dafür etwas kann',
+      '... versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
+      '... Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie dauerhaft misstrauisch und skeptisch sind',
+      '... sich Ihre eigenen Stärken, Fähigkeiten und Ressourcen bewusst machen. Was können Sie gut? Sie können viel!',
+      '... realisieren, dass Sie Meister im Abgrenzen und Verteidigen sind. Ihr Alarmzustand ist also unnötig. Lassen Sie Probleme auf sich zukommen. Wenn jemand Ihnen wirklich schaden möchte, werden Sie jederzeit damit fertig!',
+      '... sich klar machen, dass die meisten Menschen Ihnen nichts wollen',
+      '... versuchen sich zu entspannen',
+      '... prüfen, was Sie möchten. Tun Sie dann genau das, was Ihnen Spaß macht',
+      '... sich verdeutlichen wie viele Menschen an Ihrer Seite stehen. Verlassen Sie sich auf diese Zuverlässigen!',
+      '... aus Kritik lernen und für Ihr Handeln Verantwortung übernehmen',
+      '... bedenken, dass häufig Dinge schiefgehen, obwohl niemand dafür etwas kann',
     ],
     furtherInfo: [
       {
@@ -597,27 +495,9 @@ export const personalityStyleData = [
       },
       {
         text:
-          'Sachse, Rainer; Klärungsorientierte Psychotherapie der schizoiden, passiv-aggressiven und paranoiden Persönlichkeitsstörung, hogrefe, 2017',
+          'Sachse, Rainer; Klärungsorientierte Psychotherapie der schizoiden, passiv-aggressiven und paranoiden Persönlichkeitsstörung, Hogrefe, 2017',
         url:
-          'https://www.hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-schizoiden-passiv-aggressiven-und-paranoiden-persoenlichkeitsstoerung-76541.html',
-      },
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-    ],
-    help: [
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'Test-Telefonnummer',
-        url: 'tel:+491789396747',
+          'https://www.Hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-schizoiden-passiv-aggressiven-und-paranoiden-persoenlichkeitsstoerung-76541.html',
       },
     ],
   },
@@ -644,7 +524,7 @@ export const personalityStyleData = [
       'Reagieren Sie manchmal auf das Verhalten anderer schnell und heftig ärgerlich?',
     ],
     description: [
-      'Sprunghafte Menschen zeichnen sich durch ein hohes Maß an spontanem, emotionsgesteuertem Handeln, starken Gefühlsschwankungen, erhöhter Aggressivität sowie Problemen in der Regulierung von Nähe und Distanz aus. Sie verfügen über sehr viele nebeneinander bestehende überdauernde negative Annahmen über die eigene Person, die dazu führen, dass sie auf viele Situationen schnell in ungünstiger Weise reagieren. Sie vertrauen weder sich, noch anderen. Sie misstrauen ihren Kompetenzen, Einschätzungen und Emotionen. Dies alles macht sie für andere schwer berechenbar. Ihr Verhalten gilt als schwer einschätzbar, was andere verunsichert. Bei sehr starker Ausprägung, die zu umfangreichen Problemen in Beziehungen führt, spricht man von einer Borderline- Persönlichkeitsstörung.',
+      'Sprunghafte Menschen zeichnen sich durch ein hohes Maß an spontanem, emotionsgesteuertem Handeln, starken Gefühlsschwankungen, erhöhter Aggressivität sowie Problemen in der Regulierung von Nähe und Distanz aus. Sie verfügen über sehr viele nebeneinander bestehende überdauernde negative Annahmen über die eigene Person, die dazu führen, dass sie auf viele Situationen schnell in ungünstiger Weise reagieren. Sie vertrauen weder sich, noch anderen. Sie misstrauen ihren Kompetenzen, Einschätzungen und Emotionen. Dies alles macht sie für andere schwer berechenbar. Ihr Verhalten gilt als schwer einschätzbar, was andere verunsichert. Bei sehr starker Ausprägung, die zu umfangreichen Problemen in Beziehungen führt, spricht man von einer Borderline-Persönlichkeitsstörung.',
     ],
     strengths: [
       'hohe Empathie',
@@ -661,20 +541,19 @@ export const personalityStyleData = [
       'Identitätsdiffusion: sehr schlechte, fragile Vorstellung davon, wer oder was man ist',
     ],
     tips: [
-      '...versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
-      '...Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie Probleme mit der Steuerung Ihrer starken Gefühle sowie von Nähe und Distanz zu anderen haben',
-      '..ersuchen, eine positive Selbsteinschätzung von sich zuzulassen und zu fördern',
-      '...eine Liste mit Ihren Fähigkeiten erstellen',
-      'andere fragen, was sie an Ihnen schätzen',
-      '...sich damit auseinandersetzen und aufschreiben, wer sie sind: Was kennzeichnet Sie?',
-      '...Was unterscheidet Sie von anderen?',
-      '...sich verdeutlichen, dass Ihr mangelndes Vertrauen durch Ihre Annahmen zustande kommt – diese können Sie bekämpfen!',
-      '...notieren, wem Sie warum vertrauen können – und sollten',
-      'vor Augen führen, dass Sie Ihren eigenen Gefühlen und Einschätzungen vertrauen können',
-      '...Ihre Gefühle als extrem wichtige Informationsquellen akzeptieren',
-      '...Ihre Empathie einsetzen, um zu verfolgen wie Ihr Handeln auf andere wirkt',
-      '...offen über das reden, was Sie fühlen, wenn Probleme zwischen einander auftreten',
-      '...erst denken, einige Sekunden vergehen zu lassen und sich zu fragen, wie Sie in zwei Wochen auf Ihre Handlung zurückschauen würden anstatt direkt spontan zu handeln',
+      '... versuchen, sich selbst zu verstehen: Welche Annahmen und Überzeugungen stecken hinter meinem Denken und Handeln?',
+      '... Ihr zwischenmenschliches Verhalten stärker wahrnehmen und überprüfen, ob Sie Probleme mit der Steuerung Ihrer starken Gefühle sowie von Nähe und Distanz zu anderen haben',
+      '... versuchen, eine positive Selbsteinschätzung von sich zuzulassen und zu fördern',
+      '... eine Liste mit Ihren Fähigkeiten erstellen',
+      '... andere fragen, was sie an Ihnen schätzen',
+      '... sich damit auseinandersetzen und aufschreiben, wer Sie sind: Was kennzeichnet Sie? Was unterscheidet Sie von anderen?',
+      '... sich verdeutlichen, dass Ihr mangelndes Vertrauen durch Ihre Annahmen zustande kommt – diese können Sie bekämpfen!',
+      '... notieren, wem Sie warum vertrauen können – und sollten',
+      '... vor Augen führen, dass Sie Ihren eigenen Gefühlen und Einschätzungen vertrauen können',
+      '... Ihre Gefühle als extrem wichtige Informationsquellen akzeptieren',
+      '... Ihre Empathie einsetzen, um zu verfolgen wie Ihr Handeln auf andere wirkt',
+      '... offen über das reden, was Sie fühlen, wenn Probleme zwischen einander auftreten',
+      '... erst denken, einige Sekunden vergehen zu lassen und sich zu fragen, wie Sie in zwei Wochen auf Ihre Handlung zurückschauen würden anstatt direkt spontan zu handeln',
     ],
     furtherInfo: [
       {
@@ -688,23 +567,9 @@ export const personalityStyleData = [
       },
       {
         text:
-          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der Borderline-Persönlichkeitsstörung, hogrefe, 2018',
+          'Sachse, Rainer u.a.; Klärungsorientierte Psychotherapie der Borderline-Persönlichkeitsstörung, Hogrefe, 2018',
         url:
-          'https://www.hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-borderline-persoenlichkeitsstoerung-75912.html',
-      },
-    ],
-    help: [
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'lorem ipsum',
-        url: 'https://www.google.de/',
-      },
-      {
-        text: 'Test-Telefonnummer',
-        url: 'tel:+491789396747',
+          'https://www.Hogrefe.de/shop/klaerungsorientierte-psychotherapie-der-borderline-persoenlichkeitsstoerung-75912.html',
       },
     ],
   },

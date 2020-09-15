@@ -16,8 +16,8 @@ export default function Result({ resultData }) {
           psychologische Beratung. Wenn Sie sich unwohl fühlen, holen Sie sich
           professionelle Hilfe.
         </p>
-        <TextLink href="https://www.psychenet.de/de/hilfe-finden/schnelle-hilfe/krisenanlaufstellen.html">
-          Ansprechpartner &gt;
+        <TextLink href="https://www.wege-zur-psychotherapie.org/">
+          Infoseite "Wege zur Psychotherapie" &gt;
         </TextLink>
       </NoticeBox>
       <img src="/img/style_info.svg" alt="" />
