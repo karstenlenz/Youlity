@@ -1,39 +1,30 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useSwipeable } from 'react-swipeable'
 import styled from 'styled-components/macro'
-import { useSwipeable, Swipeable } from 'react-swipeable'
 
-export default function SwipeableCard({ children }) {
+export default function SwipeableCard({
+  children,
+  handleAnswer,
+  stackIndex,
+  offset,
+  setOffset,
+  swipeThreshold,
+}) {
   const windowWidth = window.innerWidth
 
-  const Card = styled.div`
-    background: var(--light-grey);
-    border: var(--dark-grey);
-    height: 200px;
-    ${(props) =>
-      'position: relative; right:' +
-      props.offset +
-      'px;' +
-      'transform: rotate(' +
-      (0 - (props.offset / windowWidth) * 45) +
-      'deg);'}
-  `
-
-  const [offset, setOffset] = useState(0)
   const swipeConfig = {
-    delta: 1, // min distance(px) before a swipe starts
-    preventDefaultTouchmoveEvent: true, // preventDefault on touchmove, *See Details*
-    trackTouch: true, // track touch input
-    trackMouse: false, // track mouse input
-    rotationAngle: 0, // set a rotation angle
+    delta: 1,
+    preventDefaultTouchmoveEvent: true,
+    trackTouch: true,
+    trackMouse: true,
+    rotationAngle: 0,
   }
 
   const swipeHandlers = useSwipeable({
     onSwiped: (eventData) => {
-      eventData.event.preventDefault()
       handleSwiped(eventData)
     },
     onSwiping: (eventData) => {
-      eventData.event.preventDefault()
       handleSwiping(eventData)
     },
     ...swipeConfig,
@@ -41,10 +32,10 @@ export default function SwipeableCard({ children }) {
 
   function handleSwiped(eventData) {
     eventData.event.preventDefault()
-    if (eventData.dir === 'Right') {
-      console.log('rechts')
-    } else {
-      console.log('links')
+    if (eventData.dir === 'Right' && offset < -swipeThreshold) {
+      handleAnswer(true)
+    } else if (eventData.dir === 'Left' && offset > swipeThreshold) {
+      handleAnswer(false)
     }
     setOffset(0)
   }
@@ -56,7 +47,43 @@ export default function SwipeableCard({ children }) {
 
   return (
     <div {...swipeHandlers}>
-      <Card offset={offset}>{children}</Card>
+      <Card
+        offset={offset}
+        windowWidth={windowWidth}
+        swipeThreshold={swipeThreshold}
+      >
+        {children}
+      </Card>
     </div>
   )
 }
+const Card = styled.div`
+  background: white;
+  border: ${(props) => {
+    if (
+      props.offset <= props.swipeThreshold &&
+      props.offset >= -props.swipeThreshold
+    ) {
+      return '3px solid transparent;'
+    } else if (props.offset > props.swipeThreshold) {
+      return `3px solid rgba(104, 59, 137, ${props.offset / props.windowWidth})`
+    } else if (props.offset < -props.swipeThreshold) {
+      return `3px solid rgba(0, 197, 170, ${-props.offset / props.windowWidth})`
+    }
+  }};
+  border-radius: 12px;
+  box-shadow: var(--primary-shadow);
+  max-width: 72.5%;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 1em;
+  position: relative;
+  ${(props) =>
+    'right:' +
+    props.offset +
+    'px;' +
+    'transform: rotate(' +
+    (0 - (props.offset / props.windowWidth) * 45) +
+    'deg);'}
+`
