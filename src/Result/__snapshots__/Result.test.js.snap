@@ -49,7 +49,7 @@ exports[`The Result component renders correctly 1`] = `
     class="SectionBG__Background-sc-164jup7-0 fYEYNK"
   >
     <h3>
-      Der passiv-aggressive Persönlichkeitsstil
+      der passiv-aggressive Persönlichkeitsstil
     </h3>
     <p>
       Sie haben 
@@ -77,7 +77,7 @@ exports[`The Result component renders correctly 1`] = `
     class="SectionBG__Background-sc-164jup7-0 fYEYNK"
   >
     <h3>
-      Der dependente Persönlichkeitsstil
+      der dependente Persönlichkeitsstil
     </h3>
     <p>
       Sie haben 

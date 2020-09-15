@@ -20,26 +20,63 @@ exports[`The questionnaire component renders correctly 1`] = `
       underline.svg
     </svg>
   </section>
-  <h2>
+  <h2
+    class="Questionnaire__H2Styled-sc-13hxlgu-1 kfJYVs"
+  >
     Frage 
     1
      / 
     8
   </h2>
-  <h3>
-    Brauchen Sie in hohem Maße Lob und Anerkennung?
-  </h3>
+  <div
+    class="CardStack__CardStackContainer-vgb89h-0 byiENK"
+  >
+    <div
+      class="CardStack__BackgroundCardsContainer-vgb89h-1 MfyjY"
+    >
+      <div
+        class="CardStack__Card-vgb89h-2 kyUaud"
+        scale="0.9"
+      >
+        Reagieren Sie empfindlich auf Kritik, selbst wenn diese berechtigt ist?
+      </div>
+      <div
+        class="CardStack__Card-vgb89h-2 cydTFS"
+        scale="0.95"
+      >
+        Möchten Sie besser sein als andere?
+      </div>
+    </div>
+    <div>
+      <div
+        class="SwipeableCard__Card-zqgmcw-0 fZHvwI"
+        offset="0"
+      >
+        Brauchen Sie in hohem Maße Lob und Anerkennung?
+      </div>
+    </div>
+  </div>
+  <div
+    class="Questionnaire__ArrowContainer-sc-13hxlgu-3 hgOFzU"
+  >
+    <svg>
+      arrow_left.svg
+    </svg>
+    <svg>
+      arrow_right.svg
+    </svg>
+  </div>
   <section
     class="Questionnaire__ButtonRow-sc-13hxlgu-0 jArQLV"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 dhhzWY"
+      class="Button__BtnStyled-sc-129yfz5-0 dhhzWY Questionnaire__QuestionnaireButton-sc-13hxlgu-2 kEMYte"
       width="47.5"
     >
       (Eher) Nein
     </button>
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 dhhzWY"
+      class="Button__BtnStyled-sc-129yfz5-0 dhhzWY Questionnaire__QuestionnaireButton-sc-13hxlgu-2 kEMYte"
       width="47.5"
     >
       (Eher) Ja
