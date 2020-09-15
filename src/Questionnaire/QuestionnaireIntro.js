@@ -10,12 +10,11 @@ export default function QuestionnaireIntro({ onButtonClick }) {
         <h1>Schritt 2: Fragebogen</h1>
       </HeadlineUnderline>
       <p>
-        Durch die Auswahl Ihrer Bedürfnisse haben wir 2 potentielle
-        Persönlichkeitsstile identifiziert. <br /> Bitte füllen Sie jeweils
-        einen Fragebogen aus, um die Ausprägung des jeweiligen Stils bei Ihnen
-        zu testen. Es werden jeweils 8 Ja/Nein-Fragen gestellt. Pro Bogen dauert
-        es ca. 3 Minuten. Die Reaktionszeit spielt keine Rolle, Sie können den
-        Bogen in Ruhe ausfüllen.
+        Im Folgenden präsentieren wir Ihnen als Ergebnis Ihrer Auswahl zwei
+        Fragebögen. Diese sind auf Sie angepasst. Bitte beantworten Sie alle 16
+        Fragen. Sie helfen, Ihre zentralen Persönlichkeitsaspekte besser
+        einzuschätzen. Alle Fragen sind Ja/Nein-Fragen. Die Bearbeitungszeit pro
+        Fragebogen beträgt circa drei Minuten.
       </p>
       <Button onClick={onButtonClick}>Weiter zum Fragebogen</Button>
     </>

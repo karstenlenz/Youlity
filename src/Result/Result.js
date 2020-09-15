@@ -30,7 +30,7 @@ export default function Result({ resultData }) {
       {resultData.map((result) => {
         return (
           <SectionBG key={result.id}>
-            <h3>{personalityStyleData[result.id - 1]?.name}</h3>
+            <h3>{personalityStyleData[result.id - 1]?.commonName}</h3>
             <p>
               Sie haben {result.yesCount} von{' '}
               {personalityStyleData[result.id - 1].questions.length} Fragen mit

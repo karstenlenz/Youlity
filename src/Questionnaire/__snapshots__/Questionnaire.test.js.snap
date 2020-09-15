@@ -70,7 +70,11 @@ exports[`The questionnaire component renders correctly 1`] = `
     class="Questionnaire__ButtonRow-sc-13hxlgu-0 jArQLV"
   >
     <button
+<<<<<<< HEAD
       class="Button__BtnStyled-sc-129yfz5-0 dhhzWY Questionnaire__QuestionnaireButton-sc-13hxlgu-2 kEMYte"
+=======
+      class="Button__BtnStyled-sc-129yfz5-0 ibTELz"
+>>>>>>> master
       width="47.5"
     >
       (Eher) Nein

@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import Motives from './Motives'
 
 export default {
@@ -7,8 +8,7 @@ export default {
 }
 
 export const MotivesComponent = () => (
-  <Motives
-    userMotives={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
-    setUserMotives={() => ''}
-  />
+  <Router>
+    <Motives />
+  </Router>
 )
