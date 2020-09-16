@@ -440,7 +440,7 @@ export const personalityStyleData = [
   {
     id: 8,
     name: 'Der paranoide Persönlichkeitsstil',
-    CommonName: 'Der wachsame Persönlichkeitsstil',
+    commonName: 'Der wachsame Persönlichkeitsstil',
     motives: ['Anerkennung', 'Grenzen', 'Autonomie', 'Solidarität'],
     questions: [
       'Zweifeln Sie manchmal an Ihren Kompetenzen und Fähigkeiten?',
