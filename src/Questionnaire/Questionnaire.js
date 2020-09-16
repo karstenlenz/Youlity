@@ -14,7 +14,7 @@ Questionnaire.propTypes = {
   testIds: PropTypes.arrayOf(PropTypes.number).isRequired,
 }
 
-export default function Questionnaire({ testIds }) {
+export default function Questionnaire({ testIds, results = '' }) {
   const history = useHistory()
 
   const [questionRound, setQuestionRound] = useState(0)
@@ -22,14 +22,16 @@ export default function Questionnaire({ testIds }) {
   const questions = personalityStyleData[currentTestIndex]?.questions ?? []
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
-  const [resultUrl, setResultUrl] = useState('/result/')
+  const [resultUrl, setResultUrl] = useState(
+    '/result/' + testIds.join('') + '/' + results
+  )
 
   const [cardOffset, setCardOffset] = useState(0)
   const swipeThreshold = 50
 
   useEffect(() => {
-    resultUrl.length === 12 && history.push(resultUrl)
-  }, [resultUrl, history])
+    questionRound === 2 && history.push(resultUrl)
+  }, [resultUrl, history, questionRound])
 
   return (
     <>
@@ -77,10 +79,12 @@ export default function Questionnaire({ testIds }) {
 
   function handleAnswer(answer) {
     if (currentQuestionIndex === questions.length - 1) {
-      setResultUrl(
-        resultUrl + (currentTestIndex + 1) + countYes([...answers, answer])
-      )
-      if (questionRound !== 1) {
+      if (questionRound === 1) {
+        setResultUrl(resultUrl + countYes([...answers, answer]))
+        setQuestionRound(2)
+      }
+      if (questionRound === 0) {
+        setResultUrl(resultUrl + countYes([...answers, answer]))
         setQuestionRound(questionRound + 1)
         setCurrentQuestionIndex(0)
         setAnswers([])

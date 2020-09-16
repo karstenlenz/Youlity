@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Motives from './Motives/Motives'
+import MotivesEntry from './Motives/MotivesEntry'
 import QuestionnaireIntroPage from './Questionnaire/QuestionnaireIntroPage'
 import ResultPage from './Result/ResultPage'
 import PersonalityStyleInfo from './Result/PersonalityStyleInfo'
@@ -13,20 +13,20 @@ export default function App() {
   return (
     <AppMain>
       <Switch>
-        <Route path="/questionnaire/intro/:testIdParam">
+        <Route path="/questionnaire/intro/:questionnaireIds/:results?">
           <QuestionnaireIntroPage />
         </Route>
-        <Route path="/questionnaire/entry/:testIdParam">
+        <Route path="/questionnaire/entry/:questionnaireIds/:results?">
           <QuestionnaireEntryPage />
         </Route>
-        <Route path="/result/:resultCode">
+        <Route path="/result/:questionnaireIds/:results">
           <ResultPage />
         </Route>
         <Route path="/style-info/:styleId">
           <PersonalityStyleInfo />
         </Route>
         <Route path="/motives/entry">
-          <Motives />
+          <MotivesEntry />
         </Route>
         <Route path="/motives/intro">
           <MotivesIntro />

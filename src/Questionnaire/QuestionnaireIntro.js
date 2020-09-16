@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Button from '../common/Button'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 
-export default function QuestionnaireIntro({ testIdParam }) {
+export default function QuestionnaireIntro({ questionnaireIds, results = '' }) {
   return (
     <>
       <img alt="" src="/img/questionnaire-intro.svg" />
@@ -17,7 +17,7 @@ export default function QuestionnaireIntro({ testIdParam }) {
         einzuschätzen. Alle Fragen sind Ja/Nein-Fragen. Die Bearbeitungszeit pro
         Fragebogen beträgt circa drei Minuten.
       </p>
-      <Link to={'/questionnaire/entry/' + testIdParam}>
+      <Link to={'/questionnaire/entry/' + questionnaireIds + '/' + results}>
         <Button>Weiter zum Fragebogen</Button>
       </Link>
     </>

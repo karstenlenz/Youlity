@@ -3,7 +3,9 @@ import { useParams } from 'react-router-dom'
 import QuestionnaireIntro from './QuestionnaireIntro'
 
 export default function QuestionnaireIntroPage() {
-  const { testIdParam } = useParams()
+  const { questionnaireIds, results } = useParams()
 
-  return <QuestionnaireIntro testIdParam={testIdParam} />
+  return (
+    <QuestionnaireIntro questionnaireIds={questionnaireIds} result={results} />
+  )
 }

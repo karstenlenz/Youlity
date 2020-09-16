@@ -3,11 +3,12 @@ import Result from './Result'
 import { useParams } from 'react-router-dom'
 
 export default function ResultPage() {
-  const { resultCode } = useParams()
-  const resultArray = resultCode.split('')
+  const { questionnaireIds, results } = useParams()
+  const resultQuestionnaireIds = questionnaireIds.split('')
+  const resultYesCounts = results.split('')
   const resultData = [
-    { id: resultArray[0], yesCount: resultArray[1] },
-    { id: resultArray[2], yesCount: resultArray[3] },
+    { id: resultQuestionnaireIds[0], yesCount: resultYesCounts[0] },
+    { id: resultQuestionnaireIds[1], yesCount: resultYesCounts[1] },
   ]
 
   return <Result resultData={resultData} />
