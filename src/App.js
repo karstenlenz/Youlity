@@ -1,19 +1,23 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Motives from './Motives/Motives'
-import QuestionnairePage from './Questionnaire/QuestionnairePage'
+import QuestionnaireIntroPage from './Questionnaire/QuestionnaireIntroPage'
 import ResultPage from './Result/ResultPage'
 import PersonalityStyleInfo from './Result/PersonalityStyleInfo'
 import Homepage from './Homepage/Homepage'
 import MotivesIntro from './Motives/MotivesIntro'
 import styled from 'styled-components/macro'
+import QuestionnaireEntryPage from './Questionnaire/QuestionnaireEntryPage'
 
 export default function App() {
   return (
     <AppMain>
       <Switch>
-        <Route path="/questionnaire/:testIdParam">
-          <QuestionnairePage />
+        <Route path="/questionnaire/intro/:testIdParam">
+          <QuestionnaireIntroPage />
+        </Route>
+        <Route path="/questionnaire/entry/:testIdParam">
+          <QuestionnaireEntryPage />
         </Route>
         <Route path="/result/:resultCode">
           <ResultPage />
@@ -21,7 +25,7 @@ export default function App() {
         <Route path="/style-info/:styleId">
           <PersonalityStyleInfo />
         </Route>
-        <Route path="/motives/selection">
+        <Route path="/motives/entry">
           <Motives />
         </Route>
         <Route path="/motives/intro">
