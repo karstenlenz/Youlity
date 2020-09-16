@@ -5,7 +5,8 @@ import QuestionnaireIntro from './QuestionnaireIntro'
 
 export default function QuestionnairePage() {
   const { testIdParam } = useParams()
-  const testIds = testIdParam.split('')
+  const testIdStrings = testIdParam.split('')
+  const testIds = testIdStrings.map((id) => parseInt(id))
   const [phase, setPhase] = useState(1)
 
   if (phase === 1) {
