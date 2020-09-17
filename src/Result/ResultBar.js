@@ -1,28 +1,44 @@
 import React from 'react'
-import styled from 'styled-components/macro'
+import styled, { keyframes } from 'styled-components/macro'
 
-export default function ResultBar({ percentage }) {
+export default function ResultBar({ percentage, index }) {
   return (
     <Outline>
-      <ColorBar percentage={percentage}>{percentage}% Übereinstimmung</ColorBar>
+      <ColorBar percentage={percentage} index={index}>
+        <Text>{percentage}% Übereinstimmung</Text>
+      </ColorBar>
     </Outline>
   )
 }
+
+const Text = styled.p`
+  margin: 0;
+  padding: 8px 15px;
+`
 
 const Outline = styled.div`
   border: 1px solid var(--dark-grey);
   border-radius: 5px;
   width: 100%;
-  line-height: 0;
+`
+
+const expandWidth = (width) => keyframes`
+from {
+      width: 0;
+    }
+    to {
+      width: ${width}%;
+    }
 `
 
 const ColorBar = styled.div`
+  animation: ${(props) => expandWidth(props.percentage)} 0.8s
+    ${(props) => 0.4 + 0.2 * props.index}s forwards ease-in-out;
   white-space: nowrap;
   overflow: visible;
-  padding: 20px 20px;
   border-radius: 5px;
   height: 40px;
-  width: ${(props) => props.percentage + '%'};
+  width: 0;
   background-color: ${(props) =>
     props.percentage > 50
       ? 'rgba(0,197,170,' + (props.percentage / 50 - 1) + ')'

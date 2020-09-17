@@ -30,13 +30,16 @@ export default function ExtendedResult({ questionnaireIds, results }) {
         Namen, um zu den Detail-Informationen zu gelangen.
       </p>
       <section>
-        {sortedResultData.map((result) => (
-          <Link to={'/style-info/' + result.id}>
-            <ResultSection key={result.id}>
+        {sortedResultData.map((result, index) => (
+          <Link to={'/style-info/' + result.id} key={result.id}>
+            <ResultSection>
               <ResultHeadline>
                 {personalityStyleData[result.id - 1]?.adjective} {'>'}
               </ResultHeadline>
-              <ResultBar percentage={(result.yesCount / 8) * 100} />
+              <ResultBar
+                percentage={(result.yesCount / 8) * 100}
+                index={index}
+              />
             </ResultSection>
           </Link>
         ))}
