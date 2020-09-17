@@ -5,7 +5,6 @@ import Button from './Button'
 
 export default function BackButton() {
   const history = useHistory()
-  console.log(history)
   return (
     <ButtonContainer>
       <Button btnType="secondary" onClick={() => history.goBack()}>
