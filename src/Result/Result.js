@@ -6,12 +6,22 @@ import SectionBG from '../common/SectionBG'
 import TextLink from '../common/TextLink'
 import { personalityStyleData } from '../data/personalityStyleData'
 import PropTypes from 'prop-types'
+import Button from '../common/Button'
+import { Link } from 'react-router-dom'
 
 Result.propTypes = {
-  resultData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  questionnaireIds: PropTypes.string.isRequired,
+  results: PropTypes.string.isRequired,
 }
 
-export default function Result({ resultData }) {
+export default function Result({ questionnaireIds, results }) {
+  const resultQuestionnaireIds = questionnaireIds.split('')
+  const resultYesCounts = results.split('')
+  const resultData = []
+  resultYesCounts.forEach((yesCount, index) => {
+    resultData.push({ id: resultQuestionnaireIds[index], yesCount: yesCount })
+  })
+
   return (
     <>
       <NoticeBox>
@@ -75,11 +85,24 @@ export default function Result({ resultData }) {
           </SectionBG>
         )
       })}
+      <h3>Weitere Fragebögen</h3>
       <p>
-        Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese Seite
-        im Browser als Lesezeichen speichern, um diese Informationen erneut
-        aufzurufen.
+        Sie haben im ersten Schritt 2 von 9 Fragebögen ausgefüllt. Sie können
+        auch noch weitere Fragebögen ausfüllen, um zu erfahren, wie stark die
+        weiteren Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen
+        haben wenige, dafür stark ausgepräge Stile, andere mehrere, jeweils
+        weniger stark ausgeprägte Stile.
       </p>
+      <Link to={'/questionnaire/entry/' + questionnaireIds + '/' + results}>
+        <Button>Weiteren Fragebogen starten</Button>
+      </Link>
+      <SectionBG>
+        <p>
+          Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese
+          Seite im Browser als Lesezeichen speichern, um diese Informationen
+          erneut aufzurufen.
+        </p>
+      </SectionBG>
     </>
   )
 }
