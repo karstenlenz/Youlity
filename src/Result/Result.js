@@ -62,9 +62,10 @@ export default function Result({ resultData }) {
                 <p>
                   Das deutet <strong>wahrscheinlich nicht</strong> darauf hin,
                   dass dieser Stil bei Ihnen überdurchschnittlich ausgeprägt
-                  ist. Sie können sich die Beschreibung des Persönlichkeitsstil
-                  trotzdem gerne durchlesen und prüfen, ob Sie sich damit
-                  identifizieren können.
+                  ist.
+                  <br /> Sie können sich die Beschreibung des
+                  Persönlichkeitsstil trotzdem gerne durchlesen und prüfen, ob
+                  Sie sich damit identifizieren können.
                 </p>
                 <TextLink href={'/style-info/' + result.id}>
                   Zu den Informationen &gt;

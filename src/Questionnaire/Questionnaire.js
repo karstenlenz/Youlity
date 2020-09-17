@@ -24,7 +24,6 @@ export default function Questionnaire({ questionSets, handleResults }) {
 
   return (
     <>
-      <img alt="" src="/img/questionnaire-intro.svg" />
       <HeadlineUnderline>
         <h1>
           Fragebogen {questionRound + 1} / {questionSets.length}

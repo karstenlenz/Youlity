@@ -1,29 +1,23 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useHistory, useParams } from 'react-router-dom'
 import { personalityStyleData } from '../data/personalityStyleData'
 import Questionnaire from './Questionnaire'
 
 export default function QuestionnaireEntryPage() {
   const { questionnaireIds, results } = useParams()
   const testIds = questionnaireIds.split('').map((id) => parseInt(id))
-  const questionSets = testIds.map(
+  const firstTwoIds = testIds.slice(0, 2)
+  const questionSets = firstTwoIds.map(
     (id) => personalityStyleData[id - 1].questions
   )
-
-  // const [resultUrl, setResultUrl] = useState(
-  //   '/result/' + testIds.join('') + '/' + results
-  // )
-  // const history = useHistory()
-
-  // useEffect(() => {
-  //   questionRound === 2 && history.push(resultUrl)
-  // }, [resultUrl, history, questionRound])
+  const history = useHistory()
 
   return (
     <Questionnaire questionSets={questionSets} handleResults={handleResults} />
   )
-}
 
-function handleResults(results) {
-  console.log(results)
+  function handleResults(results) {
+    const resultUrl = '/result/' + testIds.join('') + '/' + results.join('')
+    history.push(resultUrl)
+  }
 }
