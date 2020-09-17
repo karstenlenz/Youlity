@@ -4,8 +4,25 @@ import Questionnaire from './Questionnaire'
 export default {
   title: 'Questionnaire',
   component: Questionnaire,
+  argTypes: {
+    questionSets: {
+      control: {
+        type: 'array',
+      },
+    },
+    handleResults: {
+      action: 'results',
+    },
+  },
 }
 
-export const QuestionnaireComponent = () => {
-  return <Questionnaire testIds={[1, 4, 3, 6]} />
+export const QuestionnaireComponent = (args) => {
+  return <Questionnaire {...args} />
+}
+
+QuestionnaireComponent.args = {
+  questionSets: [
+    ['Lorem ipsum?', 'Dolor sit?', 'Acquesitur et rudum?'],
+    ['Dolor sit?', 'Lorem ipsum?', 'Acquesitur et rudum?'],
+  ],
 }

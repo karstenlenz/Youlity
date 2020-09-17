@@ -9,6 +9,7 @@ import CardStack from './CardStack'
 
 Questionnaire.propTypes = {
   questionSets: PropTypes.arrayOf(PropTypes.array).isRequired,
+  handleResults: PropTypes.func.isRequired,
 }
 
 export default function Questionnaire({ questionSets, handleResults }) {
