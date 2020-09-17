@@ -21,13 +21,13 @@ context('Motives Intro', () => {
 
   it('can navigate to motive selection', () => {
     cy.get('button').contains('Weiter zur Auswahl').click()
-    cy.url().should('contain', '/motives/selection')
+    cy.url().should('contain', '/motives/entry')
   })
 })
 
-context('Motives Selection', () => {
+context('Motives Entry', () => {
   beforeEach(() => {
-    cy.visit('/motives/selection')
+    cy.visit('/motives/entry')
   })
 
   it('has a headline', () => {
@@ -45,7 +45,7 @@ context('Motives Selection', () => {
     cy.contains('Grenzen').click()
     cy.contains('Solidarität').click()
     cy.contains('Fragebogen starten').click()
-    cy.url().should('contain', '/questionnaire/89')
+    cy.url().should('contain', '/questionnaire/')
   })
 
   it('can open the info layer', () => {

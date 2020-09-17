@@ -2,17 +2,14 @@
 
 exports[`The questionnaire component renders correctly 1`] = `
 <div>
-  <img
-    alt=""
-    src="/img/questionnaire-intro.svg"
-  />
   <section
     class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 jWFWIm"
   >
     <h1>
       Fragebogen 
       1
-       / 2
+       / 
+      2
     </h1>
     <svg
       class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"

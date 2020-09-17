@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Button from '../common/Button'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 import TextLink from '../common/TextLink'
+import { capitalizeFirstLetter } from '../common/util'
 import { personalityStyleData } from '../data/personalityStyleData'
 import ResultBar from './ResultBar'
 import useResults from './useResults'
@@ -34,7 +35,10 @@ export default function ExtendedResult({ questionnaireIds, results }) {
           <Link to={'/style-info/' + result.id} key={result.id}>
             <ResultSection>
               <ResultHeadline>
-                {personalityStyleData[result.id - 1]?.adjective} {'>'}
+                {capitalizeFirstLetter(
+                  personalityStyleData[result.id - 1]?.adjective
+                )}{' '}
+                {'>'}
               </ResultHeadline>
               <ResultBar
                 percentage={(result.yesCount / 8) * 100}

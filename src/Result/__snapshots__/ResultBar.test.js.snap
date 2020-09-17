@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The ResultBar component renders correctly 1`] = `
+<div>
+  <div
+    class="ResultBar__Outline-sc-479x3f-1 echTYD"
+  >
+    <div
+      class="ResultBar__ColorBar-sc-479x3f-2 yIAeb"
+    >
+      <p
+        class="ResultBar__Text-sc-479x3f-0 icLhoH"
+      >
+        50
+        % Übereinstimmung
+      </p>
+    </div>
+  </div>
+</div>
+`;

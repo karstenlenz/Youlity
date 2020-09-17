@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The ExtendedResult component renders correctly 1`] = `
+<div>
+  <img
+    alt=""
+    src="/img/style_info.svg"
+  />
+  <section
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 jWFWIm"
+  >
+    <h1>
+      Ergebnis
+    </h1>
+    <svg
+      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
+    >
+      underline.svg
+    </svg>
+  </section>
+  <p>
+    Sie haben bisher folgende Fragebögen ausgefüllt. Klicken Sie auf einen Namen, um zu den Detail-Informationen zu gelangen.
+  </p>
+  <section>
+    <a
+      href="/style-info/1"
+    >
+      <section
+        class="sc-AxirZ fHEVYp"
+      >
+        <h3
+          class="sc-AxiKw ejNxiR"
+        >
+          Selbstbewusst
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 gUwDrH"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 icLhoH"
+            >
+              75
+              % Übereinstimmung
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+    <a
+      href="/style-info/9"
+    >
+      <section
+        class="sc-AxirZ fHEVYp"
+      >
+        <h3
+          class="sc-AxiKw ejNxiR"
+        >
+          Sprunghaft
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 fqhHNn"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 icLhoH"
+            >
+              50
+              % Übereinstimmung
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+    <a
+      href="/style-info/2"
+    >
+      <section
+        class="sc-AxirZ fHEVYp"
+      >
+        <h3
+          class="sc-AxiKw ejNxiR"
+        >
+          Gesellig
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 DFdqP"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 icLhoH"
+            >
+              25
+              % Übereinstimmung
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+    <a
+      href="/style-info/8"
+    >
+      <section
+        class="sc-AxirZ fHEVYp"
+      >
+        <h3
+          class="sc-AxiKw ejNxiR"
+        >
+          Wachsam
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 kavjaE"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 icLhoH"
+            >
+              25
+              % Übereinstimmung
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+  </section>
+  <p>
+    Es gibt noch 
+    5
+     weitere Fragebögen.
+  </p>
+  <a
+    href="/questionnaire/entry/1928373645/6422"
+  >
+    <button
+      class="Button__BtnStyled-sc-129yfz5-0 czYdCq"
+      width="100"
+    >
+      Weiteren Fragebogen starten
+    </button>
+  </a>
+</div>
+`;

@@ -513,7 +513,7 @@ export const personalityStyleData = [
     id: 9,
     name: 'Der Borderline-Persönlichkeitsstil',
     commonName: 'Der sprunghafte Persönlichkeitsstil',
-    adjective: 'Borderline',
+    adjective: 'sprunghaft',
     motives: [
       'Anerkennung',
       'Wichtigkeit',
