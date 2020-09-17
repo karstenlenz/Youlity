@@ -8,6 +8,7 @@ import { personalityStyleData } from '../data/personalityStyleData'
 import PropTypes from 'prop-types'
 import Button from '../common/Button'
 import { Link } from 'react-router-dom'
+import useResults from './useResults'
 
 Result.propTypes = {
   questionnaireIds: PropTypes.string.isRequired,
@@ -15,12 +16,7 @@ Result.propTypes = {
 }
 
 export default function Result({ questionnaireIds, results }) {
-  const resultQuestionnaireIds = questionnaireIds.split('')
-  const resultYesCounts = results.split('')
-  const resultData = []
-  resultYesCounts.forEach((yesCount, index) => {
-    resultData.push({ id: resultQuestionnaireIds[index], yesCount: yesCount })
-  })
+  const resultData = useResults(questionnaireIds, results)
 
   return (
     <>

@@ -90,6 +90,7 @@ export default function PersonalityStyleInfo() {
           </li>
         </ul>
       </HelpSection>
+      <BottomSpacer />
     </>
   )
 }
@@ -107,7 +108,10 @@ const SectionNoBG = styled.section`
 `
 
 const HelpSection = styled.section`
-  background: var(--secondary);
+  background: var(--secondary-disabled);
   padding: 15px;
   border-radius: 5px;
+`
+const BottomSpacer = styled.div`
+  margin-bottom: 80px;
 `

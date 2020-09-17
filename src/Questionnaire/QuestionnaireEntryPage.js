@@ -31,7 +31,11 @@ export default function QuestionnaireEntryPage() {
 
   function handleResults(results) {
     const resultUrl =
-      '/result/' + testIds.join('') + '/' + previousResults + results.join('')
+      '/result/' +
+      testIds.join('') +
+      '/' +
+      (previousResults ? previousResults : '') +
+      results.join('')
     history.push(resultUrl)
   }
 }

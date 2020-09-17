@@ -11,7 +11,6 @@ export default function BackButton() {
       <Button btnType="secondary" onClick={() => history.goBack()}>
         zurück
       </Button>
-      <BottomSpacer />
     </ButtonContainer>
   )
 }
@@ -22,7 +21,4 @@ const ButtonContainer = styled.div`
   right: 15px;
   bottom: 0;
   z-index: var(--floating-button);
-`
-const BottomSpacer = styled.div`
-  margin-bottom: 80px;
 `

@@ -71,6 +71,7 @@ p {
 
 --primary-shadow:  0 1px 6px 0 rgba(63, 0, 110, 0.16);
 --secondary-shadow:  0 1px 6px 0 rgba(0,197,170, 0.16);
+--white-shadow:  0 1px 6px 0 white;
 
 }
 
