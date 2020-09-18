@@ -13,7 +13,7 @@ export default function QuestionnaireEntryPage() {
     (id) => personalityStyleData[id - 1].questions
   )
   const nextQuestionSet = results
-    ? [personalityStyleData[results.length].questions]
+    ? [personalityStyleData[testIds[results.length] - 1].questions]
     : []
   const history = useHistory()
 
