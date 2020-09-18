@@ -1,14 +1,14 @@
 import React from 'react'
 import Result from './Result'
 import { useParams } from 'react-router-dom'
+import ExtendedResult from './ExtendedResult'
 
 export default function ResultPage() {
-  const { resultCode } = useParams()
-  const resultArray = resultCode.split('')
-  const resultData = [
-    { id: resultArray[0], yesCount: resultArray[1] },
-    { id: resultArray[2], yesCount: resultArray[3] },
-  ]
+  const { questionnaireIds, results } = useParams()
 
-  return <Result resultData={resultData} />
+  return results.length > 2 ? (
+    <ExtendedResult questionnaireIds={questionnaireIds} results={results} />
+  ) : (
+    <Result questionnaireIds={questionnaireIds} results={results} />
+  )
 }

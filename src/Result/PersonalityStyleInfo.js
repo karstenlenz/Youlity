@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import styled from 'styled-components/macro'
+import BackButton from '../common/BackButton'
 import BulletList from '../common/BulletList'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 import SectionBG from '../common/SectionBG'
@@ -85,9 +86,11 @@ export default function PersonalityStyleInfo() {
             <TextLink href="tel:08001110111">
               Kostenlose Telefon-Seelsorge 0800-1110111
             </TextLink>
+            <BackButton />
           </li>
         </ul>
       </HelpSection>
+      <BottomSpacer />
     </>
   )
 }
@@ -105,7 +108,10 @@ const SectionNoBG = styled.section`
 `
 
 const HelpSection = styled.section`
-  background: var(--secondary);
+  background: var(--secondary-disabled);
   padding: 15px;
   border-radius: 5px;
+`
+const BottomSpacer = styled.div`
+  margin-bottom: 80px;
 `

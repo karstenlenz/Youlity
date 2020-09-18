@@ -21,7 +21,7 @@ export default function MotivesIntro() {
         <br />
         Im Anschluss erhalten Sie Ihr Ergebnis und dazu passende Informationen.
       </p>
-      <FloatingButtonContainer to="/motives/selection">
+      <FloatingButtonContainer to="/motives/entry">
         <Button>Weiter zur Auswahl</Button>
       </FloatingButtonContainer>
     </>

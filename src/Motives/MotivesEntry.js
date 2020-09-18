@@ -11,7 +11,7 @@ import { MotivesList } from './MotivesList'
 import { useMotiveSelection } from './useMotiveSelection'
 import UserMotiveDroppableWrapper from './UserMotiveDroppableWrapper'
 
-export default function Motives() {
+export default function MotivesEntry() {
   const {
     onDragStart,
     onDragEnd,

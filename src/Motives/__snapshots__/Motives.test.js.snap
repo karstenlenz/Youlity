@@ -18,12 +18,12 @@ exports[`The Motives component renders correctly 1`] = `
       </svg>
     </section>
     <h2
-      class="Motives__SmallH2-nzxhhf-0 hnMpqV"
+      class="MotivesEntry__SmallH2-zdirr-0 iUHsxQ"
     >
       Wählen Sie bitte intuitiv die drei Bedürfnisse aus, die für Sie am Wichtigsten sind. Sie können die Bedürfnisse hin- und herziehen oder anklicken.
     </h2>
     <section
-      class="Motives__MotiveBG-nzxhhf-1 dILmxj"
+      class="MotivesEntry__MotiveBG-zdirr-1 hmGxxG"
     >
       <div
         class="UserMotiveDropzone__DropzoneBG-jv6lv-0 cFWTRG"

@@ -6,6 +6,8 @@ export default function TextLink({ children, href }) {
 }
 
 const LinkStyled = styled.a`
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
   text-decoration: underline;
   color: black;
 `

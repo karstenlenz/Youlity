@@ -6,12 +6,18 @@ import SectionBG from '../common/SectionBG'
 import TextLink from '../common/TextLink'
 import { personalityStyleData } from '../data/personalityStyleData'
 import PropTypes from 'prop-types'
+import Button from '../common/Button'
+import { Link } from 'react-router-dom'
+import useResults from './useResults'
 
 Result.propTypes = {
-  resultData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  questionnaireIds: PropTypes.string.isRequired,
+  results: PropTypes.string.isRequired,
 }
 
-export default function Result({ resultData }) {
+export default function Result({ questionnaireIds, results }) {
+  const resultData = useResults(questionnaireIds, results)
+
   return (
     <>
       <NoticeBox>
@@ -62,9 +68,10 @@ export default function Result({ resultData }) {
                 <p>
                   Das deutet <strong>wahrscheinlich nicht</strong> darauf hin,
                   dass dieser Stil bei Ihnen überdurchschnittlich ausgeprägt
-                  ist. Sie können sich die Beschreibung des Persönlichkeitsstil
-                  trotzdem gerne durchlesen und prüfen, ob Sie sich damit
-                  identifizieren können.
+                  ist.
+                  <br /> Sie können sich die Beschreibung des
+                  Persönlichkeitsstil trotzdem gerne durchlesen und prüfen, ob
+                  Sie sich damit identifizieren können.
                 </p>
                 <TextLink href={'/style-info/' + result.id}>
                   Zu den Informationen &gt;
@@ -74,11 +81,24 @@ export default function Result({ resultData }) {
           </SectionBG>
         )
       })}
+      <h3>Weitere Fragebögen</h3>
       <p>
-        Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese Seite
-        im Browser als Lesezeichen speichern, um diese Informationen erneut
-        aufzurufen.
+        Sie haben im ersten Schritt 2 von 9 Fragebögen ausgefüllt. Sie können
+        auch noch weitere Fragebögen ausfüllen, um zu erfahren, wie stark die
+        weiteren Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen
+        haben wenige, dafür stark ausgepräge Stile, andere mehrere, jeweils
+        weniger stark ausgeprägte Stile.
       </p>
+      <Link to={'/questionnaire/entry/' + questionnaireIds + '/' + results}>
+        <Button>Weiteren Fragebogen starten</Button>
+      </Link>
+      <SectionBG>
+        <p>
+          Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese
+          Seite im Browser als Lesezeichen speichern, um diese Informationen
+          erneut aufzurufen.
+        </p>
+      </SectionBG>
     </>
   )
 }

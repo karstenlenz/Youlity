@@ -1,14 +1,14 @@
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Motives from './Motives'
+import MotivesEntry from './MotivesEntry'
 
 export default {
   title: 'Motive Selection',
-  component: Motives,
+  component: MotivesEntry,
 }
 
-export const MotivesComponent = () => (
+export const MotivesEntryComponent = () => (
   <Router>
-    <Motives />
+    <MotivesEntry />
   </Router>
 )

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Motives from './Motives'
+import MotivesEntry from './MotivesEntry'
 import { evaluateMatchingStyles } from './util'
 import ReactDOM from 'react-dom'
 
@@ -20,7 +20,7 @@ describe('The Motives component', () => {
     const { container } = render(
       <Router>
         <div id="root">
-          <Motives />
+          <MotivesEntry />
         </div>
       </Router>
     )

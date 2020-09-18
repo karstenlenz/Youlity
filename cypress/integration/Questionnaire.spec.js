@@ -2,7 +2,7 @@
 
 context('Questionnaire Intro', () => {
   beforeEach(() => {
-    cy.visit('/questionnaire/89')
+    cy.visit('questionnaire/intro/194867523')
   })
 
   it('has 1 img', () => {

@@ -27,7 +27,8 @@ export function useMotiveSelection() {
         userMotive3,
       ])
       const questionnaireUrl =
-        '/questionnaire/' + userPersonalityStyles[0] + userPersonalityStyles[1]
+        '/questionnaire/intro/' + userPersonalityStyles.join('')
+
       setQuestionnaireUrl(questionnaireUrl)
     }
   }, [motives])

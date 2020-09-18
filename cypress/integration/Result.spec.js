@@ -2,7 +2,7 @@
 
 context('Result', () => {
   beforeEach(() => {
-    cy.visit('/result/1694')
+    cy.visit('result/194867523/51')
   })
 
   it('has intro img', () => {

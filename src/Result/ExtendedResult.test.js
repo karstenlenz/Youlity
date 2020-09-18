@@ -1,13 +1,13 @@
 import { render } from '@testing-library/react'
 import React from 'react'
+import ExtendedResult from './ExtendedResult'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Result from './Result'
 
-describe('The Result component', () => {
+describe('The ExtendedResult component', () => {
   it('renders correctly', () => {
     const { container } = render(
       <Router>
-        <Result questionnaireIds="1928373645" results="64" />
+        <ExtendedResult questionnaireIds="1928373645" results="6422" />
       </Router>
     )
     expect(container).toMatchSnapshot()

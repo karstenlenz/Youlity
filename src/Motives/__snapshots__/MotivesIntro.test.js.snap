@@ -29,7 +29,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
   </p>
   <a
     class="FloatingButtonContainer__ButtonContainer-slkv4p-0 cLTvWp"
-    href="/motives/selection"
+    href="/motives/entry"
   >
     <button
       class="Button__BtnStyled-sc-129yfz5-0 czYdCq"

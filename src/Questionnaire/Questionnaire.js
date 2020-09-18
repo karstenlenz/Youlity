@@ -1,41 +1,33 @@
-import React, { useEffect, useState } from 'react'
-import { useHistory } from 'react-router-dom'
-import { personalityStyleData } from '../data/personalityStyleData'
-import HeadlineUnderline from '../common/HeadlineUnderline'
-import Button from '../common/Button'
-import styled from 'styled-components/macro'
-import CardStack from './CardStack'
 import PropTypes from 'prop-types'
-
+import React, { useState } from 'react'
+import styled from 'styled-components/macro'
+import Button from '../common/Button'
+import HeadlineUnderline from '../common/HeadlineUnderline'
 import { ReactComponent as ArrowLeft } from '../img/arrow_left.svg'
 import { ReactComponent as ArrowRight } from '../img/arrow_right.svg'
+import CardStack from './CardStack'
 
 Questionnaire.propTypes = {
-  testIds: PropTypes.arrayOf(PropTypes.number).isRequired,
+  questionSets: PropTypes.arrayOf(PropTypes.array).isRequired,
+  handleResults: PropTypes.func.isRequired,
 }
 
-export default function Questionnaire({ testIds }) {
-  const history = useHistory()
-
+export default function Questionnaire({ questionSets, handleResults }) {
   const [questionRound, setQuestionRound] = useState(0)
-  const currentTestIndex = testIds[questionRound] - 1
-  const questions = personalityStyleData[currentTestIndex]?.questions ?? []
+  const questions = questionSets[questionRound] ?? []
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
-  const [resultUrl, setResultUrl] = useState('/result/')
+  const [results, setResults] = useState([])
 
   const [cardOffset, setCardOffset] = useState(0)
   const swipeThreshold = 50
 
-  useEffect(() => {
-    resultUrl.length === 12 && history.push(resultUrl)
-  }, [resultUrl, history])
-
   return (
     <>
-      <img alt="" src="/img/questionnaire-intro.svg" />
       <HeadlineUnderline>
-        <h1>Fragebogen {questionRound + 1} / 2</h1>
+        <h1>
+          Fragebogen {questionRound + 1} / {questionSets.length}
+        </h1>
       </HeadlineUnderline>
       <H2Styled>
         Frage {currentQuestionIndex + 1} / {questions.length}
@@ -77,10 +69,10 @@ export default function Questionnaire({ testIds }) {
 
   function handleAnswer(answer) {
     if (currentQuestionIndex === questions.length - 1) {
-      setResultUrl(
-        resultUrl + (currentTestIndex + 1) + countYes([...answers, answer])
-      )
-      if (questionRound !== 1) {
+      if (questionRound === questionSets.length - 1) {
+        handleResults([...results, countYes([...answers, answer])])
+      } else {
+        setResults([...results, countYes([...answers, answer])])
         setQuestionRound(questionRound + 1)
         setCurrentQuestionIndex(0)
         setAnswers([])
