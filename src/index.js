@@ -5,12 +5,14 @@ import * as serviceWorker from './serviceWorker'
 import GlobalStyles from './GlobalStyles'
 import GlobalFonts from './GlobalFonts'
 import { BrowserRouter as Router } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop'
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
     <GlobalFonts />
     <Router>
+      <ScrollToTop />
       <App />
     </Router>
   </React.StrictMode>,
