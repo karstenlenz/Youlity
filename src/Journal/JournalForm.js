@@ -51,6 +51,10 @@ export default function JournalForm({ createJournalEntry }) {
           Speichern
         </Button>
       </ButtonPair>
+      <p>
+        Alle Einträge werden nur auf Ihrem Gerät gespeichert. Es werden keine
+        Daten übertragen.
+      </p>
     </FormStyled>
   )
 
