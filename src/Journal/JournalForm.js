@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { Redirect, useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import styled from 'styled-components/macro'
+import { v4 as uuidv4 } from 'uuid'
 import Button from '../common/Button'
 import HeadlineUnderline from '../common/HeadlineUnderline'
-import { v4 as uuidv4 } from 'uuid'
 
 export default function JournalForm({ createJournalEntry }) {
   const currentDate = new Date()
@@ -38,10 +38,16 @@ export default function JournalForm({ createJournalEntry }) {
         onChange={handleDescriptionChange}
       />
       <ButtonPair>
-        <Button btnType="white" width="47.5">
-          abbrechen
-        </Button>
-        <Button btnType="primary" width="47.5">
+        <CancelLink to="/journal">
+          <Button type="button" btnType="white">
+            Abbrechen
+          </Button>
+        </CancelLink>
+        <Button
+          btnType="primary"
+          width="47.5"
+          isButtonDisabled={!title || !description}
+        >
           Speichern
         </Button>
       </ButtonPair>
@@ -58,8 +64,13 @@ export default function JournalForm({ createJournalEntry }) {
 
   function handleSubmit(event) {
     event.preventDefault()
+    if (title.length === 0 || description.length === 0) {
+      console.log('nixx eingetragen')
+      return false
+    }
+
     const newEntry = {
-      date: currentDate,
+      date: currentDate.toLocaleDateString('de-DE', { timeZone: 'GMT' }),
       title,
       description,
       id: uuidv4(),
@@ -113,4 +124,7 @@ const FormLabel = styled.label`
 const ButtonPair = styled.div`
   display: flex;
   justify-content: space-between;
+`
+const CancelLink = styled(Link)`
+  width: 47.5%;
 `

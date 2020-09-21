@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import MotivesEntry from './Motives/MotivesEntry'
 import QuestionnaireIntroPage from './Questionnaire/QuestionnaireIntroPage'
@@ -11,13 +11,20 @@ import QuestionnaireEntryPage from './Questionnaire/QuestionnaireEntryPage'
 import JournalForm from './Journal/JournalForm'
 import JournalList from './Journal/JournalList'
 import { useState } from 'react'
+import { loadLocally, saveLocally } from './Journal/util'
 
 export default function App() {
-  const [journalEntries, setJournalEntries] = useState([])
+  const [journalEntries, setJournalEntries] = useState(
+    loadLocally('journalEntries') ?? []
+  )
 
   function createJournalEntry(newEntry) {
     setJournalEntries([...journalEntries, newEntry])
   }
+
+  useEffect(() => saveLocally('journalEntries', journalEntries), [
+    journalEntries,
+  ])
 
   return (
     <AppMain>
