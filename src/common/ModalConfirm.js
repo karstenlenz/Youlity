@@ -4,8 +4,8 @@ import styled from 'styled-components/macro'
 import Button from './Button'
 import ReactDOM from 'react-dom'
 
-export default function InfoOverlay({ children, className }) {
-  const [isOverlayVisible, setIsOverlayVisible] = useState(false)
+export default function ModalConfirm({ children, className }) {
+  const [isOverlayVisible, setIsOverlayVisible] = useState(true)
 
   const appRoot = document.querySelector('#root')
 

@@ -22,6 +22,15 @@ export default function App() {
     setJournalEntries([...journalEntries, newEntry])
   }
 
+  function deleteJournalEntry(entryId) {
+    const indexToDelete = journalEntries.findIndex(
+      (element) => element.id === entryId
+    )
+    const updatedJournalEntries = [...journalEntries]
+    updatedJournalEntries.splice(indexToDelete, 1)
+    setJournalEntries(updatedJournalEntries)
+  }
+
   useEffect(() => saveLocally('journalEntries', journalEntries), [
     journalEntries,
   ])
@@ -33,7 +42,10 @@ export default function App() {
           <JournalForm createJournalEntry={createJournalEntry} />
         </Route>
         <Route path="/journal">
-          <JournalList journalEntries={journalEntries} />
+          <JournalList
+            journalEntries={journalEntries}
+            deleteJournalEntry={deleteJournalEntry}
+          />
         </Route>
         <Route path="/style-info/:styleId">
           <PersonalityStyleInfo />

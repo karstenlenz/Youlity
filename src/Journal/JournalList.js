@@ -4,7 +4,7 @@ import FloatingButtonContainer from '../common/FloatingButtonContainer'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 import JournalCard from './JournalCard'
 
-export default function JournalList({ journalEntries }) {
+export default function JournalList({ journalEntries, deleteJournalEntry }) {
   return (
     <>
       <img alt="" src="/img/journal.svg" />
@@ -22,6 +22,8 @@ export default function JournalList({ journalEntries }) {
             date={entry.date}
             title={entry.title}
             description={entry.description}
+            id={entry.id}
+            handleDelete={deleteJournalEntry}
           ></JournalCard>
         ))
       )}
