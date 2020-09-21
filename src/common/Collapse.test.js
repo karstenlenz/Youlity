@@ -16,7 +16,7 @@ describe('The Collapse component', () => {
   })
 
   it('hides the content at first', () => {
-    const { container } = render(
+    render(
       <Router>
         <Collapse headline="test Headline" headlineOpen="collapse is open">
           Collapse content
@@ -27,7 +27,7 @@ describe('The Collapse component', () => {
   })
 
   it('shows the content after a click', () => {
-    const { container } = render(
+    render(
       <Router>
         <Collapse headline="test Headline" headlineOpen="collapse is open">
           Collapse content
