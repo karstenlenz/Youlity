@@ -1,6 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 import styled from 'styled-components/macro'
+import PropTypes from 'prop-types'
+
+Collapse.propType = {
+  headline: PropTypes.string.isRequired,
+  headlineOpen: PropTypes.string.isRequired,
+  children: PropTypes.any.isRequired,
+}
 
 export default function Collapse({ headline, headlineOpen, children }) {
   const [isOpen, setIsOpen] = useState(false)
