@@ -25,7 +25,7 @@ export default function InfoOverlay({ children, className }) {
               <OverLayBG onClick={toggleOverlay} />
               <OverlayContent>
                 <CloseButton onClick={toggleOverlay}>
-                  <img alt="close overlay" src="/img/close.svg" />
+                  <img alt="Dialog schließen" src="/img/close.svg" />
                 </CloseButton>
                 {children}
               </OverlayContent>
@@ -65,8 +65,8 @@ const OverLayBG = styled.div`
 const OverlayContent = styled.section`
   position: fixed;
   top: 30px;
-  left: 30px;
-  right: 30px;
+  left: 15px;
+  right: 15px;
   border-radius: 10px;
   background: white;
   z-index: var(--overlay-content);

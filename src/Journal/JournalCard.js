@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import ModalConfirm from '../common/ModalConfirm'
 
 export default function JournalCard({
   date,
@@ -10,9 +11,7 @@ export default function JournalCard({
 }) {
   return (
     <CardContainer>
-      <DeleteButton onClick={() => handleDelete(id)}>
-        <img alt="close overlay" src="/img/delete.svg" />
-      </DeleteButton>
+      <ModalConfirm handleDelete={handleDelete} id={id} />
       <CardDate>{date}</CardDate>
       <CardTitle>{title}</CardTitle>
       <p>{description}</p>
@@ -34,15 +33,4 @@ const CardDate = styled.h3`
 const CardTitle = styled.h2`
   margin-top: 0;
   text-align: left;
-`
-
-const DeleteButton = styled.button`
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: none;
-  border: none;
 `

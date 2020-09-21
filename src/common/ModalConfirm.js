@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import ReactDOM from 'react-dom'
 import styled from 'styled-components/macro'
 import Button from './Button'
-import ReactDOM from 'react-dom'
 
-export default function ModalConfirm({ children, className }) {
-  const [isOverlayVisible, setIsOverlayVisible] = useState(true)
+export default function ModalConfirm({ handleDelete, id }) {
+  const [isOverlayVisible, setIsOverlayVisible] = useState(false)
 
   const appRoot = document.querySelector('#root')
 
@@ -25,18 +24,30 @@ export default function ModalConfirm({ children, className }) {
               <OverLayBG onClick={toggleOverlay} />
               <OverlayContent>
                 <CloseButton onClick={toggleOverlay}>
-                  <img alt="close overlay" src="/img/close.svg" />
+                  <img alt="Dialog schließen" src="/img/close.svg" />
                 </CloseButton>
-                {children}
+                <h3>Eintrag löschen</h3>
+                <p>
+                  Möchten Sie diesen Beitrag wirklich löschen? Gelöschte
+                  Einträge können nicht wiederhergestellt werden
+                </p>
+                <ButtonPair>
+                  <Button btnType="white" width="47.5" onClick={toggleOverlay}>
+                    Abbrechen
+                  </Button>
+                  <Button width="47.5" onClick={handleDelete}>
+                    Ja
+                  </Button>
+                </ButtonPair>
               </OverlayContent>
             </>
           )}
         </>,
         appRoot
       )}
-      <InfoButton btnType="white" onClick={toggleOverlay} className={className}>
-        i
-      </InfoButton>
+      <DeleteButton btnType="white" onClick={toggleOverlay}>
+        <img alt="Eintrag löschen" src="/img/delete.svg" />
+      </DeleteButton>
     </>
   )
 
@@ -46,9 +57,15 @@ export default function ModalConfirm({ children, className }) {
   }
 }
 
-const InfoButton = styled(Button)`
+const DeleteButton = styled.button`
   width: 40px;
   height: 40px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  border: none;
 `
 
 const OverLayBG = styled.div`
@@ -65,8 +82,8 @@ const OverLayBG = styled.div`
 const OverlayContent = styled.section`
   position: fixed;
   top: 30px;
-  left: 30px;
-  right: 30px;
+  left: 15px;
+  right: 15px;
   border-radius: 10px;
   background: white;
   z-index: var(--overlay-content);
@@ -83,4 +100,8 @@ const CloseButton = styled.button`
   top: 0px;
   background: none;
   border: none;
+`
+const ButtonPair = styled.div`
+  display: flex;
+  justify-content: space-between;
 `
