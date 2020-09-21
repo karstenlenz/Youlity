@@ -93,12 +93,18 @@ export default function Result({ questionnaireIds, results }) {
         <Button>Weiteren Fragebogen starten</Button>
       </Link>
       <SectionBG>
+        <h2>Tagebuch</h2>
         <p>
-          Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese
-          Seite im Browser als Lesezeichen speichern, um diese Informationen
-          erneut aufzurufen.
+          Unsere Tagebuchfunktion hilft Ihnen, Ihr Verhalten zu analysieren und
+          dadurch erste Schritte zu einer Veränderung anzustoßen.
         </p>
+        <TextLink href="/journal">Zum Tagebuch</TextLink>
       </SectionBG>
+      <p>
+        Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese Seite
+        im Browser als Lesezeichen speichern, um diese Informationen erneut
+        aufzurufen.
+      </p>
     </>
   )
 }

@@ -23,9 +23,9 @@ export default function ModalConfirm({ handleDelete, id }) {
             <>
               <OverLayBG onClick={toggleOverlay} />
               <OverlayContent>
-                <CloseButton onClick={toggleOverlay}>
+                <IconButton onClick={toggleOverlay}>
                   <img alt="Dialog schließen" src="/img/close.svg" />
-                </CloseButton>
+                </IconButton>
                 <h3>Eintrag löschen</h3>
                 <p>
                   Möchten Sie diesen Beitrag wirklich löschen? Gelöschte
@@ -45,9 +45,9 @@ export default function ModalConfirm({ handleDelete, id }) {
         </>,
         appRoot
       )}
-      <DeleteButton btnType="white" onClick={toggleOverlay}>
+      <IconButton onClick={toggleOverlay}>
         <img alt="Eintrag löschen" src="/img/delete.svg" />
-      </DeleteButton>
+      </IconButton>
     </>
   )
 
@@ -57,7 +57,7 @@ export default function ModalConfirm({ handleDelete, id }) {
   }
 }
 
-const DeleteButton = styled.button`
+const IconButton = styled.button`
   width: 40px;
   height: 40px;
   padding: 0;
@@ -91,16 +91,7 @@ const OverlayContent = styled.section`
   padding: 15px;
   text-align: left;
 `
-const CloseButton = styled.button`
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  background: none;
-  border: none;
-`
+
 const ButtonPair = styled.div`
   display: flex;
   justify-content: space-between;
