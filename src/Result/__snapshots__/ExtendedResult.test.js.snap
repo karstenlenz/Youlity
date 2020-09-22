@@ -154,5 +154,21 @@ exports[`The ExtendedResult component renders correctly 1`] = `
       Weiteren Fragebogen starten
     </button>
   </a>
+  <section
+    class="SectionBG__Background-sc-164jup7-0 OlfId"
+  >
+    <h2>
+      Tagebuch
+    </h2>
+    <p>
+      Unsere Tagebuchfunktion hilft Ihnen, Ihr Verhalten zu analysieren und dadurch erste Schritte zu einer Veränderung anzustoßen.
+    </p>
+    <a
+      class="TextLink__LinkStyled-sc-1a9sgio-0 kcJVcY"
+      href="/journal"
+    >
+      Zum Tagebuch
+    </a>
+  </section>
 </div>
 `;

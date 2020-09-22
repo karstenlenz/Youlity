@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Header component renders correctly 1`] = `
+<div>
+  <header
+    class="Header__HeaderContainer-sc-15lxbtt-0 cLpyLR"
+  >
+    <button
+      class="IconButton__ButtonContainer-sc-47n1yg-0 jCeVKT"
+    >
+      <img
+        alt="zurück"
+        src="/img/back.svg"
+      />
+    </button>
+    <img
+      alt="Youlity logo"
+      src="/img/logo.svg"
+    />
+    <button
+      class="IconButton__ButtonContainer-sc-47n1yg-0 jCeVKT"
+    >
+      <img
+        alt="zur Homepage"
+        src="/img/home.svg"
+      />
+    </button>
+  </header>
+</div>
+`;

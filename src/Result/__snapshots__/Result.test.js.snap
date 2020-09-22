@@ -3,9 +3,11 @@
 exports[`The Result component renders correctly 1`] = `
 <div>
   <section
-    class="NoticeBox__SectionStyled-sc-87rj1i-0 ebXtJR"
+    class="NoticeBox__SectionStyled-sc-87rj1i-0 kftwUj"
   >
-    <button>
+    <button
+      class="NoticeBox__CloseButton-sc-87rj1i-1 eNuUKw"
+    >
       <img
         alt="close overlay"
         src="/img/close.svg"
@@ -122,9 +124,21 @@ exports[`The Result component renders correctly 1`] = `
   <section
     class="SectionBG__Background-sc-164jup7-0 OlfId"
   >
+    <h2>
+      Tagebuch
+    </h2>
     <p>
-      Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese Seite im Browser als Lesezeichen speichern, um diese Informationen erneut aufzurufen.
+      Unsere Tagebuchfunktion hilft Ihnen, Ihr Verhalten zu analysieren und dadurch erste Schritte zu einer Veränderung anzustoßen.
     </p>
+    <a
+      class="TextLink__LinkStyled-sc-1a9sgio-0 kcJVcY"
+      href="/journal"
+    >
+      Zum Tagebuch
+    </a>
   </section>
+  <p>
+    Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese Seite im Browser als Lesezeichen speichern, um diese Informationen erneut aufzurufen.
+  </p>
 </div>
 `;

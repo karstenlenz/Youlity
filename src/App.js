@@ -12,10 +12,60 @@ import JournalForm from './Journal/JournalForm'
 import JournalList from './Journal/JournalList'
 import { useState } from 'react'
 import { loadLocally, saveLocally } from './Journal/util'
+import Header from './common/Header'
 
 export default function App() {
   const [journalEntries, setJournalEntries] = useState(
     loadLocally('journalEntries') ?? []
+  )
+
+  useEffect(() => saveLocally('journalEntries', journalEntries), [
+    journalEntries,
+  ])
+
+  return (
+    <>
+      <Switch>
+        <Route exact path="/"></Route>
+        <Route path="/">
+          <Header />
+        </Route>
+      </Switch>
+      <AppMain>
+        <Switch>
+          <Route path="/journal/entry">
+            <JournalForm createJournalEntry={createJournalEntry} />
+          </Route>
+          <Route path="/journal">
+            <JournalList
+              journalEntries={journalEntries}
+              deleteJournalEntry={deleteJournalEntry}
+            />
+          </Route>
+          <Route path="/style-info/:styleId">
+            <PersonalityStyleInfo />
+          </Route>
+          <Route path="/result/:questionnaireIds/:results">
+            <ResultPage />
+          </Route>
+          <Route path="/questionnaire/entry/:questionnaireIds/:results?">
+            <QuestionnaireEntryPage />
+          </Route>
+          <Route path="/questionnaire/intro/:questionnaireIds/:results?">
+            <QuestionnaireIntroPage />
+          </Route>
+          <Route path="/motives/entry">
+            <MotivesEntry />
+          </Route>
+          <Route path="/motives/intro">
+            <MotivesIntro />
+          </Route>
+          <Route path="/">
+            <Homepage />
+          </Route>
+        </Switch>
+      </AppMain>
+    </>
   )
 
   function createJournalEntry(newEntry) {
@@ -30,47 +80,6 @@ export default function App() {
     updatedJournalEntries.splice(indexToDelete, 1)
     setJournalEntries(updatedJournalEntries)
   }
-
-  useEffect(() => saveLocally('journalEntries', journalEntries), [
-    journalEntries,
-  ])
-
-  return (
-    <AppMain>
-      <Switch>
-        <Route path="/journal/entry">
-          <JournalForm createJournalEntry={createJournalEntry} />
-        </Route>
-        <Route path="/journal">
-          <JournalList
-            journalEntries={journalEntries}
-            deleteJournalEntry={deleteJournalEntry}
-          />
-        </Route>
-        <Route path="/style-info/:styleId">
-          <PersonalityStyleInfo />
-        </Route>
-        <Route path="/result/:questionnaireIds/:results">
-          <ResultPage />
-        </Route>
-        <Route path="/questionnaire/entry/:questionnaireIds/:results?">
-          <QuestionnaireEntryPage />
-        </Route>
-        <Route path="/questionnaire/intro/:questionnaireIds/:results?">
-          <QuestionnaireIntroPage />
-        </Route>
-        <Route path="/motives/entry">
-          <MotivesEntry />
-        </Route>
-        <Route path="/motives/intro">
-          <MotivesIntro />
-        </Route>
-        <Route path="/">
-          <Homepage />
-        </Route>
-      </Switch>
-    </AppMain>
-  )
 }
 
 const AppMain = styled.main`
