@@ -13,6 +13,7 @@ export default function Button({
   className,
   children,
   onClick,
+  type,
   btnType = 'primary',
   isButtonDisabled = false,
   width = '100',
@@ -22,6 +23,7 @@ export default function Button({
       className={className}
       disabled={isButtonDisabled}
       btnType={btnType}
+      type={type}
       onClick={onClick}
       width={width}
     >

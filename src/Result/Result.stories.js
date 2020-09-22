@@ -1,16 +1,14 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import Result from './Result'
 
 export default {
-  title: 'Result Selection',
+  title: 'Result',
   component: Result,
 }
 
 export const ResultComponent = () => (
-  <Result
-    resultData={[
-      { id: 5, yesCount: 8 },
-      { id: 3, yesCount: 4 },
-    ]}
-  />
+  <Router>
+    <Result questionnaireIds="192837465" results="73" />
+  </Router>
 )

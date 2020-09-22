@@ -4,6 +4,7 @@ import BulletList from '../common/BulletList'
 import Button from '../common/Button'
 import FloatingButtonContainer from '../common/FloatingButtonContainer'
 import HeadlineUnderline from '../common/HeadlineUnderline'
+import TextLink from '../common/TextLink'
 
 export default function () {
   return (
@@ -47,6 +48,12 @@ export default function () {
           </p>
         </li>
       </BulletList>
+      <h2>Tagebuch</h2>
+      <p>
+        Unsere Tagebuchfunktion hilft Ihnen, Ihr Verhalten zu analysieren und
+        dadurch erste Schritte zu einer Veränderung anzustoßen.
+      </p>
+      <TextLink href="/journal">Zum Tagebuch</TextLink>
       <FinePrint>
         Hinweis: Dieser Test ersetzt keine psychologische Beratung. Wenn Sie
         unter psychischen Problemen leiden, suchen Sie sich bitte professionelle
@@ -60,5 +67,6 @@ export default function () {
 }
 
 const FinePrint = styled.small`
+  margin-top: 20px;
   display: block;
 `

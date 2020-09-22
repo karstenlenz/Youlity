@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Collapse component renders correctly 1`] = `
+<div>
+  <section>
+    <div
+      class="Collapse__CollapseHeader-sc-1tgbx39-0 coVHVe"
+    >
+      test Headline
+      <img
+        class="Collapse__CollapseIcon-sc-1tgbx39-1 hIUnYw"
+        src="/img/expand.svg"
+      />
+    </div>
+    <div
+      class="Collapse__CollapseContent-sc-1tgbx39-2 bvSoVd"
+    >
+      Collapse content lorem ipsum
+    </div>
+  </section>
+</div>
+`;

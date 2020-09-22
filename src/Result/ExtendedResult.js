@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Button from '../common/Button'
 import HeadlineUnderline from '../common/HeadlineUnderline'
+import SectionBG from '../common/SectionBG'
 import TextLink from '../common/TextLink'
 import { capitalizeFirstLetter } from '../common/util'
 import { personalityStyleData } from '../data/personalityStyleData'
@@ -59,6 +60,14 @@ export default function ExtendedResult({ questionnaireIds, results }) {
           <Link to={'/questionnaire/entry/' + questionnaireIds + '/' + results}>
             <Button>Weiteren Fragebogen starten</Button>
           </Link>
+          <SectionBG>
+            <h2>Tagebuch</h2>
+            <p>
+              Unsere Tagebuchfunktion hilft Ihnen, Ihr Verhalten zu analysieren
+              und dadurch erste Schritte zu einer Veränderung anzustoßen.
+            </p>
+            <TextLink href="/journal">Zum Tagebuch</TextLink>
+          </SectionBG>
         </>
       ) : (
         <>

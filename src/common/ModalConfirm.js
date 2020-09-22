@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import ReactDOM from 'react-dom'
 import styled from 'styled-components/macro'
 import Button from './Button'
-import ReactDOM from 'react-dom'
 
-export default function InfoOverlay({ children, className }) {
+export default function ModalConfirm({ handleDelete, id }) {
   const [isOverlayVisible, setIsOverlayVisible] = useState(false)
 
   const appRoot = document.querySelector('#root')
@@ -24,19 +23,31 @@ export default function InfoOverlay({ children, className }) {
             <>
               <OverLayBG onClick={toggleOverlay} />
               <OverlayContent>
-                <CloseButton onClick={toggleOverlay}>
+                <IconButton onClick={toggleOverlay}>
                   <img alt="Dialog schließen" src="/img/close.svg" />
-                </CloseButton>
-                {children}
+                </IconButton>
+                <h3>Eintrag löschen</h3>
+                <p>
+                  Möchten Sie diesen Beitrag wirklich löschen? Gelöschte
+                  Einträge können nicht wiederhergestellt werden
+                </p>
+                <ButtonPair>
+                  <Button btnType="white" width="47.5" onClick={toggleOverlay}>
+                    Abbrechen
+                  </Button>
+                  <Button width="47.5" onClick={handleDelete}>
+                    Ja
+                  </Button>
+                </ButtonPair>
               </OverlayContent>
             </>
           )}
         </>,
         appRoot
       )}
-      <InfoButton btnType="white" onClick={toggleOverlay} className={className}>
-        i
-      </InfoButton>
+      <IconButton onClick={toggleOverlay}>
+        <img alt="Eintrag löschen" src="/img/delete.svg" />
+      </IconButton>
     </>
   )
 
@@ -46,9 +57,15 @@ export default function InfoOverlay({ children, className }) {
   }
 }
 
-const InfoButton = styled(Button)`
+const IconButton = styled.button`
   width: 40px;
   height: 40px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  border: none;
 `
 
 const OverLayBG = styled.div`
@@ -74,13 +91,8 @@ const OverlayContent = styled.section`
   padding: 15px;
   text-align: left;
 `
-const CloseButton = styled.button`
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  background: none;
-  border: none;
+
+const ButtonPair = styled.div`
+  display: flex;
+  justify-content: space-between;
 `

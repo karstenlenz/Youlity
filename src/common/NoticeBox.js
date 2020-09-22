@@ -8,9 +8,9 @@ export default function NoticeBox({ children }) {
     <>
       {isNoticeVisible && (
         <SectionStyled>
-          <button onClick={() => setIsNoticeVisible(false)}>
+          <CloseButton onClick={() => setIsNoticeVisible(false)}>
             <img alt="close overlay" src="/img/close.svg" />
-          </button>
+          </CloseButton>
           {children}
         </SectionStyled>
       )}
@@ -25,13 +25,15 @@ const SectionStyled = styled.section`
   padding: 15px;
   position: relative;
   margin-bottom: 30px;
+`
 
-  button {
-    padding: 0;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    background: none;
-    border: none;
-  }
+const CloseButton = styled.button`
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: none;
+  border: none;
 `
