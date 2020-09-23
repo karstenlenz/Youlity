@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import styled from 'styled-components/macro'
 import IconButton from './IconButton'
 
@@ -13,7 +13,9 @@ export default function Header() {
         altText="zurück"
         onClick={() => history.goBack()}
       />
-      <img src="/img/logo.svg" alt="Youlity logo" />
+      <Link to="/">
+        <img src="/img/logo.svg" alt="Youlity logo" />
+      </Link>
       <IconButton
         imgUrl="/img/home.svg"
         altText="zur Homepage"
@@ -24,9 +26,13 @@ export default function Header() {
 }
 
 const HeaderContainer = styled.header`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   height: 60px;
-  width: 100vw;
+  width: 100%;
   padding: 10px 15px;
   box-shadow: var(--primary-shadow);
+  button:nth-child(3) {
+    justify-self: end;
+  }
 `
