@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types'
-import React, { useState } from 'react'
-import { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components/macro'
 import Button from '../common/Button'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 import { ReactComponent as ArrowLeft } from '../img/arrow_left.svg'
 import { ReactComponent as ArrowRight } from '../img/arrow_right.svg'
 import CardStack from './CardStack'
+import useQuestionnaire from './useQuestionnaire'
 
 Questionnaire.propTypes = {
   questionSets: PropTypes.arrayOf(PropTypes.array).isRequired,
@@ -14,22 +14,16 @@ Questionnaire.propTypes = {
 }
 
 export default function Questionnaire({ questionSets, handleResults }) {
-  const [questionRound, setQuestionRound] = useState(0)
-  const questions = questionSets[questionRound] ?? []
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-  const [answers, setAnswers] = useState([])
-  const [results, setResults] = useState([])
-
-  const [cardOffset, setCardOffset] = useState(0)
-  const swipeThreshold = 50
-
-  const [isInputDisabled, setIsInputDisabled] = useState(false)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsInputDisabled(false)
-    }, 100)
-  }, [answers])
+  const {
+    questions,
+    questionRound,
+    currentQuestionIndex,
+    isInputDisabled,
+    swipeThreshold,
+    cardOffset,
+    setCardOffset,
+    handleAnswer,
+  } = useQuestionnaire(questionSets, handleResults)
 
   return (
     <>
@@ -75,29 +69,6 @@ export default function Questionnaire({ questionSets, handleResults }) {
       </ButtonRow>
     </>
   )
-
-  function handleAnswer(answer) {
-    setIsInputDisabled(true)
-    if (currentQuestionIndex === questions.length - 1) {
-      if (questionRound === questionSets.length - 1) {
-        handleResults([...results, countYes([...answers, answer])])
-      } else {
-        setResults([...results, countYes([...answers, answer])])
-        setQuestionRound(questionRound + 1)
-        setCurrentQuestionIndex(0)
-        setAnswers([])
-      }
-    } else {
-      setAnswers([...answers, answer])
-      setCurrentQuestionIndex(currentQuestionIndex + 1)
-    }
-  }
-}
-
-export function countYes(answers) {
-  return answers.reduce((yesCount, answer) => {
-    return answer ? yesCount + 1 : yesCount
-  }, 0)
 }
 
 const ButtonRow = styled.section`

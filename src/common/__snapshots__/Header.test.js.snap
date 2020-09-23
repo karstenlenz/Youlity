@@ -3,7 +3,7 @@
 exports[`The Header component renders correctly 1`] = `
 <div>
   <header
-    class="Header__HeaderContainer-sc-15lxbtt-0 cLpyLR"
+    class="Header__HeaderContainer-sc-15lxbtt-0 lkLVpF"
   >
     <button
       class="IconButton__ButtonContainer-sc-47n1yg-0 jCeVKT"
@@ -13,10 +13,14 @@ exports[`The Header component renders correctly 1`] = `
         src="/img/back.svg"
       />
     </button>
-    <img
-      alt="Youlity logo"
-      src="/img/logo.svg"
-    />
+    <a
+      href="/"
+    >
+      <img
+        alt="Youlity logo"
+        src="/img/logo.svg"
+      />
+    </a>
     <button
       class="IconButton__ButtonContainer-sc-47n1yg-0 jCeVKT"
     >

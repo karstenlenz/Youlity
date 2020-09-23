@@ -46,8 +46,9 @@ exports[`The questionnaire component renders correctly 1`] = `
     </div>
     <div>
       <div
-        class="SwipeableCard__Card-zqgmcw-0 fZHvwI"
+        class="SwipeableCard__Card-zqgmcw-0 cluEmM"
         offset="0"
+        style="transform: translateX(0px) rotate(0deg); border: 3px solid transparent;"
       >
         Brauchen Sie in hohem Maße Lob und Anerkennung?
       </div>

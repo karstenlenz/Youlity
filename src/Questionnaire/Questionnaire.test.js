@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
-import Questionnaire, { countYes } from './Questionnaire'
+import Questionnaire from './Questionnaire'
+import { countYes } from './useQuestionnaire'
 
 describe('The questionnaire component', () => {
   it('renders correctly', () => {
