@@ -43,9 +43,11 @@ export default function () {
           <li>Entdecken Sie Ihre individuellen Persönlichkeitsstile.</li>
           <li>
             Entwickeln Sie ein besseres Verständnis für sich selbst in
-            Beziehungen.
+            zwischenmenschlichen Beziehungen.
           </li>
-          <li>Ideale Gesprächsstütze für Therapie-Termine. </li>
+          <li>
+            Profitieren Sie von speziell auf Sie zugeschnittenen Alltagstipps.
+          </li>
         </BulletList>
         <Link to="/motives/intro">
           <Button>Test starten</Button>
@@ -60,8 +62,13 @@ export default function () {
             Notieren Sie sich Situationen, in denen sich Ihre Persönlichkeit
             widerspiegelt.
           </li>
-          <li>Selbstbeobachtung ermöglicht Veränderung.</li>
-          <li>Ideale Gesprächsstütze für Therapie-Termine.</li>
+          <li>
+            Übernehmen Sie die Kontrolle: Selbstbeobachtung ermöglicht
+            Veränderung.
+          </li>
+          <li>
+            Nutzen Sie das Tagebuch als Gesprächsstütze für Therapie-Termine.
+          </li>
         </BulletList>
         <Link to="/journal">
           <Button>Tagebuch öffnen</Button>
