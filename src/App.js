@@ -1,27 +1,24 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import MotivesEntry from './Motives/MotivesEntry'
-import QuestionnaireIntroPage from './Questionnaire/QuestionnaireIntroPage'
-import ResultPage from './Result/ResultPage'
-import PersonalityStyleInfo from './Result/PersonalityStyleInfo'
-import Homepage from './Homepage/Homepage'
-import MotivesIntro from './Motives/MotivesIntro'
 import styled from 'styled-components/macro'
-import QuestionnaireEntryPage from './Questionnaire/QuestionnaireEntryPage'
+import Header from './common/Header'
+import Homepage from './Homepage/Homepage'
 import JournalForm from './Journal/JournalForm'
 import JournalList from './Journal/JournalList'
-import { useState } from 'react'
-import { loadLocally, saveLocally } from './Journal/util'
-import Header from './common/Header'
+import useJournalEntries from './Journal/useJournalEntries'
+import MotivesEntry from './Motives/MotivesEntry'
+import MotivesIntro from './Motives/MotivesIntro'
+import QuestionnaireEntryPage from './Questionnaire/QuestionnaireEntryPage'
+import QuestionnaireIntroPage from './Questionnaire/QuestionnaireIntroPage'
+import PersonalityStyleInfo from './Result/PersonalityStyleInfo'
+import ResultPage from './Result/ResultPage'
 
 export default function App() {
-  const [journalEntries, setJournalEntries] = useState(
-    loadLocally('journalEntries') ?? []
-  )
-
-  useEffect(() => saveLocally('journalEntries', journalEntries), [
+  const {
     journalEntries,
-  ])
+    createJournalEntry,
+    deleteJournalEntry,
+  } = useJournalEntries()
 
   return (
     <>
@@ -67,19 +64,6 @@ export default function App() {
       </AppMain>
     </>
   )
-
-  function createJournalEntry(newEntry) {
-    setJournalEntries([...journalEntries, newEntry])
-  }
-
-  function deleteJournalEntry(entryId) {
-    const indexToDelete = journalEntries.findIndex(
-      (element) => element.id === entryId
-    )
-    const updatedJournalEntries = [...journalEntries]
-    updatedJournalEntries.splice(indexToDelete, 1)
-    setJournalEntries(updatedJournalEntries)
-  }
 }
 
 const AppMain = styled.main`
