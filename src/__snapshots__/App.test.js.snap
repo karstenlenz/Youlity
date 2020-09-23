@@ -74,8 +74,20 @@ exports[`renders correctly 1`] = `
         </p>
       </li>
     </ul>
+    <h2>
+      Tagebuch
+    </h2>
+    <p>
+      Unsere Tagebuchfunktion hilft Ihnen, Ihr Verhalten zu analysieren und dadurch erste Schritte zu einer Veränderung anzustoßen.
+    </p>
+    <a
+      class="TextLink__LinkStyled-sc-1a9sgio-0 kcJVcY"
+      href="/journal"
+    >
+      Zum Tagebuch
+    </a>
     <small
-      class="Homepage__FinePrint-ye7llx-0 hBFnTz"
+      class="Homepage__FinePrint-ye7llx-0 geqzfQ"
     >
       Hinweis: Dieser Test ersetzt keine psychologische Beratung. Wenn Sie unter psychischen Problemen leiden, suchen Sie sich bitte professionelle Hilfe.
     </small>

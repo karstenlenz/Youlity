@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="151" height="40" viewBox="0 0 151 40">
+  <g id="Gruppe_97" data-name="Gruppe 97" transform="translate(-38 -260)">
+    <g id="Gruppe_96" data-name="Gruppe 96" transform="translate(-549 97.09)">
+      <text id="Youlity" transform="translate(619 195.91)" fill="#00c5aa" font-size="35" font-family="Ubuntu-Bold, Ubuntu" font-weight="700"><tspan x="0" y="0">You</tspan><tspan y="0" fill="#683b89">lity</tspan></text>
+    </g>
+    <g id="Gruppe_95" data-name="Gruppe 95" transform="translate(-302 -125)">
+      <path id="Icon_awesome-brain" data-name="Icon awesome-brain" d="M28.869,15.236a3.989,3.989,0,0,0-2.02-3.463,3.945,3.945,0,0,0,.416-1.749,4.01,4.01,0,0,0-2.491-3.709,3.178,3.178,0,0,0-3.122-3.909c-.04,0-.075.01-.11.01a3.2,3.2,0,0,0-6.305.792V22.053A3.6,3.6,0,0,0,22.253,23.2a3.4,3.4,0,0,0,.6.06,3.606,3.606,0,0,0,3.609-3.609,3.673,3.673,0,0,0-.07-.707A4.01,4.01,0,0,0,28.869,15.236Z" transform="translate(340 391.807)" fill="#683b89"/>
+      <path id="Icon_awesome-brain-2" data-name="Icon awesome-brain" d="M10.425,0a3.2,3.2,0,0,0-3.1,2.416c-.04,0-.07-.01-.11-.01A3.211,3.211,0,0,0,4.01,5.613a2.956,2.956,0,0,0,.085.7A3.975,3.975,0,0,0,2.02,11.773a3.995,3.995,0,0,0,.456,7.167,3.673,3.673,0,0,0-.07.707,3.606,3.606,0,0,0,3.609,3.609,3.4,3.4,0,0,0,.6-.06,3.6,3.6,0,0,0,7.017-1.143V3.208A3.211,3.211,0,0,0,10.425,0Z" transform="translate(340 391.807)" fill="#00c5aa"/>
+    </g>
+  </g>
+</svg>
