@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
+import { useEffect } from 'react'
 import styled from 'styled-components/macro'
 import Button from '../common/Button'
 import HeadlineUnderline from '../common/HeadlineUnderline'
@@ -21,6 +22,14 @@ export default function Questionnaire({ questionSets, handleResults }) {
 
   const [cardOffset, setCardOffset] = useState(0)
   const swipeThreshold = 50
+
+  const [isInputDisabled, setIsInputDisabled] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsInputDisabled(false)
+    }, 100)
+  }, [answers])
 
   return (
     <>
@@ -50,7 +59,7 @@ export default function Questionnaire({ questionSets, handleResults }) {
           width="47.5"
           onClick={() => handleAnswer(false)}
           borderColor={cardOffset > swipeThreshold && 'var(--primary)'}
-          isButtonDisabled={cardOffset < -swipeThreshold}
+          isButtonDisabled={cardOffset < -swipeThreshold || isInputDisabled}
         >
           (Eher) Nein
         </QuestionnaireButton>
@@ -59,7 +68,7 @@ export default function Questionnaire({ questionSets, handleResults }) {
           width="47.5"
           onClick={() => handleAnswer(true)}
           borderColor={cardOffset < -swipeThreshold && 'var(--secondary)'}
-          isButtonDisabled={cardOffset > swipeThreshold}
+          isButtonDisabled={cardOffset > swipeThreshold || isInputDisabled}
         >
           (Eher) Ja
         </QuestionnaireButton>
@@ -68,6 +77,7 @@ export default function Questionnaire({ questionSets, handleResults }) {
   )
 
   function handleAnswer(answer) {
+    setIsInputDisabled(true)
     if (currentQuestionIndex === questions.length - 1) {
       if (questionRound === questionSets.length - 1) {
         handleResults([...results, countYes([...answers, answer])])
