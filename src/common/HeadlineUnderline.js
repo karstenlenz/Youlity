@@ -12,6 +12,7 @@ export default function HeadlineUnderline({ children }) {
 }
 
 const HeadlineContainer = styled.section`
+  margin-bottom: -15px;
   position: relative;
 `
 
