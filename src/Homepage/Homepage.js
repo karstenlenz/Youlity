@@ -112,7 +112,8 @@ export default function () {
 
 const Logo = styled.img`
   margin-top: 20px;
-  width: 50vw;
+  width: 50%;
+  max-width: 300px;
 `
 const SmallImg = styled.img`
   width: 50%;
