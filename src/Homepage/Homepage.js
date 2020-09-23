@@ -27,12 +27,16 @@ export default function () {
           Persönlichkeits-störungen beschäftigt. Doch auch gesunde Menschen
           haben ein Interesse daran, Ihre Persönlichkeit zu verstehen, und in
           bestimmten Situationen ihr Handeln zu verändern. Dazu dient unser
-          Youlity-Persönlichkeitstest. Im Gegensatz zu Tests wie z.B. „16
-          Personalities“, die jeden Menschen in starre Persönlichkeitstypen
-          zwängen wollen, erkennen wir an, dass jeder Mensch individuell ist.
-          Deshalb messen wir Übereinstimmungen zu einzelnen
-          „Persönlichkeitsstilen“. So entsteht ein differenziertes Modell Ihrer
-          individuellen Persönlichkeit.
+          Youlity-Persönlichkeitstest.
+          <br /> Im Gegensatz zu Tests wie z.B. „16 Personalities“, die jeden
+          Menschen in starre Persönlichkeitstypen zwängen wollen, erkennen wir
+          an, dass jeder Mensch individuell ist. Deshalb messen wir
+          Übereinstimmungen zu einzelnen „Persönlichkeitsstilen“.
+          <br />
+          Persönlichkeitsstile sind Muster aus stabilen Merkmalen in Menschen,
+          die sich aus der individuellen Lebensgeschichte ergeben. Youlity hilft
+          Ihnen, ein differenziertes Modell Ihrer individuellen Persönlichkeit
+          zu erstellen.
         </p>
       </Collapse>
       <Card>
