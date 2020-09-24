@@ -31,20 +31,6 @@ export function register(config) {
       return
     }
 
-    window.addEventListener('install', function (event) {
-      const cacheName = 'youlityCache'
-      event.waitUntil(
-        caches.open(cacheName).then(function (cache) {
-          console.log('doing some caching')
-          return cache.addAll([
-            '/img/logo.svg',
-            '/img/back.svg',
-            '/img/home.svg',
-          ])
-        })
-      )
-    })
-
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`
 
