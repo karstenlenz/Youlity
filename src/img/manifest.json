@@ -1,6 +1,4 @@
 {
-  "short_name": "Youlity",
-  "name": "Youlity - Discover Your Personality",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -74,9 +72,5 @@
       "sizes": "150x150",
       "type": "image/png"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#683B89",
-  "background_color": "#ffffff"
+  ]
 }
