@@ -35,6 +35,7 @@ export function register(config) {
       const cacheName = 'youlityCache'
       event.waitUntil(
         caches.open(cacheName).then(function (cache) {
+          console.log('doing some caching')
           return cache.addAll([
             '/img/logo.svg',
             '/img/back.svg',
