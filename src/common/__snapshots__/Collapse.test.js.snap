@@ -2,18 +2,20 @@
 
 exports[`The Collapse component renders correctly 1`] = `
 <div>
-  <section>
+  <section
+    class="Collapse__CollapseWrapper-sc-1tgbx39-0 imOYVX"
+  >
     <div
-      class="Collapse__CollapseHeader-sc-1tgbx39-0 coVHVe"
+      class="Collapse__CollapseHeader-sc-1tgbx39-1 hKtGZf"
     >
       test Headline
       <img
-        class="Collapse__CollapseIcon-sc-1tgbx39-1 hIUnYw"
+        class="Collapse__CollapseIcon-sc-1tgbx39-2 bFSuxH"
         src="/img/expand.svg"
       />
     </div>
     <div
-      class="Collapse__CollapseContent-sc-1tgbx39-2 bvSoVd"
+      class="Collapse__CollapseContent-sc-1tgbx39-3 domdvA"
     >
       Collapse content lorem ipsum
     </div>

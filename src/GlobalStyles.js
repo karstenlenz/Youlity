@@ -28,31 +28,32 @@ h1,h2,h3,h4,h5,h6 {
 
 
 h1 {
-    font-size: 1.611rem ;
+    font-size: 1.611em ;
 }
 
 h2 {
-    font-size: 1.464rem ;
+    font-size: 1.464em ;
 }
 
 h3 {
-    font-size: 1.331rem;
+    font-size: 1.331em;
 }
 
 h4 {
-    font-size: 1.21rem;
+    font-size: 1.21em;
 }
 
 h5 {
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 h6 {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 p {
     line-height:140%;
+    margin:0;
 }
 
 

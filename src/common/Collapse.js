@@ -5,26 +5,30 @@ import PropTypes from 'prop-types'
 
 Collapse.propType = {
   headline: PropTypes.string.isRequired,
-  headlineOpen: PropTypes.string.isRequired,
+  headlineOpen: PropTypes.string,
   children: PropTypes.any.isRequired,
 }
 
 export default function Collapse({ headline, headlineOpen, children }) {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <section>
+    <CollapseWrapper>
       <CollapseHeader onClick={toggleIsOpen}>
-        {isOpen ? headlineOpen : headline}
+        {isOpen ? headlineOpen || headline : headline}
         <CollapseIcon src="/img/expand.svg" isOpen={isOpen} />
       </CollapseHeader>
       <CollapseContent isOpen={isOpen}>{children}</CollapseContent>
-    </section>
+    </CollapseWrapper>
   )
 
   function toggleIsOpen() {
     setIsOpen(!isOpen)
   }
 }
+
+const CollapseWrapper = styled.section`
+  margin: 30px 0;
+`
 
 const CollapseHeader = styled.div`
   position: relative;

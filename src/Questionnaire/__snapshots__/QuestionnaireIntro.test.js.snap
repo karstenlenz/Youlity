@@ -7,7 +7,7 @@ exports[`The QuestionnaireIntro component renders correctly 1`] = `
     src="/img/questionnaire-intro.svg"
   />
   <section
-    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 jWFWIm"
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 eSchLu"
   >
     <h1>
       Schritt 2: Fragebogen

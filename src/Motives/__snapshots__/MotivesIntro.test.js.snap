@@ -7,7 +7,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     src="/img/motives-intro.svg"
   />
   <section
-    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 jWFWIm"
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 eSchLu"
   >
     <h1>
       Schritt 1: Bedürfnisse
@@ -28,7 +28,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     Im Anschluss erhalten Sie Ihr Ergebnis und dazu passende Informationen.
   </p>
   <a
-    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 cLTvWp"
+    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 kGUNwE"
     href="/motives/entry"
   >
     <button
