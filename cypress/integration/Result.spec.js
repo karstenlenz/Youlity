@@ -5,12 +5,6 @@ context('Result', () => {
     cy.visit('result/194867523/51')
   })
 
-  it('has intro img', () => {
-    cy.get('main > img')
-      .should('have.attr', 'src')
-      .should('include', 'style_info.svg')
-  })
-
   it('has a headline', () => {
     cy.contains('Ergebnis').should('exist')
   })

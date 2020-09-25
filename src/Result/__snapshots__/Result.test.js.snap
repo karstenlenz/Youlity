@@ -18,32 +18,36 @@ exports[`The Result component renders correctly 1`] = `
     </h3>
     <p>
       Unser Testergebnis stellt nur eine Tendenz dar und ersetzt keine psychologische Beratung. Wenn Sie sich unwohl fühlen, holen Sie sich professionelle Hilfe.
+      <br />
+      <br />
     </p>
     <a
-      class="TextLink__LinkStyled-sc-1a9sgio-0 kcJVcY"
+      class="TextLink__LinkStyled-sc-1a9sgio-0 eXUZha"
       href="https://www.wege-zur-psychotherapie.org/"
     >
       Infoseite "Wege zur Psychotherapie" &gt;
     </a>
   </section>
-  <img
-    alt=""
-    src="/img/style_info.svg"
-  />
+  <svg
+    class="Result__IntroImgStyled-sc-19vma1i-0 jElWtw"
+    title=""
+  >
+    style_info.svg
+  </svg>
   <section
-    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 eSchLu"
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 iPfevw"
   >
     <h1>
       Ergebnis
     </h1>
     <svg
-      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
+      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 iXilNe"
     >
       underline.svg
     </svg>
   </section>
   <p
-    class="Result__ResultIntro-sc-19vma1i-0 eycrSn"
+    class="Result__ResultIntro-sc-19vma1i-1 ijCUam"
   >
     Sie haben eben Tests für folgende Persönlichkeitsstile ausgefüllt:
   </p>
@@ -53,23 +57,31 @@ exports[`The Result component renders correctly 1`] = `
     <h3>
       Der selbstbewusste Persönlichkeitsstil
     </h3>
-    <p>
-      Sie haben 
-      6
-       von
-       
-      8
-       Fragen mit "Ja" beantwortet.
-    </p>
-    <p>
-      Das kann darauf hindeuten, dass dieser Stil bei Ihnen überdurchschnittlich ausgeprägt ist. 
+    <div
+      class="ResultBar__Outline-sc-479x3f-1 echTYD"
+    >
+      <div
+        class="ResultBar__ColorBar-sc-479x3f-2 gUwDrH"
+      >
+        <p
+          class="ResultBar__Text-sc-479x3f-0 icLhoH"
+        >
+          75
+          % Übereinstimmung
+        </p>
+      </div>
+    </div>
+    <p
+      class="Result__StyleText-sc-19vma1i-2 brizaG"
+    >
+      Sie haben eine hohe Übereinstimmung mit diesem Persönlichkeitsstil. 
       <br />
       Das heißt nicht, dass etwas mit Ihnen „nicht stimmt“, oder eine Störung vorliegt! Jeder Mensch hat einen oder mehrere dominante Persönlichkeitsstile. Erst wenn Sie unter Ihrer Persönlichkeit leiden, besteht Handlungsbedarf. 
       <br />
       Lesen Sie sich die folgenden Informationen durch und prüfen Sie ehrlich, ob die Beschreibungen auf Sie zutreffen.
     </p>
     <a
-      class="TextLink__LinkStyled-sc-1a9sgio-0 kcJVcY"
+      class="TextLink__LinkStyled-sc-1a9sgio-0 eXUZha"
       href="/style-info/1"
     >
       Zu den Informationen &gt;
@@ -81,25 +93,33 @@ exports[`The Result component renders correctly 1`] = `
     <h3>
       Der sprunghafte Persönlichkeitsstil
     </h3>
-    <p>
-      Sie haben 
-      4
-       von
-       
-      8
-       Fragen mit "Ja" beantwortet.
-    </p>
-    <p>
+    <div
+      class="ResultBar__Outline-sc-479x3f-1 echTYD"
+    >
+      <div
+        class="ResultBar__ColorBar-sc-479x3f-2 fqhHNn"
+      >
+        <p
+          class="ResultBar__Text-sc-479x3f-0 icLhoH"
+        >
+          50
+          % Übereinstimmung
+        </p>
+      </div>
+    </div>
+    <p
+      class="Result__StyleText-sc-19vma1i-2 brizaG"
+    >
       Das deutet 
       <strong>
         wahrscheinlich nicht
       </strong>
-       darauf hin, dass dieser Stil bei Ihnen überdurchschnittlich ausgeprägt ist.
+       darauf hin, dass dieser Stil bei Ihnen stark ausgeprägt ist.
       <br />
        Sie können sich die Beschreibung des Persönlichkeitsstil trotzdem gerne durchlesen und prüfen, ob Sie sich damit identifizieren können.
     </p>
     <a
-      class="TextLink__LinkStyled-sc-1a9sgio-0 kcJVcY"
+      class="TextLink__LinkStyled-sc-1a9sgio-0 eXUZha"
       href="/style-info/9"
     >
       Zu den Informationen &gt;
@@ -109,32 +129,36 @@ exports[`The Result component renders correctly 1`] = `
     Weitere Fragebögen
   </h3>
   <p>
-    Sie haben im ersten Schritt 2 von 9 Fragebögen ausgefüllt. Sie können auch noch weitere Fragebögen ausfüllen, um zu erfahren, wie stark die weiteren Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen haben wenige, dafür stark ausgepräge Stile, andere mehrere, jeweils weniger stark ausgeprägte Stile.
+    Sie haben im ersten Schritt 2 von 9 Fragebögen ausgefüllt. Meist werden damit die für Sie relevantesten Persönlichkeitsstile abgedeckt. Sie können noch weitere Fragebögen ausfüllen, um zu erfahren, wie stark die weiteren Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen haben wenige, dafür stark ausgepräge Stile, andere mehrere, jeweils weniger stark ausgeprägte Stile.
   </p>
   <a
     href="/questionnaire/entry/1928373645/64"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 czYdCq"
+      class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
       width="100"
     >
       Weiteren Fragebogen starten
     </button>
   </a>
   <section
-    class="SectionBG__Background-sc-164jup7-0 OlfId"
+    class="SectionBGWithButton__Background-sc-11viaht-0 bOMnEz"
   >
     <h2>
       Tagebuch
     </h2>
     <p>
-      Unsere Tagebuchfunktion hilft Ihnen, Ihr Verhalten zu analysieren und dadurch erste Schritte zu einer Veränderung anzustoßen.
+      Sind Sie manchmal unzufrieden mit Ihrer Persönlichkeit? Unsere Tagebuch-Funktion hilft Ihnen, Ihr Verhalten zu analysieren und dadurch erste Schritte zu einer Veränderung anzustoßen.
     </p>
     <a
-      class="TextLink__LinkStyled-sc-1a9sgio-0 kcJVcY"
       href="/journal"
     >
-      Zum Tagebuch
+      <button
+        class="Button__BtnStyled-sc-129yfz5-0 tgIAk"
+        width="100"
+      >
+        Zum Tagebuch
+      </button>
     </a>
   </section>
   <p>

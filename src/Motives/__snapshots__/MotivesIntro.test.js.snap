@@ -2,18 +2,20 @@
 
 exports[`The MotivesIntro component renders correctly 1`] = `
 <div>
-  <img
-    alt=""
-    src="/img/motives-intro.svg"
-  />
+  <svg
+    class="MotivesIntro__IntroImgStyled-sc-16bb2wg-0 hCpTvX"
+    title=""
+  >
+    thinking.svg
+  </svg>
   <section
-    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 eSchLu"
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 iPfevw"
   >
     <h1>
       Schritt 1: Bedürfnisse
     </h1>
     <svg
-      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
+      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 iXilNe"
     >
       underline.svg
     </svg>
@@ -27,12 +29,30 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     <br />
     Im Anschluss erhalten Sie Ihr Ergebnis und dazu passende Informationen.
   </p>
+  <section
+    class="Collapse__CollapseWrapper-sc-1tgbx39-0 imOYVX"
+  >
+    <div
+      class="Collapse__CollapseHeader-sc-1tgbx39-1 hKtGZf"
+    >
+      Mehr erfahren
+      <img
+        class="Collapse__CollapseIcon-sc-1tgbx39-2 bFSuxH"
+        src="/img/expand.svg"
+      />
+    </div>
+    <div
+      class="Collapse__CollapseContent-sc-1tgbx39-3 domdvA"
+    >
+      Hier kommt später Text vom Psychologen rein.
+    </div>
+  </section>
   <a
-    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 kGUNwE"
+    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 fIGCfd"
     href="/motives/entry"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 czYdCq"
+      class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
       width="100"
     >
       Weiter zur Auswahl

@@ -3,7 +3,7 @@
 exports[`The questionnaire component renders correctly 1`] = `
 <div>
   <section
-    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 eSchLu"
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 iPfevw"
   >
     <h1>
       Fragebogen 
@@ -12,7 +12,7 @@ exports[`The questionnaire component renders correctly 1`] = `
       2
     </h1>
     <svg
-      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
+      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 iXilNe"
     >
       underline.svg
     </svg>
@@ -68,17 +68,22 @@ exports[`The questionnaire component renders correctly 1`] = `
     class="Questionnaire__ButtonRow-sc-13hxlgu-0 jArQLV"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 ibTELz Questionnaire__QuestionnaireButton-sc-13hxlgu-2 kEMYte"
+      class="Button__BtnStyled-sc-129yfz5-0 IUyFd Questionnaire__QuestionnaireButton-sc-13hxlgu-2 kEMYte"
       width="47.5"
     >
       (Eher) Nein
     </button>
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 ibTELz Questionnaire__QuestionnaireButton-sc-13hxlgu-2 kEMYte"
+      class="Button__BtnStyled-sc-129yfz5-0 IUyFd Questionnaire__QuestionnaireButton-sc-13hxlgu-2 kEMYte"
       width="47.5"
     >
       (Eher) Ja
     </button>
   </section>
+  <small
+    class="FinePrint__SmallStyled-sc-1oy87bz-0 bIdxte"
+  >
+    Tipp: Sie können die Fragen auch beantworten, indem Sie sie nach links oder rechts wischen.
+  </small>
 </div>
 `;

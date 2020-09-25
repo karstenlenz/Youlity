@@ -5,10 +5,6 @@ context('Journal List', () => {
     cy.visit('/journal')
   })
 
-  it('has 1 img', () => {
-    cy.get('img').should('exist')
-  })
-
   it('has a headline', () => {
     cy.contains('Tagebuch').should('exist')
   })

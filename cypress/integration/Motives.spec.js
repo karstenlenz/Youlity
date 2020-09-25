@@ -5,10 +5,6 @@ context('Motives Intro', () => {
     cy.visit('/motives/intro')
   })
 
-  it('has 1 img', () => {
-    cy.get('img').should('have.length', 1)
-  })
-
   it('has a headline', () => {
     cy.contains('Schritt 1: Bedürfnisse').should('exist')
   })

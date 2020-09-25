@@ -2,18 +2,20 @@
 
 exports[`The QuestionnaireIntro component renders correctly 1`] = `
 <div>
-  <img
-    alt=""
-    src="/img/questionnaire-intro.svg"
-  />
+  <svg
+    class="QuestionnaireIntro__IntroImgStyled-nv4k9j-0 BlqQH"
+    title=""
+  >
+    questionnaire-intro.svg
+  </svg>
   <section
-    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 eSchLu"
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 iPfevw"
   >
     <h1>
       Schritt 2: Fragebogen
     </h1>
     <svg
-      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
+      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 iXilNe"
     >
       underline.svg
     </svg>
@@ -22,14 +24,18 @@ exports[`The QuestionnaireIntro component renders correctly 1`] = `
     Im Folgenden präsentieren wir Ihnen als Ergebnis Ihrer Auswahl zwei Fragebögen. Diese sind auf Sie angepasst. Bitte beantworten Sie alle 16 Fragen. Sie helfen, Ihre zentralen Persönlichkeitsaspekte besser einzuschätzen. Alle Fragen sind Ja/Nein-Fragen. Die Bearbeitungszeit pro Fragebogen beträgt circa drei Minuten.
   </p>
   <a
+    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 fIGCfd"
     href="/questionnaire/entry/undefined/"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 czYdCq"
+      class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
       width="100"
     >
-      Weiter zum Fragebogen
+      Weiter zur Auswahl
     </button>
   </a>
+  <div
+    class="FloatingButtonContainer__BottomSpacer-slkv4p-1 hgDFeh"
+  />
 </div>
 `;
