@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components/macro'
 import Button from '../common/Button'
+import FinePrint from '../common/FinePrint'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 import { ReactComponent as ArrowLeft } from '../img/arrow_left.svg'
 import { ReactComponent as ArrowRight } from '../img/arrow_right.svg'
@@ -67,6 +68,10 @@ export default function Questionnaire({ questionSets, handleResults }) {
           (Eher) Ja
         </QuestionnaireButton>
       </ButtonRow>
+      <FinePrint>
+        Tipp: Sie können die Fragen auch beantworten, indem Sie sie nach links
+        oder rechts wischen.
+      </FinePrint>
     </>
   )
 }

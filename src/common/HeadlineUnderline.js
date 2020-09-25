@@ -12,7 +12,7 @@ export default function HeadlineUnderline({ children }) {
 }
 
 const HeadlineContainer = styled.section`
-  margin-bottom: -15px;
+  margin: -15px 0;
   position: relative;
 `
 
@@ -21,6 +21,6 @@ const UnderlineStyled = styled(Underline)`
   width: 100%;
   z-index: var(--background);
   position: relative;
-  top: -30px;
+  top: -34px;
   opacity: 0.6;
 `

@@ -1,8 +1,12 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-export default function TextLink({ children, href }) {
-  return <LinkStyled href={href}>{children}</LinkStyled>
+export default function TextLink({ children, href, className }) {
+  return (
+    <LinkStyled className={className} href={href}>
+      {children}
+    </LinkStyled>
+  )
 }
 
 const LinkStyled = styled.a`
@@ -10,4 +14,5 @@ const LinkStyled = styled.a`
   font-weight: 700;
   text-decoration: underline;
   color: black;
+  display: inline-block;
 `

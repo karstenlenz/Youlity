@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import Button from '../common/Button'
 import HeadlineUnderline from '../common/HeadlineUnderline'
-import SectionBG from '../common/SectionBG'
+import SectionBGWithButton from '../common/SectionBGWithButton'
 import TextLink from '../common/TextLink'
 import { capitalizeFirstLetter } from '../common/util'
 import { personalityStyleData } from '../data/personalityStyleData'
@@ -27,10 +27,10 @@ export default function ExtendedResult({ questionnaireIds, results }) {
       <HeadlineUnderline>
         <h1>Ergebnis</h1>
       </HeadlineUnderline>
-      <p>
+      <IntroText>
         Sie haben bisher folgende Fragebögen ausgefüllt. Klicken Sie auf einen
         Namen, um zu den Detail-Informationen zu gelangen.
-      </p>
+      </IntroText>
       <section>
         {sortedResultData.map((result, index) => (
           <Link to={'/style-info/' + result.id} key={result.id}>
@@ -60,14 +60,17 @@ export default function ExtendedResult({ questionnaireIds, results }) {
           <Link to={'/questionnaire/entry/' + questionnaireIds + '/' + results}>
             <Button>Weiteren Fragebogen starten</Button>
           </Link>
-          <SectionBG>
+          <SectionBGWithButton>
             <h2>Tagebuch</h2>
             <p>
-              Unsere Tagebuchfunktion hilft Ihnen, Ihr Verhalten zu analysieren
-              und dadurch erste Schritte zu einer Veränderung anzustoßen.
+              Sind Sie manchmal unzufrieden mit Ihrer Persönlichkeit? Unsere
+              Tagebuch-Funktion hilft Ihnen, Ihr Verhalten zu analysieren und
+              dadurch erste Schritte zu einer Veränderung anzustoßen.
             </p>
-            <TextLink href="/journal">Zum Tagebuch</TextLink>
-          </SectionBG>
+            <Link to="/journal">
+              <Button btnType="secondary">Zum Tagebuch</Button>
+            </Link>
+          </SectionBGWithButton>
         </>
       ) : (
         <>
@@ -79,15 +82,33 @@ export default function ExtendedResult({ questionnaireIds, results }) {
             Wenn Sie noch mehr über sich erfahren wollen, nehmen Sie am besten
             Kontakt zu einem Psychotherapeuten auf.
           </p>
-          <TextLink href="https://www.wege-zur-psychotherapie.org/">
+          <TextLinkWithMargin href="https://www.wege-zur-psychotherapie.org/">
             Infoseite "Wege zur Psychotherapie" &gt;
-          </TextLink>
+          </TextLinkWithMargin>
+          <SectionBGWithButton>
+            <h2>Tagebuch</h2>
+            <p>
+              Sind Sie manchmal unzufrieden mit Ihrer Persönlichkeit? Unsere
+              Tagebuch-Funktion hilft Ihnen, Ihr Verhalten zu analysieren und
+              dadurch erste Schritte zu einer Veränderung anzustoßen.
+            </p>
+            <Link to="/journal">
+              <Button btnType="secondary">Zum Tagebuch</Button>
+            </Link>
+          </SectionBGWithButton>
           <BottomSpacer />
         </>
       )}
     </>
   )
 }
+
+const IntroText = styled.p`
+  margin-bottom: 15px;
+`
+const TextLinkWithMargin = styled(TextLink)`
+  margin: 15px 0;
+`
 
 const BottomSpacer = styled.div`
   margin-bottom: 40px;

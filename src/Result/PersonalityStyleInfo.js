@@ -46,16 +46,16 @@ export default function PersonalityStyleInfo() {
         </BulletList>
       </InfoBG>
       <h2>Weitere Informationen</h2>
-      <p>
-        Hinweis: folgende Ressourcen thematisieren größtenteils
-        „Persönlichkeitsstörungen“. Das heißt weder, dass Sie eine
+      <InfoText>
+        Hinweis: folgende Ressourcen thematisieren größtenteils Persönlichkeits-
+        <em>"Störungen</em>“. Das heißt weder, dass Sie eine
         Persönlichkeitsstörung haben, noch, dass nur Menschen mit
         Persönlichkeitsstörungen von den Informationen profitieren.
-        Persönlichkeitsstörungen sind Steigerungen von Persönlichkeitsaspekten,
+        Persönlichkeitsstörungen sind Steigerungen von Persönlichkeitsstilen,
         die in geringerer Ausprägung viele Vorteile bieten können. Behalten Sie
         das bei der Lektüre im Hinterkopf.
-      </p>
-      <BulletList listType="bullet_circle">
+      </InfoText>
+      <BulletList listType="bullet_circle_black">
         {currentStyleData.furtherInfo.map((info, index) => {
           return (
             <li key={index}>
@@ -66,12 +66,12 @@ export default function PersonalityStyleInfo() {
       </BulletList>
       <HelpSection>
         <h2>Hier gibt es Hilfe</h2>
-        <p>
+        <InfoText>
           Falls Sie unter Ihrem Persönlichkeitsstil leiden, holen Sie sich
           Hilfe! <br />
           Hier sind erste Anlaufstellen:
-        </p>
-        <ul>
+        </InfoText>
+        <BulletList listType="bullet_circle_black">
           <li>
             <TextLink href="https://www.wege-zur-psychotherapie.org/">
               Infoseite "Wege zur Psychotherapie"
@@ -88,12 +88,16 @@ export default function PersonalityStyleInfo() {
             </TextLink>
             <BackButton />
           </li>
-        </ul>
+        </BulletList>
       </HelpSection>
       <BottomSpacer />
     </>
   )
 }
+
+const InfoText = styled.p`
+  margin-bottom: 15px;
+`
 
 const InfoBG = styled(SectionBG)`
   margin-bottom: 0px;
