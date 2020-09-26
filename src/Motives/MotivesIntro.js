@@ -25,7 +25,7 @@ export default function MotivesIntro() {
         Im Anschluss erhalten Sie Ihr Ergebnis und dazu passende Informationen.
       </p>
       <Collapse headline="Mehr erfahren">
-        HLeben heißt, in Beziehung zu gehen. Wie Menschen in Beziehung gehen,
+        Leben heißt, in Beziehung zu gehen. Wie Menschen in Beziehung gehen,
         hängt stark von ihrer Persönlichkeit ab. Einige Menschen halten Distanz,
         andere brauchen viel Nähe. Dabei spielen sechs Grundbedürfnisse eine
         zentrale Rolle. Welche Grundbedürfnisse für Menschen bedeutsam werden,
