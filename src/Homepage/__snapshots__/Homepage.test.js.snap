@@ -62,112 +62,116 @@ exports[`The Homepage component renders correctly 1`] = `
       </p>
     </div>
   </section>
-  <div
-    class="Card__CardBG-sc-1k8174e-0 bqDKbN"
+  <section
+    class="Homepage__CardContainer-ye7llx-4 fRTZvy"
   >
     <div
-      class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
+      class="Card__CardBG-sc-1k8174e-0 jHOCri"
     >
-      <span
-        class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
-        color="green"
+      <div
+        class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
       >
-        Your
-          
-      </span>
-       
-      <span
-        class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
+        <span
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
+          color="green"
+        >
+          Your
+            
+        </span>
+         
+        <span
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
+        >
+          Personality
+        </span>
+      </div>
+      <svg
+        class="Homepage__StyleInfoImgStyled-ye7llx-2 iWmwWa"
+        title=""
       >
-        Personality
-      </span>
+        mirror.svg
+      </svg>
+      <h2>
+        Der Youlity-Test
+      </h2>
+      <ul
+        class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
+      >
+        <li>
+          Entdecken Sie Ihre individuellen Persönlichkeitsstile.
+        </li>
+        <li>
+          Entwickeln Sie ein besseres Verständnis für sich selbst in zwischenmenschlichen Beziehungen.
+        </li>
+        <li>
+          Profitieren Sie von speziell auf Sie zugeschnittenen Alltagstipps.
+        </li>
+      </ul>
+      <a
+        href="/motives/intro"
+      >
+        <button
+          class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+          width="100"
+        >
+          Test starten
+        </button>
+      </a>
     </div>
-    <svg
-      class="Homepage__StyleInfoImgStyled-ye7llx-2 fxhNWA"
-      title=""
-    >
-      style_info.svg
-    </svg>
-    <h2>
-      Der Youlity-Test
-    </h2>
-    <ul
-      class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
-    >
-      <li>
-        Entdecken Sie Ihre individuellen Persönlichkeitsstile.
-      </li>
-      <li>
-        Entwickeln Sie ein besseres Verständnis für sich selbst in zwischenmenschlichen Beziehungen.
-      </li>
-      <li>
-        Profitieren Sie von speziell auf Sie zugeschnittenen Alltagstipps.
-      </li>
-    </ul>
-    <a
-      href="/motives/intro"
-    >
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
-        width="100"
-      >
-        Test starten
-      </button>
-    </a>
-  </div>
-  <div
-    class="Card__CardBG-sc-1k8174e-0 bqDKbN"
-  >
     <div
-      class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
+      class="Card__CardBG-sc-1k8174e-0 jHOCri"
     >
-      <span
-        class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
-        color="green"
+      <div
+        class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
       >
-        Your
-          
-      </span>
-       
-      <span
-        class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
+        <span
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
+          color="green"
+        >
+          Your
+            
+        </span>
+         
+        <span
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
+        >
+          Reality
+        </span>
+      </div>
+      <svg
+        class="Homepage__JournalImgStyled-ye7llx-3 ckkzJT"
+        title=""
       >
-        Reality
-      </span>
+        journal.svg
+      </svg>
+      <h2>
+        Das Youlity-Tagebuch
+      </h2>
+      <ul
+        class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
+      >
+        <li>
+          Notieren Sie sich Situationen, in denen sich Ihre Persönlichkeit widerspiegelt.
+        </li>
+        <li>
+          Übernehmen Sie die Kontrolle: Selbstbeobachtung ermöglicht Veränderung.
+        </li>
+        <li>
+          Nutzen Sie das Tagebuch als Gesprächsstütze für Therapie-Termine.
+        </li>
+      </ul>
+      <a
+        href="/journal"
+      >
+        <button
+          class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+          width="100"
+        >
+          Tagebuch öffnen
+        </button>
+      </a>
     </div>
-    <svg
-      class="Homepage__JournalImgStyled-ye7llx-3 fBdOhN"
-      title=""
-    >
-      journal.svg
-    </svg>
-    <h2>
-      Das Youlity-Tagebuch
-    </h2>
-    <ul
-      class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
-    >
-      <li>
-        Notieren Sie sich Situationen, in denen sich Ihre Persönlichkeit widerspiegelt.
-      </li>
-      <li>
-        Übernehmen Sie die Kontrolle: Selbstbeobachtung ermöglicht Veränderung.
-      </li>
-      <li>
-        Nutzen Sie das Tagebuch als Gesprächsstütze für Therapie-Termine.
-      </li>
-    </ul>
-    <a
-      href="/journal"
-    >
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
-        width="100"
-      >
-        Tagebuch öffnen
-      </button>
-    </a>
-  </div>
+  </section>
   <div
     class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
   >

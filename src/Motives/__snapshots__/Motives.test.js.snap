@@ -52,7 +52,7 @@ exports[`The Motives component renders correctly 1`] = `
     >
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 lnZpnZ"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Anerkennung"
         data-rbd-draggable-context-id="0"
@@ -71,7 +71,7 @@ exports[`The Motives component renders correctly 1`] = `
       </div>
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 lnZpnZ"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Wichtigkeit"
         data-rbd-draggable-context-id="0"
@@ -90,7 +90,7 @@ exports[`The Motives component renders correctly 1`] = `
       </div>
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 lnZpnZ"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Solidarität"
         data-rbd-draggable-context-id="0"
@@ -109,7 +109,7 @@ exports[`The Motives component renders correctly 1`] = `
       </div>
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 lnZpnZ"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Autonomie"
         data-rbd-draggable-context-id="0"
@@ -128,7 +128,7 @@ exports[`The Motives component renders correctly 1`] = `
       </div>
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 lnZpnZ"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Grenzen"
         data-rbd-draggable-context-id="0"
@@ -147,7 +147,7 @@ exports[`The Motives component renders correctly 1`] = `
       </div>
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"
-        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 ioZAjb"
+        class="MotiveItem__MotiveItemStyled-sc-17qm44j-1 lnZpnZ"
         data-rbd-drag-handle-context-id="0"
         data-rbd-drag-handle-draggable-id="draggable-Verlässlichkeit"
         data-rbd-draggable-context-id="0"
