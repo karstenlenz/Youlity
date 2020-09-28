@@ -28,9 +28,11 @@ export default function MotivesIntro() {
         Leben heißt, in Beziehung zu gehen. Wie Menschen in Beziehung gehen,
         hängt stark von ihrer Persönlichkeit ab. Einige Menschen halten Distanz,
         andere brauchen viel Nähe. Dabei spielen sechs Grundbedürfnisse eine
-        zentrale Rolle. Welche Grundbedürfnisse für Menschen bedeutsam werden,
-        entscheidet sich in ihrer Lebensgeschichte. Die Persönlichkeit jedes
-        Menschen ist ein Ergebnis aus der Gewichtung dieser sechs
+        zentrale Rolle, die schon in der Kindheit entstehen und häufig nicht
+        bewusst sind. Welche Grundbedürfnisse für Menschen bedeutsam werden,
+        entscheidet sich in ihrer individuellen Lebensgeschichte. Die
+        Persönlichkeit jedes Menschen ist ein Ergebnis aus der Gewichtung dieser
+        sechs parallel bestehenden und unterschiedlich ausgeprägten
         Grundbedürfnisse.
       </Collapse>
       <FloatingButtonContainer to="/motives/entry">
