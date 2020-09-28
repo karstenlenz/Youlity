@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "cypress:open": "node_modules/.bin/cypress open"
+    "cypress:open": "node_modules/.bin/cypress open",
+    "chromatic": "npx chromatic"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +51,7 @@
     "@storybook/addons": "^6.0.21",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.21",
+    "chromatic": "^5.2.0",
     "cypress": "^5.1.0",
     "eslint-plugin-cypress": "^2.11.1"
   }

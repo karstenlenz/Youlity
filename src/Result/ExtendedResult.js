@@ -55,7 +55,10 @@ export default function ExtendedResult({ questionnaireIds, results }) {
           {9 - results.length === 1 ? (
             <p>Es gibt noch 1 weiteren Fragebogen.</p>
           ) : (
-            <p>Es gibt noch {9 - results.length} weitere Fragebögen.</p>
+            <p>
+              Es gibt noch <strong>{9 - results.length} weitere</strong>{' '}
+              Fragebögen.
+            </p>
           )}
           <Link to={'/questionnaire/entry/' + questionnaireIds + '/' + results}>
             <Button>Weiteren Fragebogen starten</Button>

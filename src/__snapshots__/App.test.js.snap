@@ -59,7 +59,7 @@ exports[`renders correctly 1`] = `
           <em>
             Typen
           </em>
-           arbeiten, wie z. B. „16 Personalities“, gehen wir davon aus, dass jeder Mensch individuell ist. Deshalb messen wir nur Übereinstimmungen zu einzelnen „Persönlichkeitsstilen“.
+           arbeiten, wie z. B. „16 Personalities“, gehen wir davon aus, dass jeder Mensch individuell ist. Deshalb messen wir nur Übereinstimmungen zu einzelnen „Persönlichkeitsstilen“. Es gibt insgesamt 9 verschiedene Persönlichkeitsstile.
           <br />
           Persönlichkeitsstile sind Muster aus stabilen Merkmalen in Menschen, die sich aus der individuellen Lebensgeschichte ergeben. Youlity hilft Ihnen, ein differenziertes Modell Ihrer individuellen Persönlichkeit zu erstellen.
         </p>
@@ -69,36 +69,49 @@ exports[`renders correctly 1`] = `
       class="Homepage__CardContainer-ye7llx-4 fRTZvy"
     >
       <div
-        class="Card__CardBG-sc-1k8174e-0 jHOCri"
+        class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
       >
-        <div
-          class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
+        <h3
+          class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
         >
-          <span
-            class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
-            color="green"
-          >
-            Your
-              
-          </span>
-           
-          <span
-            class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
-          >
-            Personality
-          </span>
-        </div>
-        <svg
-          class="Homepage__StyleInfoImgStyled-ye7llx-2 iWmwWa"
-          title=""
+          Your
+            
+        </h3>
+         
+        <h3
+          class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
         >
-          mirror.svg
-        </svg>
-        <h2>
-          Der Youlity-Test
-        </h2>
-        <ul
-          class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
+          Personality
+        </h3>
+      </div>
+      <svg
+        class="Homepage__StyleInfoImgStyled-ye7llx-2 fxhNWA"
+        title=""
+      >
+        style_info.svg
+      </svg>
+      <h2>
+        Der Youlity-Test
+      </h2>
+      <ul
+        class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
+      >
+        <li>
+          Entdecken Sie Ihre individuellen Persönlichkeitsstile.
+        </li>
+        <li>
+          Entwickeln Sie ein besseres Verständnis für sich selbst in zwischenmenschlichen Beziehungen.
+        </li>
+        <li>
+          Profitieren Sie von speziell auf Sie zugeschnittenen Tipps für Alltagssituationen.
+        </li>
+      </ul>
+      <a
+        href="/motives/intro"
+      >
+        <button
+          class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
+          width="100"
         >
           <li>
             Entdecken Sie Ihre individuellen Persönlichkeitsstile.
@@ -122,36 +135,49 @@ exports[`renders correctly 1`] = `
         </a>
       </div>
       <div
-        class="Card__CardBG-sc-1k8174e-0 jHOCri"
+        class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
       >
-        <div
-          class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
+        <h3
+          class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
         >
-          <span
-            class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
-            color="green"
-          >
-            Your
-              
-          </span>
-           
-          <span
-            class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
-          >
-            Reality
-          </span>
-        </div>
-        <svg
-          class="Homepage__JournalImgStyled-ye7llx-3 ckkzJT"
-          title=""
+          Your
+            
+        </h3>
+         
+        <h3
+          class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
         >
-          journal.svg
-        </svg>
-        <h2>
-          Das Youlity-Tagebuch
-        </h2>
-        <ul
-          class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
+          Reality
+        </h3>
+      </div>
+      <svg
+        class="Homepage__JournalImgStyled-ye7llx-3 fBdOhN"
+        title=""
+      >
+        journal.svg
+      </svg>
+      <h2>
+        Das Youlity-Tagebuch
+      </h2>
+      <ul
+        class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
+      >
+        <li>
+          Notieren Sie sich Situationen, in denen sich Ihre Persönlichkeit widerspiegelt.
+        </li>
+        <li>
+          Übernehmen Sie die Kontrolle: Selbstbeobachtung ermöglicht Veränderung.
+        </li>
+        <li>
+          Nutzen Sie das Tagebuch als Gesprächsstütze für Therapie-Termine.
+        </li>
+      </ul>
+      <a
+        href="/journal"
+      >
+        <button
+          class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
+          width="100"
         >
           <li>
             Notieren Sie sich Situationen, in denen sich Ihre Persönlichkeit widerspiegelt.
@@ -178,16 +204,15 @@ exports[`renders correctly 1`] = `
     <div
       class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
     >
-      <span
-        class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
-        color="green"
+      <h3
+        class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
       >
         Your
           
       </span>
        
-      <span
-        class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
+      <h3
+        class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
       >
         Quality
       </span>
@@ -242,7 +267,7 @@ exports[`renders correctly 1`] = `
       href="/motives/intro"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+        class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
         width="100"
       >
         Test starten

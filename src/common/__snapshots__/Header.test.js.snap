@@ -8,26 +8,29 @@ exports[`The Header component renders correctly 1`] = `
     <button
       class="IconButton__ButtonContainer-sc-47n1yg-0 jCeVKT"
     >
-      <img
-        alt="zurück"
-        src="/img/back.svg"
-      />
+      <svg
+        title="zurück"
+      >
+        back.svg
+      </svg>
     </button>
     <a
       href="/"
     >
-      <img
-        alt="Youlity logo"
-        src="/img/logo.svg"
-      />
+      <svg
+        title="Youlity logo"
+      >
+        logo.svg
+      </svg>
     </a>
     <button
       class="IconButton__ButtonContainer-sc-47n1yg-0 jCeVKT"
     >
-      <img
-        alt="zur Homepage"
-        src="/img/home.svg"
-      />
+      <svg
+        title="zur Homepage"
+      >
+        home.svg
+      </svg>
     </button>
   </header>
 </div>

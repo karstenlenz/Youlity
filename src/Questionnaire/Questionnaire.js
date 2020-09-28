@@ -29,9 +29,13 @@ export default function Questionnaire({ questionSets, handleResults }) {
   return (
     <>
       <HeadlineUnderline>
-        <h1>
-          Fragebogen {questionRound + 1} / {questionSets.length}
-        </h1>
+        {questionSets.length === 1 ? (
+          <h1>Zusatz-Fragebogen</h1>
+        ) : (
+          <h1>
+            Fragebogen {questionRound + 1} / {questionSets.length}
+          </h1>
+        )}
       </HeadlineUnderline>
       <H2Styled>
         Frage {currentQuestionIndex + 1} / {questions.length}

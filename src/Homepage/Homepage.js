@@ -9,12 +9,10 @@ import Collapse from '../common/Collapse'
 import FinePrint from '../common/FinePrint'
 import FloatingButtonContainer from '../common/FloatingButtonContainer'
 import HeadlineUnderline from '../common/HeadlineUnderline'
-import { ReactComponent as JournalImg } from '../img/journal.svg'
 import { ReactComponent as Logo } from '../img/logo.svg'
-import {
-  ReactComponent as MirrorImg,
-  ReactComponent as StyleInfoImg,
-} from '../img/mirror.svg'
+import { ReactComponent as MirrorImg } from '../img/mirror.svg'
+import { ReactComponent as JournalImg } from '../img/journal.svg'
+import { ReactComponent as StyleInfoImg } from '../img/style_info.svg'
 
 export default function () {
   return (
@@ -38,7 +36,8 @@ export default function () {
           <br /> Im Gegensatz zu Tests, die mit starren Persönlichkeits-
           <em>Typen</em> arbeiten, wie z. B. „16 Personalities“, gehen wir davon
           aus, dass jeder Mensch individuell ist. Deshalb messen wir nur
-          Übereinstimmungen zu einzelnen „Persönlichkeitsstilen“.
+          Übereinstimmungen zu einzelnen „Persönlichkeitsstilen“. Es gibt
+          insgesamt 9 verschiedene Persönlichkeitsstile.
           <br />
           Persönlichkeitsstile sind Muster aus stabilen Merkmalen in Menschen,
           die sich aus der individuellen Lebensgeschichte ergeben. Youlity hilft
@@ -58,7 +57,8 @@ export default function () {
               zwischenmenschlichen Beziehungen.
             </li>
             <li>
-              Profitieren Sie von speziell auf Sie zugeschnittenen Alltagstipps.
+              Profitieren Sie von speziell auf Sie zugeschnittenen Tipps für
+              Alltagssituationen.
             </li>
           </BulletList>
           <Link to="/motives/intro">

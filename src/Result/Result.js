@@ -83,12 +83,13 @@ export default function Result({ questionnaireIds, results }) {
       })}
       <h3>Weitere Fragebögen</h3>
       <p>
-        Sie haben im ersten Schritt 2 von 9 Fragebögen ausgefüllt. Meist werden
-        damit die für Sie relevantesten Persönlichkeitsstile abgedeckt. Sie
-        können noch weitere Fragebögen ausfüllen, um zu erfahren, wie stark die
-        weiteren Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen
-        haben wenige, dafür stark ausgepräge Stile, andere mehrere, jeweils
-        weniger stark ausgeprägte Stile.
+        Sie haben im ersten Schritt Fragebögen zu <strong>2 von 9</strong>{' '}
+        Persönlichkeitsstilen ausgefüllt. Meist werden damit die für Sie
+        relevantesten Persönlichkeitsstile abgedeckt. Sie können noch weitere
+        Fragebögen ausfüllen, um zu erfahren, wie stark die weiteren
+        Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen haben
+        wenige, dafür stark ausgeprägte Stile, andere mehrere, jeweils weniger
+        stark ausgeprägte Stile.
       </p>
       <Link to={'/questionnaire/entry/' + questionnaireIds + '/' + results}>
         <Button>Weiteren Fragebogen starten</Button>

@@ -143,14 +143,18 @@ exports[`The ExtendedResult component renders correctly 1`] = `
   </section>
   <p>
     Es gibt noch 
-    5
-     weitere Fragebögen.
+    <strong>
+      5
+       weitere
+    </strong>
+     
+    Fragebögen.
   </p>
   <a
     href="/questionnaire/entry/1928373645/6422"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+      class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
       width="100"
     >
       Weiteren Fragebogen starten
@@ -169,7 +173,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
       href="/journal"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 cXymYf"
+        class="Button__BtnStyled-sc-129yfz5-0 tgIAk"
         width="100"
       >
         Zum Tagebuch

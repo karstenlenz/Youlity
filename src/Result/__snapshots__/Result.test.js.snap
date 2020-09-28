@@ -64,7 +64,7 @@ exports[`The Result component renders correctly 1`] = `
         class="ResultBar__ColorBar-sc-479x3f-2 gUwDrH"
       >
         <p
-          class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+          class="ResultBar__Text-sc-479x3f-0 icLhoH"
         >
           75
           % Übereinstimmung
@@ -100,7 +100,7 @@ exports[`The Result component renders correctly 1`] = `
         class="ResultBar__ColorBar-sc-479x3f-2 fqhHNn"
       >
         <p
-          class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+          class="ResultBar__Text-sc-479x3f-0 icLhoH"
         >
           50
           % Übereinstimmung
@@ -129,13 +129,18 @@ exports[`The Result component renders correctly 1`] = `
     Weitere Fragebögen
   </h3>
   <p>
-    Sie haben im ersten Schritt 2 von 9 Fragebögen ausgefüllt. Meist werden damit die für Sie relevantesten Persönlichkeitsstile abgedeckt. Sie können noch weitere Fragebögen ausfüllen, um zu erfahren, wie stark die weiteren Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen haben wenige, dafür stark ausgepräge Stile, andere mehrere, jeweils weniger stark ausgeprägte Stile.
+    Sie haben im ersten Schritt Fragebögen zu 
+    <strong>
+      2 von 9
+    </strong>
+     
+    Persönlichkeitsstilen ausgefüllt. Meist werden damit die für Sie relevantesten Persönlichkeitsstile abgedeckt. Sie können noch weitere Fragebögen ausfüllen, um zu erfahren, wie stark die weiteren Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen haben wenige, dafür stark ausgeprägte Stile, andere mehrere, jeweils weniger stark ausgeprägte Stile.
   </p>
   <a
     href="/questionnaire/entry/1928373645/64"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+      class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
       width="100"
     >
       Weiteren Fragebogen starten
@@ -154,7 +159,7 @@ exports[`The Result component renders correctly 1`] = `
       href="/journal"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 cXymYf"
+        class="Button__BtnStyled-sc-129yfz5-0 tgIAk"
         width="100"
       >
         Zum Tagebuch
