@@ -12,7 +12,8 @@ import HeadlineUnderline from '../common/HeadlineUnderline'
 import { ReactComponent as Logo } from '../img/logo.svg'
 import { ReactComponent as MirrorImg } from '../img/mirror.svg'
 import { ReactComponent as JournalImg } from '../img/journal.svg'
-import { ReactComponent as StyleInfoImg } from '../img/style_info.svg'
+import { ReactComponent as StyleInfoImg } from '../img/mirror.svg'
+import { breakpoints } from '../common/util'
 
 export default function () {
   return (
@@ -44,45 +45,47 @@ export default function () {
           zu erstellen.
         </p>
       </Collapse>
-      <Card>
-        <BrandHeadline firstWord="Your" secondWord="Personality" />
-        <StyleInfoImgStyled title="" />
-        <h2>Der Youlity-Test</h2>
-        <BulletList listType="bullet_circle">
-          <li>Entdecken Sie Ihre individuellen Persönlichkeitsstile.</li>
-          <li>
-            Entwickeln Sie ein besseres Verständnis für sich selbst in
-            zwischenmenschlichen Beziehungen.
-          </li>
-          <li>
-            Profitieren Sie von speziell auf Sie zugeschnittenen Alltagstipps.
-          </li>
-        </BulletList>
-        <Link to="/motives/intro">
-          <Button>Test starten</Button>
-        </Link>
-      </Card>
-      <Card>
-        <BrandHeadline firstWord="Your" secondWord="Reality" />
-        <JournalImgStyled title="" />
-        <h2>Das Youlity-Tagebuch</h2>
-        <BulletList listType="bullet_circle">
-          <li>
-            Notieren Sie sich Situationen, in denen sich Ihre Persönlichkeit
-            widerspiegelt.
-          </li>
-          <li>
-            Übernehmen Sie die Kontrolle: Selbstbeobachtung ermöglicht
-            Veränderung.
-          </li>
-          <li>
-            Nutzen Sie das Tagebuch als Gesprächsstütze für Therapie-Termine.
-          </li>
-        </BulletList>
-        <Link to="/journal">
-          <Button>Tagebuch öffnen</Button>
-        </Link>
-      </Card>
+      <CardContainer>
+        <Card>
+          <BrandHeadline firstWord="Your" secondWord="Personality" />
+          <StyleInfoImgStyled title="" />
+          <h2>Der Youlity-Test</h2>
+          <BulletList listType="bullet_circle">
+            <li>Entdecken Sie Ihre individuellen Persönlichkeitsstile.</li>
+            <li>
+              Entwickeln Sie ein besseres Verständnis für sich selbst in
+              zwischenmenschlichen Beziehungen.
+            </li>
+            <li>
+              Profitieren Sie von speziell auf Sie zugeschnittenen Alltagstipps.
+            </li>
+          </BulletList>
+          <Link to="/motives/intro">
+            <Button>Test starten</Button>
+          </Link>
+        </Card>
+        <Card>
+          <BrandHeadline firstWord="Your" secondWord="Reality" />
+          <JournalImgStyled title="" />
+          <h2>Das Youlity-Tagebuch</h2>
+          <BulletList listType="bullet_circle">
+            <li>
+              Notieren Sie sich Situationen, in denen sich Ihre Persönlichkeit
+              widerspiegelt.
+            </li>
+            <li>
+              Übernehmen Sie die Kontrolle: Selbstbeobachtung ermöglicht
+              Veränderung.
+            </li>
+            <li>
+              Nutzen Sie das Tagebuch als Gesprächsstütze für Therapie-Termine.
+            </li>
+          </BulletList>
+          <Link to="/journal">
+            <Button>Tagebuch öffnen</Button>
+          </Link>
+        </Card>
+      </CardContainer>
       <BrandHeadline firstWord="Your" secondWord="Quality" />
       <HeadlineUnderline>
         <h2>Unser Versprechen</h2>
@@ -135,13 +138,29 @@ const MirrorStyled = styled(MirrorImg)`
 const StyleInfoImgStyled = styled(StyleInfoImg)`
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: auto;
   height: 50%;
+  @media screen and (min-width: 750px) {
+    height: 125px;
+  }
 `
 
 const JournalImgStyled = styled(JournalImg)`
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: auto;
   height: 50%;
+  @media screen and (min-width: 750px) {
+    height: 125px;
+  }
+`
+const CardContainer = styled.section`
+  /* display: flex;
+  flex-wrap: wrap; */
+  @media screen and (min-width: 750px) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
 `

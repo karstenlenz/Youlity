@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import { breakpoints } from './util'
 
 export default function Card({ children }) {
   return <CardBG>{children}</CardBG>
@@ -14,5 +13,5 @@ const CardBG = styled.div`
   margin: 30px 0;
   padding: 15px;
   position: relative;
-  ${breakpoints('max-width', '%', [{ 750: 40 }])}
+  height: auto;
 `
