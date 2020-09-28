@@ -22,6 +22,11 @@ body {
   var(--secondary) 50%,
   var(--secondary) 100%
 );
+
+@media screen and (min-width: 750px){
+    font-size:140%;
+}
+
 }
 
 #root {
@@ -31,6 +36,7 @@ body {
 
 main {
     padding: 15px;
+    min-height:100vh;
 }
 
 h1,h2,h3,h4,h5,h6 {

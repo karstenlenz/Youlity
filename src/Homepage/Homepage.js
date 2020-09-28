@@ -9,11 +9,12 @@ import Collapse from '../common/Collapse'
 import FinePrint from '../common/FinePrint'
 import FloatingButtonContainer from '../common/FloatingButtonContainer'
 import HeadlineUnderline from '../common/HeadlineUnderline'
-import { ReactComponent as Logo } from '../img/logo.svg'
-import { ReactComponent as MirrorImg } from '../img/mirror.svg'
 import { ReactComponent as JournalImg } from '../img/journal.svg'
-import { ReactComponent as StyleInfoImg } from '../img/mirror.svg'
-import { breakpoints } from '../common/util'
+import { ReactComponent as Logo } from '../img/logo.svg'
+import {
+  ReactComponent as MirrorImg,
+  ReactComponent as StyleInfoImg,
+} from '../img/mirror.svg'
 
 export default function () {
   return (

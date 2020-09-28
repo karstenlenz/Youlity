@@ -63,7 +63,7 @@ const MotiveItemStyled = styled.div`
   background: white;
   box-shadow: var(--primary-shadow);
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 0;
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
