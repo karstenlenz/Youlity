@@ -143,8 +143,12 @@ exports[`The ExtendedResult component renders correctly 1`] = `
   </section>
   <p>
     Es gibt noch 
-    5
-     weitere Fragebögen.
+    <strong>
+      5
+       weitere
+    </strong>
+     
+    Fragebögen.
   </p>
   <a
     href="/questionnaire/entry/1928373645/6422"
