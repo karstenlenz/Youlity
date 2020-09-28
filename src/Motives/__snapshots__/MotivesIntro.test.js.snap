@@ -37,6 +37,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     >
       Mehr erfahren
       <img
+        alt="auf/zuklappen"
         class="Collapse__CollapseIcon-sc-1tgbx39-2 bFSuxH"
         src="/img/expand.svg"
       />
@@ -52,7 +53,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     href="/motives/entry"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
+      class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
       width="100"
     >
       Weiter zur Auswahl

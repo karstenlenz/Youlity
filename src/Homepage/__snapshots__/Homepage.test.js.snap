@@ -66,49 +66,36 @@ exports[`The Homepage component renders correctly 1`] = `
     class="Homepage__CardContainer-ye7llx-4 fRTZvy"
   >
     <div
-      class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
+      class="Card__CardBG-sc-1k8174e-0 jHOCri"
     >
-      <h3
-        class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
+      <div
+        class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
       >
-        Your
-          
-      </h3>
-       
-      <h3
-        class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
+        <span
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
+          color="green"
+        >
+          Your
+            
+        </span>
+         
+        <span
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
+        >
+          Personality
+        </span>
+      </div>
+      <svg
+        class="Homepage__StyleInfoImgStyled-ye7llx-2 iWmwWa"
+        title=""
       >
-        Personality
-      </h3>
-    </div>
-    <svg
-      class="Homepage__StyleInfoImgStyled-ye7llx-2 fxhNWA"
-      title=""
-    >
-      style_info.svg
-    </svg>
-    <h2>
-      Der Youlity-Test
-    </h2>
-    <ul
-      class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
-    >
-      <li>
-        Entdecken Sie Ihre individuellen Persönlichkeitsstile.
-      </li>
-      <li>
-        Entwickeln Sie ein besseres Verständnis für sich selbst in zwischenmenschlichen Beziehungen.
-      </li>
-      <li>
-        Profitieren Sie von speziell auf Sie zugeschnittenen Tipps für Alltagssituationen.
-      </li>
-    </ul>
-    <a
-      href="/motives/intro"
-    >
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
-        width="100"
+        style_info.svg
+      </svg>
+      <h2>
+        Der Youlity-Test
+      </h2>
+      <ul
+        class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
       >
         <li>
           Entdecken Sie Ihre individuellen Persönlichkeitsstile.
@@ -117,7 +104,7 @@ exports[`The Homepage component renders correctly 1`] = `
           Entwickeln Sie ein besseres Verständnis für sich selbst in zwischenmenschlichen Beziehungen.
         </li>
         <li>
-          Profitieren Sie von speziell auf Sie zugeschnittenen Alltagstipps.
+          Profitieren Sie von speziell auf Sie zugeschnittenen Tipps für Alltagssituationen.
         </li>
       </ul>
       <a
@@ -132,49 +119,36 @@ exports[`The Homepage component renders correctly 1`] = `
       </a>
     </div>
     <div
-      class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
+      class="Card__CardBG-sc-1k8174e-0 jHOCri"
     >
-      <h3
-        class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
+      <div
+        class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
       >
-        Your
-          
-      </h3>
-       
-      <h3
-        class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
+        <span
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
+          color="green"
+        >
+          Your
+            
+        </span>
+         
+        <span
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
+        >
+          Reality
+        </span>
+      </div>
+      <svg
+        class="Homepage__JournalImgStyled-ye7llx-3 ckkzJT"
+        title=""
       >
-        Reality
-      </h3>
-    </div>
-    <svg
-      class="Homepage__JournalImgStyled-ye7llx-3 fBdOhN"
-      title=""
-    >
-      journal.svg
-    </svg>
-    <h2>
-      Das Youlity-Tagebuch
-    </h2>
-    <ul
-      class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
-    >
-      <li>
-        Notieren Sie sich Situationen, in denen sich Ihre Persönlichkeit widerspiegelt.
-      </li>
-      <li>
-        Übernehmen Sie die Kontrolle: Selbstbeobachtung ermöglicht Veränderung.
-      </li>
-      <li>
-        Nutzen Sie das Tagebuch als Gesprächsstütze für Therapie-Termine.
-      </li>
-    </ul>
-    <a
-      href="/journal"
-    >
-      <button
-        class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
-        width="100"
+        journal.svg
+      </svg>
+      <h2>
+        Das Youlity-Tagebuch
+      </h2>
+      <ul
+        class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
       >
         <li>
           Notieren Sie sich Situationen, in denen sich Ihre Persönlichkeit widerspiegelt.
@@ -201,15 +175,16 @@ exports[`The Homepage component renders correctly 1`] = `
   <div
     class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
   >
-    <h3
-      class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
+    <span
+      class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
+      color="green"
     >
       Your
         
     </span>
      
-    <h3
-      class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
+    <span
+      class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
     >
       Quality
     </span>
@@ -264,7 +239,7 @@ exports[`The Homepage component renders correctly 1`] = `
     href="/motives/intro"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
+      class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
       width="100"
     >
       Test starten
