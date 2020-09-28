@@ -36,7 +36,8 @@ export default function () {
           <br /> Im Gegensatz zu Tests, die mit starren Persönlichkeits-
           <em>Typen</em> arbeiten, wie z. B. „16 Personalities“, gehen wir davon
           aus, dass jeder Mensch individuell ist. Deshalb messen wir nur
-          Übereinstimmungen zu einzelnen „Persönlichkeitsstilen“.
+          Übereinstimmungen zu einzelnen „Persönlichkeitsstilen“. Es gibt
+          insgesamt 9 verschiedene Persönlichkeitsstile.
           <br />
           Persönlichkeitsstile sind Muster aus stabilen Merkmalen in Menschen,
           die sich aus der individuellen Lebensgeschichte ergeben. Youlity hilft
@@ -55,7 +56,8 @@ export default function () {
             zwischenmenschlichen Beziehungen.
           </li>
           <li>
-            Profitieren Sie von speziell auf Sie zugeschnittenen Alltagstipps.
+            Profitieren Sie von speziell auf Sie zugeschnittenen Tipps für
+            Alltagssituationen.
           </li>
         </BulletList>
         <Link to="/motives/intro">
