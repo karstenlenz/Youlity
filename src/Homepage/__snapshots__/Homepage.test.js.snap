@@ -37,6 +37,7 @@ exports[`The Homepage component renders correctly 1`] = `
     >
       Was sind Persönlichkeitsstile?
       <img
+        alt="auf/zuklappen"
         class="Collapse__CollapseIcon-sc-1tgbx39-2 bFSuxH"
         src="/img/expand.svg"
       />
@@ -67,18 +68,19 @@ exports[`The Homepage component renders correctly 1`] = `
     <div
       class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
     >
-      <h3
-        class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
+      <span
+        class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
+        color="green"
       >
         Your
           
-      </h3>
+      </span>
        
-      <h3
-        class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
+      <span
+        class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
       >
         Personality
-      </h3>
+      </span>
     </div>
     <svg
       class="Homepage__StyleInfoImgStyled-ye7llx-2 fxhNWA"
@@ -106,7 +108,7 @@ exports[`The Homepage component renders correctly 1`] = `
       href="/motives/intro"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
+        class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
         width="100"
       >
         Test starten
@@ -119,18 +121,19 @@ exports[`The Homepage component renders correctly 1`] = `
     <div
       class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
     >
-      <h3
-        class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
+      <span
+        class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
+        color="green"
       >
         Your
           
-      </h3>
+      </span>
        
-      <h3
-        class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
+      <span
+        class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
       >
         Reality
-      </h3>
+      </span>
     </div>
     <svg
       class="Homepage__JournalImgStyled-ye7llx-3 fBdOhN"
@@ -158,7 +161,7 @@ exports[`The Homepage component renders correctly 1`] = `
       href="/journal"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
+        class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
         width="100"
       >
         Tagebuch öffnen
@@ -168,18 +171,19 @@ exports[`The Homepage component renders correctly 1`] = `
   <div
     class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
   >
-    <h3
-      class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
+    <span
+      class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
+      color="green"
     >
       Your
         
-    </h3>
+    </span>
      
-    <h3
-      class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
+    <span
+      class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
     >
       Quality
-    </h3>
+    </span>
   </div>
   <section
     class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 iPfevw"
@@ -231,7 +235,7 @@ exports[`The Homepage component renders correctly 1`] = `
     href="/motives/intro"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
+      class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
       width="100"
     >
       Test starten

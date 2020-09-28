@@ -37,6 +37,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     >
       Mehr erfahren
       <img
+        alt="auf/zuklappen"
         class="Collapse__CollapseIcon-sc-1tgbx39-2 bFSuxH"
         src="/img/expand.svg"
       />
@@ -44,7 +45,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     <div
       class="Collapse__CollapseContent-sc-1tgbx39-3 domdvA"
     >
-      Hier kommt später Text vom Psychologen rein.
+      Leben heißt, in Beziehung zu gehen. Wie Menschen in Beziehung gehen, hängt stark von ihrer Persönlichkeit ab. Einige Menschen halten Distanz, andere brauchen viel Nähe. Dabei spielen sechs Grundbedürfnisse eine zentrale Rolle, die schon in der Kindheit entstehen und häufig nicht bewusst sind. Welche Grundbedürfnisse für Menschen bedeutsam werden, entscheidet sich in ihrer individuellen Lebensgeschichte. Die Persönlichkeit jedes Menschen ist ein Ergebnis aus der Gewichtung dieser sechs parallel bestehenden und unterschiedlich ausgeprägten Grundbedürfnisse.
     </div>
   </section>
   <a
@@ -52,7 +53,7 @@ exports[`The MotivesIntro component renders correctly 1`] = `
     href="/motives/entry"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
+      class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
       width="100"
     >
       Weiter zur Auswahl
