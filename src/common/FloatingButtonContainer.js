@@ -15,8 +15,8 @@ const ButtonContainer = styled(Link)`
   position: fixed;
   left: 0;
   right: 0;
-  bottom: -15px;
-  padding: 15px;
+  bottom: 0;
+  padding: 0 15px;
   z-index: var(--floating-button);
   background: linear-gradient(
     rgba(255, 255, 255, 0) 0%,

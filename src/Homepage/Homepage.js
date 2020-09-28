@@ -6,14 +6,19 @@ import BulletList from '../common/BulletList'
 import Button from '../common/Button'
 import Card from '../common/Card'
 import Collapse from '../common/Collapse'
+import FinePrint from '../common/FinePrint'
 import FloatingButtonContainer from '../common/FloatingButtonContainer'
 import HeadlineUnderline from '../common/HeadlineUnderline'
+import { ReactComponent as Logo } from '../img/logo.svg'
+import { ReactComponent as MirrorImg } from '../img/mirror.svg'
+import { ReactComponent as JournalImg } from '../img/journal.svg'
+import { ReactComponent as StyleInfoImg } from '../img/style_info.svg'
 
 export default function () {
   return (
     <>
-      <img alt="" src="/img/mirror.svg" />
-      <Logo alt="Youlity" src="/img/logo.svg" />
+      <MirrorStyled title="" />
+      <LogoStyled title="Youlity" />
       <HeadlineUnderline>
         <h1>Discover Your Personality!</h1>
       </HeadlineUnderline>
@@ -23,15 +28,16 @@ export default function () {
       </p>
       <Collapse headline="Was sind Persönlichkeitsstile?">
         <p>
-          Die Psychologie hat sich lange hauptsächlich mit
-          Persönlichkeits-störungen beschäftigt. Doch auch gesunde Menschen
-          haben ein Interesse daran, Ihre Persönlichkeit zu verstehen, und in
-          bestimmten Situationen ihr Handeln zu verändern. Dazu dient unser
+          Die Psychologie hat sich lange hauptsächlich mit Persönlichkeits-
+          <em>störungen</em> beschäftigt. Doch auch gesunde Menschen haben ein
+          Interesse daran, Ihre Persönlichkeit zu verstehen, und in bestimmten
+          Situationen ihr Handeln zu verändern. Dazu dient unser
           Youlity-Persönlichkeitstest.
-          <br /> Im Gegensatz zu Tests wie z.B. „16 Personalities“, die jeden
-          Menschen in starre Persönlichkeitstypen zwängen wollen, erkennen wir
-          an, dass jeder Mensch individuell ist. Deshalb messen wir
-          Übereinstimmungen zu einzelnen „Persönlichkeitsstilen“.
+          <br /> Im Gegensatz zu Tests, die mit starren Persönlichkeits-
+          <em>Typen</em> arbeiten, wie z. B. „16 Personalities“, gehen wir davon
+          aus, dass jeder Mensch individuell ist. Deshalb messen wir nur
+          Übereinstimmungen zu einzelnen „Persönlichkeitsstilen“. Es gibt
+          insgesamt 9 verschiedene Persönlichkeitsstile.
           <br />
           Persönlichkeitsstile sind Muster aus stabilen Merkmalen in Menschen,
           die sich aus der individuellen Lebensgeschichte ergeben. Youlity hilft
@@ -41,7 +47,7 @@ export default function () {
       </Collapse>
       <Card>
         <BrandHeadline firstWord="Your" secondWord="Personality" />
-        <SmallImg src="/img/style_info.svg" alt="" />
+        <StyleInfoImgStyled title="" />
         <h2>Der Youlity-Test</h2>
         <BulletList listType="bullet_circle">
           <li>Entdecken Sie Ihre individuellen Persönlichkeitsstile.</li>
@@ -50,7 +56,8 @@ export default function () {
             zwischenmenschlichen Beziehungen.
           </li>
           <li>
-            Profitieren Sie von speziell auf Sie zugeschnittenen Alltagstipps.
+            Profitieren Sie von speziell auf Sie zugeschnittenen Tipps für
+            Alltagssituationen.
           </li>
         </BulletList>
         <Link to="/motives/intro">
@@ -59,7 +66,7 @@ export default function () {
       </Card>
       <Card>
         <BrandHeadline firstWord="Your" secondWord="Reality" />
-        <SmallImg src="/img/journal.svg" alt="" />
+        <JournalImgStyled title="" />
         <h2>Das Youlity-Tagebuch</h2>
         <BulletList listType="bullet_circle">
           <li>
@@ -114,16 +121,29 @@ export default function () {
   )
 }
 
-const Logo = styled.img`
-  margin-top: 20px;
+const LogoStyled = styled(Logo)`
+  display: block;
+  margin: 15px auto 0 auto;
   width: 50%;
   max-width: 300px;
 `
-const SmallImg = styled.img`
-  width: 50%;
+
+const MirrorStyled = styled(MirrorImg)`
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
 `
 
-const FinePrint = styled.small`
-  margin-top: 20px;
+const StyleInfoImgStyled = styled(StyleInfoImg)`
   display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+`
+
+const JournalImgStyled = styled(JournalImg)`
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
 `

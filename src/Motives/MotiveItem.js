@@ -52,7 +52,7 @@ export default function ({
 
 const PositionedInfoOverlay = styled(InfoOverlay)`
   position: absolute;
-  top: -10px;
+  top: -40px;
   right: -10px;
 `
 

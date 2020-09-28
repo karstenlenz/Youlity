@@ -5,10 +5,6 @@ context('Questionnaire Intro', () => {
     cy.visit('questionnaire/intro/194867523')
   })
 
-  it('has 1 img', () => {
-    cy.get('img').should('have.length', 1)
-  })
-
   it('has a headline', () => {
     cy.contains('Schritt 2: Fragebogen').should('exist')
   })
@@ -20,13 +16,13 @@ context('Questionnaire Intro', () => {
   })
 
   it('can navigate to questionnaire', () => {
-    cy.get('button').click()
+    cy.contains('Weiter').click()
     cy.get('button').contains('(Eher) Nein').should('exist')
     cy.get('button').contains('(Eher) Ja').should('exist')
   })
 
   it('can fill out the questionnaire', () => {
-    cy.get('button').click()
+    cy.contains('Weiter').click()
     cy.get('button').contains('(Eher) Ja').as('yesButton')
     for (let i = 0; i < 16; i++) {
       cy.get('@yesButton').click()

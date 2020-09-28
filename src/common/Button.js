@@ -50,7 +50,7 @@ const BtnStyled = styled.button`
       ? 'var(--secondary-shadow)'
       : 'var(--primary-shadow)'};
   display: ${(props) => (props.width === '100' ? 'block' : 'inline')};
-  margin-bottom: 20px;
+  margin: 20px 0;
   font-size: 1.21rem;
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;

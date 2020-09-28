@@ -5,10 +5,6 @@ context('Homepage', () => {
     cy.visit('/')
   })
 
-  it('has some imgs', () => {
-    cy.get('img').should('exist')
-  })
-
   it('has a headline', () => {
     cy.contains('Discover Your Personality!').should('exist')
   })

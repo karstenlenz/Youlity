@@ -5,23 +5,26 @@ exports[`renders correctly 1`] = `
   <main
     class="App__AppMain-sc-8vgfik-0 lyLVG"
   >
-    <img
-      alt=""
-      src="/img/mirror.svg"
-    />
-    <img
-      alt="Youlity"
-      class="Homepage__Logo-ye7llx-0 eSIHUi"
-      src="/img/logo.svg"
-    />
+    <svg
+      class="Homepage__MirrorStyled-ye7llx-1 bxPHyM"
+      title=""
+    >
+      mirror.svg
+    </svg>
+    <svg
+      class="Homepage__LogoStyled-ye7llx-0 csaKgP"
+      title="Youlity"
+    >
+      logo.svg
+    </svg>
     <section
-      class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 eSchLu"
+      class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 iPfevw"
     >
       <h1>
         Discover Your Personality!
       </h1>
       <svg
-        class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
+        class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 iXilNe"
       >
         underline.svg
       </svg>
@@ -45,9 +48,17 @@ exports[`renders correctly 1`] = `
         class="Collapse__CollapseContent-sc-1tgbx39-3 domdvA"
       >
         <p>
-          Die Psychologie hat sich lange hauptsächlich mit Persönlichkeits-störungen beschäftigt. Doch auch gesunde Menschen haben ein Interesse daran, Ihre Persönlichkeit zu verstehen, und in bestimmten Situationen ihr Handeln zu verändern. Dazu dient unser Youlity-Persönlichkeitstest.
+          Die Psychologie hat sich lange hauptsächlich mit Persönlichkeits-
+          <em>
+            störungen
+          </em>
+           beschäftigt. Doch auch gesunde Menschen haben ein Interesse daran, Ihre Persönlichkeit zu verstehen, und in bestimmten Situationen ihr Handeln zu verändern. Dazu dient unser Youlity-Persönlichkeitstest.
           <br />
-           Im Gegensatz zu Tests wie z.B. „16 Personalities“, die jeden Menschen in starre Persönlichkeitstypen zwängen wollen, erkennen wir an, dass jeder Mensch individuell ist. Deshalb messen wir Übereinstimmungen zu einzelnen „Persönlichkeitsstilen“.
+           Im Gegensatz zu Tests, die mit starren Persönlichkeits-
+          <em>
+            Typen
+          </em>
+           arbeiten, wie z. B. „16 Personalities“, gehen wir davon aus, dass jeder Mensch individuell ist. Deshalb messen wir nur Übereinstimmungen zu einzelnen „Persönlichkeitsstilen“.
           <br />
           Persönlichkeitsstile sind Muster aus stabilen Merkmalen in Menschen, die sich aus der individuellen Lebensgeschichte ergeben. Youlity hilft Ihnen, ein differenziertes Modell Ihrer individuellen Persönlichkeit zu erstellen.
         </p>
@@ -57,26 +68,27 @@ exports[`renders correctly 1`] = `
       class="Card__CardBG-sc-1k8174e-0 bqDKbN"
     >
       <div
-        class="sc-AxjAm kVoejJ"
+        class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
       >
         <h3
-          class="sc-AxirZ cFvmhJ"
+          class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
         >
           Your
             
         </h3>
          
         <h3
-          class="sc-AxiKw jrznZH"
+          class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
         >
           Personality
         </h3>
       </div>
-      <img
-        alt=""
-        class="Homepage__SmallImg-ye7llx-1 hZbgoy"
-        src="/img/style_info.svg"
-      />
+      <svg
+        class="Homepage__StyleInfoImgStyled-ye7llx-2 fxhNWA"
+        title=""
+      >
+        style_info.svg
+      </svg>
       <h2>
         Der Youlity-Test
       </h2>
@@ -97,7 +109,7 @@ exports[`renders correctly 1`] = `
         href="/motives/intro"
       >
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 czYdCq"
+          class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
           width="100"
         >
           Test starten
@@ -108,26 +120,27 @@ exports[`renders correctly 1`] = `
       class="Card__CardBG-sc-1k8174e-0 bqDKbN"
     >
       <div
-        class="sc-AxjAm kVoejJ"
+        class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
       >
         <h3
-          class="sc-AxirZ cFvmhJ"
+          class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
         >
           Your
             
         </h3>
          
         <h3
-          class="sc-AxiKw jrznZH"
+          class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
         >
           Reality
         </h3>
       </div>
-      <img
-        alt=""
-        class="Homepage__SmallImg-ye7llx-1 hZbgoy"
-        src="/img/journal.svg"
-      />
+      <svg
+        class="Homepage__JournalImgStyled-ye7llx-3 fBdOhN"
+        title=""
+      >
+        journal.svg
+      </svg>
       <h2>
         Das Youlity-Tagebuch
       </h2>
@@ -148,7 +161,7 @@ exports[`renders correctly 1`] = `
         href="/journal"
       >
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 czYdCq"
+          class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
           width="100"
         >
           Tagebuch öffnen
@@ -156,29 +169,29 @@ exports[`renders correctly 1`] = `
       </a>
     </div>
     <div
-      class="sc-AxjAm kVoejJ"
+      class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
     >
       <h3
-        class="sc-AxirZ cFvmhJ"
+        class="BrandHeadline__Green-sc-1gsl6zz-1 ljEpsh"
       >
         Your
           
       </h3>
        
       <h3
-        class="sc-AxiKw jrznZH"
+        class="BrandHeadline__Purple-sc-1gsl6zz-2 Kbtt"
       >
         Quality
       </h3>
     </div>
     <section
-      class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 eSchLu"
+      class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 iPfevw"
     >
       <h2>
         Unser Versprechen
       </h2>
       <svg
-        class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
+        class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 iXilNe"
       >
         underline.svg
       </svg>
@@ -212,16 +225,16 @@ exports[`renders correctly 1`] = `
       </li>
     </ul>
     <small
-      class="Homepage__FinePrint-ye7llx-2 ifgcrO"
+      class="FinePrint__SmallStyled-sc-1oy87bz-0 bIdxte"
     >
       Hinweis: Unser Angebot ersetzt keine psychologische Beratung. Wenn Sie unter psychischen Problemen leiden, suchen Sie sich bitte professionelle Hilfe.
     </small>
     <a
-      class="FloatingButtonContainer__ButtonContainer-slkv4p-0 kGUNwE"
+      class="FloatingButtonContainer__ButtonContainer-slkv4p-0 fIGCfd"
       href="/motives/intro"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 czYdCq"
+        class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
         width="100"
       >
         Test starten

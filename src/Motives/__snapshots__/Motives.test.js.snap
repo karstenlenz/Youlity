@@ -6,13 +6,13 @@ exports[`The Motives component renders correctly 1`] = `
     id="root"
   >
     <section
-      class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 eSchLu"
+      class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 iPfevw"
     >
       <h1>
         Schritt 1: Bedürfnisse
       </h1>
       <svg
-        class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 hZOZZy"
+        class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 iXilNe"
       >
         underline.svg
       </svg>
@@ -29,21 +29,21 @@ exports[`The Motives component renders correctly 1`] = `
         class="UserMotiveDropzone__DropzoneBG-jv6lv-0 cFWTRG"
       >
         <div
-          class="sc-AxjAm XwQdQ"
+          class="HideElement-m9nwk9-0 hYebHX"
         />
       </div>
       <div
         class="UserMotiveDropzone__DropzoneBG-jv6lv-0 cFWTRG"
       >
         <div
-          class="sc-AxjAm XwQdQ"
+          class="HideElement-m9nwk9-0 hYebHX"
         />
       </div>
       <div
         class="UserMotiveDropzone__DropzoneBG-jv6lv-0 cFWTRG"
       >
         <div
-          class="sc-AxjAm XwQdQ"
+          class="HideElement-m9nwk9-0 hYebHX"
         />
       </div>
     </section>
@@ -63,7 +63,7 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Anerkennung
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
+          class="Button__BtnStyled-sc-129yfz5-0 hYnixA InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 cxSIYu"
           width="100"
         >
           i
@@ -82,7 +82,7 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Wichtigkeit
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
+          class="Button__BtnStyled-sc-129yfz5-0 hYnixA InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 cxSIYu"
           width="100"
         >
           i
@@ -101,7 +101,7 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Solidarität
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
+          class="Button__BtnStyled-sc-129yfz5-0 hYnixA InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 cxSIYu"
           width="100"
         >
           i
@@ -120,7 +120,7 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Autonomie
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
+          class="Button__BtnStyled-sc-129yfz5-0 hYnixA InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 cxSIYu"
           width="100"
         >
           i
@@ -139,7 +139,7 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Grenzen
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
+          class="Button__BtnStyled-sc-129yfz5-0 hYnixA InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 cxSIYu"
           width="100"
         >
           i
@@ -158,22 +158,22 @@ exports[`The Motives component renders correctly 1`] = `
       >
         Verlässlichkeit
         <button
-          class="Button__BtnStyled-sc-129yfz5-0 kKCkxi InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 jwrVIH"
+          class="Button__BtnStyled-sc-129yfz5-0 hYnixA InfoOverlay__InfoButton-sc-17974c-0 eQphtg MotiveItem__PositionedInfoOverlay-sc-17qm44j-0 cxSIYu"
           width="100"
         >
           i
         </button>
       </div>
       <div
-        class="sc-AxjAm XwQdQ"
+        class="HideElement-m9nwk9-0 hYebHX"
       />
     </div>
     <a
-      class="FloatingButtonContainer__ButtonContainer-slkv4p-0 kGUNwE"
+      class="FloatingButtonContainer__ButtonContainer-slkv4p-0 fIGCfd"
       href="/"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 czYdCq"
+        class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
         disabled=""
         width="100"
       >
