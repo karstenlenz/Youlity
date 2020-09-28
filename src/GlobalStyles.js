@@ -15,6 +15,18 @@ body {
     margin: 0 auto;
     max-width: 900px;
     font-family: 'Cabin', sans-serif; ;
+    background: linear-gradient(
+        270deg,
+  var(--primary),
+  var(--primary) 50%,
+  var(--secondary) 50%,
+  var(--secondary) 100%
+);
+}
+
+#root {
+    background: white;
+    box-shadow:0 0 30px 0px white;
 }
 
 main {
