@@ -2,25 +2,24 @@ import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import styled from 'styled-components/macro'
 import IconButton from './IconButton'
+import { ReactComponent as Logo } from '../img/logo.svg'
+import { ReactComponent as BackIcon } from '../img/back.svg'
+import { ReactComponent as HomeIcon } from '../img/home.svg'
 
 export default function Header() {
   const history = useHistory()
 
   return (
     <HeaderContainer>
-      <IconButton
-        imgUrl="/img/back.svg"
-        altText="zurück"
-        onClick={() => history.goBack()}
-      />
+      <IconButton onClick={() => history.goBack()}>
+        <BackIcon title="zurück" />
+      </IconButton>
       <Link to="/">
-        <img src="/img/logo.svg" alt="Youlity logo" />
+        <Logo title="Youlity logo" />
       </Link>
-      <IconButton
-        imgUrl="/img/home.svg"
-        altText="zur Homepage"
-        onClick={() => history.push('/')}
-      />
+      <IconButton onClick={() => history.push('/')}>
+        <HomeIcon title="zur Homepage" />
+      </IconButton>
     </HeaderContainer>
   )
 }

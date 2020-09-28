@@ -13,6 +13,7 @@ export default createGlobalStyle`
        url('/fonts/cabin-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
        url('/fonts/cabin-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/fonts/cabin-v15-latin-regular.svg#Cabin') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* ubuntu-regular - latin */
@@ -27,6 +28,7 @@ export default createGlobalStyle`
        url('/fonts/ubuntu-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
        url('/fonts/ubuntu-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/fonts/ubuntu-v15-latin-regular.svg#Ubuntu') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 
