@@ -52,7 +52,7 @@ exports[`The Result component renders correctly 1`] = `
     Sie haben eben Tests für folgende Persönlichkeitsstile ausgefüllt:
   </p>
   <section
-    class="SectionBG__Background-sc-164jup7-0 OlfId"
+    class="SectionBG__Background-sc-164jup7-0 jucRXy"
   >
     <h3>
       Der selbstbewusste Persönlichkeitsstil
@@ -88,7 +88,7 @@ exports[`The Result component renders correctly 1`] = `
     </a>
   </section>
   <section
-    class="SectionBG__Background-sc-164jup7-0 OlfId"
+    class="SectionBG__Background-sc-164jup7-0 jucRXy"
   >
     <h3>
       Der sprunghafte Persönlichkeitsstil
@@ -147,7 +147,7 @@ exports[`The Result component renders correctly 1`] = `
     </button>
   </a>
   <section
-    class="SectionBGWithButton__Background-sc-11viaht-0 bOMnEz"
+    class="SectionBGWithButton__Background-sc-11viaht-0 llKPXe"
   >
     <h2>
       Tagebuch
