@@ -7,7 +7,9 @@ This has been my capstone project ("Digitales Gesellenstück") for the web devel
 It's a progressive web app featuring an interactive questionnaire and a journal function. Highlights are a mobile-optimized UI with drag&drop and swipe gesture support. The app can be installed on used offline.
 The app is responsive, however it is best viewed on a mobile device.
 
-![Lighthouse results](./youlity_lighthouse_result.png)
+## Google Lighthouse results
+
+<img src="./youlity_lighthouse_result.png" alt="Lighthouse results" width="500px"/>
 
 ## Tech-Stack
 
