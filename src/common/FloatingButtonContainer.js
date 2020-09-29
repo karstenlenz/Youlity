@@ -13,6 +13,7 @@ export default function FloatingButtonContainer({ children, to }) {
 
 const ButtonContainer = styled(Link)`
   position: fixed;
+  max-width: 900px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -22,6 +23,13 @@ const ButtonContainer = styled(Link)`
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 1) 100%
   );
+
+  @media screen and (min-width: 750px) {
+    width: 100%;
+    margin-left: -15px;
+    left: auto;
+    right: auto;
+  }
 `
 const BottomSpacer = styled.div`
   margin-bottom: 80px;

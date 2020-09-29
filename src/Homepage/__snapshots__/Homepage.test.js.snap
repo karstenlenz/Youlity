@@ -3,13 +3,13 @@
 exports[`The Homepage component renders correctly 1`] = `
 <div>
   <svg
-    class="Homepage__MirrorStyled-ye7llx-1 bxPHyM"
+    class="Homepage__MirrorStyled-ye7llx-2 fnfAef"
     title=""
   >
     mirror.svg
   </svg>
   <svg
-    class="Homepage__LogoStyled-ye7llx-0 csaKgP"
+    class="Homepage__LogoStyled-ye7llx-1 keCzIi"
     title="Youlity"
   >
     logo.svg
@@ -63,10 +63,10 @@ exports[`The Homepage component renders correctly 1`] = `
     </div>
   </section>
   <section
-    class="Homepage__CardContainer-ye7llx-4 fRTZvy"
+    class="Homepage__CardContainer-ye7llx-5 dMFNa-D"
   >
     <div
-      class="Card__CardBG-sc-1k8174e-0 jHOCri"
+      class="Card__CardBG-sc-1k8174e-0 hOcFsr"
     >
       <div
         class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
@@ -86,7 +86,7 @@ exports[`The Homepage component renders correctly 1`] = `
         </span>
       </div>
       <svg
-        class="Homepage__StyleInfoImgStyled-ye7llx-2 iWmwWa"
+        class="Homepage__StyleInfoImgStyled-ye7llx-3 ihCKgj"
         title=""
       >
         style_info.svg
@@ -107,19 +107,23 @@ exports[`The Homepage component renders correctly 1`] = `
           Profitieren Sie von speziell auf Sie zugeschnittenen Tipps für Alltagssituationen.
         </li>
       </ul>
-      <a
-        href="/motives/intro"
+      <div
+        class="Homepage__BottomButtonContainer-ye7llx-0 hfXNA-D"
       >
-        <button
-          class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
-          width="100"
+        <a
+          href="/motives/intro"
         >
-          Test starten
-        </button>
-      </a>
+          <button
+            class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+            width="100"
+          >
+            Test starten
+          </button>
+        </a>
+      </div>
     </div>
     <div
-      class="Card__CardBG-sc-1k8174e-0 jHOCri"
+      class="Card__CardBG-sc-1k8174e-0 hOcFsr"
     >
       <div
         class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
@@ -139,7 +143,7 @@ exports[`The Homepage component renders correctly 1`] = `
         </span>
       </div>
       <svg
-        class="Homepage__JournalImgStyled-ye7llx-3 ckkzJT"
+        class="Homepage__JournalImgStyled-ye7llx-4 htAnhc"
         title=""
       >
         journal.svg
@@ -160,16 +164,20 @@ exports[`The Homepage component renders correctly 1`] = `
           Nutzen Sie das Tagebuch als Gesprächsstütze für Therapie-Termine.
         </li>
       </ul>
-      <a
-        href="/journal"
+      <div
+        class="Homepage__BottomButtonContainer-ye7llx-0 hfXNA-D"
       >
-        <button
-          class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
-          width="100"
+        <a
+          href="/journal"
         >
-          Tagebuch öffnen
-        </button>
-      </a>
+          <button
+            class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+            width="100"
+          >
+            Tagebuch öffnen
+          </button>
+        </a>
+      </div>
     </div>
   </section>
   <div
@@ -235,7 +243,7 @@ exports[`The Homepage component renders correctly 1`] = `
     Hinweis: Unser Angebot ersetzt keine psychologische Beratung. Wenn Sie unter psychischen Problemen leiden, suchen Sie sich bitte professionelle Hilfe.
   </small>
   <a
-    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 fIGCfd"
+    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 hTXSTP"
     href="/motives/intro"
   >
     <button

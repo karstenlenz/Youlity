@@ -61,9 +61,11 @@ export default function () {
               Alltagssituationen.
             </li>
           </BulletList>
-          <Link to="/motives/intro">
-            <Button>Test starten</Button>
-          </Link>
+          <BottomButtonContainer>
+            <Link to="/motives/intro">
+              <Button>Test starten</Button>
+            </Link>
+          </BottomButtonContainer>
         </Card>
         <Card>
           <BrandHeadline firstWord="Your" secondWord="Reality" />
@@ -82,9 +84,11 @@ export default function () {
               Nutzen Sie das Tagebuch als Gesprächsstütze für Therapie-Termine.
             </li>
           </BulletList>
-          <Link to="/journal">
-            <Button>Tagebuch öffnen</Button>
-          </Link>
+          <BottomButtonContainer>
+            <Link to="/journal">
+              <Button>Tagebuch öffnen</Button>
+            </Link>
+          </BottomButtonContainer>
         </Card>
       </CardContainer>
       <BrandHeadline firstWord="Your" secondWord="Quality" />
@@ -122,6 +126,15 @@ export default function () {
     </>
   )
 }
+const BottomButtonContainer = styled.div`
+  @media screen and (min-width: 750px) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 15px;
+    width: 100%;
+  }
+`
 
 const LogoStyled = styled(Logo)`
   display: block;
@@ -156,8 +169,6 @@ const JournalImgStyled = styled(JournalImg)`
   }
 `
 const CardContainer = styled.section`
-  /* display: flex;
-  flex-wrap: wrap; */
   @media screen and (min-width: 750px) {
     display: grid;
     grid-template-columns: repeat(2, auto);

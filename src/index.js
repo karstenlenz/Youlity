@@ -8,14 +8,16 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <GlobalStyles />
     <GlobalFonts />
-    <Router>
-      <ScrollToTop />
-      <App />
-    </Router>
-  </React.StrictMode>,
+    <React.StrictMode>
+      <Router>
+        <ScrollToTop />
+        <App />
+      </Router>
+    </React.StrictMode>
+  </>,
   document.getElementById('root')
 )
 

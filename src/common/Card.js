@@ -12,6 +12,10 @@ const CardBG = styled.div`
   box-shadow: var(--primary-shadow);
   margin: 30px 0;
   padding: 15px;
+  width: 100%;
   position: relative;
-  height: auto;
+
+  @media screen and (min-width: 750px) {
+    padding: 15px 15px 60px 15px;
+  }
 `

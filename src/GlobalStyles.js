@@ -2,10 +2,6 @@ import { createGlobalStyle } from 'styled-components/macro'
 
 export default createGlobalStyle`
 
-
-
-
-
 * {
     box-sizing: border-box;
 }
@@ -17,10 +13,10 @@ body {
     font-family: 'Cabin', sans-serif; ;
     background: linear-gradient(
         270deg,
-  var(--primary),
-  var(--primary) 50%,
-  var(--secondary) 50%,
-  var(--secondary) 100%
+        rgba(63, 0, 110, 0.75),
+        rgba(63, 0, 110, 0.75) 50%,
+  rgba(0,197,170, 0.75) 50%,
+  rgba(0,197,170, 0.75) 100%
 );
 
 @media screen and (min-width: 750px){
@@ -97,7 +93,6 @@ p {
 --white-shadow:  0 1px 6px 0 white;
 
 }
-
 
 a {
     cursor:pointer;
