@@ -7,10 +7,6 @@ export default function SectionBGWithButton({ children, className }) {
 
 const Background = styled.section`
   background: var(--light-grey);
-  margin: 0 -15px 40px -15px;
-  padding: 1px 15px 15px 15px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  margin: 0 -15px 20px -15px;
+  padding: 1px 15px 1px 15px;
 `

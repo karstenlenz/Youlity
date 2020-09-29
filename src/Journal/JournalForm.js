@@ -116,6 +116,7 @@ const TextAreaStyled = styled.textarea`
   font-size: 1em;
   background: var(--light-grey);
   margin-bottom: 20px;
+  max-height: 200px;
 `
 
 const FormLabel = styled.label`

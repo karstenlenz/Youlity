@@ -84,18 +84,6 @@ export default function SwipeableCard({
 }
 const Card = styled.div`
   background: white;
-  /* border: ${(props) => {
-    if (
-      props.offset <= props.swipeThreshold &&
-      props.offset >= -props.swipeThreshold
-    ) {
-      return '3px solid transparent;'
-    } else if (props.offset > props.swipeThreshold) {
-      return `3px solid rgba(104, 59, 137, ${props.offset / props.windowWidth})`
-    } else if (props.offset < -props.swipeThreshold) {
-      return `3px solid rgba(0, 197, 170, ${-props.offset / props.windowWidth})`
-    }
-  }}; */
   border-radius: 12px;
   box-shadow: var(--primary-shadow);
   max-width: 72.5%;
@@ -104,4 +92,9 @@ const Card = styled.div`
   padding: 20px;
   font-size: 1em;
   position: relative;
+  z-index: 50;
+
+  @media screen and (min-width: 750px) {
+    max-width: 60%;
+  }
 `

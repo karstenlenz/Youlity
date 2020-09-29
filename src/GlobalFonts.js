@@ -6,6 +6,7 @@ export default createGlobalStyle`
   font-family: 'Cabin';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/cabin-v15-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Cabin'),
        url('/fonts/cabin-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -21,6 +22,7 @@ export default createGlobalStyle`
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/ubuntu-v15-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
        url('/fonts/ubuntu-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */

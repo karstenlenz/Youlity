@@ -36,6 +36,7 @@ const BtnStyled = styled.button`
   color: ${(props) =>
     props.btnType === 'white' ? 'var(--dark-grey)' : 'white'};
   width: ${(props) => props.width + '%'};
+  max-width: 600px;
   background: ${(props) => {
     if (props.btnType === 'primary') {
       return 'var(--primary)'
@@ -50,7 +51,7 @@ const BtnStyled = styled.button`
       ? 'var(--secondary-shadow)'
       : 'var(--primary-shadow)'};
   display: ${(props) => (props.width === '100' ? 'block' : 'inline')};
-  margin: 20px 0;
+  margin: 20px auto;
   font-size: 1.21rem;
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;

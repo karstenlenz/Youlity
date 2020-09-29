@@ -44,7 +44,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
             class="ResultBar__ColorBar-sc-479x3f-2 gUwDrH"
           >
             <p
-              class="ResultBar__Text-sc-479x3f-0 icLhoH"
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
             >
               75
               % Übereinstimmung
@@ -73,7 +73,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
             class="ResultBar__ColorBar-sc-479x3f-2 fqhHNn"
           >
             <p
-              class="ResultBar__Text-sc-479x3f-0 icLhoH"
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
             >
               50
               % Übereinstimmung
@@ -102,7 +102,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
             class="ResultBar__ColorBar-sc-479x3f-2 DFdqP"
           >
             <p
-              class="ResultBar__Text-sc-479x3f-0 icLhoH"
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
             >
               25
               % Übereinstimmung
@@ -131,7 +131,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
             class="ResultBar__ColorBar-sc-479x3f-2 kavjaE"
           >
             <p
-              class="ResultBar__Text-sc-479x3f-0 icLhoH"
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
             >
               25
               % Übereinstimmung
@@ -154,14 +154,14 @@ exports[`The ExtendedResult component renders correctly 1`] = `
     href="/questionnaire/entry/1928373645/6422"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
+      class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
       width="100"
     >
       Weiteren Fragebogen starten
     </button>
   </a>
   <section
-    class="SectionBGWithButton__Background-sc-11viaht-0 bOMnEz"
+    class="SectionBGWithButton__Background-sc-11viaht-0 llKPXe"
   >
     <h2>
       Tagebuch
@@ -173,7 +173,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
       href="/journal"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 tgIAk"
+        class="Button__BtnStyled-sc-129yfz5-0 cXymYf"
         width="100"
       >
         Zum Tagebuch

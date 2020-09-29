@@ -24,12 +24,12 @@ export default function CardStack({
     <CardStackContainer>
       <BackgroundCardsContainer>
         {questions[currentQuestionIndex + 2] && (
-          <Card scale={0.9} top="-25px" brightness="96%" zIndex="-2">
+          <Card scale={0.9} top="-25px" brightness="96%" zIndex="1">
             {questions[currentQuestionIndex + 2]}
           </Card>
         )}
         {questions[currentQuestionIndex + 1] && (
-          <Card scale={0.95} top="-15px" brightness="98%" zIndex="-1">
+          <Card scale={0.95} top="-15px" brightness="98%" zIndex="2">
             {questions[currentQuestionIndex + 1]}
           </Card>
         )}

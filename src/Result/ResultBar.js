@@ -14,6 +14,9 @@ export default function ResultBar({ percentage, index }) {
 const Text = styled.p`
   margin: 0;
   padding: 8px 15px;
+  @media screen and (min-width: 750px) {
+    padding: 5px 15px;
+  }
 `
 
 const Outline = styled.div`

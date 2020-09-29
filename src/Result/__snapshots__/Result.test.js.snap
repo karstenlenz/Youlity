@@ -52,7 +52,7 @@ exports[`The Result component renders correctly 1`] = `
     Sie haben eben Tests für folgende Persönlichkeitsstile ausgefüllt:
   </p>
   <section
-    class="SectionBG__Background-sc-164jup7-0 OlfId"
+    class="SectionBG__Background-sc-164jup7-0 jucRXy"
   >
     <h3>
       Der selbstbewusste Persönlichkeitsstil
@@ -64,7 +64,7 @@ exports[`The Result component renders correctly 1`] = `
         class="ResultBar__ColorBar-sc-479x3f-2 gUwDrH"
       >
         <p
-          class="ResultBar__Text-sc-479x3f-0 icLhoH"
+          class="ResultBar__Text-sc-479x3f-0 bCfkyT"
         >
           75
           % Übereinstimmung
@@ -88,7 +88,7 @@ exports[`The Result component renders correctly 1`] = `
     </a>
   </section>
   <section
-    class="SectionBG__Background-sc-164jup7-0 OlfId"
+    class="SectionBG__Background-sc-164jup7-0 jucRXy"
   >
     <h3>
       Der sprunghafte Persönlichkeitsstil
@@ -100,7 +100,7 @@ exports[`The Result component renders correctly 1`] = `
         class="ResultBar__ColorBar-sc-479x3f-2 fqhHNn"
       >
         <p
-          class="ResultBar__Text-sc-479x3f-0 icLhoH"
+          class="ResultBar__Text-sc-479x3f-0 bCfkyT"
         >
           50
           % Übereinstimmung
@@ -140,14 +140,14 @@ exports[`The Result component renders correctly 1`] = `
     href="/questionnaire/entry/1928373645/64"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 bJYIPU"
+      class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
       width="100"
     >
       Weiteren Fragebogen starten
     </button>
   </a>
   <section
-    class="SectionBGWithButton__Background-sc-11viaht-0 bOMnEz"
+    class="SectionBGWithButton__Background-sc-11viaht-0 llKPXe"
   >
     <h2>
       Tagebuch
@@ -159,7 +159,7 @@ exports[`The Result component renders correctly 1`] = `
       href="/journal"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 tgIAk"
+        class="Button__BtnStyled-sc-129yfz5-0 cXymYf"
         width="100"
       >
         Zum Tagebuch

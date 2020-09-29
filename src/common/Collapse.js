@@ -15,7 +15,11 @@ export default function Collapse({ headline, headlineOpen, children }) {
     <CollapseWrapper>
       <CollapseHeader onClick={toggleIsOpen}>
         {isOpen ? headlineOpen || headline : headline}
-        <CollapseIcon src="/img/expand.svg" isOpen={isOpen} />
+        <CollapseIcon
+          alt="auf/zuklappen"
+          src="/img/expand.svg"
+          isOpen={isOpen}
+        />
       </CollapseHeader>
       <CollapseContent isOpen={isOpen}>{children}</CollapseContent>
     </CollapseWrapper>

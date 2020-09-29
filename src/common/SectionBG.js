@@ -7,7 +7,7 @@ export default function SectionBG({ children, className }) {
 
 const Background = styled.section`
   background: var(--light-grey);
-  margin: 0 -15px 40px -15px;
+  margin: 0 -15px 30px -15px;
   padding: 1px 15px 30px 15px;
 
   &:last-child {
