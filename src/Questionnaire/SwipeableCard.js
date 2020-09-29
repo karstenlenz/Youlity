@@ -92,6 +92,7 @@ const Card = styled.div`
   padding: 20px;
   font-size: 1em;
   position: relative;
+  z-index: 50;
 
   @media screen and (min-width: 750px) {
     max-width: 60%;
