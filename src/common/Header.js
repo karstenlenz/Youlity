@@ -15,7 +15,7 @@ export default function Header() {
         <BackIcon title="zurück" />
       </IconButton>
       <Link to="/">
-        <Logo title="Youlity logo" />
+        <LogoStyled title="Youlity logo" />
       </Link>
       <IconButton onClick={() => history.push('/')}>
         <HomeIcon title="zur Homepage" />
@@ -23,6 +23,10 @@ export default function Header() {
     </HeaderContainer>
   )
 }
+
+const LogoStyled = styled(Logo)`
+  overflow: visiblegit pull;
+`
 
 const HeaderContainer = styled.header`
   display: grid;
