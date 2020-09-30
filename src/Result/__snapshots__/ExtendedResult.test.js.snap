@@ -7,13 +7,17 @@ exports[`The ExtendedResult component renders correctly 1`] = `
     src="/img/style_info.svg"
   />
   <section
-    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-0 iPfevw"
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-1 tAJUt"
   >
-    <h1>
-      Ergebnis
-    </h1>
+    <div
+      class="HeadlineUnderline__ChildContainer-sc-1reeb6v-0 cbzWsz"
+    >
+      <h1>
+        Ergebnis
+      </h1>
+    </div>
     <svg
-      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-1 iXilNe"
+      class="HeadlineUnderline__UnderlineStyled-sc-1reeb6v-2 dVDSEH"
     >
       underline.svg
     </svg>
