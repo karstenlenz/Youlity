@@ -25,7 +25,7 @@ export default function MotivesEntry() {
       <HeadlineUnderline>
         <h1>Schritt 1: Bedürfnisse</h1>
       </HeadlineUnderline>
-      <SmallH2 as="h2">
+      <SmallH2>
         Wählen Sie bitte intuitiv die drei Bedürfnisse aus, die für Sie am
         Wichtigsten sind. Sie können die Bedürfnisse hin- und herziehen oder
         anklicken.
@@ -81,7 +81,7 @@ export default function MotivesEntry() {
   )
 }
 
-const SmallH2 = styled.h6`
+const SmallH2 = styled.h2`
   font-size: 1em;
   margin-top: 0;
 `

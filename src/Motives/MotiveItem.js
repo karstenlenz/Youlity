@@ -57,30 +57,22 @@ const PositionedInfoOverlay = styled(InfoOverlay)`
 `
 
 const MotiveItemStyled = styled.div`
-  position: relative;
-  color: var(--dark-grey);
-  width: 100%;
-  background: white;
-  box-shadow: var(--primary-shadow);
   display: inline-block;
+  position: relative;
+  z-index: var(--front);
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1em;
   line-height: 0;
   text-decoration: none;
-  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  color: var(--dark-grey);
+  background: white;
+  box-shadow: var(--primary-shadow);
+  width: 100%;
+  max-width: 47.5vw;
   height: 58px;
   padding: 29px 0;
   border: ${(props) =>
     props.isDragging ? '1px solid var(--dark-grey)' : 'none'};
   border-radius: 12px;
-  text-align: center;
-  max-width: 47.5vw;
-  z-index: var(--front);
-
-  &:disabled {
-    opacity: 0.4;
-    color: rgba(255, 255, 255, 0.5);
-    background: var(--light-grey);
-    color: var(--medium-grey);
-    opacity: 0.4;
-  }
 `

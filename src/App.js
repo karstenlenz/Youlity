@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import styled from 'styled-components/macro'
 import Header from './common/Header'
@@ -6,7 +6,6 @@ import Homepage from './Homepage/Homepage'
 import JournalForm from './Journal/JournalForm'
 import JournalList from './Journal/JournalList'
 import useJournalEntries from './Journal/useJournalEntries'
-import { saveLocally } from './Journal/util'
 import MotivesEntry from './Motives/MotivesEntry'
 import MotivesIntro from './Motives/MotivesIntro'
 import QuestionnaireEntryPage from './Questionnaire/QuestionnaireEntryPage'
@@ -19,7 +18,6 @@ export default function App() {
     journalEntries,
     createJournalEntry,
     deleteJournalEntry,
-    handleSubmit,
   } = useJournalEntries()
 
   return (
@@ -33,10 +31,7 @@ export default function App() {
       <AppMain>
         <Switch>
           <Route path="/journal/entry">
-            <JournalForm
-              createJournalEntry={createJournalEntry}
-              handleSubmit={handleSubmit}
-            />
+            <JournalForm createJournalEntry={createJournalEntry} />
           </Route>
           <Route path="/journal">
             <JournalList

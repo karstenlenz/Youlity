@@ -16,10 +16,10 @@ export default {
         type: 'text',
       },
     },
-  },
-  description: {
-    control: {
-      type: 'text',
+    description: {
+      control: {
+        type: 'text',
+      },
     },
   },
 }
