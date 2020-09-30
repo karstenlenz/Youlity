@@ -36,29 +36,11 @@ export function useMotiveSelection() {
   function handleMotiveClick(event, motiveId, droppableId) {
     if (droppableId === 'motives-list') {
       if (motives.slot1.length === 0) {
-        const newMotives = { ...motives }
-        newMotives.slot1 = [motiveId]
-        const newMotivesList = [...motives.list].filter(
-          (motive) => motive !== motiveId
-        )
-        newMotives.list = newMotivesList
-        setMotives(newMotives)
+        addMotive('slot1', motiveId)
       } else if (motives.slot2.length === 0) {
-        const newMotives = { ...motives }
-        newMotives.slot2 = [motiveId]
-        const newMotivesList = [...motives.list].filter(
-          (motive) => motive !== motiveId
-        )
-        newMotives.list = newMotivesList
-        setMotives(newMotives)
+        addMotive('slot2', motiveId)
       } else if (motives.slot3.length === 0) {
-        const newMotives = { ...motives }
-        newMotives.slot3 = [motiveId]
-        const newMotivesList = [...motives.list].filter(
-          (motive) => motive !== motiveId
-        )
-        newMotives.list = newMotivesList
-        setMotives(newMotives)
+        addMotive('slot3', motiveId)
       }
     } else {
       const newMotives = { ...motives }
@@ -66,6 +48,16 @@ export function useMotiveSelection() {
       newMotives.list.push(motiveId)
       setMotives(newMotives)
     }
+  }
+
+  function addMotive(slot, motiveId) {
+    const newMotives = { ...motives }
+    newMotives[slot] = [motiveId]
+    const newMotivesList = [...motives.list].filter(
+      (motive) => motive !== motiveId
+    )
+    newMotives.list = newMotivesList
+    setMotives(newMotives)
   }
 
   function onDragStart() {

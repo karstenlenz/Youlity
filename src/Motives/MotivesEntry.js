@@ -66,11 +66,11 @@ export default function MotivesEntry() {
       <FloatingButtonContainer to={questionnaireUrl}>
         <Button
           isButtonDisabled={
-            motives.slot1.length === 1 &&
-            motives.slot2.length === 1 &&
-            motives.slot3.length === 1
-              ? false
-              : true
+            !(
+              motives.slot1.length === 1 &&
+              motives.slot2.length === 1 &&
+              motives.slot3.length === 1
+            )
           }
           btnType="primary"
         >
@@ -93,20 +93,24 @@ const MotiveBG = styled.section`
   grid-template-areas:
     '. . one one one one . .'
     ' two two two two three three three three';
+  gap: 15px;
   background: var(--secondary);
+  min-height: 80px;
   margin: 0 -15px;
   padding: 30px 15px;
-  min-height: 80px;
-  gap: 15px;
+
   > div {
     width: 100% !important;
   }
+
   > :nth-child(1) {
     grid-area: one;
   }
+
   > :nth-child(2) {
     grid-area: two;
   }
+
   > :nth-child(3) {
     grid-area: three;
   }

@@ -15,8 +15,8 @@ const MotiveContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   row-gap: 30px;
   column-gap: 15px;
+  justify-content: stretch;
   margin: 0 -15px;
   padding: 30px 15px;
-  justify-content: stretch;
   ${(props) => props.isDraggingOver && 'background: var(--light-grey)'};
 `
