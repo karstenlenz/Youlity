@@ -5,11 +5,15 @@ import { ReactComponent as Underline } from '../img/underline.svg'
 export default function HeadlineUnderline({ children }) {
   return (
     <HeadlineContainer>
-      {children}
+      <ChildContainer>{children}</ChildContainer>
       <UnderlineStyled />
     </HeadlineContainer>
   )
 }
+const ChildContainer = styled.div`
+  position: relative;
+  z-index: 1;
+`
 
 const HeadlineContainer = styled.section`
   margin: -15px 0;
@@ -19,7 +23,7 @@ const HeadlineContainer = styled.section`
 const UnderlineStyled = styled(Underline)`
   color: var(--highlight);
   width: 100%;
-  z-index: var(--background);
+  z-index: 0;
   position: relative;
   top: -34px;
   opacity: 0.6;
