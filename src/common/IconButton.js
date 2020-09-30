@@ -3,11 +3,17 @@ import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
 
 IconButton.propTypes = {
+  children: PropTypes.any,
   onClick: PropTypes.func,
+  className: PropTypes.string,
 }
 
-export default function IconButton({ children, onClick }) {
-  return <ButtonContainer onClick={onClick}>{children}</ButtonContainer>
+export default function IconButton({ children, onClick, className }) {
+  return (
+    <ButtonContainer className={className} onClick={onClick}>
+      {children}
+    </ButtonContainer>
+  )
 }
 
 const ButtonContainer = styled.button`

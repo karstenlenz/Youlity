@@ -5,6 +5,7 @@ export default {
   title: 'JournalCard',
   component: JournalCard,
   argTypes: {
+    handleDelete: { action: 'deleted' },
     date: {
       control: {
         type: 'text',

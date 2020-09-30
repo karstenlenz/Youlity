@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components/macro'
+import IconButton from './IconButton'
 
 export default function NoticeBox({ children }) {
   const [isNoticeVisible, setIsNoticeVisible] = useState(true)
@@ -27,13 +28,9 @@ const SectionStyled = styled.section`
   margin-bottom: 30px;
 `
 
-const CloseButton = styled.button`
-  width: 40px;
-  height: 40px;
+const CloseButton = styled(IconButton)`
   padding: 0;
   position: absolute;
   right: 0px;
   top: 0px;
-  background: none;
-  border: none;
 `

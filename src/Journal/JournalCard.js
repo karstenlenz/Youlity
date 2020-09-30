@@ -30,9 +30,9 @@ export default function JournalCard({
 
 const CardContainer = styled.section`
   position: relative;
-  padding: 15px;
   box-shadow: var(--primary-shadow);
   border-radius: 12px;
+  padding: 15px;
   margin-bottom: 40px;
 `
 const CardDate = styled.h3`
