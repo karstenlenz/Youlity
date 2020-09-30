@@ -40,7 +40,7 @@ export default function MotivesEntry() {
           />
         ))}
       </MotiveBG>
-      <Droppable droppableId="motives-list">
+      <Droppable droppableId="list">
         {(provided, snapshot) => (
           <MotivesList
             ref={provided.innerRef}
@@ -49,9 +49,9 @@ export default function MotivesEntry() {
           >
             {motives.list?.map((motive, index) => (
               <MotiveItem
-                droppableId="motives-list"
+                droppableId="list"
                 onClick={handleMotiveClick}
-                key={'motives-list' + motive}
+                key={'list' + motive}
                 index={index}
                 isDragDisabled={motives.slot1 && motives.slot2 && motives.slot3}
                 motiveIndex={motive - 1}

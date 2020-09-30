@@ -56,8 +56,11 @@ const BackgroundCardsContainer = styled.div`
   left: 0;
   width: 100%;
 `
-
 const Card = styled.div`
+  position: absolute;
+  top: ${(props) => props.top};
+  left: 50%;
+  z-index: ${(props) => props.zIndex};
   background: white;
   border-radius: 12px;
   box-shadow: var(--primary-shadow);
@@ -67,10 +70,6 @@ const Card = styled.div`
   margin: auto;
   padding: 20px;
   font-size: 1em;
-  position: absolute;
-  left: 50%;
   transform: ${(props) => 'translateX(-50%) scale(' + props.scale + ');'};
-  top: ${(props) => props.top};
-  z-index: ${(props) => props.zIndex};
   filter: brightness(${(props) => props.brightness});
 `
