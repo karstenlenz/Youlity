@@ -7,7 +7,7 @@ export default {
 }
 
 export const ExampleOverlay = (args) => (
-  <InfoOverlay {...args}>
+  <InfoOverlay>
     <h1>Beispiel-Headline</h1>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi neque

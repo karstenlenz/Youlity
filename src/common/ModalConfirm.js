@@ -35,7 +35,7 @@ export default function ModalConfirm({ handleDelete, id }) {
                   <Button btnType="white" width="47.5" onClick={toggleOverlay}>
                     Abbrechen
                   </Button>
-                  <Button width="47.5" onClick={handleDelete}>
+                  <Button width="47.5" onClick={() => handleDelete(id)}>
                     Ja
                   </Button>
                 </ButtonPair>
