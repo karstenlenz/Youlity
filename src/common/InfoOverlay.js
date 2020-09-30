@@ -47,6 +47,7 @@ export default function InfoOverlay({ children, className }) {
 }
 
 const InfoButton = styled(Button)`
+  font-size: 18px;
   width: 40px;
   height: 40px;
 `
@@ -67,20 +68,21 @@ const OverlayContent = styled.section`
   top: 30px;
   left: 15px;
   right: 15px;
+  opacity: 1;
   border-radius: 10px;
   background: white;
   z-index: var(--overlay-content);
-  opacity: 1;
-  padding: 15px;
   text-align: left;
+  padding: 15px;
+  max-width: 600px;
 `
 const CloseButton = styled.button`
-  width: 40px;
-  height: 40px;
-  padding: 0;
   position: absolute;
   right: 0px;
   top: 0px;
+  width: 40px;
+  height: 40px;
   background: none;
   border: none;
+  padding: 0;
 `

@@ -154,7 +154,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
     href="/questionnaire/entry/1928373645/6422"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+      class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
       width="100"
     >
       Weiteren Fragebogen starten
@@ -173,7 +173,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
       href="/journal"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 cXymYf"
+        class="Button__BtnStyled-sc-129yfz5-0 cxViIx"
         width="100"
       >
         Zum Tagebuch

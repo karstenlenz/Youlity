@@ -1,6 +1,7 @@
 import React from 'react'
+import styled from 'styled-components/macro'
 import GlobalStyles from '../src/GlobalStyles'
-import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport'
+import './custom.css'
 
 export const CUSTOM_VIEWPORTS = {
   mobile1: {
@@ -35,9 +36,18 @@ export const CUSTOM_VIEWPORTS = {
     },
     type: 'tablet',
   },
+  tablet: {
+    name: 'Laptop',
+    styles: {
+      height: '768px',
+      width: '1366px',
+    },
+    type: 'desktop',
+  },
 }
 
 export const parameters = {
+  layout: 'fullscreen',
   viewport: {
     viewports: CUSTOM_VIEWPORTS,
     defaultViewport: 'iPhone6',
@@ -48,7 +58,9 @@ export const decorators = [
   (Story) => (
     <>
       <GlobalStyles />
-      <Story />
+      <main>
+        <Story />
+      </main>
     </>
   ),
 ]

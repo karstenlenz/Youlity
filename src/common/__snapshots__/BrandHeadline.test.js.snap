@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The BrandHeadline component renders correctly 1`] = `
+<div>
+  <div
+    class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
+  >
+    <span
+      class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 eGCGLG"
+      color="green"
+    >
+      first
+        
+    </span>
+     
+    <span
+      class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 idxAxg"
+    >
+      second
+    </span>
+  </div>
+</div>
+`;

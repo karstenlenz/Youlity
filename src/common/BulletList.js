@@ -1,5 +1,11 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import PropTypes from 'prop-types'
+
+BulletList.propTypes = {
+  children: PropTypes.any.isRequired,
+  listType: PropTypes.resetWarningCache,
+}
 
 export default function BulletList({ children, listType = 'bullet_circle' }) {
   return <ListContainer listType={listType}>{children}</ListContainer>
@@ -18,8 +24,8 @@ const ListContainer = styled.ul`
   }
 
   h3 {
-    margin: 0;
     text-align: left;
+    margin: 0;
   }
 
   p {

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The BackButton component renders correctly 1`] = `
+<div>
+  <div
+    class="BackButton__ButtonContainer-xw370m-0 bZdOVN"
+  >
+    <button
+      class="Button__BtnStyled-sc-129yfz5-0 cxViIx"
+      width="100"
+    >
+      zurück
+    </button>
+  </div>
+</div>
+`;

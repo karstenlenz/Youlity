@@ -7,8 +7,8 @@ export default {
   component: NoticeBox,
 }
 
-export const ExampleNoticeBox = (args) => (
-  <NoticeBox {...args}>
+export const ExampleNoticeBox = () => (
+  <NoticeBox>
     <h3>Hinweis</h3>
     <p>
       Unser Testergebnis stellt nur eine Tendenz dar und ersetzt keine
