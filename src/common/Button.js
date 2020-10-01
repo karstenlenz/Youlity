@@ -3,10 +3,13 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components/macro'
 
 Button.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.any.isRequired,
   onClick: PropTypes.func,
-  children: PropTypes.string.isRequired,
+  type: PropTypes.string,
   btnType: PropTypes.string,
   isButtonDisabled: PropTypes.bool,
+  width: PropTypes.string,
 }
 
 export default function Button({
@@ -33,6 +36,7 @@ export default function Button({
 }
 
 const BtnStyled = styled.button`
+  display: ${(props) => (props.width === '100' ? 'block' : 'inline')};
   color: ${(props) =>
     props.btnType === 'white' ? 'var(--dark-grey)' : 'white'};
   width: ${(props) => props.width + '%'};
@@ -50,15 +54,14 @@ const BtnStyled = styled.button`
     props.btnType === 'secondary'
       ? 'var(--secondary-shadow)'
       : 'var(--primary-shadow)'};
-  display: ${(props) => (props.width === '100' ? 'block' : 'inline')};
-  margin: 20px auto;
-  font-size: 1.21rem;
-  text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
-  height: 50px;
-  padding: 10px;
+  font-size: 1.21em;
+  text-decoration: none;
   border: none;
   border-radius: 39px;
+  height: 50px;
+  padding: 10px;
+  margin: 20px auto;
 
   &:disabled {
     background: ${(props) => {

@@ -6,6 +6,12 @@ import FloatingButtonContainer from '../common/FloatingButtonContainer'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 import { ReactComponent as IntroImg } from '../img/journal.svg'
 import JournalCard from './JournalCard'
+import PropTypes from 'prop-types'
+
+JournalList.propTypes = {
+  journalEntries: PropTypes.arrayOf(PropTypes.object).isRequired,
+  deleteJournalEntry: PropTypes.func.isRequired,
+}
 
 export default function JournalList({ journalEntries, deleteJournalEntry }) {
   return (

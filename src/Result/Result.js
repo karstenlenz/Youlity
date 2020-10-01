@@ -116,8 +116,8 @@ export default function Result({ questionnaireIds, results }) {
 
 const IntroImgStyled = styled(IntroImg)`
   display: block;
-  margin: 0 auto;
   max-width: 300px;
+  margin: 0 auto;
 `
 
 const ResultIntro = styled.p`

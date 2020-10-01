@@ -1,6 +1,12 @@
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
 import React from 'react'
+import PropTypes from 'prop-types'
+
+FloatingButtonContainer.propTypes = {
+  children: PropTypes.any.isRequired,
+  to: PropTypes.string.isRequired,
+}
 
 export default function FloatingButtonContainer({ children, to }) {
   return (
@@ -12,13 +18,13 @@ export default function FloatingButtonContainer({ children, to }) {
 }
 
 const ButtonContainer = styled(Link)`
+  z-index: var(--floating-button);
   position: fixed;
-  max-width: 900px;
   left: 0;
   right: 0;
   bottom: 0;
+  max-width: 900px;
   padding: 0 15px;
-  z-index: var(--floating-button);
   background: linear-gradient(
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 1) 100%
@@ -26,9 +32,9 @@ const ButtonContainer = styled(Link)`
 
   @media screen and (min-width: 750px) {
     width: 100%;
-    margin-left: -15px;
     left: auto;
     right: auto;
+    margin-left: -15px;
   }
 `
 const BottomSpacer = styled.div`

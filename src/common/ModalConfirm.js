@@ -1,19 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components/macro'
 import Button from './Button'
+import IconButton from './IconButton'
+import useModal from './useModal'
 
 export default function ModalConfirm({ handleDelete, id }) {
-  const [isOverlayVisible, setIsOverlayVisible] = useState(false)
+  const { isOverlayVisible, toggleOverlay } = useModal()
 
   const appRoot = document.querySelector('#root')
-
-  useEffect(() => {
-    if (isOverlayVisible) {
-      document.body.style.overflow = 'hidden'
-    }
-    return () => (document.body.style.overflow = 'unset')
-  }, [isOverlayVisible])
 
   return (
     <>
@@ -32,10 +27,10 @@ export default function ModalConfirm({ handleDelete, id }) {
                   Einträge können nicht wiederhergestellt werden
                 </p>
                 <ButtonPair>
-                  <Button btnType="white" width="47.5" onClick={toggleOverlay}>
+                  <Button btnType="white" width="45" onClick={toggleOverlay}>
                     Abbrechen
                   </Button>
-                  <Button width="47.5" onClick={handleDelete}>
+                  <Button width="45" onClick={() => handleDelete(id)}>
                     Ja
                   </Button>
                 </ButtonPair>
@@ -45,27 +40,18 @@ export default function ModalConfirm({ handleDelete, id }) {
         </>,
         appRoot
       )}
-      <IconButton onClick={toggleOverlay}>
+      <DeleteButton onClick={toggleOverlay}>
         <img alt="Eintrag löschen" src="/img/delete.svg" />
-      </IconButton>
+      </DeleteButton>
     </>
   )
-
-  function toggleOverlay(event) {
-    event.stopPropagation()
-    setIsOverlayVisible(!isOverlayVisible)
-  }
 }
 
-const IconButton = styled.button`
-  width: 40px;
-  height: 40px;
+const DeleteButton = styled(IconButton)`
   padding: 0;
   position: absolute;
   right: 0;
   top: 0;
-  background: none;
-  border: none;
 `
 
 const OverLayBG = styled.div`

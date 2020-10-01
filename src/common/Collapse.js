@@ -37,11 +37,11 @@ const CollapseWrapper = styled.section`
 const CollapseHeader = styled.div`
   position: relative;
   height: 40px;
-  padding: 8px;
+  border-radius: 12px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
-  border-radius: 12px;
   background: var(--secondary);
+  padding: 8px;
 `
 
 const CollapseIcon = styled.img`
@@ -54,7 +54,7 @@ const CollapseIcon = styled.img`
 const CollapseContent = styled.div`
   display: ${(props) => (props.isOpen ? 'block' : 'none')};
   border-top: 10px solid var(--secondary);
+  box-shadow: var(--primary-shadow);
   padding: 15px;
   margin-top: -10px;
-  box-shadow: var(--primary-shadow);
 `

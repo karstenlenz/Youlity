@@ -15,9 +15,9 @@ export default function BackButton() {
 }
 
 const ButtonContainer = styled.div`
+  z-index: var(--floating-button);
   position: fixed;
   left: 15px;
   right: 15px;
   bottom: 0;
-  z-index: var(--floating-button);
 `

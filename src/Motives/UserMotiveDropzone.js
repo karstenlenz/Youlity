@@ -12,10 +12,10 @@ export const UserMotiveDropzone = React.forwardRef(
 const DropzoneBG = styled.div`
   position: relative;
   border: 1px dashed var(--medium-grey);
+  border-radius: 12px;
   background: ${(props) =>
     props.isDraggingOver ? 'var(--light-grey)' : 'white'};
   min-height: 60px;
-  border-radius: 12px;
 
   &:nth-child(1):before {
     font-family: 'Ubuntu', sans-serif;

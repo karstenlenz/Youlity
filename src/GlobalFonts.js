@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components/macro'
 
 export default createGlobalStyle`
-/* cabin-regular - latin */
+
 @font-face {
   font-family: 'Cabin';
   font-style: normal;
@@ -17,7 +17,6 @@ export default createGlobalStyle`
   font-display: swap;
 }
 
-/* ubuntu-regular - latin */
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
@@ -32,6 +31,4 @@ export default createGlobalStyle`
        url('/fonts/ubuntu-v15-latin-regular.svg#Ubuntu') format('svg'); /* Legacy iOS */
   font-display: swap;
 }
-
-
 `

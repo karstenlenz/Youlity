@@ -6,7 +6,6 @@ import Questionnaire from './Questionnaire'
 export default function QuestionnaireEntryPage() {
   const { questionnaireIds, results } = useParams()
   const previousResults = results
-  const resultsArray = results ? results.split('').join('') : []
   const testIds = questionnaireIds.split('').map((id) => parseInt(id))
   const firstTwoIds = testIds.slice(0, 2)
   const first2QuestionSets = firstTwoIds.map(
@@ -17,7 +16,7 @@ export default function QuestionnaireEntryPage() {
     : []
   const history = useHistory()
 
-  return resultsArray.length > 0 ? (
+  return results?.length > 0 ? (
     <Questionnaire
       questionSets={nextQuestionSet}
       handleResults={handleResults}

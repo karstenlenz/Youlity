@@ -49,7 +49,6 @@ export default function ExtendedResult({ questionnaireIds, results }) {
           </Link>
         ))}
       </section>
-
       {9 - results.length > 0 ? (
         <>
           {9 - results.length === 1 ? (
@@ -63,17 +62,6 @@ export default function ExtendedResult({ questionnaireIds, results }) {
           <Link to={'/questionnaire/entry/' + questionnaireIds + '/' + results}>
             <Button>Weiteren Fragebogen starten</Button>
           </Link>
-          <SectionBGWithButton>
-            <h2>Tagebuch</h2>
-            <p>
-              Sind Sie manchmal unzufrieden mit Ihrer Persönlichkeit? Unsere
-              Tagebuch-Funktion hilft Ihnen, Ihr Verhalten zu analysieren und
-              dadurch erste Schritte zu einer Veränderung anzustoßen.
-            </p>
-            <Link to="/journal">
-              <Button btnType="secondary">Zum Tagebuch</Button>
-            </Link>
-          </SectionBGWithButton>
         </>
       ) : (
         <>
@@ -88,20 +76,20 @@ export default function ExtendedResult({ questionnaireIds, results }) {
           <TextLinkWithMargin href="https://www.wege-zur-psychotherapie.org/">
             Infoseite "Wege zur Psychotherapie" &gt;
           </TextLinkWithMargin>
-          <SectionBGWithButton>
-            <h2>Tagebuch</h2>
-            <p>
-              Sind Sie manchmal unzufrieden mit Ihrer Persönlichkeit? Unsere
-              Tagebuch-Funktion hilft Ihnen, Ihr Verhalten zu analysieren und
-              dadurch erste Schritte zu einer Veränderung anzustoßen.
-            </p>
-            <Link to="/journal">
-              <Button btnType="secondary">Zum Tagebuch</Button>
-            </Link>
-          </SectionBGWithButton>
           <BottomSpacer />
         </>
       )}
+      <SectionBGWithButton>
+        <h2>Tagebuch</h2>
+        <p>
+          Sind Sie manchmal unzufrieden mit Ihrer Persönlichkeit? Unsere
+          Tagebuch-Funktion hilft Ihnen, Ihr Verhalten zu analysieren und
+          dadurch erste Schritte zu einer Veränderung anzustoßen.
+        </p>
+        <Link to="/journal">
+          <Button btnType="secondary">Zum Tagebuch</Button>
+        </Link>
+      </SectionBGWithButton>
     </>
   )
 }

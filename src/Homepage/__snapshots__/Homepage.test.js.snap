@@ -37,7 +37,7 @@ exports[`The Homepage component renders correctly 1`] = `
     class="Collapse__CollapseWrapper-sc-1tgbx39-0 imOYVX"
   >
     <div
-      class="Collapse__CollapseHeader-sc-1tgbx39-1 hKtGZf"
+      class="Collapse__CollapseHeader-sc-1tgbx39-1 iWtOZL"
     >
       Was sind Persönlichkeitsstile?
       <img
@@ -47,7 +47,7 @@ exports[`The Homepage component renders correctly 1`] = `
       />
     </div>
     <div
-      class="Collapse__CollapseContent-sc-1tgbx39-3 domdvA"
+      class="Collapse__CollapseContent-sc-1tgbx39-3 hPRoM"
     >
       <p>
         Die Psychologie hat sich lange hauptsächlich mit Persönlichkeits-
@@ -70,13 +70,13 @@ exports[`The Homepage component renders correctly 1`] = `
     class="Homepage__CardContainer-ye7llx-5 dMFNa-D"
   >
     <div
-      class="Card__CardBG-sc-1k8174e-0 hOcFsr"
+      class="Card__CardBG-sc-1k8174e-0 dZRenL"
     >
       <div
         class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
       >
         <span
-          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 eGCGLG"
           color="green"
         >
           Your
@@ -84,7 +84,7 @@ exports[`The Homepage component renders correctly 1`] = `
         </span>
          
         <span
-          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 idxAxg"
         >
           Personality
         </span>
@@ -99,7 +99,7 @@ exports[`The Homepage component renders correctly 1`] = `
         Der Youlity-Test
       </h2>
       <ul
-        class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
+        class="BulletList__ListContainer-sc-1r3lk85-0 hMJFqi"
       >
         <li>
           Entdecken Sie Ihre individuellen Persönlichkeitsstile.
@@ -118,7 +118,7 @@ exports[`The Homepage component renders correctly 1`] = `
           href="/motives/intro"
         >
           <button
-            class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+            class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
             width="100"
           >
             Test starten
@@ -127,13 +127,13 @@ exports[`The Homepage component renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="Card__CardBG-sc-1k8174e-0 hOcFsr"
+      class="Card__CardBG-sc-1k8174e-0 dZRenL"
     >
       <div
         class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
       >
         <span
-          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 eGCGLG"
           color="green"
         >
           Your
@@ -141,7 +141,7 @@ exports[`The Homepage component renders correctly 1`] = `
         </span>
          
         <span
-          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
+          class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 idxAxg"
         >
           Reality
         </span>
@@ -156,7 +156,7 @@ exports[`The Homepage component renders correctly 1`] = `
         Das Youlity-Tagebuch
       </h2>
       <ul
-        class="BulletList__ListContainer-sc-1r3lk85-0 FqDGi"
+        class="BulletList__ListContainer-sc-1r3lk85-0 hMJFqi"
       >
         <li>
           Notieren Sie sich Situationen, in denen sich Ihre Persönlichkeit widerspiegelt.
@@ -175,7 +175,7 @@ exports[`The Homepage component renders correctly 1`] = `
           href="/journal"
         >
           <button
-            class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+            class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
             width="100"
           >
             Tagebuch öffnen
@@ -188,7 +188,7 @@ exports[`The Homepage component renders correctly 1`] = `
     class="BrandHeadline__Wrapper-sc-1gsl6zz-0 kOqNrf"
   >
     <span
-      class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 jRapDq"
+      class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 eGCGLG"
       color="green"
     >
       Your
@@ -196,7 +196,7 @@ exports[`The Homepage component renders correctly 1`] = `
     </span>
      
     <span
-      class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 burcIk"
+      class="BrandHeadline__SpanStyled-sc-1gsl6zz-1 idxAxg"
     >
       Quality
     </span>
@@ -218,7 +218,7 @@ exports[`The Homepage component renders correctly 1`] = `
     </svg>
   </section>
   <ul
-    class="BulletList__ListContainer-sc-1r3lk85-0 kxqqwb"
+    class="BulletList__ListContainer-sc-1r3lk85-0 jlyEoH"
   >
     <li>
       <h3>
@@ -246,16 +246,16 @@ exports[`The Homepage component renders correctly 1`] = `
     </li>
   </ul>
   <small
-    class="FinePrint__SmallStyled-sc-1oy87bz-0 bIdxte"
+    class="FinePrint__SmallStyled-sc-1oy87bz-0 gdFdOa"
   >
     Hinweis: Unser Angebot ersetzt keine psychologische Beratung. Wenn Sie unter psychischen Problemen leiden, suchen Sie sich bitte professionelle Hilfe.
   </small>
   <a
-    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 hTXSTP"
+    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 kjwBa-D"
     href="/motives/intro"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+      class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
       width="100"
     >
       Test starten

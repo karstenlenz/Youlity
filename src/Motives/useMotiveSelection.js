@@ -33,32 +33,14 @@ export function useMotiveSelection() {
     }
   }, [motives])
 
-  function handleMotiveClick(event, motiveId, droppableId) {
-    if (droppableId === 'motives-list') {
+  function handleMotiveClick(motiveId, droppableId) {
+    if (droppableId === 'list') {
       if (motives.slot1.length === 0) {
-        const newMotives = { ...motives }
-        newMotives.slot1 = [motiveId]
-        const newMotivesList = [...motives.list].filter(
-          (motive) => motive !== motiveId
-        )
-        newMotives.list = newMotivesList
-        setMotives(newMotives)
+        addMotive('slot1', motiveId)
       } else if (motives.slot2.length === 0) {
-        const newMotives = { ...motives }
-        newMotives.slot2 = [motiveId]
-        const newMotivesList = [...motives.list].filter(
-          (motive) => motive !== motiveId
-        )
-        newMotives.list = newMotivesList
-        setMotives(newMotives)
+        addMotive('slot2', motiveId)
       } else if (motives.slot3.length === 0) {
-        const newMotives = { ...motives }
-        newMotives.slot3 = [motiveId]
-        const newMotivesList = [...motives.list].filter(
-          (motive) => motive !== motiveId
-        )
-        newMotives.list = newMotivesList
-        setMotives(newMotives)
+        addMotive('slot3', motiveId)
       }
     } else {
       const newMotives = { ...motives }
@@ -66,6 +48,16 @@ export function useMotiveSelection() {
       newMotives.list.push(motiveId)
       setMotives(newMotives)
     }
+  }
+
+  function addMotive(slot, motiveId) {
+    const newMotives = { ...motives }
+    newMotives[slot] = [motiveId]
+    const newMotivesList = [...motives.list].filter(
+      (motive) => motive !== motiveId
+    )
+    newMotives.list = newMotivesList
+    setMotives(newMotives)
   }
 
   function onDragStart() {
@@ -80,28 +72,8 @@ export function useMotiveSelection() {
     }
 
     // assign the correct states to to source and destination
-    let sourceState
-    let destinationState
-
-    if (result.source.droppableId === 'slot1') {
-      sourceState = 'slot1'
-    } else if (result.source.droppableId === 'slot2') {
-      sourceState = 'slot2'
-    } else if (result.source.droppableId === 'slot3') {
-      sourceState = 'slot3'
-    } else if (result.source.droppableId === 'motives-list') {
-      sourceState = 'list'
-    }
-
-    if (result.destination.droppableId === 'slot1') {
-      destinationState = 'slot1'
-    } else if (result.destination.droppableId === 'slot2') {
-      destinationState = 'slot2'
-    } else if (result.destination.droppableId === 'slot3') {
-      destinationState = 'slot3'
-    } else if (result.destination.droppableId === 'motives-list') {
-      destinationState = 'list'
-    }
+    const sourceState = result.source.droppableId
+    const destinationState = result.destination.droppableId
 
     // drop a list item on same list => trigger reorder
     if (result.destination.droppableId === result.source.droppableId) {

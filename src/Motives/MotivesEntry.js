@@ -25,7 +25,7 @@ export default function MotivesEntry() {
       <HeadlineUnderline>
         <h1>Schritt 1: Bedürfnisse</h1>
       </HeadlineUnderline>
-      <SmallH2 as="h2">
+      <SmallH2>
         Wählen Sie bitte intuitiv die drei Bedürfnisse aus, die für Sie am
         Wichtigsten sind. Sie können die Bedürfnisse hin- und herziehen oder
         anklicken.
@@ -40,7 +40,7 @@ export default function MotivesEntry() {
           />
         ))}
       </MotiveBG>
-      <Droppable droppableId="motives-list">
+      <Droppable droppableId="list">
         {(provided, snapshot) => (
           <MotivesList
             ref={provided.innerRef}
@@ -49,9 +49,9 @@ export default function MotivesEntry() {
           >
             {motives.list?.map((motive, index) => (
               <MotiveItem
-                droppableId="motives-list"
+                droppableId="list"
                 onClick={handleMotiveClick}
-                key={'motives-list' + motive}
+                key={'list' + motive}
                 index={index}
                 isDragDisabled={motives.slot1 && motives.slot2 && motives.slot3}
                 motiveIndex={motive - 1}
@@ -66,11 +66,11 @@ export default function MotivesEntry() {
       <FloatingButtonContainer to={questionnaireUrl}>
         <Button
           isButtonDisabled={
-            motives.slot1.length === 1 &&
-            motives.slot2.length === 1 &&
-            motives.slot3.length === 1
-              ? false
-              : true
+            !(
+              motives.slot1.length === 1 &&
+              motives.slot2.length === 1 &&
+              motives.slot3.length === 1
+            )
           }
           btnType="primary"
         >
@@ -81,7 +81,7 @@ export default function MotivesEntry() {
   )
 }
 
-const SmallH2 = styled.h6`
+const SmallH2 = styled.h2`
   font-size: 1em;
   margin-top: 0;
 `
@@ -93,20 +93,24 @@ const MotiveBG = styled.section`
   grid-template-areas:
     '. . one one one one . .'
     ' two two two two three three three three';
+  gap: 15px;
   background: var(--secondary);
+  min-height: 80px;
   margin: 0 -15px;
   padding: 30px 15px;
-  min-height: 80px;
-  gap: 15px;
+
   > div {
     width: 100% !important;
   }
+
   > :nth-child(1) {
     grid-area: one;
   }
+
   > :nth-child(2) {
     grid-area: two;
   }
+
   > :nth-child(3) {
     grid-area: three;
   }

@@ -28,11 +28,11 @@ exports[`The QuestionnaireIntro component renders correctly 1`] = `
     Im Folgenden präsentieren wir Ihnen als Ergebnis Ihrer Auswahl zwei Fragebögen. Diese sind auf Sie angepasst. Bitte beantworten Sie alle 16 Fragen. Sie helfen, Ihre zentralen Persönlichkeitsaspekte besser einzuschätzen. Alle Fragen sind Ja/Nein-Fragen. Die Bearbeitungszeit pro Fragebogen beträgt circa drei Minuten.
   </p>
   <a
-    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 hTXSTP"
+    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 kjwBa-D"
     href="/questionnaire/entry/undefined/"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 jyIaa-D"
+      class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
       width="100"
     >
       Weiter zur Auswahl

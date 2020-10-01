@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react'
 import React from 'react'
-import ResultBar from './ResultBar'
+import BackButton from './BackButton'
 
-describe('The ResultBar component', () => {
+describe('The BackButton component', () => {
   it('renders correctly', () => {
-    const { container } = render(<ResultBar percentage={50} />)
+    const { container } = render(<BackButton />)
     expect(container).toMatchSnapshot()
   })
 })

@@ -1,5 +1,11 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components/macro'
+import PropTypes from 'prop-types'
+
+ResultBar.propTypes = {
+  percentage: PropTypes.number,
+  index: PropTypes.number,
+}
 
 export default function ResultBar({ percentage, index }) {
   return (
