@@ -65,7 +65,7 @@ const Card = styled.div`
   border-radius: 12px;
   box-shadow: var(--primary-shadow);
   width: 100%;
-  max-width: 72.5%;
+  max-width: 60%;
   min-height: 200px;
   margin: auto;
   padding: 20px;
