@@ -6,7 +6,7 @@ exports[`The Result component renders correctly 1`] = `
     class="NoticeBox__SectionStyled-sc-87rj1i-0 kftwUj"
   >
     <button
-      class="NoticeBox__CloseButton-sc-87rj1i-1 eNuUKw"
+      class="IconButton__ButtonContainer-sc-47n1yg-0 jCeVKT NoticeBox__CloseButton-sc-87rj1i-1 exIQlb"
     >
       <img
         alt="close overlay"
@@ -29,7 +29,7 @@ exports[`The Result component renders correctly 1`] = `
     </a>
   </section>
   <svg
-    class="Result__IntroImgStyled-sc-19vma1i-0 jElWtw"
+    class="Result__IntroImgStyled-sc-19vma1i-0 kEeMbE"
     title=""
   >
     style_info.svg

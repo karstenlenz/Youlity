@@ -23,7 +23,7 @@ export default function ({
           ref={provided.innerRef}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
-          onClick={(event) => onClick(event, motiveIndex + 1, droppableId)}
+          onClick={() => onClick(motiveIndex + 1, droppableId)}
           style={getStyle(provided.draggableProps.style, snapshot)}
           isDragging={snapshot.isDragging}
         >

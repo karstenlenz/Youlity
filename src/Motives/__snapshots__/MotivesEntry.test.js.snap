@@ -30,21 +30,21 @@ exports[`The Motives component renders correctly 1`] = `
       class="MotivesEntry__MotiveBG-zdirr-1 kpggCm"
     >
       <div
-        class="UserMotiveDropzone__DropzoneBG-jv6lv-0 cFWTRG"
+        class="UserMotiveDropzone__DropzoneBG-jv6lv-0 fTLFAu"
       >
         <div
           class="HideElement-m9nwk9-0 hYebHX"
         />
       </div>
       <div
-        class="UserMotiveDropzone__DropzoneBG-jv6lv-0 cFWTRG"
+        class="UserMotiveDropzone__DropzoneBG-jv6lv-0 fTLFAu"
       >
         <div
           class="HideElement-m9nwk9-0 hYebHX"
         />
       </div>
       <div
-        class="UserMotiveDropzone__DropzoneBG-jv6lv-0 cFWTRG"
+        class="UserMotiveDropzone__DropzoneBG-jv6lv-0 fTLFAu"
       >
         <div
           class="HideElement-m9nwk9-0 hYebHX"
@@ -52,7 +52,7 @@ exports[`The Motives component renders correctly 1`] = `
       </div>
     </section>
     <div
-      class="MotivesList__MotiveContainer-sc-935jjf-0 jbKbTJ"
+      class="MotivesList__MotiveContainer-sc-935jjf-0 hjFBMV"
     >
       <div
         aria-describedby="rbd-hidden-text-0-hidden-text-0"

@@ -4,7 +4,7 @@ import ResultBar from './ResultBar'
 
 describe('The ResultBar component', () => {
   it('renders correctly', () => {
-    const { container } = render(<ResultBar percentage="50" />)
+    const { container } = render(<ResultBar percentage={50} />)
     expect(container).toMatchSnapshot()
   })
 })

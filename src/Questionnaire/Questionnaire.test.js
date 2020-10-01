@@ -38,19 +38,19 @@ describe('The questionnaire component', () => {
 })
 
 describe('countYes', () => {
-  it('counts all the yesses', () => {
+  it('counts all the trues', () => {
     const testAnswers = [true, true, true, true, true, true, true, true]
     const result = countYes(testAnswers)
     expect(result).toEqual(8)
   })
 
-  it('doesnt count all the noes', () => {
+  it('doesnt count all the falses', () => {
     const testAnswers = [false, false, false, false, false, false, false, false]
     const result = countYes(testAnswers)
     expect(result).toEqual(0)
   })
 
-  it('only counts the yesses', () => {
+  it('only counts the trues', () => {
     const testAnswers = [false, true, false, true, true, false, false, false]
     const result = countYes(testAnswers)
     expect(result).toEqual(3)

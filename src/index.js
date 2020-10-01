@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker'
 import GlobalStyles from './GlobalStyles'
 import GlobalFonts from './GlobalFonts'
 import { BrowserRouter as Router } from 'react-router-dom'
-import ScrollToTop from './ScrollToTop'
+import ScrollToTop from './common/ScrollToTop'
 
 ReactDOM.render(
   <>

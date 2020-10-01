@@ -2,9 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  <main
-    class="App__AppMain-sc-8vgfik-0 lyLVG"
-  >
+  <main>
     <svg
       class="Homepage__MirrorStyled-ye7llx-2 fnfAef"
       title=""

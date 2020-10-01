@@ -33,7 +33,7 @@ export function useMotiveSelection() {
     }
   }, [motives])
 
-  function handleMotiveClick(_, motiveId, droppableId) {
+  function handleMotiveClick(motiveId, droppableId) {
     if (droppableId === 'list') {
       if (motives.slot1.length === 0) {
         addMotive('slot1', motiveId)

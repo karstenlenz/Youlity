@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import styled from 'styled-components/macro'
 import Header from './common/Header'
 import Homepage from './Homepage/Homepage'
 import JournalForm from './Journal/JournalForm'
@@ -28,7 +27,7 @@ export default function App() {
           <Header />
         </Route>
       </Switch>
-      <AppMain>
+      <main>
         <Switch>
           <Route path="/journal/entry">
             <JournalForm createJournalEntry={createJournalEntry} />
@@ -61,11 +60,7 @@ export default function App() {
             <Homepage />
           </Route>
         </Switch>
-      </AppMain>
+      </main>
     </>
   )
 }
-
-const AppMain = styled.main`
-  overflow-x: hidden;
-`
