@@ -50,8 +50,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
             >
-              75
-              % Übereinstimmung
+              deutlich ausgeprägt
             </p>
           </div>
         </div>
@@ -79,8 +78,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
             >
-              50
-              % Übereinstimmung
+              wenig ausgeprägt
             </p>
           </div>
         </div>
@@ -108,8 +106,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
             >
-              25
-              % Übereinstimmung
+              Nicht ausgeprägt
             </p>
           </div>
         </div>
@@ -137,8 +134,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
             >
-              25
-              % Übereinstimmung
+              Nicht ausgeprägt
             </p>
           </div>
         </div>

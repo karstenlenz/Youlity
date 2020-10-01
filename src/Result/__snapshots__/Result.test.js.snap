@@ -2,32 +2,6 @@
 
 exports[`The Result component renders correctly 1`] = `
 <div>
-  <section
-    class="NoticeBox__SectionStyled-sc-87rj1i-0 kftwUj"
-  >
-    <button
-      class="IconButton__ButtonContainer-sc-47n1yg-0 jCeVKT NoticeBox__CloseButton-sc-87rj1i-1 exIQlb"
-    >
-      <img
-        alt="close overlay"
-        src="/img/close.svg"
-      />
-    </button>
-    <h3>
-      Hinweis
-    </h3>
-    <p>
-      Unser Testergebnis stellt nur eine Tendenz dar und ersetzt keine psychologische Beratung. Wenn Sie sich unwohl fühlen, holen Sie sich professionelle Hilfe.
-      <br />
-      <br />
-    </p>
-    <a
-      class="TextLink__LinkStyled-sc-1a9sgio-0 eXUZha"
-      href="https://www.wege-zur-psychotherapie.org/"
-    >
-      Infoseite "Wege zur Psychotherapie" &gt;
-    </a>
-  </section>
   <svg
     class="Result__IntroImgStyled-sc-19vma1i-0 kEeMbE"
     title=""
@@ -50,106 +24,290 @@ exports[`The Result component renders correctly 1`] = `
       underline.svg
     </svg>
   </section>
+  <h2>
+    Sie sind
+     
+    selbstbewusst.
+  </h2>
   <p
     class="Result__ResultIntro-sc-19vma1i-1 ijCUam"
   >
-    Sie haben eben Tests für folgende Persönlichkeitsstile ausgefüllt:
+    Sie haben bisher Tests für folgende Persönlichkeitsstile ausgefüllt:
   </p>
-  <section
-    class="SectionBG__Background-sc-164jup7-0 jucRXy"
-  >
-    <h3>
-      Der selbstbewusste Persönlichkeitsstil
-    </h3>
-    <div
-      class="ResultBar__Outline-sc-479x3f-1 echTYD"
-    >
-      <div
-        class="ResultBar__ColorBar-sc-479x3f-2 gUwDrH"
-      >
-        <p
-          class="ResultBar__Text-sc-479x3f-0 bCfkyT"
-        >
-          75
-          % Übereinstimmung
-        </p>
-      </div>
-    </div>
-    <p
-      class="Result__StyleText-sc-19vma1i-2 brizaG"
-    >
-      Sie haben eine hohe Übereinstimmung mit diesem Persönlichkeitsstil. 
-      <br />
-      Das heißt nicht, dass etwas mit Ihnen „nicht stimmt“, oder eine Störung vorliegt! Jeder Mensch hat einen oder mehrere dominante Persönlichkeitsstile. Erst wenn Sie unter Ihrer Persönlichkeit leiden, besteht Handlungsbedarf. 
-      <br />
-      Lesen Sie sich die folgenden Informationen durch und prüfen Sie ehrlich, ob die Beschreibungen auf Sie zutreffen.
-    </p>
+  <section>
     <a
-      class="TextLink__LinkStyled-sc-1a9sgio-0 eXUZha"
       href="/style-info/1"
     >
-      Zu den Informationen &gt;
-    </a>
-  </section>
-  <section
-    class="SectionBG__Background-sc-164jup7-0 jucRXy"
-  >
-    <h3>
-      Der sprunghafte Persönlichkeitsstil
-    </h3>
-    <div
-      class="ResultBar__Outline-sc-479x3f-1 echTYD"
-    >
-      <div
-        class="ResultBar__ColorBar-sc-479x3f-2 fqhHNn"
+      <section
+        class="Result__ResultSection-sc-19vma1i-3 eGUjwN"
       >
-        <p
-          class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+        <h3
+          class="Result__ResultHeadline-sc-19vma1i-4 cNHSwT"
         >
-          50
-          % Übereinstimmung
-        </p>
-      </div>
-    </div>
-    <p
-      class="Result__StyleText-sc-19vma1i-2 brizaG"
-    >
-      Das deutet 
-      <strong>
-        wahrscheinlich nicht
-      </strong>
-       darauf hin, dass dieser Stil bei Ihnen stark ausgeprägt ist.
-      <br />
-       Sie können sich die Beschreibung des Persönlichkeitsstil trotzdem gerne durchlesen und prüfen, ob Sie sich damit identifizieren können.
-    </p>
+          Selbstbewusst
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 gUwDrH"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+            >
+              deutlich ausgeprägt
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
     <a
-      class="TextLink__LinkStyled-sc-1a9sgio-0 eXUZha"
       href="/style-info/9"
     >
-      Zu den Informationen &gt;
+      <section
+        class="Result__ResultSection-sc-19vma1i-3 eGUjwN"
+      >
+        <h3
+          class="Result__ResultHeadline-sc-19vma1i-4 cNHSwT"
+        >
+          Sprunghaft
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 fqhHNn"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+            >
+              wenig ausgeprägt
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+    <a
+      href="/style-info/2"
+    >
+      <section
+        class="Result__ResultSection-sc-19vma1i-3 eGUjwN"
+      >
+        <h3
+          class="Result__ResultHeadline-sc-19vma1i-4 cNHSwT"
+        >
+          Gesellig
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 zLyHQ"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+            >
+              Noch nicht getestet
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+    <a
+      href="/style-info/8"
+    >
+      <section
+        class="Result__ResultSection-sc-19vma1i-3 eGUjwN"
+      >
+        <h3
+          class="Result__ResultHeadline-sc-19vma1i-4 cNHSwT"
+        >
+          Wachsam
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 fWVpbL"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+            >
+              Noch nicht getestet
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+    <a
+      href="/style-info/3"
+    >
+      <section
+        class="Result__ResultSection-sc-19vma1i-3 eGUjwN"
+      >
+        <h3
+          class="Result__ResultHeadline-sc-19vma1i-4 cNHSwT"
+        >
+          Anhänglich
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 ivvhLt"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+            >
+              Noch nicht getestet
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+    <a
+      href="/style-info/7"
+    >
+      <section
+        class="Result__ResultSection-sc-19vma1i-3 eGUjwN"
+      >
+        <h3
+          class="Result__ResultHeadline-sc-19vma1i-4 cNHSwT"
+        >
+          Gewissenhaft
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 kehGSJ"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+            >
+              Noch nicht getestet
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+    <a
+      href="/style-info/6"
+    >
+      <section
+        class="Result__ResultSection-sc-19vma1i-3 eGUjwN"
+      >
+        <h3
+          class="Result__ResultHeadline-sc-19vma1i-4 cNHSwT"
+        >
+          Ungesellig
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 ihBHIz"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+            >
+              Noch nicht getestet
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+    <a
+      href="/style-info/4"
+    >
+      <section
+        class="Result__ResultSection-sc-19vma1i-3 eGUjwN"
+      >
+        <h3
+          class="Result__ResultHeadline-sc-19vma1i-4 cNHSwT"
+        >
+          Sensibel
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 kImkNG"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+            >
+              Noch nicht getestet
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+    <a
+      href="/style-info/5"
+    >
+      <section
+        class="Result__ResultSection-sc-19vma1i-3 eGUjwN"
+      >
+        <h3
+          class="Result__ResultHeadline-sc-19vma1i-4 cNHSwT"
+        >
+          Lässig
+           
+          &gt;
+        </h3>
+        <div
+          class="ResultBar__Outline-sc-479x3f-1 echTYD"
+        >
+          <div
+            class="ResultBar__ColorBar-sc-479x3f-2 jHgcJo"
+          >
+            <p
+              class="ResultBar__Text-sc-479x3f-0 bCfkyT"
+            >
+              Noch nicht getestet
+            </p>
+          </div>
+        </div>
+      </section>
+    </a>
+    <p>
+      Sie haben im bereits Fragebögen zu
+       
+      <strong>
+        2
+         von 9
+      </strong>
+       
+      Persönlichkeitsstilen ausgefüllt. Häufig sind die ersten Fragebögen die relevantesten. Sie können noch weitere Fragebögen ausfüllen, um zu erfahren, wie stark die weiteren Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen haben wenige, dafür stark ausgeprägte Stile, andere mehrere, jeweils weniger stark ausgeprägte Stile.
+    </p>
+    <a
+      href="/questionnaire/entry/192837645/64"
+    >
+      <button
+        class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
+        width="100"
+      >
+        Weiteren Fragebogen starten
+      </button>
     </a>
   </section>
-  <h3>
-    Weitere Fragebögen
-  </h3>
-  <p>
-    Sie haben im ersten Schritt Fragebögen zu 
-    <strong>
-      2 von 9
-    </strong>
-     
-    Persönlichkeitsstilen ausgefüllt. Meist werden damit die für Sie relevantesten Persönlichkeitsstile abgedeckt. Sie können noch weitere Fragebögen ausfüllen, um zu erfahren, wie stark die weiteren Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen haben wenige, dafür stark ausgeprägte Stile, andere mehrere, jeweils weniger stark ausgeprägte Stile.
-  </p>
-  <a
-    href="/questionnaire/entry/1928373645/64"
-  >
-    <button
-      class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
-      width="100"
-    >
-      Weiteren Fragebogen starten
-    </button>
-  </a>
   <section
     class="SectionBGWithButton__Background-sc-11viaht-0 llKPXe"
   >
@@ -170,8 +328,38 @@ exports[`The Result component renders correctly 1`] = `
       </button>
     </a>
   </section>
+  <h3>
+    Hinweis
+  </h3>
   <p>
-    Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese Seite im Browser als Lesezeichen speichern, um diese Informationen erneut aufzurufen.
+    Unser Testergebnis stellt nur eine Tendenz dar und ersetzt keine psychologische Beratung. Wenn Sie sich unwohl fühlen, holen Sie sich professionelle Hilfe.
+    <br />
+    <br />
   </p>
+  <a
+    class="TextLink__LinkStyled-sc-1a9sgio-0 eXUZha"
+    href="https://www.wege-zur-psychotherapie.org/"
+  >
+    Infoseite "Wege zur Psychotherapie" &gt;
+  </a>
+  <small
+    class="FinePrint__SmallStyled-sc-1oy87bz-0 gdFdOa"
+  >
+    Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese Seite im Browser als Lesezeichen speichern, um diese Informationen erneut aufzurufen.
+  </small>
+  <a
+    class="FloatingButtonContainer__ButtonContainer-slkv4p-0 kjwBa-D"
+    href="/questionnaire/entry/192837645/64"
+  >
+    <button
+      class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
+      width="100"
+    >
+      Weiteren Fragebogen starten
+    </button>
+  </a>
+  <div
+    class="FloatingButtonContainer__BottomSpacer-slkv4p-1 hgDFeh"
+  />
 </div>
 `;

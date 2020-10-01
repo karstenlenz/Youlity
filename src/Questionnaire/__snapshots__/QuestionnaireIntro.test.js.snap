@@ -25,7 +25,7 @@ exports[`The QuestionnaireIntro component renders correctly 1`] = `
     </svg>
   </section>
   <p>
-    Im Folgenden präsentieren wir Ihnen als Ergebnis Ihrer Auswahl zwei Fragebögen. Diese sind auf Sie angepasst. Bitte beantworten Sie alle 16 Fragen. Sie helfen, Ihre zentralen Persönlichkeitsaspekte besser einzuschätzen. Alle Fragen sind Ja/Nein-Fragen. Die Bearbeitungszeit pro Fragebogen beträgt circa drei Minuten.
+    Im Folgenden präsentieren wir Ihnen als Ergebnis Ihrer Auswahl Fragebögen zu 2 Persönlichkeitsstilen. Bitte beantworten Sie alle 16 Fragen. Sie helfen, Ihre zentralen Persönlichkeitsaspekte besser einzuschätzen. Alle Fragen sind Ja/Nein-Fragen. Die Bearbeitungszeit pro Fragebogen beträgt circa drei Minuten.
   </p>
   <a
     class="FloatingButtonContainer__ButtonContainer-slkv4p-0 kjwBa-D"
