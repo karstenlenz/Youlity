@@ -43,20 +43,25 @@ export default function Result({ questionnaireIds, results }) {
       <HeadlineUnderline>
         <h1>Ergebnis</h1>
       </HeadlineUnderline>
-      <h2>
-        Sie sind{' '}
-        {positiveStyleNames.reduce((result, name, index) => {
-          if (positiveStyleNames.length === 1) {
-            return result + name + '.'
-          } else if (index === positiveStyleNames.length - 1) {
-            return result + ' und ' + name + '.'
-          } else {
-            return result + name + ', '
-          }
-        }, '')}
-      </h2>
+      <SmallH2>
+        {positiveStyleNames.length === 0
+          ? 'Die bereits getesteten Persönlichkeitsstile sind bei Ihnen nicht stark ausgeprägt.'
+          : 'Sie sind ' +
+            positiveStyleNames.reduce((result, name, index) => {
+              if (positiveStyleNames.length === 1) {
+                return result + name + '.'
+              } else if (index === positiveStyleNames.length - 1) {
+                return result + ' und ' + name + '.'
+              } else {
+                return result + name + ', '
+              }
+            }, '')}
+      </SmallH2>
       <ResultIntro>
-        Sie haben bisher Tests für folgende Persönlichkeitsstile ausgefüllt:
+        Hier sehen Sie die Ergebnisse der bisherigen Fragebögen.{' '}
+        {results.length !== 9 &&
+          'Füllen Sie weitere Fragebögen aus, um Ihr Profil zu schärfen.'}
+        Klicken Sie auf einen Namen, um zu den Detail-Informationen zu gelangen.
       </ResultIntro>
       <section>
         {sortedResultData.map((result, index) => (
@@ -83,7 +88,7 @@ export default function Result({ questionnaireIds, results }) {
               <p>Es gibt noch 1 weiteren Fragebogen.</p>
             ) : (
               <p>
-                Sie haben im bereits Fragebögen zu{' '}
+                Sie haben bereits Fragebögen zu{' '}
                 <strong>{NumberOfCompletedQuestionnaires} von 9</strong>{' '}
                 Persönlichkeitsstilen ausgefüllt. Häufig sind die ersten
                 Fragebögen die relevantesten. Sie können noch weitere Fragebögen
@@ -139,19 +144,27 @@ export default function Result({ questionnaireIds, results }) {
       <TextLink href="https://www.wege-zur-psychotherapie.org/">
         Infoseite "Wege zur Psychotherapie" &gt;
       </TextLink>
+      <BottomSpacer />
       <FinePrint>
         Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese Seite
         im Browser als Lesezeichen speichern, um diese Informationen erneut
         aufzurufen.
       </FinePrint>
-      <FloatingButtonContainer
-        to={'/questionnaire/entry/' + questionnaireIds + '/' + results}
-      >
-        <Button>Weiteren Fragebogen starten</Button>
-      </FloatingButtonContainer>
+      {results.length !== 9 && (
+        <FloatingButtonContainer
+          to={'/questionnaire/entry/' + questionnaireIds + '/' + results}
+        >
+          <Button>Weiteren Fragebogen starten</Button>
+        </FloatingButtonContainer>
+      )}
     </>
   )
 }
+
+const SmallH2 = styled.h2`
+  font-size: 1em;
+  margin-top: 0;
+`
 
 const IntroImgStyled = styled(IntroImg)`
   display: block;
@@ -161,9 +174,6 @@ const IntroImgStyled = styled(IntroImg)`
 
 const ResultIntro = styled.p`
   margin-bottom: 40px;
-`
-const StyleText = styled.p`
-  margin: 15px 0;
 `
 
 const ResultSection = styled.section`

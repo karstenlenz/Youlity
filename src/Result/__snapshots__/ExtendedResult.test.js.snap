@@ -45,7 +45,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 gUwDrH"
+            class="ResultBar__ColorBar-sc-479x3f-2 MirAr"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -73,7 +73,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 fqhHNn"
+            class="ResultBar__ColorBar-sc-479x3f-2 kuxa-dL"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -101,7 +101,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 DFdqP"
+            class="ResultBar__ColorBar-sc-479x3f-2 LsDfm"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -129,7 +129,7 @@ exports[`The ExtendedResult component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 kavjaE"
+            class="ResultBar__ColorBar-sc-479x3f-2 bekMn"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"

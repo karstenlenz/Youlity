@@ -3,7 +3,7 @@
 exports[`The Result component renders correctly 1`] = `
 <div>
   <svg
-    class="Result__IntroImgStyled-sc-19vma1i-0 kEeMbE"
+    class="Result__IntroImgStyled-sc-19vma1i-1 iEEnbp"
     title=""
   >
     style_info.svg
@@ -24,15 +24,18 @@ exports[`The Result component renders correctly 1`] = `
       underline.svg
     </svg>
   </section>
-  <h2>
-    Sie sind
-     
-    selbstbewusst.
+  <h2
+    class="Result__SmallH2-sc-19vma1i-0 ceSjfa"
+  >
+    Sie sind selbstbewusst.
   </h2>
   <p
-    class="Result__ResultIntro-sc-19vma1i-1 ijCUam"
+    class="Result__ResultIntro-sc-19vma1i-2 jLKDeV"
   >
-    Sie haben bisher Tests für folgende Persönlichkeitsstile ausgefüllt:
+    Hier sehen Sie die Ergebnisse der bisherigen Fragebögen.
+     
+    Füllen Sie weitere Fragebögen aus, um Ihr Profil zu schärfen.
+    Klicken Sie auf einen Namen, um zu den Detail-Informationen zu gelangen.
   </p>
   <section>
     <a
@@ -52,7 +55,7 @@ exports[`The Result component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 gUwDrH"
+            class="ResultBar__ColorBar-sc-479x3f-2 MirAr"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -80,7 +83,7 @@ exports[`The Result component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 fqhHNn"
+            class="ResultBar__ColorBar-sc-479x3f-2 kuxa-dL"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -108,7 +111,7 @@ exports[`The Result component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 zLyHQ"
+            class="ResultBar__ColorBar-sc-479x3f-2 ivvhLt"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -136,7 +139,7 @@ exports[`The Result component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 fWVpbL"
+            class="ResultBar__ColorBar-sc-479x3f-2 xBbVg"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -164,7 +167,7 @@ exports[`The Result component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 ivvhLt"
+            class="ResultBar__ColorBar-sc-479x3f-2 ihBHIz"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -192,7 +195,7 @@ exports[`The Result component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 kehGSJ"
+            class="ResultBar__ColorBar-sc-479x3f-2 fIEoFZ"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -220,7 +223,7 @@ exports[`The Result component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 ihBHIz"
+            class="ResultBar__ColorBar-sc-479x3f-2 jHgcJo"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -248,7 +251,7 @@ exports[`The Result component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 kImkNG"
+            class="ResultBar__ColorBar-sc-479x3f-2 iVQYNk"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -276,7 +279,7 @@ exports[`The Result component renders correctly 1`] = `
           class="ResultBar__Outline-sc-479x3f-1 echTYD"
         >
           <div
-            class="ResultBar__ColorBar-sc-479x3f-2 jHgcJo"
+            class="ResultBar__ColorBar-sc-479x3f-2 ecufUC"
           >
             <p
               class="ResultBar__Text-sc-479x3f-0 bCfkyT"
@@ -288,7 +291,7 @@ exports[`The Result component renders correctly 1`] = `
       </section>
     </a>
     <p>
-      Sie haben im bereits Fragebögen zu
+      Sie haben bereits Fragebögen zu
        
       <strong>
         2
@@ -342,6 +345,9 @@ exports[`The Result component renders correctly 1`] = `
   >
     Infoseite "Wege zur Psychotherapie" &gt;
   </a>
+  <div
+    class="Result__BottomSpacer-sc-19vma1i-6 cOmlEn"
+  />
   <small
     class="FinePrint__SmallStyled-sc-1oy87bz-0 gdFdOa"
   >
