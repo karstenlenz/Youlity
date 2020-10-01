@@ -13,8 +13,8 @@ export default function QuestionnaireIntro({ questionnaireIds, results = '' }) {
         <h1>Schritt 2: Fragebogen</h1>
       </HeadlineUnderline>
       <p>
-        Im Folgenden präsentieren wir Ihnen als Ergebnis Ihrer Auswahl zwei
-        Fragebögen. Diese sind auf Sie angepasst. Bitte beantworten Sie alle 16
+        Im Folgenden präsentieren wir Ihnen als Ergebnis Ihrer Auswahl
+        Fragebögen zu 2 Persönlichkeitsstilen. Bitte beantworten Sie alle 16
         Fragen. Sie helfen, Ihre zentralen Persönlichkeitsaspekte besser
         einzuschätzen. Alle Fragen sind Ja/Nein-Fragen. Die Bearbeitungszeit pro
         Fragebogen beträgt circa drei Minuten.

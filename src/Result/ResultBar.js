@@ -11,7 +11,17 @@ export default function ResultBar({ percentage, index }) {
   return (
     <Outline>
       <ColorBar percentage={percentage} index={index}>
-        <Text>{percentage}% Übereinstimmung</Text>
+        <Text>
+          {percentage === null
+            ? 'Noch nicht getestet'
+            : percentage < 37.5
+            ? 'Nicht ausgeprägt'
+            : percentage >= 37.5 && percentage < 62.5
+            ? 'wenig ausgeprägt'
+            : percentage >= 62.5 && percentage < 87.5
+            ? 'deutlich ausgeprägt'
+            : 'Stark ausgeprägt'}
+        </Text>
       </ColorBar>
     </Outline>
   )
