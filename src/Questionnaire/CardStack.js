@@ -65,11 +65,15 @@ const Card = styled.div`
   border-radius: 12px;
   box-shadow: var(--primary-shadow);
   width: 100%;
-  max-width: 60%;
+  max-width: 72.5%;
   min-height: 200px;
   margin: auto;
   padding: 20px;
   font-size: 1em;
   transform: ${(props) => 'translateX(-50%) scale(' + props.scale + ');'};
   filter: brightness(${(props) => props.brightness});
+
+  @media screen and (min-width: 750px) {
+    max-width: 60%;
+  }
 `
