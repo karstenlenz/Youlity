@@ -13,6 +13,7 @@ import { personalityStyleData } from '../data/personalityStyleData'
 import { ReactComponent as IntroImg } from '../img/style_info.svg'
 import ResultBar from './ResultBar'
 import useResult from './useResult'
+import Chart from './Chart.js'
 
 Result.propTypes = {
   questionnaireIds: PropTypes.string.isRequired,
@@ -21,10 +22,36 @@ Result.propTypes = {
 
 export default function Result({ questionnaireIds, results }) {
   const {
+    resultData,
     sortedResultData,
     positiveStyleNames,
     NumberOfCompletedQuestionnaires,
   } = useResult(questionnaireIds, results)
+
+  const chartConfig = {
+    type: 'radar',
+    data: {
+      labels: resultData.map(
+        (result) => personalityStyleData[result.id - 1]?.adjective
+      ),
+      datasets: [
+        {
+          data: resultData.map((result) => result.yesCount),
+        },
+      ],
+    },
+    options: {
+      legend: {
+        display: false,
+        labels: {
+          fontColor: 'red',
+        },
+      },
+      tooltips: {
+        enabled: false,
+      },
+    },
+  }
 
   return (
     <>
@@ -32,6 +59,7 @@ export default function Result({ questionnaireIds, results }) {
       <HeadlineUnderline>
         <h1>Ergebnis</h1>
       </HeadlineUnderline>
+      <Chart config={chartConfig} />
       <SmallH2>
         {positiveStyleNames.length === 0
           ? 'Die bereits getesteten Persönlichkeitsstile sind bei Ihnen nicht stark ausgeprägt.'

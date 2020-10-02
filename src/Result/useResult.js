@@ -20,6 +20,7 @@ export default function useResult(questionnaireIds, results) {
   const NumberOfCompletedQuestionnaires = resultYesCounts.length
 
   return {
+    resultData,
     sortedResultData,
     positiveStyleNames,
     NumberOfCompletedQuestionnaires,
