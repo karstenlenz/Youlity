@@ -12,6 +12,7 @@ import { capitalizeFirstLetter } from '../common/util'
 import { personalityStyleData } from '../data/personalityStyleData'
 import { ReactComponent as IntroImg } from '../img/style_info.svg'
 import ResultBar from './ResultBar'
+import useResult from './useResult'
 
 Result.propTypes = {
   questionnaireIds: PropTypes.string.isRequired,
@@ -19,23 +20,11 @@ Result.propTypes = {
 }
 
 export default function Result({ questionnaireIds, results }) {
-  const resultQuestionnaireIds = questionnaireIds.split('')
-  const resultYesCounts = results.split('')
-  const resultData = []
-  resultQuestionnaireIds.forEach((id, index) => {
-    resultData.push({ id: id, yesCount: resultYesCounts[index] || null })
-  })
-  const sortedResultData = resultData
-    .slice()
-    .sort((a, b) => b.yesCount - a.yesCount)
-
-  const positiveStyles = resultData
-    .slice()
-    .filter((result) => result.yesCount > 4)
-  const positiveStyleNames = positiveStyles.map(
-    (style) => personalityStyleData[style.id - 1]?.adjective
-  )
-  const NumberOfCompletedQuestionnaires = resultYesCounts.length
+  const {
+    sortedResultData,
+    positiveStyleNames,
+    NumberOfCompletedQuestionnaires,
+  } = useResult(questionnaireIds, results)
 
   return (
     <>
@@ -61,7 +50,8 @@ export default function Result({ questionnaireIds, results }) {
         Hier sehen Sie die Ergebnisse der bisherigen Fragebögen.{' '}
         {results.length !== 9 &&
           'Füllen Sie weitere Fragebögen aus, um Ihr Profil zu schärfen.'}
-        Klicken Sie auf einen Namen, um zu den Detail-Informationen zu gelangen.
+        <br /> Klicken Sie auf einen Namen, um zu den Detail-Informationen mit
+        hilfreichen Tipps zu gelangen.
       </ResultIntro>
       <section>
         {sortedResultData.map((result, index) => (

@@ -35,7 +35,8 @@ exports[`The Result component renders correctly 1`] = `
     Hier sehen Sie die Ergebnisse der bisherigen Fragebögen.
      
     Füllen Sie weitere Fragebögen aus, um Ihr Profil zu schärfen.
-    Klicken Sie auf einen Namen, um zu den Detail-Informationen zu gelangen.
+    <br />
+     Klicken Sie auf einen Namen, um zu den Detail-Informationen mit hilfreichen Tipps zu gelangen.
   </p>
   <section>
     <a

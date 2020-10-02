@@ -15,17 +15,13 @@ export default function MotivesIntro() {
       </HeadlineUnderline>
       <p>
         Die Persönlichkeit jedes Menschen ist von 6 Grundbedürfnissen bestimmt.
-        Dabei gibt es bei jedem von uns eine unterschiedliche Gewichtung.
         <br />
         Wählen Sie zunächst Ihre drei wichtigsten Grundbedürfnisse aus.
         <br />
         Daraufhin wählen wir die zwei relevantesten Persönlichkeitsstile aus und
         prüfen mit einem Fragebogen, wie ausgeprägt diese bei Ihnen sind.
         <br />
-        Dazu erhalten Sie umfangreiche Informationen und Tipps. Wenn Sie
-        möchten, können Sie im Anschluss auch noch Fragebögen zu den weiteren
-        Persönlichkeitsstilen ausfüllen, um ein umfassendes Bild Ihrer
-        Persönlichkeit zu erhalten.
+        Dazu erhalten Sie umfangreiche Informationen und Tipps.
       </p>
       <Collapse headline="Mehr erfahren">
         Leben heißt, in Beziehung zu gehen. Wie Menschen in Beziehung gehen,

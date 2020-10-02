@@ -18,6 +18,9 @@ export default function QuestionnaireIntro({ questionnaireIds, results = '' }) {
         Fragen. Sie helfen, Ihre zentralen Persönlichkeitsaspekte besser
         einzuschätzen. Alle Fragen sind Ja/Nein-Fragen. Die Bearbeitungszeit pro
         Fragebogen beträgt circa drei Minuten.
+        <br /> Wenn Sie möchten, können Sie im Anschluss auch noch Fragebögen zu
+        den weiteren Persönlichkeitsstilen ausfüllen, um ein umfassendes Bild
+        Ihrer Persönlichkeit zu erhalten.
       </p>
       <FloatingButtonContainer
         to={'/questionnaire/entry/' + questionnaireIds + '/' + results}
