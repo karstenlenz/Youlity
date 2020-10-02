@@ -11,7 +11,17 @@ export default function ResultBar({ percentage, index }) {
   return (
     <Outline>
       <ColorBar percentage={percentage} index={index}>
-        <Text>{percentage}% Übereinstimmung</Text>
+        <Text>
+          {percentage === null
+            ? 'Noch nicht getestet'
+            : percentage <= 25
+            ? 'Nicht ausgeprägt'
+            : percentage > 25 && percentage < 62.5
+            ? 'wenig ausgeprägt'
+            : percentage >= 62.5 && percentage < 87.5
+            ? 'deutlich ausgeprägt'
+            : 'Stark ausgeprägt'}
+        </Text>
       </ColorBar>
     </Outline>
   )
@@ -42,7 +52,7 @@ from {
 
 const ColorBar = styled.div`
   animation: ${(props) => expandWidth(props.percentage)} 0.8s
-    ${(props) => 0.4 + 0.2 * props.index}s forwards ease-in-out;
+    ${(props) => 0.8 + 0.2 * props.index}s forwards ease-in-out;
   white-space: nowrap;
   overflow: visible;
   border-radius: 5px;

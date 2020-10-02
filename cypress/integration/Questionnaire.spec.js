@@ -11,7 +11,7 @@ context('Questionnaire Intro', () => {
 
   it('has an introductory paragraph', () => {
     cy.contains(
-      'Im Folgenden präsentieren wir Ihnen als Ergebnis Ihrer Auswahl zwei Fragebögen.'
+      'Im Folgenden präsentieren wir Ihnen als Ergebnis Ihrer Auswahl Fragebögen zu 2 Persönlichkeitsstilen.'
     ).should('exist')
   })
 

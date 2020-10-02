@@ -7,7 +7,7 @@ describe('The Result component', () => {
   it('renders correctly', () => {
     const { container } = render(
       <Router>
-        <Result questionnaireIds="1928373645" results="64" />
+        <Result questionnaireIds="192837645" results="64" />
       </Router>
     )
     expect(container).toMatchSnapshot()

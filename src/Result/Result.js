@@ -1,17 +1,18 @@
+import PropTypes from 'prop-types'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components/macro'
+import Button from '../common/Button'
+import FinePrint from '../common/FinePrint'
+import FloatingButtonContainer from '../common/FloatingButtonContainer'
 import HeadlineUnderline from '../common/HeadlineUnderline'
-import NoticeBox from '../common/NoticeBox'
-import SectionBG from '../common/SectionBG'
 import SectionBGWithButton from '../common/SectionBGWithButton'
 import TextLink from '../common/TextLink'
+import { capitalizeFirstLetter } from '../common/util'
 import { personalityStyleData } from '../data/personalityStyleData'
-import PropTypes from 'prop-types'
-import Button from '../common/Button'
-import { Link } from 'react-router-dom'
-import useResults from './useResults'
-import ResultBar from './ResultBar'
 import { ReactComponent as IntroImg } from '../img/style_info.svg'
+import ResultBar from './ResultBar'
+import useResult from './useResult'
 
 Result.propTypes = {
   questionnaireIds: PropTypes.string.isRequired,
@@ -19,81 +20,98 @@ Result.propTypes = {
 }
 
 export default function Result({ questionnaireIds, results }) {
-  const resultData = useResults(questionnaireIds, results)
+  const {
+    sortedResultData,
+    positiveStyleNames,
+    NumberOfCompletedQuestionnaires,
+  } = useResult(questionnaireIds, results)
 
   return (
     <>
-      <NoticeBox>
-        <h3>Hinweis</h3>
-        <p>
-          Unser Testergebnis stellt nur eine Tendenz dar und ersetzt keine
-          psychologische Beratung. Wenn Sie sich unwohl fühlen, holen Sie sich
-          professionelle Hilfe.
-          <br />
-          <br />
-        </p>
-        <TextLink href="https://www.wege-zur-psychotherapie.org/">
-          Infoseite "Wege zur Psychotherapie" &gt;
-        </TextLink>
-      </NoticeBox>
       <IntroImgStyled title="" />
       <HeadlineUnderline>
         <h1>Ergebnis</h1>
       </HeadlineUnderline>
+      <SmallH2>
+        {positiveStyleNames.length === 0
+          ? 'Die bereits getesteten Persönlichkeitsstile sind bei Ihnen nicht stark ausgeprägt.'
+          : 'Sie sind ' +
+            positiveStyleNames.reduce((result, name, index) => {
+              if (positiveStyleNames.length === 1) {
+                return result + name + '.'
+              } else if (index === positiveStyleNames.length - 1) {
+                return result + ' und ' + name + '.'
+              } else {
+                return result + name + ', '
+              }
+            }, '')}
+      </SmallH2>
       <ResultIntro>
-        Sie haben eben Tests für folgende Persönlichkeitsstile ausgefüllt:
+        Hier sehen Sie die Ergebnisse der bisherigen Fragebögen.{' '}
+        {results.length !== 9 &&
+          'Füllen Sie weitere Fragebögen aus, um Ihr Profil zu schärfen.'}
+        <br /> Klicken Sie auf einen Namen, um zu den Detail-Informationen mit
+        hilfreichen Tipps zu gelangen.
       </ResultIntro>
-      {resultData.map((result, index) => {
-        return (
-          <SectionBG key={result.id}>
-            <h3>{personalityStyleData[result.id - 1]?.commonName}</h3>
-            <ResultBar percentage={(result.yesCount / 8) * 100} index={index} />
-            {result.yesCount > 4 ? (
-              <>
-                <StyleText>
-                  Sie haben eine hohe Übereinstimmung mit diesem
-                  Persönlichkeitsstil. <br />
-                  Das heißt nicht, dass etwas mit Ihnen „nicht stimmt“, oder
-                  eine Störung vorliegt! Jeder Mensch hat einen oder mehrere
-                  dominante Persönlichkeitsstile. Erst wenn Sie unter Ihrer
-                  Persönlichkeit leiden, besteht Handlungsbedarf. <br />
-                  Lesen Sie sich die folgenden Informationen durch und prüfen
-                  Sie ehrlich, ob die Beschreibungen auf Sie zutreffen.
-                </StyleText>
-                <TextLink href={'/style-info/' + result.id}>
-                  Zu den Informationen &gt;
-                </TextLink>
-              </>
+      <section>
+        {sortedResultData.map((result, index) => (
+          <Link to={'/style-info/' + result.id} key={result.id}>
+            <ResultSection>
+              <ResultHeadline>
+                {capitalizeFirstLetter(
+                  personalityStyleData[result.id - 1]?.adjective
+                )}{' '}
+                {'>'}
+              </ResultHeadline>
+              <ResultBar
+                percentage={
+                  result.yesCount === null ? null : (result.yesCount / 8) * 100
+                }
+                index={index}
+              />
+            </ResultSection>
+          </Link>
+        ))}
+        {9 - results.length > 0 ? (
+          <>
+            {9 - results.length === 1 ? (
+              <p>Es gibt noch 1 weiteren Fragebogen.</p>
             ) : (
-              <>
-                <StyleText>
-                  Das deutet <strong>wahrscheinlich nicht</strong> darauf hin,
-                  dass dieser Stil bei Ihnen stark ausgeprägt ist.
-                  <br /> Sie können sich die Beschreibung des
-                  Persönlichkeitsstil trotzdem gerne durchlesen und prüfen, ob
-                  Sie sich damit identifizieren können.
-                </StyleText>
-                <TextLink href={'/style-info/' + result.id}>
-                  Zu den Informationen &gt;
-                </TextLink>
-              </>
+              <p>
+                Sie haben bereits Fragebögen zu{' '}
+                <strong>{NumberOfCompletedQuestionnaires} von 9</strong>{' '}
+                Persönlichkeitsstilen ausgefüllt. Häufig sind die ersten
+                Fragebögen die relevantesten. Sie können noch weitere Fragebögen
+                ausfüllen, um zu erfahren, wie stark die weiteren
+                Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen
+                haben wenige, dafür stark ausgeprägte Stile, andere mehrere,
+                jeweils weniger stark ausgeprägte Stile.
+              </p>
             )}
-          </SectionBG>
-        )
-      })}
-      <h3>Weitere Fragebögen</h3>
-      <p>
-        Sie haben im ersten Schritt Fragebögen zu <strong>2 von 9</strong>{' '}
-        Persönlichkeitsstilen ausgefüllt. Meist werden damit die für Sie
-        relevantesten Persönlichkeitsstile abgedeckt. Sie können noch weitere
-        Fragebögen ausfüllen, um zu erfahren, wie stark die weiteren
-        Persönlichkeitsstile bei Ihnen ausgeprägt sind. Manche Menschen haben
-        wenige, dafür stark ausgeprägte Stile, andere mehrere, jeweils weniger
-        stark ausgeprägte Stile.
-      </p>
-      <Link to={'/questionnaire/entry/' + questionnaireIds + '/' + results}>
-        <Button>Weiteren Fragebogen starten</Button>
-      </Link>
+            <Link
+              to={'/questionnaire/entry/' + questionnaireIds + '/' + results}
+            >
+              <Button>Weiteren Fragebogen starten</Button>
+            </Link>
+          </>
+        ) : (
+          <>
+            <p>
+              Sie haben die Fragebögen zu allen 9 Persönlichkeitsstilen
+              ausgefüllt. Wir hoffen, dass Sie etwas Nützliches über Ihre
+              Persönlichkeit mitnehmen konnten.
+              <br />
+              Wenn Sie noch mehr über sich erfahren wollen, nehmen Sie am besten
+              Kontakt zu einem Psychotherapeuten auf.
+            </p>
+            <TextLinkWithMargin href="https://www.wege-zur-psychotherapie.org/">
+              Infoseite "Wege zur Psychotherapie" &gt;
+            </TextLinkWithMargin>
+            <BottomSpacer />
+          </>
+        )}
+      </section>
+
       <SectionBGWithButton>
         <h2>Tagebuch</h2>
         <p>
@@ -105,14 +123,38 @@ export default function Result({ questionnaireIds, results }) {
           <Button btnType="secondary">Zum Tagebuch</Button>
         </Link>
       </SectionBGWithButton>
+      <h3>Hinweis</h3>
       <p>
+        Unser Testergebnis stellt nur eine Tendenz dar und ersetzt keine
+        psychologische Beratung. Wenn Sie sich unwohl fühlen, holen Sie sich
+        professionelle Hilfe.
+        <br />
+        <br />
+      </p>
+      <TextLink href="https://www.wege-zur-psychotherapie.org/">
+        Infoseite "Wege zur Psychotherapie" &gt;
+      </TextLink>
+      <BottomSpacer />
+      <FinePrint>
         Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese Seite
         im Browser als Lesezeichen speichern, um diese Informationen erneut
         aufzurufen.
-      </p>
+      </FinePrint>
+      {results.length !== 9 && (
+        <FloatingButtonContainer
+          to={'/questionnaire/entry/' + questionnaireIds + '/' + results}
+        >
+          <Button>Weiteren Fragebogen starten</Button>
+        </FloatingButtonContainer>
+      )}
     </>
   )
 }
+
+const SmallH2 = styled.h2`
+  font-size: 1em;
+  margin-top: 0;
+`
 
 const IntroImgStyled = styled(IntroImg)`
   display: block;
@@ -123,6 +165,19 @@ const IntroImgStyled = styled(IntroImg)`
 const ResultIntro = styled.p`
   margin-bottom: 40px;
 `
-const StyleText = styled.p`
+
+const ResultSection = styled.section`
+  margin-bottom: 20px;
+`
+
+const ResultHeadline = styled.h3`
+  margin: 0 0 5px 0;
+  text-align: left;
+`
+const TextLinkWithMargin = styled(TextLink)`
   margin: 15px 0;
+`
+
+const BottomSpacer = styled.div`
+  margin-bottom: 40px;
 `
