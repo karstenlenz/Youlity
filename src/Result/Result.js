@@ -22,6 +22,7 @@ Result.propTypes = {
 export default function Result({ questionnaireIds, results }) {
   const {
     sortedResultData,
+    positiveStyles,
     positiveStyleNames,
     NumberOfCompletedQuestionnaires,
   } = useResult(questionnaireIds, results)
@@ -33,18 +34,37 @@ export default function Result({ questionnaireIds, results }) {
         <h1>Ergebnis</h1>
       </HeadlineUnderline>
       <SmallH2>
-        {positiveStyleNames.length === 0
+        Sie sind <StyleInfoLink href="/">super</StyleInfoLink>
+        {/* {positiveStyleNames.length === 0
           ? 'Die bereits getesteten Persönlichkeitsstile sind bei Ihnen nicht stark ausgeprägt.'
           : 'Sie sind ' +
-            positiveStyleNames.reduce((result, name, index) => {
-              if (positiveStyleNames.length === 1) {
-                return result + name + '.'
+            positiveStyles.map((style, index) => {
+              if (positiveStyles.length === 1) {
+                const styleName = personalityStyleData[style.id - 1]?.adjective
+
+                return (
+                  <StyleInfoLink href={'style-info/' + style.id}>
+                    {styleName + '.'}
+                  </StyleInfoLink>
+                )
               } else if (index === positiveStyleNames.length - 1) {
-                return result + ' und ' + name + '.'
+                const styleName = personalityStyleData[style.id - 1]?.adjective
+
+                return (
+                  <StyleInfoLink href={'style-info/' + style.id}>
+                    {' und ' + styleName + '.'}
+                  </StyleInfoLink>
+                )
               } else {
-                return result + name + ', '
+                const styleName = personalityStyleData[style.id - 1]?.adjective
+
+                return (
+                  <StyleInfoLink href={'style-info/' + style.id}>
+                    {styleName + ', '}
+                  </StyleInfoLink>
+                )
               }
-            }, '')}
+            }, '')} */}
       </SmallH2>
       <ResultIntro>
         Hier sehen Sie die Ergebnisse der bisherigen Fragebögen.{' '}
@@ -154,6 +174,11 @@ export default function Result({ questionnaireIds, results }) {
 const SmallH2 = styled.h2`
   font-size: 1em;
   margin-top: 0;
+`
+
+const StyleInfoLink = styled.a`
+  font-size: 1em;
+  text-decoration: underline;
 `
 
 const IntroImgStyled = styled(IntroImg)`

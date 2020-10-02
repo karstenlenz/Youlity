@@ -21,6 +21,7 @@ export default function useResult(questionnaireIds, results) {
 
   return {
     sortedResultData,
+    positiveStyles,
     positiveStyleNames,
     NumberOfCompletedQuestionnaires,
   }

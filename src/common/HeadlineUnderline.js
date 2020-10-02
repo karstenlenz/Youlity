@@ -18,6 +18,7 @@ const ChildContainer = styled.div`
 const HeadlineContainer = styled.section`
   margin: -15px 0;
   position: relative;
+  pointer-events: none;
 `
 
 const UnderlineStyled = styled(Underline)`
