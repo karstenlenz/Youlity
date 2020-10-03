@@ -9,7 +9,7 @@ exports[`The Result component renders correctly 1`] = `
     style_info.svg
   </svg>
   <section
-    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-1 tAJUt"
+    class="HeadlineUnderline__HeadlineContainer-sc-1reeb6v-1 iTZjyj"
   >
     <div
       class="HeadlineUnderline__ChildContainer-sc-1reeb6v-0 cbzWsz"
@@ -25,9 +25,19 @@ exports[`The Result component renders correctly 1`] = `
     </svg>
   </section>
   <h2
-    class="Result__SmallH2-sc-19vma1i-0 ceSjfa"
+    class="ResultSummary__SmallH2-byiznu-0 gvhvLp"
   >
-    Sie sind selbstbewusst.
+    Sie sind
+     
+    und 
+    <a
+      class="ResultSummary__StyleInfoLink-byiznu-1 bqLymn"
+      href="/style-info/1"
+    >
+      selbstbewusst
+      .
+    </a>
+     
   </h2>
   <p
     class="Result__ResultIntro-sc-19vma1i-2 jLKDeV"

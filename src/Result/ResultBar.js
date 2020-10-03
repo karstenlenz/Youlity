@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import styled, { keyframes } from 'styled-components/macro'
-import PropTypes from 'prop-types'
 
 ResultBar.propTypes = {
   percentage: PropTypes.number,

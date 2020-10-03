@@ -12,6 +12,7 @@ import { capitalizeFirstLetter } from '../common/util'
 import { personalityStyleData } from '../data/personalityStyleData'
 import { ReactComponent as IntroImg } from '../img/style_info.svg'
 import ResultBar from './ResultBar'
+import ResultSummary from './ResultSummary'
 import useResult from './useResult'
 
 Result.propTypes = {
@@ -33,39 +34,13 @@ export default function Result({ questionnaireIds, results }) {
       <HeadlineUnderline>
         <h1>Ergebnis</h1>
       </HeadlineUnderline>
-      <SmallH2>
-        Sie sind <StyleInfoLink href="/">super</StyleInfoLink>
-        {/* {positiveStyleNames.length === 0
-          ? 'Die bereits getesteten Persönlichkeitsstile sind bei Ihnen nicht stark ausgeprägt.'
-          : 'Sie sind ' +
-            positiveStyles.map((style, index) => {
-              if (positiveStyles.length === 1) {
-                const styleName = personalityStyleData[style.id - 1]?.adjective
-
-                return (
-                  <StyleInfoLink href={'style-info/' + style.id}>
-                    {styleName + '.'}
-                  </StyleInfoLink>
-                )
-              } else if (index === positiveStyleNames.length - 1) {
-                const styleName = personalityStyleData[style.id - 1]?.adjective
-
-                return (
-                  <StyleInfoLink href={'style-info/' + style.id}>
-                    {' und ' + styleName + '.'}
-                  </StyleInfoLink>
-                )
-              } else {
-                const styleName = personalityStyleData[style.id - 1]?.adjective
-
-                return (
-                  <StyleInfoLink href={'style-info/' + style.id}>
-                    {styleName + ', '}
-                  </StyleInfoLink>
-                )
-              }
-            }, '')} */}
-      </SmallH2>
+      {positiveStyleNames.length === 0 && (
+        <SmallH2>
+          Die bereits getesteten Persönlichkeitsstile sind bei Ihnen nicht stark
+          ausgeprägt.
+        </SmallH2>
+      )}
+      <ResultSummary {...{ positiveStyles }} />
       <ResultIntro>
         Hier sehen Sie die Ergebnisse der bisherigen Fragebögen.{' '}
         {results.length !== 9 &&
@@ -174,11 +149,6 @@ export default function Result({ questionnaireIds, results }) {
 const SmallH2 = styled.h2`
   font-size: 1em;
   margin-top: 0;
-`
-
-const StyleInfoLink = styled.a`
-  font-size: 1em;
-  text-decoration: underline;
 `
 
 const IntroImgStyled = styled(IntroImg)`
