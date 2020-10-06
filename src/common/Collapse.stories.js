@@ -2,7 +2,7 @@ import React from 'react'
 import Collapse from './Collapse'
 
 export default {
-  title: 'Collapse',
+  title: 'Common/Collapse',
   component: Collapse,
   argTypes: {
     headline: {

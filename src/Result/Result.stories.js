@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Result from './Result'
 
 export default {
-  title: 'Result',
+  title: 'Result/Result',
   component: Result,
 }
 

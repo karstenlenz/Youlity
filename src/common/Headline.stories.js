@@ -2,7 +2,7 @@ import React from 'react'
 import HeadlineUnderline from './HeadlineUnderline'
 
 export default {
-  title: 'Headline',
+  title: 'Common/Headline',
   component: HeadlineUnderline,
 }
 

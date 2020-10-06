@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Header from './Header'
 
 export default {
-  title: 'Header',
+  title: 'Common/Header',
   component: Header,
 }
 

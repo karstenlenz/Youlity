@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import JournalForm from './JournalForm'
 
 export default {
-  title: 'JournalForm',
+  title: 'Journal/JournalForm',
   component: JournalForm,
 }
 

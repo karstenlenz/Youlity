@@ -2,7 +2,7 @@ import React from 'react'
 import JournalCard from './JournalCard'
 
 export default {
-  title: 'JournalCard',
+  title: 'Journal/JournalCard',
   component: JournalCard,
   argTypes: {
     handleDelete: { action: 'deleted' },

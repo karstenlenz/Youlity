@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import JournalList from './JournalList'
 
 export default {
-  title: 'JournalList',
+  title: 'Journal/JournalList',
   component: JournalList,
   argTypes: {
     deleteJournalEntry: { action: 'deleted' },

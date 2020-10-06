@@ -2,7 +2,7 @@ import React from 'react'
 import Questionnaire from './Questionnaire'
 
 export default {
-  title: 'Questionnaire',
+  title: 'Questionnaire/QuestionnaireEntry',
   component: Questionnaire,
   argTypes: {
     questionSets: {

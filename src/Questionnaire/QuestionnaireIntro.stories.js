@@ -3,7 +3,7 @@ import QuestionnaireIntro from './QuestionnaireIntro'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 export default {
-  title: 'Questionnaire',
+  title: 'Questionnaire/Questionnaire',
   component: QuestionnaireIntro,
 }
 

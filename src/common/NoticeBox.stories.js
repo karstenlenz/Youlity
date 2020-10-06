@@ -3,7 +3,7 @@ import NoticeBox from './NoticeBox'
 import TextLink from './TextLink'
 
 export default {
-  title: 'NoticeBox',
+  title: 'Common/NoticeBox',
   component: NoticeBox,
 }
 

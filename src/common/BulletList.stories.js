@@ -2,7 +2,7 @@ import React from 'react'
 import BulletList from './BulletList'
 
 export default {
-  title: 'BulletList',
+  title: 'Common/BulletList',
   component: BulletList,
   argTypes: {
     listType: {

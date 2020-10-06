@@ -2,7 +2,7 @@ import React from 'react'
 import InfoOverlay from './InfoOverlay'
 
 export default {
-  title: 'InfoOverlay',
+  title: 'Common/InfoOverlay',
   component: InfoOverlay,
 }
 

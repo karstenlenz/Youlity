@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import MotivesEntry from './MotivesEntry'
 
 export default {
-  title: 'Motive Selection',
+  title: 'Motives/Motive Selection',
   component: MotivesEntry,
 }
 
