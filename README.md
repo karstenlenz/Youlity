@@ -23,7 +23,7 @@ The app is responsive, however it is best viewed on a mobile device.
 
 Test-URL (master): [https://youlity.vercel.app/](https://youlity.vercel.app/)
 
-[StoryBook Pattern Library](https://5f6fbc1092d9510022f8d1f0-gfbgpsprzf.chromatic.com/)
+[StoryBook Pattern Library](https://master--5f6fbc1092d9510022f8d1f0.chromatic.com)
 
 ## Dev notes
 
