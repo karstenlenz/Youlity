@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import styled from 'styled-components/macro'
 import { v4 as uuidv4 } from 'uuid'
 import Button from '../common/Button'
@@ -8,7 +8,11 @@ import HeadlineUnderline from '../common/HeadlineUnderline'
 export default function ExtendedJournalForm({ createJournalEntry }) {
   const currentDate = new Date()
   const history = useHistory()
-  const [newJournalEntry, setNewJournalEntry] = useState({})
+  const [newJournalEntry, setNewJournalEntry] = useState({
+    date: currentDate.toLocaleDateString('de-DE', { timeZone: 'GMT' }),
+    type: 'extended',
+    id: uuidv4(),
+  })
   const [inputRound, setInputRound] = useState(0)
   const [input, setInput] = useState('')
 
@@ -19,7 +23,7 @@ export default function ExtendedJournalForm({ createJournalEntry }) {
     think:
       'Was haben Sie in der Situation gedacht? (konkrete Gedanken wie: „Ich bin es einfach nicht wert.“)',
     feel: 'Wie fühlten Sie sich? (traurig, ärgerlich, beschämt etc.)',
-    do: 'Was haben Sie getan?',
+    doWhat: 'Was haben Sie getan?',
     consequence: 'Wozu hat das geführt?',
     otherPeople: 'Wie verhielten die anderen Personen sich daraufhin?',
     agreement: 'Waren Sie mit dem Ergebnis der Situation einverstanden?',
@@ -40,57 +44,61 @@ export default function ExtendedJournalForm({ createJournalEntry }) {
       <DateText>
         {currentDate.toLocaleDateString('de-DE', { timeZone: 'GMT' })}
       </DateText>
-      <FormLabel htmlFor="title">
+      <FormLabel htmlFor="question">
         {Object.values(journalQuestions)[inputRound]}
+        {' (' +
+          (inputRound + 1) +
+          ' / ' +
+          Object.values(journalQuestions).length +
+          ')'}
       </FormLabel>
       <TextAreaStyled
-        id="title"
-        name="title"
+        id="question"
+        name="question"
         value={input}
+        rows="10"
         onChange={(event) => setInput(event.target.value)}
-        placeholder="z.B. Streit mit Stefanie"
       />
       <ButtonPair>
-        <CancelLink to="/journal">
-          <Button type="button" btnType="white">
-            Abbrechen
-          </Button>
-        </CancelLink>
+        <Button type="button" btnType="white" width="47.5" onClick={handleBack}>
+          Abbrechen
+        </Button>
         <Button btnType="primary" width="47.5">
           Speichern
         </Button>
       </ButtonPair>
-      <p>
-        Alle Einträge werden nur auf Ihrem Gerät gespeichert. Es werden keine
-        Daten übertragen.
-      </p>
     </FormStyled>
   )
 
+  function handleBack(event) {
+    event.preventDefault()
+    if (inputRound === 0) {
+      history.push('/journal')
+    } else {
+      setInputRound(inputRound - 1)
+    }
+  }
   function handleSubmit(event) {
+    event.preventDefault()
+
     const currentQuestion = Object.keys(journalQuestions)[inputRound]
     const currentAnswer = input
     const journalEntry = { ...newJournalEntry }
-    journalEntry[currentQuestion] = currentAnswer
-    event.preventDefault()
-    setInputRound(inputRound + 1)
-    setInput('')
-    setNewJournalEntry({ journalEntry })
-    event.target.title.focus()
 
-    // if (title.length === 0 || description.length === 0) {
-    //   console.log('nixx eingetragen')
-    //   return false
-  }
-
-  const newEntry = {
-    //   date: currentDate.toLocaleDateString('de-DE', { timeZone: 'GMT' }),
-    //   title,
-    //   description,
-    //   id: uuidv4(),
-    // }
-    // createJournalEntry(newEntry)
-    // history.push('/journal')
+    if (input.length === 0) {
+      event.target.question.focus()
+      return false
+    } else if (inputRound === Object.values(journalQuestions).length - 1) {
+      journalEntry[currentQuestion] = currentAnswer
+      createJournalEntry(journalEntry)
+      history.push('/journal')
+    } else {
+      journalEntry[currentQuestion] = currentAnswer
+      setInputRound(inputRound + 1)
+      setInput('')
+      setNewJournalEntry(journalEntry)
+      event.target.question.focus()
+    }
   }
 }
 const FormStyled = styled.form``
@@ -105,15 +113,6 @@ const DateHeadline = styled.span`
 const DateText = styled.span`
   display: block;
   font-size: 1em;
-  margin-bottom: 20px;
-`
-const InputStyled = styled.input`
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  width: 100%;
-  font-size: 1em;
-  background: var(--light-grey);
   margin-bottom: 20px;
 `
 
@@ -136,10 +135,8 @@ const FormLabel = styled.label`
   font-weight: 700;
   margin-bottom: 10px;
 `
+
 const ButtonPair = styled.div`
   display: flex;
   justify-content: space-between;
-`
-const CancelLink = styled(Link)`
-  width: 47.5%;
 `

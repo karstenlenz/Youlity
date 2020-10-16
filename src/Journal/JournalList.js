@@ -6,7 +6,9 @@ import FloatingButtonContainer from '../common/FloatingButtonContainer'
 import HeadlineUnderline from '../common/HeadlineUnderline'
 import { ReactComponent as IntroImg } from '../img/journal.svg'
 import JournalCard from './JournalCard'
+import ExtendedJournalCard from './ExtendedJournalCard'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 JournalList.propTypes = {
   journalEntries: PropTypes.arrayOf(PropTypes.object).isRequired,
@@ -38,21 +40,49 @@ export default function JournalList({ journalEntries, deleteJournalEntry }) {
           Es sind noch keine Einträge vorhanden. Legen Sie jetzt einen neuen an.
         </p>
       ) : (
-        journalEntries.map((entry) => (
-          <JournalCard
-            key={entry.id}
-            date={entry.date}
-            title={entry.title}
-            description={entry.description}
-            id={entry.id}
-            handleDelete={deleteJournalEntry}
-          ></JournalCard>
-        ))
+        journalEntries.map((entry) => {
+          if (entry.type === 'short') {
+            return (
+              <JournalCard
+                key={entry.id}
+                date={entry.date}
+                title={entry.title}
+                description={entry.description}
+                id={entry.id}
+                handleDelete={deleteJournalEntry}
+              />
+            )
+          } else {
+            return (
+              <ExtendedJournalCard
+                key={entry.id}
+                date={entry.date}
+                id={entry.id}
+                when={entry.when}
+                what={entry.what}
+                who={entry.who}
+                think={entry.think}
+                feel={entry.feel}
+                doWhat={entry.doWhat}
+                consequence={entry.consequence}
+                otherPeople={entry.otherPeople}
+                agreement={entry.agreement}
+                doDifferent={entry.doDifferent}
+                howChange={entry.howChange}
+                learn={entry.learn}
+                cause={entry.cause}
+                handleDelete={deleteJournalEntry}
+              />
+            )
+          }
+        })
       )}
-
-      <FloatingButtonContainer to="/journal/entry">
-        <Button btnType="primary">Eintrag erstellen</Button>
-      </FloatingButtonContainer>
+      <Link to="/journal/entry">
+        <Button btnType="primary">Freier Eintrag</Button>
+      </Link>
+      <Link to="/journal/entry-extended">
+        <Button btnType="secondary">Strukturierter Eintrag</Button>
+      </Link>
     </>
   )
 }
