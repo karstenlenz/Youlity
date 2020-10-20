@@ -2,6 +2,8 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Header from './common/Header'
 import Homepage from './Homepage/Homepage'
+import ExtendedJournalForm from './Journal/ExtendedJournalForm'
+import JournalDetail from './Journal/JournalDetail'
 import JournalForm from './Journal/JournalForm'
 import JournalList from './Journal/JournalList'
 import useJournalEntries from './Journal/useJournalEntries'
@@ -29,6 +31,15 @@ export default function App() {
       </Switch>
       <main>
         <Switch>
+          <Route path="/journal/detail/:index">
+            <JournalDetail
+              journalEntries={journalEntries}
+              deleteJournalEntry={deleteJournalEntry}
+            />
+          </Route>
+          <Route path="/journal/entry-extended">
+            <ExtendedJournalForm createJournalEntry={createJournalEntry} />
+          </Route>
           <Route path="/journal/entry">
             <JournalForm createJournalEntry={createJournalEntry} />
           </Route>

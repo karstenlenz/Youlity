@@ -69,11 +69,11 @@ export default function JournalForm({ createJournalEntry }) {
   function handleSubmit(event) {
     event.preventDefault()
     if (title.length === 0 || description.length === 0) {
-      console.log('nixx eingetragen')
       return false
     }
 
     const newEntry = {
+      type: 'short',
       date: currentDate.toLocaleDateString('de-DE', { timeZone: 'GMT' }),
       title,
       description,
