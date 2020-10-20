@@ -56,7 +56,7 @@ export default function JournalList({ journalEntries, deleteJournalEntry }) {
                 handleDelete={deleteJournalEntry}
               />
             )
-          } else {
+          } else if (entry.type === 'extended') {
             return (
               <ExtendedJournalCardPreview
                 key={entry.id}
@@ -67,7 +67,7 @@ export default function JournalList({ journalEntries, deleteJournalEntry }) {
                 index={index}
               />
             )
-          }
+          } else return ''
         })
       )}
       <Link to="/journal/entry">

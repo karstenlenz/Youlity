@@ -43,8 +43,14 @@ export default function ExtendedJournalForm({ createJournalEntry }) {
         <Button type="button" btnType="white" width="47.5" onClick={handleBack}>
           Abbrechen
         </Button>
-        <Button btnType="primary" width="47.5">
-          Speichern
+        <Button
+          btnType="primary"
+          width="47.5"
+          isButtonDisabled={!input ? true : false}
+        >
+          {inputRound + 1 === Object.values(journalQuestions).length
+            ? 'Speichern'
+            : 'Weiter'}
         </Button>
       </ButtonPair>
     </FormStyled>

@@ -26,7 +26,6 @@ export default function ExtendedJournalCard({
 }) {
   const { journalQuestions } = useExtendedJournalForm()
   const headlines = Object.values(journalQuestions)
-  console.log(headlines)
 
   return (
     <CardContainer>

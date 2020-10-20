@@ -9,9 +9,14 @@ context('Journal List', () => {
     cy.contains('Tagebuch').should('exist')
   })
 
-  it('can navigate to journal entry form', () => {
-    cy.contains('Eintrag erstellen').click()
+  it('can navigate to the simple journal entry form', () => {
+    cy.contains('Freier Eintrag').click()
     cy.url().should('contain', '/journal/entry')
+  })
+
+  it('can navigate to the extended journal entry form', () => {
+    cy.contains('Strukturierter Eintrag').click()
+    cy.url().should('contain', '/journal/entry-extended')
   })
 })
 
@@ -35,6 +40,31 @@ context('Journal Form', () => {
       .type('Test-Beschreibung lorem ipsum')
     cy.contains('Speichern').click()
     cy.contains('Test-Headline').should('exist')
+    cy.contains('Test-Beschreibung').should('exist')
+  })
+})
+
+context('The Extended Journal Form', () => {
+  beforeEach(() => {
+    cy.visit('/journal/entry-extended')
+  })
+
+  it('has a headline', () => {
+    cy.contains('Strukturierte Situationsanalyse').should('exist')
+  })
+
+  it('cant submit an empty form', () => {
+    cy.contains('Weiter').should('be.disabled')
+  })
+
+  it.only('can submit the form', () => {
+    for (let i = 0; i <= 12; i++) {
+      cy.get('textarea').type('Test-Beschreibung lorem ipsum Nr:' + i)
+      cy.contains('Weiter').click()
+    }
+
+    cy.get('textarea').type('Test-Beschreibung letzter Schritt')
+    cy.contains('Speichern').click()
     cy.contains('Test-Beschreibung').should('exist')
   })
 })
