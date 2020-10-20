@@ -70,12 +70,15 @@ export default function JournalList({ journalEntries, deleteJournalEntry }) {
           } else return ''
         })
       )}
-      <Link to="/journal/entry">
-        <Button btnType="primary">Freier Eintrag</Button>
-      </Link>
-      <Link to="/journal/entry-extended">
-        <Button btnType="secondary">Strukturierter Eintrag</Button>
-      </Link>
+      <BottomSpacer />
+      <FloatingButtonsContainer>
+        <Link to="/journal/entry">
+          <Button btnType="primary">Freier Eintrag</Button>
+        </Link>
+        <Link to="/journal/entry-extended">
+          <Button btnType="secondary">Strukturierter Eintrag</Button>
+        </Link>
+      </FloatingButtonsContainer>
     </>
   )
 }
@@ -87,4 +90,28 @@ const IntroImgStyled = styled(IntroImg)`
 
 const SmallH2 = styled.h2`
   font-size: 1em;
+`
+const BottomSpacer = styled.div`
+  margin-bottom: 160px;
+`
+
+const FloatingButtonsContainer = styled.div`
+  z-index: var(--floating-button);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 900px;
+  padding: 0 15px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  @media screen and (min-width: 750px) {
+    width: 100%;
+    left: auto;
+    right: auto;
+    margin-left: -15px;
+  }
 `

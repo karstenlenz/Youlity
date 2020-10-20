@@ -14,7 +14,7 @@ export default function JournalForm({ createJournalEntry }) {
   return (
     <FormStyled onSubmit={handleSubmit}>
       <HeadlineUnderline>
-        <h1>Eintrag erstellen</h1>
+        <h1>Freier Eintrag</h1>
       </HeadlineUnderline>
       <DateHeadline>Datum</DateHeadline>
       <DateText>
