@@ -26,13 +26,13 @@ export default function useExtendedJournalForm(createJournalEntry) {
     doWhat: 'Was haben Sie getan?',
     consequence: 'Wozu hat das geführt?',
     otherPeople: 'Wie verhielten die anderen Personen sich daraufhin?',
-    agreement: 'Waren Sie mit dem Ergebnis der Situation einverstanden?',
+    agreement: 'Wie zufrieden waren Sie mit dem Ergebnis der Situation?',
     doDifferent: 'Was hätten Sie rückblickend gern anders gemacht?',
     howChange:
       'Wie hätten Sie im Nachhinein vielleicht ein besseres Ergebnis der Situation herbeiführen können?',
-    learn: 'Was lerne ich aus meinen Erfahrungen in dieser Situation?',
+    learn: 'Was lernen Sie aus Ihren Erfahrungen in dieser Situation?',
     cause:
-      'Welche meiner Annahmen und Überzeugungen über Beziehungen im Allgemeinen könnten diese Situation mit verändert oder sogar verzerrt haben?',
+      'Welche Ihrer Annahmen und Überzeugungen über Beziehungen im Allgemeinen könnten diese Situation mit verändert oder sogar verzerrt haben?',
   }
 
   function handleBack(event) {
