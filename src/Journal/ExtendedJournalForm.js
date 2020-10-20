@@ -18,7 +18,7 @@ export default function ExtendedJournalForm({ createJournalEntry }) {
   return (
     <FormStyled onSubmit={handleSubmit}>
       <HeadlineUnderline>
-        <h1>Strukturierte Situationsanalyse</h1>
+        <h1>Strukturierter Eintrag</h1>
       </HeadlineUnderline>
       <DateHeadline>Datum</DateHeadline>
       <DateText>
