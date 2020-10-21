@@ -315,7 +315,7 @@ exports[`The Result component renders correctly 1`] = `
       href="/questionnaire/entry/192837645/64"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
+        class="Button__BtnStyled-sc-129yfz5-0 dlyhBD"
         width="100"
       >
         Weiteren Fragebogen starten
@@ -335,7 +335,7 @@ exports[`The Result component renders correctly 1`] = `
       href="/journal"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 cxViIx"
+        class="Button__BtnStyled-sc-129yfz5-0 iScSVT"
         width="100"
       >
         Zum Tagebuch
@@ -369,7 +369,7 @@ exports[`The Result component renders correctly 1`] = `
     href="/questionnaire/entry/192837645/64"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
+      class="Button__BtnStyled-sc-129yfz5-0 dlyhBD"
       width="100"
     >
       Weiteren Fragebogen starten

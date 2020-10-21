@@ -119,7 +119,7 @@ exports[`renders correctly 1`] = `
             href="/motives/intro"
           >
             <button
-              class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
+              class="Button__BtnStyled-sc-129yfz5-0 dlyhBD"
               width="100"
             >
               Test starten
@@ -176,7 +176,7 @@ exports[`renders correctly 1`] = `
             href="/journal"
           >
             <button
-              class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
+              class="Button__BtnStyled-sc-129yfz5-0 dlyhBD"
               width="100"
             >
               Tagebuch öffnen
@@ -256,7 +256,7 @@ exports[`renders correctly 1`] = `
       href="/motives/intro"
     >
       <button
-        class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
+        class="Button__BtnStyled-sc-129yfz5-0 dlyhBD"
         width="100"
       >
         Test starten

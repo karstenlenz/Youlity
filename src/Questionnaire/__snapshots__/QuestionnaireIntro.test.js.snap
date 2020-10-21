@@ -34,7 +34,7 @@ exports[`The QuestionnaireIntro component renders correctly 1`] = `
     href="/questionnaire/entry/undefined/"
   >
     <button
-      class="Button__BtnStyled-sc-129yfz5-0 iWqmsN"
+      class="Button__BtnStyled-sc-129yfz5-0 dlyhBD"
       width="100"
     >
       Weiter zur Auswahl
