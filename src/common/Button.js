@@ -63,6 +63,10 @@ const BtnStyled = styled.button`
   padding: 10px;
   margin: 20px auto;
 
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
   &:disabled {
     background: ${(props) => {
       if (props.btnType === 'primary') {
