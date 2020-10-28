@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import { personalityStyleData } from '../data/personalityStyleData'
 
 export default function ({ positiveStyles }) {
-  if (!positiveStyles) return null
+  if (!positiveStyles || positiveStyles.length === 0) return null
 
   return (
     <SmallH2>
