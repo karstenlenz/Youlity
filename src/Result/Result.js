@@ -6,13 +6,12 @@ import Button from '../common/Button'
 import FinePrint from '../common/FinePrint'
 import FloatingButtonContainer from '../common/FloatingButtonContainer'
 import HeadlineUnderline from '../common/HeadlineUnderline'
-import SectionBGWithButton from '../common/SectionBGWithButton'
+import SectionBG from '../common/SectionBG'
 import TextLink from '../common/TextLink'
 import { capitalizeFirstLetter } from '../common/util'
 import { personalityStyleData } from '../data/personalityStyleData'
-import { ReactComponent as IntroImg } from '../img/style_info.svg'
+import { ReactComponent as IntroImg } from '../img/happy_birthday.svg'
 import ResultBar from './ResultBar'
-import ResultSummary from './ResultSummary'
 import useResult from './useResult'
 
 Result.propTypes = {
@@ -32,7 +31,7 @@ export default function Result({ questionnaireIds, results }) {
     <>
       <IntroImgStyled title="" />
       <HeadlineUnderline>
-        <h1>Ergebnis</h1>
+        <h1>Happy Birthday!</h1>
       </HeadlineUnderline>
       {positiveStyleNames.length === 0 && (
         <SmallH2>
@@ -40,32 +39,26 @@ export default function Result({ questionnaireIds, results }) {
           ausgeprägt.
         </SmallH2>
       )}
-      <ResultSummary {...{ positiveStyles }} />
-      <ResultIntro>
-        Hier sehen Sie die Ergebnisse der bisherigen Fragebögen.{' '}
-        {results.length !== 9 &&
-          'Füllen Sie weitere Fragebögen aus, um Ihr Profil zu schärfen.'}
-        <br /> Klicken Sie auf einen Namen, um zu den Detail-Informationen mit
-        hilfreichen Tipps zu gelangen.
-      </ResultIntro>
+      <SmallH2>
+        Alles Gute zum Geburtstag! <br></br> Das automatische
+        Geburtstagsprognose hat folgende Werte für dein neues Lebensjahr
+        ermittelt:{' '}
+      </SmallH2>
       <section>
         {sortedResultData.map((result, index) => (
-          <Link to={'/style-info/' + result.id} key={result.id}>
-            <ResultSection>
-              <ResultHeadline>
-                {capitalizeFirstLetter(
-                  personalityStyleData[result.id - 1]?.adjective
-                )}{' '}
-                {'>'}
-              </ResultHeadline>
-              <ResultBar
-                percentage={
-                  result.yesCount === null ? null : (result.yesCount / 8) * 100
-                }
-                index={index}
-              />
-            </ResultSection>
-          </Link>
+          <ResultSection>
+            <ResultHeadline>
+              {capitalizeFirstLetter(
+                personalityStyleData[result.id - 1]?.adjective
+              )}
+            </ResultHeadline>
+            <ResultBar
+              percentage={
+                result.yesCount === null ? null : (result.yesCount / 8) * 100
+              }
+              index={index}
+            />
+          </ResultSection>
         ))}
         {9 - results.length > 0 ? (
           <>
@@ -91,44 +84,22 @@ export default function Result({ questionnaireIds, results }) {
           </>
         ) : (
           <>
-            <p>
-              Sie haben die Fragebögen zu allen 9 Persönlichkeitsstilen
-              ausgefüllt. Wir hoffen, dass Sie etwas Nützliches über Ihre
-              Persönlichkeit mitnehmen konnten.
-              <br />
-              Wenn Sie noch mehr über sich erfahren wollen, nehmen Sie am besten
-              Kontakt zu einem Psychotherapeuten auf.
-            </p>
-            <TextLinkWithMargin href="https://www.wege-zur-psychotherapie.org/">
-              Infoseite "Wege zur Psychotherapie" &gt;
-            </TextLinkWithMargin>
+            <p></p>
             <BottomSpacer />
           </>
         )}
       </section>
-
-      <SectionBGWithButton>
-        <h2>Tagebuch</h2>
+      <SectionBG>
+        <h3>Hinweis</h3>
         <p>
-          Sind Sie manchmal unzufrieden mit Ihrer Persönlichkeit? Unsere
-          Tagebuch-Funktion hilft Ihnen, Ihr Verhalten zu analysieren und
-          dadurch erste Schritte zu einer Veränderung anzustoßen.
+          Dieser Geburtstagsgruß stellt nur eine Tendenz dar und ersetzt keine
+          professionelle Beratung. Wenn Sie sich unwohl fühlen, kontaktieren Sie
+          bitte einen professionellen Clown.
+          <br />
+          <br />
         </p>
-        <Link to="/journal">
-          <Button btnType="secondary">Zum Tagebuch</Button>
-        </Link>
-      </SectionBGWithButton>
-      <h3>Hinweis</h3>
-      <p>
-        Unser Testergebnis stellt nur eine Tendenz dar und ersetzt keine
-        psychologische Beratung. Wenn Sie sich unwohl fühlen, holen Sie sich
-        professionelle Hilfe.
-        <br />
-        <br />
-      </p>
-      <TextLink href="https://www.wege-zur-psychotherapie.org/">
-        Infoseite "Wege zur Psychotherapie" &gt;
-      </TextLink>
+      </SectionBG>
+
       <BottomSpacer />
       <FinePrint>
         Tipp: Wir speichern Ihr Ergebnis nicht, aber Sie können sich diese Seite

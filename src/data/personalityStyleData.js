@@ -3,7 +3,7 @@ export const personalityStyleData = [
     id: 1,
     name: 'Der narzisstische Persönlichkeitsstil',
     commonName: 'Der selbstbewusste Persönlichkeitsstil',
-    adjective: 'selbstbewusst',
+    adjective: 'Gesund',
     motives: ['Anerkennung', 'Autonomie', 'Solidarität', 'Wichtigkeit'],
     questions: [
       'Brauchen Sie in hohem Maße Lob und Anerkennung?',
@@ -75,7 +75,7 @@ export const personalityStyleData = [
     id: 2,
     name: 'Der histrionische Persönlichkeitsstil',
     commonName: 'Der gesellige Persönlichkeitsstil',
-    adjective: 'gesellig',
+    adjective: 'Glücklich',
     motives: ['Wichtigkeit', 'Solidarität', 'Verlässlichkeit'],
     questions: [
       'Liegt Ihnen viel daran, dass Sie für andere Personen wichtig sind, dass Sie in deren Leben eine Rolle spielen?',
@@ -143,7 +143,7 @@ export const personalityStyleData = [
     id: 3,
     name: 'Der dependente Persönlichkeitsstil',
     commonName: 'Der anhängliche Persönlichkeitsstil',
-    adjective: 'anhänglich',
+    adjective: 'Geliebt',
     motives: ['Verlässlichkeit', 'Solidarität'],
     questions: [
       'Ist es Ihnen in persönlichen Beziehungen sehr wichtig zu wissen, dass ein Partner bei Ihnen bleibt, dass eine Beziehung stabil ist?',
@@ -212,7 +212,7 @@ export const personalityStyleData = [
     id: 4,
     name: 'Der selbstunsichere Persönlichkeitsstil',
     commonName: 'Der sensible Persönlichkeitsstil',
-    adjective: 'sensibel',
+    adjective: 'Erfolgreich',
     motives: ['Anerkennung', 'Wichtigkeit'],
     questions: [
       'Würden Sie sich selbst als „schüchtern“ bezeichnen?',
@@ -269,7 +269,7 @@ export const personalityStyleData = [
     id: 5,
     name: 'Der passiv-aggressive Persönlichkeitsstil',
     commonName: 'Der lässige Persönlichkeitsstil',
-    adjective: 'lässig',
+    adjective: 'Voll mit noch mehr gutem Krams',
     motives: ['Grenzen', 'Autonomie', 'Anerkennung'],
     questions: [
       'Ist es Ihnen wichtig, auch in Beziehungen eigene Bereiche zu haben, die den Partner nichts angehen (z. B. eigenes Zimmer, eigenen Schreibtisch o. a.)?',
@@ -326,7 +326,7 @@ export const personalityStyleData = [
     id: 6,
     name: 'Der schizoide Persönlichkeitsstil',
     commonName: 'Der ungesellige Persönlichkeitsstil',
-    adjective: 'ungesellig',
+    adjective: 'Doof',
     motives: ['Solidarität', 'Verlässlichkeit', 'Wichtigkeit', 'Anerkennung'],
     questions: [
       'Haben Sie manchmal den Wunsch, andere Menschen wären an / auf Ihrer Seite und Sie könnten sich voll auf sie verlassen?',
@@ -388,7 +388,7 @@ export const personalityStyleData = [
     id: 7,
     name: 'Der zwanghafte Persönlichkeitsstil',
     commonName: 'Der gewissenhafte Persönlichkeitsstil',
-    adjective: 'gewissenhaft',
+    adjective: 'Langweilig',
     motives: ['Autonomie', 'Anerkennung', 'Wichtigkeit', 'Solidarität'],
     questions: [
       'Reagieren Sie ärgerlich, wenn andere Menschen Ihnen Vorschriften machen oder Sie bevormunden?',
@@ -456,7 +456,7 @@ export const personalityStyleData = [
     id: 8,
     name: 'Der paranoide Persönlichkeitsstil',
     commonName: 'Der wachsame Persönlichkeitsstil',
-    adjective: 'wachsam',
+    adjective: 'Unglücklich',
     motives: ['Anerkennung', 'Grenzen', 'Autonomie', 'Solidarität'],
     questions: [
       'Zweifeln Sie manchmal an Ihren Kompetenzen und Fähigkeiten?',
@@ -521,7 +521,7 @@ export const personalityStyleData = [
     id: 9,
     name: 'Der Borderline-Persönlichkeitsstil',
     commonName: 'Der sprunghafte Persönlichkeitsstil',
-    adjective: 'sprunghaft',
+    adjective: '💩',
     motives: [
       'Anerkennung',
       'Wichtigkeit',
